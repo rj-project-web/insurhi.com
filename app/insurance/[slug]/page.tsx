@@ -1,0 +1,145 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { AdSlot } from "@/components/ad-slot";
+import { getCategoryBySlug, getFaqsByCategory, getProvidersByCategory } from "@/lib/cms-client";
+import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { insuranceCategories } from "@/lib/site-data";
+
+type CategoryPageProps = {
+  params: Promise<{ slug: string }>;
+};
+
+export function generateStaticParams() {
+  return insuranceCategories.map((category) => ({ slug: category.slug }));
+}
+
+export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const cmsCategory = await getCategoryBySlug(slug);
+  const fallbackCategory = insuranceCategories.find((item) => item.slug === slug);
+  const category = cmsCategory ?? fallbackCategory;
+
+  if (!category) {
+    return buildMetadata({
+      title: "Insurance Category",
+      description: "Insurance comparisons and guidance.",
+      path: "/insurance",
+    });
+  }
+
+  return buildMetadata({
+    title: `${category.title} Coverage Guides`,
+    description:
+      category.summary ??
+      `Compare ${category.title.toLowerCase()} providers, understand coverage options, and review common claim questions.`,
+    path: `/insurance/${slug}`,
+  });
+}
+
+export default async function InsuranceCategoryPage({ params }: CategoryPageProps) {
+  const { slug } = await params;
+  const fallbackCategory = insuranceCategories.find((item) => item.slug === slug);
+  const cmsCategory = await getCategoryBySlug(slug);
+  const category = cmsCategory ?? fallbackCategory;
+
+  if (!category) {
+    notFound();
+  }
+
+  const [faqs, providers] = cmsCategory
+    ? await Promise.all([
+        getFaqsByCategory(cmsCategory.id),
+        getProvidersByCategory(cmsCategory.id),
+      ])
+    : [[], []];
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Insurance", path: "/insurance" },
+    { name: category.title, path: `/insurance/${slug}` },
+  ]);
+
+  return (
+    <div className="space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <section className="space-y-3">
+        <p className="text-sm text-muted-foreground">Insurance / {category.title}</p>
+        <h1 className="text-3xl font-semibold tracking-tight">{category.title}</h1>
+        <p className="max-w-3xl text-muted-foreground">
+          {category.summary ??
+            `This channel will host plan comparisons, best picks, FAQs, and trusted provider recommendations for ${category.title.toLowerCase()}.`}
+        </p>
+      </section>
+
+      <div className="grid gap-3 sm:grid-cols-2">
+        <Link href="/guides" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
+          Product comparison
+        </Link>
+        <Link href="/guides" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
+          Recommended plans
+        </Link>
+        <Link href="#faqs" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
+          Frequently asked questions
+        </Link>
+        <Link href="#providers" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
+          Recommended providers
+        </Link>
+      </div>
+
+      <AdSlot slotId="ad_in_content_1" />
+
+      <section id="faqs" className="space-y-3">
+        <h2 className="text-xl font-semibold tracking-tight">FAQs</h2>
+        <div className="grid gap-3">
+          {faqs.length > 0 ? (
+            faqs.map((faq) => (
+              <article key={faq.id} className="rounded-lg border bg-card p-4">
+                <p className="font-medium">{faq.question}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
+              </article>
+            ))
+          ) : (
+            <p className="text-sm text-muted-foreground">
+              CMS FAQs will appear here after content is published.
+            </p>
+          )}
+        </div>
+      </section>
+
+      <section id="providers" className="space-y-3">
+        <h2 className="text-xl font-semibold tracking-tight">Recommended Providers</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {providers.length > 0 ? (
+            providers.map((provider) => (
+              <article key={provider.id} className="rounded-lg border bg-card p-4">
+                <p className="font-medium">{provider.name}</p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Rating: {provider.rating ?? "N/A"}
+                </p>
+              </article>
+            ))
+          ) : (
+            <p className="text-sm text-muted-foreground">
+              CMS provider recommendations will appear here after content is published.
+            </p>
+          )}
+        </div>
+      </section>
+
+      <section className="rounded-lg border bg-card p-4">
+        <h2 className="text-lg font-semibold tracking-tight">Explore related channels</h2>
+        <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
+          <Link href="/guides" className="underline underline-offset-4">
+            Insurance guides
+          </Link>
+          <Link href="/claims" className="underline underline-offset-4">
+            Claims assistance
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+}

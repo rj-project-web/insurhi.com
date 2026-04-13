@@ -14,7 +14,7 @@ type BreadcrumbItem = {
 };
 
 export function getSiteUrl() {
-  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://insurhi.com";
+  return process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.insurhi.com";
 }
 
 export function absoluteUrl(path: string) {

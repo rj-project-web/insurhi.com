@@ -1,0 +1,1044 @@
+{
+  "meta": {
+    "exportedAt": "2026-04-15T09:05:57.319Z",
+    "source": "http://localhost:3000"
+  },
+  "categories": [
+    {
+      "id": 1,
+      "title": "Auto Insurance",
+      "slug": "auto",
+      "summary": "Coverage guidance for car owners in English-speaking markets.",
+      "seo": {
+        "metaTitle": "Auto Insurance Guide | Insurhi",
+        "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+      },
+      "updatedAt": "2026-04-13T10:39:43.623Z",
+      "createdAt": "2026-04-13T10:39:43.623Z"
+    },
+    {
+      "id": 3,
+      "title": "Home Insurance",
+      "slug": "home",
+      "summary": "Home Insurance",
+      "seo": {
+        "metaTitle": "Home Insurance",
+        "metaDescription": "Home Insurance"
+      },
+      "updatedAt": "2026-04-13T14:08:21.607Z",
+      "createdAt": "2026-04-13T14:08:21.606Z"
+    },
+    {
+      "id": 2,
+      "title": "Life Insurance",
+      "slug": "life",
+      "summary": "Life insurance basics, policy options, and claim preparation guidance.",
+      "seo": {
+        "metaTitle": "Life Insurance Guide | Insurhi",
+        "metaDescription": "Understand life insurance policy types and practical claim tips."
+      },
+      "updatedAt": "2026-04-13T10:39:43.629Z",
+      "createdAt": "2026-04-13T10:39:43.629Z"
+    },
+    {
+      "id": 4,
+      "title": "Pet insurance",
+      "slug": "pet-insurance",
+      "summary": "Pet insurance",
+      "seo": {
+        "metaTitle": "Pet insurance SEO Title",
+        "metaDescription": "Pet insurance SEO Description"
+      },
+      "updatedAt": "2026-04-14T02:43:11.266Z",
+      "createdAt": "2026-04-14T02:43:11.266Z"
+    }
+  ],
+  "providers": [
+    {
+      "id": 1,
+      "name": "The Travelers Companies, Inc.",
+      "slug": "travelers",
+      "categories": [
+        {
+          "id": 1,
+          "title": "Auto Insurance",
+          "slug": "auto",
+          "summary": "Coverage guidance for car owners in English-speaking markets.",
+          "seo": {
+            "metaTitle": "Auto Insurance Guide | Insurhi",
+            "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+          },
+          "updatedAt": "2026-04-13T10:39:43.623Z",
+          "createdAt": "2026-04-13T10:39:43.623Z"
+        }
+      ],
+      "rating": 5,
+      "coverageRegions": [],
+      "seo": {
+        "metaTitle": "Travelers Car Insurance Review 2026 | Best Overall Auto Insurance | 50 State Coverage & Low Rates",
+        "metaDescription": "Travelers Insurance ranks as the best overall car insurance provider in 2026, offering affordable premiums starting at $1,746/year for good drivers, comprehensive coverage in 42 states, and top-rated claims satisfaction. Get your free quote today."
+      },
+      "updatedAt": "2026-04-14T02:41:44.641Z",
+      "createdAt": "2026-04-14T02:41:08.507Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "Auto insurance products",
+      "slug": "Auto-insurance-products",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Coverage guidance for car owners in English-speaking markets.",
+        "seo": {
+          "metaTitle": "Auto Insurance Guide | Insurhi",
+          "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+        },
+        "updatedAt": "2026-04-13T10:39:43.623Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "provider": null,
+      "coverageAmount": null,
+      "deductible": null,
+      "priceRange": null,
+      "recommendedFor": null,
+      "seo": {
+        "metaTitle": null,
+        "metaDescription": null
+      },
+      "updatedAt": "2026-04-14T02:33:42.308Z",
+      "createdAt": "2026-04-14T02:33:42.305Z"
+    },
+    {
+      "id": 1,
+      "name": "product home insurance",
+      "slug": "product-home-insurance",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Home Insurance",
+        "seo": {
+          "metaTitle": "Home Insurance",
+          "metaDescription": "Home Insurance"
+        },
+        "updatedAt": "2026-04-13T14:08:21.607Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "provider": null,
+      "coverageAmount": null,
+      "deductible": null,
+      "priceRange": null,
+      "recommendedFor": null,
+      "seo": {
+        "metaTitle": "product home insurance",
+        "metaDescription": null
+      },
+      "updatedAt": "2026-04-14T02:14:16.145Z",
+      "createdAt": "2026-04-13T14:09:33.550Z"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "title": "Life Insurance Basics for New Policyholders",
+      "slug": "life-insurance-basics",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Life insurance basics, policy options, and claim preparation guidance.",
+        "seo": {
+          "metaTitle": "Life Insurance Guide | Insurhi",
+          "metaDescription": "Understand life insurance policy types and practical claim tips."
+        },
+        "updatedAt": "2026-04-13T10:39:43.629Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Life insurance is one of the most important financial decisions you'll make, yet many people find it confusing. This guide breaks down the essentials to help you get started with confidence.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What Is Life Insurance?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Life insurance is a contract between you and an insurance company. You pay premiums, and in return, the insurer provides a death benefit to your beneficiaries when you pass away. This financial safety net helps your loved ones cover expenses and maintain their quality of life.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Types of Life Insurance",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Term Life Insurance provides coverage for a specific period—typically 10, 20, or 30 years. It's the most affordable option and ideal for covering temporary needs like a mortgage or raising children. If you outlive the term, the policy expires with no payout.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                },
+                {
+                  "type": "linebreak",
+                  "version": 1
+                },
+                {
+                  "type": "linebreak",
+                  "version": 1
+                },
+                {
+                  "mode": "normal",
+                  "text": "Whole Life Insurance offers lifelong coverage with a cash value component that grows over time. Premiums are higher, but the policy builds savings you can borrow against or withdraw.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                },
+                {
+                  "type": "linebreak",
+                  "version": 1
+                },
+                {
+                  "type": "linebreak",
+                  "version": 1
+                },
+                {
+                  "mode": "normal",
+                  "text": "Universal Life Insurance combines flexible premiums with a death benefit and cash value. You can adjust your coverage and payments as your needs change.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "How Much Coverage Do You Need?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A common rule of thumb is 10-15 times your annual income. However, consider these factors:",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                },
+                {
+                  "type": "linebreak",
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "ul",
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Outstanding debts (mortgage, loans, credit cards)",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Future expenses (children's education, daily living costs)",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Existing savings and investments",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Your spouse's earning potential",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Key Terms to Know",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Term",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Definition",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Premium",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "The amount you pay for coverage",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Death Benefit",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "The payout your beneficiaries receive",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Beneficiary",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "The person(s) who receive the death benefit",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Cash Value",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Savings component in permanent policies",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Riders",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Optional add-ons for extra coverage",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Tips for First-Time Buyers",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "ol",
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Start early. Premiums increase with age and health issues.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare quotes. Rates vary significantly between insurers.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Be honest on your application. Misrepresentation can lead to claim denial.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review your policy regularly. Update coverage after major life events.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Consider a medical exam. Non-medical policies are convenient but often cost more.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "number",
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Bottom Line",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Life insurance isn't just about money—it's about peace of mind. Start by assessing your family's needs, compare your options, and choose a policy that fits your budget and goals. The right coverage today protects your loved ones tomorrow.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [],
+              "direction": "ltr",
+              "textStyle": "",
+              "textFormat": 0
+            }
+          ],
+          "direction": "ltr"
+        }
+      },
+      "publishedAt": null,
+      "seo": {
+        "metaTitle": null,
+        "metaDescription": null
+      },
+      "updatedAt": "2026-04-13T13:47:38.596Z",
+      "createdAt": "2026-04-13T10:39:43.690Z",
+      "_status": "published"
+    }
+  ],
+  "faqItems": [
+    {
+      "id": 1,
+      "question": "What affects auto insurance premium pricing?",
+      "answer": "Age, driving record, location, vehicle type, and selected coverage.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Life insurance basics, policy options, and claim preparation guidance.",
+        "seo": {
+          "metaTitle": "Life Insurance Guide | Insurhi",
+          "metaDescription": "Understand life insurance policy types and practical claim tips."
+        },
+        "updatedAt": "2026-04-13T10:39:43.629Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-04-14T02:49:11.624Z",
+      "createdAt": "2026-04-13T10:39:43.649Z"
+    }
+  ],
+  "claimsGuides": [
+    {
+      "id": 1,
+      "title": "Auto Accident Claim Checklist",
+      "slug": "auto-accident-claim-checklist",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Coverage guidance for car owners in English-speaking markets.",
+        "seo": {
+          "metaTitle": "Auto Insurance Guide | Insurhi",
+          "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+        },
+        "updatedAt": "2026-04-13T10:39:43.623Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "steps": [
+        {
+          "id": "69dcc7ef712b542a5b549e72",
+          "step": "Document the accident scene and gather contact details."
+        },
+        {
+          "id": "69dcc7ef712b542a5b549e73",
+          "step": "Notify your insurer and submit a claim ticket."
+        },
+        {
+          "id": "69dcc7ef712b542a5b549e74",
+          "step": "Upload required files and track claim status."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "69dcc7ef712b542a5b549e75",
+          "item": "Driver license and policy number"
+        },
+        {
+          "id": "69dcc7ef712b542a5b549e76",
+          "item": "Accident photos and police report"
+        },
+        {
+          "id": "69dcc7ef712b542a5b549e77",
+          "item": "Repair estimate or medical records"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims",
+      "updatedAt": "2026-04-13T10:39:43.674Z",
+      "createdAt": "2026-04-13T10:39:43.674Z"
+    }
+  ],
+  "claimCases": [
+    {
+      "id": 1,
+      "title": "Auto Accident Claim Cases",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Coverage guidance for car owners in English-speaking markets.",
+        "seo": {
+          "metaTitle": "Auto Insurance Guide | Insurhi",
+          "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+        },
+        "updatedAt": "2026-04-13T10:39:43.623Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "scenario": "Auto Accident Claim Cases",
+      "outcome": "Auto Accident Claim Cases",
+      "updatedAt": "2026-04-14T02:50:39.787Z",
+      "createdAt": "2026-04-14T02:50:39.787Z"
+    }
+  ],
+  "pages": [
+    {
+      "id": 4,
+      "title": "About Us by jiang",
+      "slug": "about",
+      "content": "About Us by jiang content",
+      "seo": {
+        "metaTitle": null,
+        "metaDescription": null
+      },
+      "updatedAt": "2026-04-15T01:33:52.894Z",
+      "createdAt": "2026-04-15T01:33:52.894Z",
+      "_status": "published"
+    },
+    {
+      "id": 5,
+      "title": "Contact us by jiang",
+      "slug": "contact",
+      "content": "Contact us by jiang content",
+      "seo": {
+        "metaTitle": null,
+        "metaDescription": null
+      },
+      "updatedAt": "2026-04-15T01:34:14.314Z",
+      "createdAt": "2026-04-15T01:34:14.314Z",
+      "_status": "published"
+    },
+    {
+      "id": 1,
+      "title": "Static Page",
+      "slug": "static-page",
+      "content": "Static Page",
+      "seo": {
+        "metaTitle": null,
+        "metaDescription": null
+      },
+      "updatedAt": "2026-04-14T02:53:11.853Z",
+      "createdAt": "2026-04-14T02:53:11.852Z",
+      "_status": "published"
+    },
+    {
+      "id": 2,
+      "title": "privacy by jiang title",
+      "slug": "privacy-policy",
+      "content": "privacy by jiang description",
+      "seo": {
+        "metaTitle": null,
+        "metaDescription": null
+      },
+      "updatedAt": "2026-04-15T01:32:53.088Z",
+      "createdAt": "2026-04-15T01:32:53.087Z",
+      "_status": "published"
+    },
+    {
+      "id": 3,
+      "title": "terms by jiang title",
+      "slug": "terms",
+      "content": "terms by jiang content\n",
+      "seo": {
+        "metaTitle": null,
+        "metaDescription": null
+      },
+      "updatedAt": "2026-04-15T01:33:33.368Z",
+      "createdAt": "2026-04-15T01:33:17.533Z",
+      "_status": "published"
+    }
+  ]
+}

@@ -4,6 +4,9 @@ import { AdSlot } from "@/components/ad-slot";
 import { getLatestArticles } from "@/lib/cms-client";
 import { buildMetadata, buildBreadcrumbJsonLd } from "@/lib/seo";
 
+/** Always merge latest CMS article list (avoid deploy-time-only or ISR-stale /guides). */
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = buildMetadata({
   title: "Insurance Guides and Tutorials",
   description:

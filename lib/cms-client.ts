@@ -90,6 +90,8 @@ export type CmsClaimCase = {
 const CMS_BASE_URL = process.env.PAYLOAD_PUBLIC_SERVER_URL ?? "http://localhost:3000";
 const FETCH_OPTIONS = { next: { revalidate: 300 } };
 const CMS_REQUEST_TIMEOUT_MS = 1500;
+/** Article lists must reflect CMS edits quickly on Vercel (avoid 5m ISR stale list). */
+const CMS_ARTICLES_TIMEOUT_MS = 8000;
 
 async function fetchCollection<T>(path: string): Promise<T[]> {
   const controller = new AbortController();
@@ -212,12 +214,38 @@ export async function getProductBySlug(slug: string) {
   }
 }
 
+async function fetchArticlesListFromCms(limit: number): Promise<CmsArticle[]> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), CMS_ARTICLES_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(
+      `${CMS_BASE_URL}/api/articles?sort=-publishedAt&limit=${encodeURIComponent(String(limit))}`,
+      {
+        cache: "no-store",
+        signal: controller.signal,
+      },
+    );
+
+    if (!response.ok) {
+      return [];
+    }
+
+    const data = (await response.json()) as PayloadList<CmsArticle>;
+    return data.docs ?? [];
+  } catch {
+    return [];
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 export async function getLatestArticles() {
-  return fetchCollection<CmsArticle>("/api/articles?sort=-publishedAt&limit=8");
+  return fetchArticlesListFromCms(8);
 }
 
 export async function getArticlesList() {
-  return fetchCollection<CmsArticle>("/api/articles?sort=-publishedAt&limit=100");
+  return fetchArticlesListFromCms(100);
 }
 
 export async function getArticleBySlug(slug: string) {

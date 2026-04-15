@@ -3,16 +3,19 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { AdSlot } from "@/components/ad-slot";
-import { getClaimCaseById, getClaimCases } from "@/lib/cms-client";
+import { getClaimCaseById, getClaimCasesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
 type ClaimCaseDetailPageProps = {
   params: Promise<{ id: string }>;
 };
 
+/** CMS edits must show immediately; avoid SSG snapshot + long-lived fetch cache. */
+export const dynamic = "force-dynamic";
+
 export async function generateStaticParams() {
-  const claimCases = await getClaimCases();
-  return claimCases.map((claimCase) => ({ id: claimCase.id }));
+  const claimCases = await getClaimCasesList();
+  return claimCases.map((claimCase) => ({ id: String(claimCase.id) }));
 }
 
 export async function generateMetadata({ params }: ClaimCaseDetailPageProps): Promise<Metadata> {

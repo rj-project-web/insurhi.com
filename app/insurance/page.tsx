@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getCategories } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 import { insuranceCategories } from "@/lib/site-data";
 
@@ -10,7 +11,12 @@ export const metadata: Metadata = buildMetadata({
   path: "/insurance",
 });
 
-export default function InsurancePage() {
+export default async function InsurancePage() {
+  const cmsCategories = await getCategories();
+  const categories =
+    cmsCategories.length > 0
+      ? cmsCategories.map((category) => ({ slug: category.slug, title: category.title }))
+      : insuranceCategories;
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Insurance", path: "/insurance" },
@@ -27,7 +33,7 @@ export default function InsurancePage() {
         Browse category-specific comparisons, recommended plans, FAQs, and providers.
       </p>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {insuranceCategories.map((category) => (
+        {categories.map((category) => (
           <Link
             key={category.slug}
             href={`/insurance/${category.slug}`}

@@ -7,7 +7,10 @@ export function SiteFooter() {
     <footer className="mt-16 border-t bg-muted/30">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
         <p>{new Date().getFullYear()} {siteName}. All rights reserved.</p>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
+          <Link href="/content-map" className="hover:text-foreground">
+            Content map
+          </Link>
           <Link href="/about" className="hover:text-foreground">
             About
           </Link>

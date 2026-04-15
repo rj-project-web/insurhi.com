@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { AdSlot } from "@/components/ad-slot";
-import { getClaimsGuideBySlug, getClaimsGuides } from "@/lib/cms-client";
+import { getClaimsGuideBySlug, getClaimsGuidesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
 type ClaimsGuideDetailPageProps = {
@@ -11,7 +11,7 @@ type ClaimsGuideDetailPageProps = {
 };
 
 export async function generateStaticParams() {
-  const guides = await getClaimsGuides();
+  const guides = await getClaimsGuidesList();
   return guides
     .filter((guide) => Boolean(guide.slug))
     .map((guide) => ({ slug: guide.slug as string }));
@@ -76,6 +76,18 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
       <section className="space-y-3">
         <p className="text-sm text-muted-foreground">Claims / Guide / {slug}</p>
         <h1 className="text-3xl font-semibold tracking-tight">{guide.title}</h1>
+        {guide.onlineClaimUrl ? (
+          <p className="text-sm">
+            <a
+              href={guide.onlineClaimUrl}
+              className="font-medium text-primary underline underline-offset-4"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Online claim filing (CMS)
+            </a>
+          </p>
+        ) : null}
       </section>
 
       <section className="space-y-3">

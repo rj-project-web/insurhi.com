@@ -15,6 +15,12 @@ integration route (admin/UI hosting) can be wired in the Next.js app in the next
 npm install
 ```
 
+## Start local PostgreSQL
+
+```bash
+npm run db:up
+```
+
 ## Validate setup
 
 ```bash
@@ -34,6 +40,17 @@ npm run migrate:status
 
 ```bash
 npm run seed
+```
+
+Default admin credentials (change in `.env`):
+- Email: `admin@insurhi.com`
+- Password: `ChangeMe123!`
+
+## One-command bootstrap
+
+```bash
+npm run db:up
+npm run setup
 ```
 
 ## Collections

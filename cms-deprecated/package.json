@@ -9,7 +9,11 @@
     "migrate:create": "payload migrate:create",
     "migrate": "payload migrate",
     "migrate:status": "payload migrate:status",
-    "seed": "tsx src/seed/seed.ts"
+    "seed": "tsx src/seed/seed.ts",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:reset": "docker compose down -v && docker compose up -d",
+    "setup": "npm run generate:types && npm run migrate && npm run seed"
   },
   "keywords": [],
   "author": "",

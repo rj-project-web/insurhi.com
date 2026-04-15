@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/ad-slot";
-import { getCategoryBySlug, getFaqsByCategory, getProvidersByCategory } from "@/lib/cms-client";
+import {
+  getCategoryBySlug,
+  getFaqsByCategory,
+  getProductsByCategory,
+  getProvidersByCategory,
+} from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 import { insuranceCategories } from "@/lib/site-data";
 
@@ -29,8 +34,9 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   }
 
   return buildMetadata({
-    title: `${category.title} Coverage Guides`,
+    title: cmsCategory?.seo?.metaTitle ?? `${category.title} Coverage Guides`,
     description:
+      cmsCategory?.seo?.metaDescription ??
       category.summary ??
       `Compare ${category.title.toLowerCase()} providers, understand coverage options, and review common claim questions.`,
     path: `/insurance/${slug}`,
@@ -47,12 +53,13 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
     notFound();
   }
 
-  const [faqs, providers] = cmsCategory
+  const [faqs, providers, products] = cmsCategory
     ? await Promise.all([
         getFaqsByCategory(cmsCategory.id),
         getProvidersByCategory(cmsCategory.id),
+        getProductsByCategory(cmsCategory.id),
       ])
-    : [[], []];
+    : [[], [], []];
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Insurance", path: "/insurance" },
@@ -75,11 +82,11 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       </section>
 
       <div className="grid gap-3 sm:grid-cols-2">
-        <Link href="/guides" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
-          Product comparison
+        <Link href="#products" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
+          CMS products
         </Link>
         <Link href="/guides" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
-          Recommended plans
+          Insurance guides
         </Link>
         <Link href="#faqs" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
           Frequently asked questions
@@ -90,6 +97,30 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       </div>
 
       <AdSlot slotId="ad_in_content_1" />
+
+      <section id="products" className="space-y-3">
+        <h2 className="text-xl font-semibold tracking-tight">Products</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {products.length > 0 ? (
+            products.map((product) => (
+              <Link
+                key={product.id}
+                href={`/products/${product.slug}`}
+                className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent"
+              >
+                <p className="font-medium">{product.name}</p>
+                {product.priceRange ? (
+                  <p className="mt-1 text-sm text-muted-foreground">Price: {product.priceRange}</p>
+                ) : null}
+              </Link>
+            ))
+          ) : (
+            <p className="text-sm text-muted-foreground">
+              CMS products for this category will appear here after publishing.
+            </p>
+          )}
+        </div>
+      </section>
 
       <section id="faqs" className="space-y-3">
         <h2 className="text-xl font-semibold tracking-tight">FAQs</h2>
@@ -115,10 +146,26 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           {providers.length > 0 ? (
             providers.map((provider) => (
               <article key={provider.id} className="rounded-lg border bg-card p-4">
-                <p className="font-medium">{provider.name}</p>
+                <Link href={`/providers/${provider.slug}`} className="font-medium underline-offset-4 hover:underline">
+                  {provider.name}
+                </Link>
                 <p className="mt-1 text-sm text-muted-foreground">
                   Rating: {provider.rating ?? "N/A"}
                 </p>
+                {provider.coverageRegions && provider.coverageRegions.length > 0 ? (
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    Regions: {provider.coverageRegions.join(", ")}
+                  </p>
+                ) : null}
+                {provider.seo?.metaTitle || provider.seo?.metaDescription ? (
+                  <div className="mt-3 rounded-md border border-dashed p-2 text-xs text-muted-foreground">
+                    <p className="font-medium text-foreground/80">CMS SEO</p>
+                    {provider.seo.metaTitle ? <p className="mt-1">Title: {provider.seo.metaTitle}</p> : null}
+                    {provider.seo.metaDescription ? (
+                      <p className="mt-1">Description: {provider.seo.metaDescription}</p>
+                    ) : null}
+                  </div>
+                ) : null}
               </article>
             ))
           ) : (
@@ -128,6 +175,16 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           )}
         </div>
       </section>
+
+      {cmsCategory?.seo?.metaTitle || cmsCategory?.seo?.metaDescription ? (
+        <section className="rounded-lg border border-dashed bg-muted/30 p-4 text-sm text-muted-foreground">
+          <h2 className="text-base font-semibold tracking-tight text-foreground">Category CMS SEO</h2>
+          {cmsCategory.seo?.metaTitle ? <p className="mt-2">Meta title: {cmsCategory.seo.metaTitle}</p> : null}
+          {cmsCategory.seo?.metaDescription ? (
+            <p className="mt-2">Meta description: {cmsCategory.seo.metaDescription}</p>
+          ) : null}
+        </section>
+      ) : null}
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Explore related channels</h2>

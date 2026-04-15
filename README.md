@@ -20,6 +20,22 @@ npm run dev
 
 App runs at [http://localhost:3000](http://localhost:3000).
 
+### Run frontend + CMS together
+
+```bash
+npm run dev:all
+```
+
+This starts:
+- Frontend: `http://localhost:3002`
+- CMS Admin (`insurhi-cms-admin`): `http://localhost:3000/admin`
+
+## CMS architecture decision
+
+- Official CMS project: `insurhi-cms-admin`
+- Deprecated folder inside this repo: `cms-deprecated`
+- See `CMS_DECISION.md` for details.
+
 ## Build and lint
 
 ```bash

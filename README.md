@@ -47,6 +47,12 @@ npm run build
 
 Copy `.env.example` to `.env.local` and fill in project values.
 
+## Release process
+
+- See `RELEASE_SOP.md` for the standard production release flow.
+- Monitoring runbook: `MONITORING_RUNBOOK.md`
+- Rollback runbook: `ROLLBACK_RUNBOOK.md`
+
 ## Static publish workflow (local CMS -> Git -> CI)
 
 For "CMS + PostgreSQL local only" publishing, use exported JSON snapshot instead of runtime CMS API:

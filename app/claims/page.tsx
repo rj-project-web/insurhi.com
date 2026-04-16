@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { FileCheck2, ShieldAlert, Sparkles } from "lucide-react";
 import { AdSlot } from "@/components/ad-slot";
 import { getClaimCases, getClaimsGuides } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
@@ -24,12 +25,30 @@ export default async function ClaimsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section className="space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight">Claims Assistance</h1>
-        <p className="max-w-3xl text-muted-foreground">
-          Follow claim steps, gather required documents, and review real-world claim cases
-          before you submit.
+      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-teal-500/[0.08] via-cyan-500/[0.06] to-card p-6 lg:p-8">
+        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+          <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
+          Claims readiness center
         </p>
+        <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">Claims Assistance</h1>
+        <p className="max-w-3xl text-muted-foreground">
+          Follow claim steps, gather required documents, and review real-world claim cases before
+          you submit.
+        </p>
+        <div className="grid gap-2 sm:grid-cols-2 lg:max-w-2xl">
+          <article className="rounded-lg border bg-background/90 p-3">
+            <p className="flex items-center gap-2 text-sm font-medium">
+              <FileCheck2 className="h-4 w-4 text-cyan-600" />
+              Checklist-driven claim preparation
+            </p>
+          </article>
+          <article className="rounded-lg border bg-background/90 p-3">
+            <p className="flex items-center gap-2 text-sm font-medium">
+              <ShieldAlert className="h-4 w-4 text-blue-600" />
+              Reduce common denial and delay risks
+            </p>
+          </article>
+        </div>
       </section>
 
       <div className="grid gap-3 sm:grid-cols-2">
@@ -38,7 +57,7 @@ export default async function ClaimsPage() {
             <Link
               key={guide.id}
               href={guide.slug ? `/claims/guides/${guide.slug}` : "/claims"}
-              className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent"
+              className="rounded-xl border bg-gradient-to-br from-card to-teal-500/[0.03] p-4 transition-colors hover:bg-accent"
             >
               <p className="font-medium">{guide.title}</p>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -59,7 +78,7 @@ export default async function ClaimsPage() {
         )}
       </div>
 
-      <section className="space-y-3">
+      <section className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-cyan-500/[0.03] p-5">
         <h2 className="text-xl font-semibold tracking-tight">Claim Cases</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           {claimCases.length > 0 ? (
@@ -67,7 +86,7 @@ export default async function ClaimsPage() {
               <Link
                 key={claimCase.id}
                 href={`/claims/cases/${claimCase.id}`}
-                className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent"
+                className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent"
               >
                 <p className="font-medium">{claimCase.title}</p>
                 <p className="mt-1 text-sm text-muted-foreground">{claimCase.scenario}</p>

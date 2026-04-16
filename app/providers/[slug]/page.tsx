@@ -3,8 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { AdSlot } from "@/components/ad-slot";
-import type { CmsCategory } from "@/lib/cms-client";
-import { getProviderBySlug, getProviders } from "@/lib/cms-client";
+import type { CmsCategory, CmsProduct } from "@/lib/cms-client";
+import { getProducts, getProviderBySlug, getProviders } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
 type ProviderPageProps = {
@@ -17,6 +17,30 @@ function resolveCategories(value: (string | CmsCategory)[] | undefined): CmsCate
   }
 
   return value.filter((item): item is CmsCategory => typeof item === "object" && item !== null && "slug" in item);
+}
+
+function resolveBestFor(value: string | string[] | Array<{ item?: string }> | undefined) {
+  if (!value) return [];
+  if (Array.isArray(value)) {
+    return value
+      .map((entry) => {
+        if (typeof entry === "string") return entry.trim();
+        return String(entry?.item ?? "").trim();
+      })
+      .filter(Boolean);
+  }
+  return value
+    .split(/\r?\n|,/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
+function providerMatchesProduct(product: CmsProduct, providerSlug: string, providerId: string) {
+  if (!product.provider) return false;
+  if (typeof product.provider === "string") {
+    return product.provider === providerId;
+  }
+  return product.provider.id === providerId || product.provider.slug === providerSlug;
 }
 
 export async function generateStaticParams() {
@@ -54,6 +78,11 @@ export default async function ProviderDetailPage({ params }: ProviderPageProps) 
   }
 
   const linkedCategories = resolveCategories(provider.categories);
+  const bestForItems = resolveBestFor(provider.bestFor);
+  const allProducts = await getProducts();
+  const linkedProducts = allProducts
+    .filter((product) => providerMatchesProduct(product, provider.slug, provider.id))
+    .slice(0, 12);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Insurance", path: "/insurance" },
@@ -69,12 +98,28 @@ export default async function ProviderDetailPage({ params }: ProviderPageProps) 
       <section className="space-y-3">
         <p className="text-sm text-muted-foreground">Providers / {slug}</p>
         <h1 className="text-3xl font-semibold tracking-tight">{provider.name}</h1>
+        {provider.summary ? <p className="max-w-3xl text-sm text-muted-foreground">{provider.summary}</p> : null}
         <p className="text-sm text-muted-foreground">Rating: {provider.rating ?? "N/A"} / 5</p>
         {provider.coverageRegions && provider.coverageRegions.length > 0 ? (
           <p className="text-sm text-muted-foreground">
             Coverage regions: {provider.coverageRegions.join(", ")}
           </p>
         ) : null}
+      </section>
+
+      <section className="space-y-3 rounded-lg border bg-card p-4">
+        <h2 className="text-lg font-semibold tracking-tight">Best for</h2>
+        {bestForItems.length > 0 ? (
+          <ul className="grid gap-2 text-sm text-muted-foreground">
+            {bestForItems.map((item) => (
+              <li key={item} className="rounded-md border bg-background px-3 py-2">
+                {item}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-sm text-muted-foreground">No best-for highlights are published yet.</p>
+        )}
       </section>
 
       <section className="space-y-3 rounded-lg border bg-card p-4">
@@ -97,15 +142,24 @@ export default async function ProviderDetailPage({ params }: ProviderPageProps) 
         )}
       </section>
 
-      {provider.seo?.metaTitle || provider.seo?.metaDescription ? (
-        <section className="rounded-lg border border-dashed bg-muted/30 p-4 text-sm text-muted-foreground">
-          <h2 className="text-base font-semibold tracking-tight text-foreground">CMS SEO</h2>
-          {provider.seo.metaTitle ? <p className="mt-2">Meta title: {provider.seo.metaTitle}</p> : null}
-          {provider.seo.metaDescription ? (
-            <p className="mt-2">Meta description: {provider.seo.metaDescription}</p>
-          ) : null}
-        </section>
-      ) : null}
+      <section className="space-y-3 rounded-lg border bg-card p-4">
+        <h2 className="text-lg font-semibold tracking-tight">Linked products</h2>
+        {linkedProducts.length > 0 ? (
+          <div className="grid gap-2 text-sm">
+            {linkedProducts.map((product) => (
+              <Link
+                key={product.id}
+                href={`/products/${product.slug}`}
+                className="rounded-md border px-3 py-2 transition-colors hover:bg-accent"
+              >
+                {product.name}
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm text-muted-foreground">No product relationships are published yet.</p>
+        )}
+      </section>
 
       <AdSlot slotId="ad_in_content_1" />
 

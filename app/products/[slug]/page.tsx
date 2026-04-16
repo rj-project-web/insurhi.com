@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 import { AdSlot } from "@/components/ad-slot";
 import type { CmsCategory, CmsProvider } from "@/lib/cms-client";
@@ -10,6 +12,50 @@ import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+async function getProductFromSnapshot(slug: string) {
+  try {
+    const snapshotPath =
+      process.env.CMS_CONTENT_FILE_PATH ?? path.join(process.cwd(), "content", "cms-content.json");
+    const raw = await readFile(snapshotPath, "utf8");
+    const parsed = JSON.parse(raw) as {
+      products?: Array<{
+        id?: number | string;
+        slug?: string;
+        name?: string;
+        coverageAmount?: string;
+        deductible?: string;
+        priceRange?: string;
+        recommendedFor?: string;
+        category?: string | CmsCategory;
+        provider?: string | CmsProvider;
+        seo?: { metaTitle?: string; metaDescription?: string };
+      }>;
+    };
+
+    const products = parsed.products ?? [];
+    const matched = products.find((item) => item.slug?.toLowerCase() === slug.toLowerCase());
+
+    if (!matched?.slug || !matched?.name) {
+      return null;
+    }
+
+    return {
+      id: String(matched.id ?? matched.slug),
+      slug: matched.slug,
+      name: matched.name,
+      coverageAmount: matched.coverageAmount,
+      deductible: matched.deductible,
+      priceRange: matched.priceRange,
+      recommendedFor: matched.recommendedFor,
+      category: matched.category,
+      provider: matched.provider,
+      seo: matched.seo,
+    };
+  } catch {
+    return null;
+  }
+}
 
 function resolveRelation<T extends object>(value: string | T | undefined): T | null {
   if (!value || typeof value === "string") {
@@ -48,7 +94,24 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { slug } = await params;
-  const product = await getProductBySlug(slug);
+  let product = await getProductBySlug(slug);
+
+  if (!product) {
+    const products = await getProducts();
+    const matched = products.find((item) => item.slug.toLowerCase() === slug.toLowerCase());
+
+    if (matched && matched.slug !== slug) {
+      redirect(`/products/${matched.slug}`);
+    }
+  }
+
+  if (!product) {
+    product = await getProductFromSnapshot(slug);
+
+    if (product && product.slug !== slug) {
+      redirect(`/products/${product.slug}`);
+    }
+  }
 
   if (!product) {
     notFound();

@@ -14,6 +14,9 @@ import {
 import { cmsPagePublicPath } from "@/lib/cms-page-routes";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
+/** Avoid baking empty snapshot at build time when env differs from runtime. */
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   ...buildMetadata({
     title: "CMS content map",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ClipboardList, Sparkles } from "lucide-react";
 
 import { AdSlot } from "@/components/ad-slot";
 import { getClaimsGuideBySlug, getClaimsGuidesList } from "@/lib/cms-client";
@@ -73,9 +74,18 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
-      <section className="space-y-3">
-        <p className="text-sm text-muted-foreground">Claims / Guide / {slug}</p>
-        <h1 className="text-3xl font-semibold tracking-tight">{guide.title}</h1>
+      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-teal-500/[0.08] via-cyan-500/[0.06] to-card p-6 lg:p-8">
+        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+          <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
+          Claims / Guide / {slug}
+        </p>
+        <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{guide.title}</h1>
+        <div className="rounded-lg border bg-background/90 p-3 text-sm">
+          <p className="flex items-center gap-2 font-medium">
+            <ClipboardList className="h-4 w-4 text-cyan-600" />
+            Step-by-step claim workflow with document checklist
+          </p>
+        </div>
         {guide.onlineClaimUrl ? (
           <p className="text-sm">
             <a
@@ -90,7 +100,7 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
         ) : null}
       </section>
 
-      <section className="space-y-3">
+      <section className="space-y-3 rounded-xl border bg-gradient-to-br from-card to-teal-500/[0.03] p-5">
         <h2 className="text-xl font-semibold tracking-tight">Claim steps</h2>
         {guide.steps?.length ? (
           <ol className="list-inside list-decimal space-y-2 text-sm text-muted-foreground">
@@ -103,7 +113,7 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
         )}
       </section>
 
-      <section className="space-y-3">
+      <section className="space-y-3 rounded-xl border bg-gradient-to-br from-card to-cyan-500/[0.03] p-5">
         <h2 className="text-xl font-semibold tracking-tight">Document checklist</h2>
         {guide.documentChecklist?.length ? (
           <ul className="list-inside list-disc space-y-2 text-sm text-muted-foreground">

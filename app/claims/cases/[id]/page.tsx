@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Sparkles } from "lucide-react";
 
 import { AdSlot } from "@/components/ad-slot";
 import { getClaimCaseById, getClaimCasesList } from "@/lib/cms-client";
@@ -67,17 +68,20 @@ export default async function ClaimCaseDetailPage({ params }: ClaimCaseDetailPag
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
-      <section className="space-y-3">
-        <p className="text-sm text-muted-foreground">Claims / Case / {claimCase.id}</p>
-        <h1 className="text-3xl font-semibold tracking-tight">{claimCase.title}</h1>
+      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-indigo-500/[0.07] via-blue-500/[0.05] to-card p-6 lg:p-8">
+        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+          <Sparkles className="mr-1 h-3.5 w-3.5 text-blue-600" />
+          Claims / Case / {claimCase.id}
+        </p>
+        <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{claimCase.title}</h1>
       </section>
 
-      <section className="space-y-3 rounded-lg border bg-card p-4">
+      <section className="space-y-3 rounded-lg border bg-gradient-to-br from-card to-indigo-500/[0.03] p-4">
         <h2 className="text-xl font-semibold tracking-tight">Scenario</h2>
         <p className="text-sm text-muted-foreground">{claimCase.scenario}</p>
       </section>
 
-      <section className="space-y-3 rounded-lg border bg-card p-4">
+      <section className="space-y-3 rounded-lg border bg-gradient-to-br from-card to-blue-500/[0.03] p-4">
         <h2 className="text-xl font-semibold tracking-tight">Outcome</h2>
         <p className="text-sm text-muted-foreground">{claimCase.outcome}</p>
       </section>

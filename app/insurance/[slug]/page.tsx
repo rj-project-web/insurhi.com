@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import {
+  BadgeCheck,
+  CheckCircle2,
+  CircleDollarSign,
+  ClipboardCheck,
+  ShieldCheck,
+  Sparkles,
+  Timer,
+  TrendingUp,
+  Users,
+} from "lucide-react";
 import { AdSlot } from "@/components/ad-slot";
 import {
   getCategoryBySlug,
@@ -62,6 +73,372 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         getProductsByCategory(cmsCategory.id),
       ])
     : [[], [], []];
+
+  const helpYouDoBySlug: Record<string, [string, string, string]> = {
+    auto: [
+      "Match liability, collision, and comprehensive limits to your driving exposure.",
+      "Balance premium savings with deductibles you can realistically pay after an accident.",
+      "Compare providers on claim speed, repair network quality, and roadside support.",
+    ],
+    life: [
+      "Estimate coverage needed to protect income replacement and long-term family goals.",
+      "Compare term vs whole life structures against your budget and timeline.",
+      "Shortlist insurers with stronger underwriting clarity and beneficiary support.",
+    ],
+    home: [
+      "Align dwelling and personal property limits with your home's rebuild risk.",
+      "Compare deductible options for weather, fire, and theft claim scenarios.",
+      "Evaluate provider claim handling for local catastrophe and contractor coordination.",
+    ],
+    pet: [
+      "Match accident and illness coverage to your pet's age and breed risk profile.",
+      "Compare reimbursement rates, annual limits, and waiting periods side by side.",
+      "Shortlist providers with clearer exclusions and faster veterinary reimbursements.",
+    ],
+    medicare: [
+      "Compare Medicare plan structures based on provider access and prescription needs.",
+      "Review premium and out-of-pocket trade-offs for predictable annual healthcare costs.",
+      "Choose carriers with stronger member support and enrollment guidance.",
+    ],
+    renters: [
+      "Set personal property and liability limits that fit your rental lifestyle.",
+      "Compare premiums with deductibles for theft, fire, and water damage scenarios.",
+      "Identify providers with smoother digital claims and temporary living support.",
+    ],
+  };
+  const helpYouDoItems =
+    helpYouDoBySlug[slug] ??
+    ([
+      "Identify policy terms that match your risk profile.",
+      "Compare premium and deductible trade-offs quickly.",
+      "Shortlist providers with stronger service confidence.",
+    ] as [string, string, string]);
+
+  const keyTakeawaysBySlug: Record<string, [string, string, string]> = {
+    auto: [
+      "Prioritize liability limits first, then compare collision and comprehensive add-ons.",
+      "Use deductible scenarios to balance monthly premium with post-accident affordability.",
+      "Check provider claim cycle time, repair network depth, and local service consistency.",
+    ],
+    life: [
+      "Start with income replacement and debt protection to estimate baseline coverage need.",
+      "Compare term and permanent options against your expected life-stage milestones.",
+      "Review underwriting terms and beneficiary claim support before purchasing.",
+    ],
+    home: [
+      "Validate dwelling limits against rebuild cost instead of home market value alone.",
+      "Compare peril exclusions and special deductibles for weather-related claim events.",
+      "Prioritize providers with stronger catastrophe response and contractor support.",
+    ],
+    pet: [
+      "Match annual limits and reimbursement rates to your expected veterinary budget.",
+      "Compare waiting periods and exclusions, especially for hereditary conditions.",
+      "Favor providers with transparent claim wording and faster reimbursement workflows.",
+    ],
+    medicare: [
+      "Align plan choice with doctor network access and recurring prescription coverage.",
+      "Estimate yearly out-of-pocket totals, not just monthly premium differences.",
+      "Choose carriers with stronger enrollment support and ongoing member service quality.",
+    ],
+    renters: [
+      "Set personal property limits based on replacement value of your belongings.",
+      "Compare liability and loss-of-use terms for realistic apartment risk scenarios.",
+      "Evaluate digital claim experience and payout speed for small-to-mid claims.",
+    ],
+  };
+  const keyTakeaways =
+    keyTakeawaysBySlug[slug] ??
+    ([
+      `Compare ${category.title.toLowerCase()} options by coverage scope, deductible, and price range.`,
+      "Use provider profiles to validate regions and editorial notes before deciding.",
+      "Review FAQ and claims resources early so policy and claim expectations are aligned.",
+    ] as [string, string, string]);
+  const productRows = products.slice(0, 6);
+  const providerRows = providers.slice(0, 6);
+  const faqRows = faqs.slice(0, 8);
+  const glanceMetrics = [
+    {
+      label: "Products compared",
+      value: productRows.length > 0 ? String(productRows.length) : "0",
+      hint: "Live CMS entries",
+      icon: ClipboardCheck,
+    },
+    {
+      label: "Provider shortlist",
+      value: providerRows.length > 0 ? String(providerRows.length) : "0",
+      hint: "With regional support",
+      icon: Users,
+    },
+    {
+      label: "Decision horizon",
+      value: "15 min",
+      hint: "To shortlist options",
+      icon: Timer,
+    },
+    {
+      label: "Review confidence",
+      value: "High",
+      hint: "Coverage-first framework",
+      icon: TrendingUp,
+    },
+  ];
+  const decisionFactorsBySlug: Record<
+    string,
+    Array<{ title: string; description: string }>
+  > = {
+    auto: [
+      {
+        title: "Coverage fit",
+        description:
+          "Confirm liability limits first, then evaluate collision and comprehensive based on your vehicle value.",
+      },
+      {
+        title: "Deductible strategy",
+        description:
+          "Use a deductible level you can pay quickly after an accident without forcing emergency borrowing.",
+      },
+      {
+        title: "Provider confidence",
+        description:
+          "Prioritize insurers with reliable repair networks and strong roadside/claims responsiveness.",
+      },
+    ],
+    life: [
+      {
+        title: "Coverage fit",
+        description:
+          "Estimate death-benefit needs from income replacement, debt, and long-term dependent obligations.",
+      },
+      {
+        title: "Premium structure",
+        description:
+          "Compare fixed term premiums versus permanent policy cash-value trade-offs over your full timeline.",
+      },
+      {
+        title: "Provider confidence",
+        description:
+          "Choose carriers with transparent underwriting and smoother beneficiary claim support.",
+      },
+    ],
+    home: [
+      {
+        title: "Coverage fit",
+        description:
+          "Set dwelling and personal property limits by rebuild and replacement cost, not listing price alone.",
+      },
+      {
+        title: "Deductible strategy",
+        description:
+          "Review separate deductible rules for wind, hail, and named-storm events before choosing a plan.",
+      },
+      {
+        title: "Provider confidence",
+        description:
+          "Check catastrophe response quality and local contractor coordination for claim recovery speed.",
+      },
+    ],
+    pet: [
+      {
+        title: "Coverage fit",
+        description:
+          "Pick annual limits and reimbursement percentages that match expected veterinary usage.",
+      },
+      {
+        title: "Cost strategy",
+        description:
+          "Compare monthly premium with deductible and co-pay to avoid surprises during high-cost treatments.",
+      },
+      {
+        title: "Provider confidence",
+        description:
+          "Favor plans with clearer exclusions and faster reimbursement to clinic or owner.",
+      },
+    ],
+    medicare: [
+      {
+        title: "Coverage fit",
+        description:
+          "Align plan design with doctor access, specialist needs, and prescription formularies.",
+      },
+      {
+        title: "Cost strategy",
+        description:
+          "Assess annual out-of-pocket exposure, not just monthly premium and copay headlines.",
+      },
+      {
+        title: "Provider confidence",
+        description:
+          "Prefer carriers with strong enrollment support and consistent member-service quality.",
+      },
+    ],
+    renters: [
+      {
+        title: "Coverage fit",
+        description:
+          "Match personal property, liability, and loss-of-use limits to your rental living situation.",
+      },
+      {
+        title: "Deductible strategy",
+        description:
+          "Keep deductible practical for theft or water-damage claims where quick cash is needed.",
+      },
+      {
+        title: "Provider confidence",
+        description:
+          "Look for digital-first claims and faster payout records on small-to-mid loss events.",
+      },
+    ],
+  };
+  const decisionFactors = decisionFactorsBySlug[slug] ?? decisionFactorsBySlug.auto;
+
+  const shopperProfilesBySlug: Record<
+    string,
+    Array<{ title: string; summary: string; cta: string }>
+  > = {
+    auto: [
+      {
+        title: "Daily commuters",
+        summary: "Need reliable protection for frequent driving and higher incident exposure.",
+        cta: "Start with liability limits and claim response quality.",
+      },
+      {
+        title: "Family drivers",
+        summary: "Prioritize stability, roadside support, and predictable monthly cost.",
+        cta: "Compare deductible tiers and network repair options.",
+      },
+      {
+        title: "New car owners",
+        summary: "Need stronger physical damage coverage while depreciation is steep.",
+        cta: "Evaluate comprehensive and collision combinations first.",
+      },
+    ],
+    life: [
+      {
+        title: "Young families",
+        summary: "Need income replacement security during mortgage and childcare years.",
+        cta: "Model coverage horizon against family financial milestones.",
+      },
+      {
+        title: "Primary earners",
+        summary: "Require protection for debt obligations and long-term dependents.",
+        cta: "Prioritize coverage amount before optional riders.",
+      },
+      {
+        title: "Planning-focused buyers",
+        summary: "Want coverage integrated with estate and legacy planning.",
+        cta: "Compare term and permanent structures by objective.",
+      },
+    ],
+    home: [
+      {
+        title: "Homeowners in risk zones",
+        summary: "Need stronger preparation for weather-related claim scenarios.",
+        cta: "Audit deductible clauses and peril exclusions carefully.",
+      },
+      {
+        title: "First-time homeowners",
+        summary: "Need clear guardrails on rebuilding and property coverage limits.",
+        cta: "Use replacement-cost estimates as your baseline.",
+      },
+      {
+        title: "Asset-protection households",
+        summary: "Prioritize higher liability and broader endorsement options.",
+        cta: "Shortlist carriers with stronger catastrophe support.",
+      },
+    ],
+    pet: [
+      {
+        title: "Breed-sensitive owners",
+        summary: "Need policy detail for hereditary and chronic-condition handling.",
+        cta: "Check exclusions and waiting periods before enrolling.",
+      },
+      {
+        title: "Budget-conscious owners",
+        summary: "Want predictable recurring spend for unexpected vet costs.",
+        cta: "Compare premium, deductible, and reimbursement together.",
+      },
+      {
+        title: "Multi-pet households",
+        summary: "Need efficient coverage structure across multiple animals.",
+        cta: "Review annual caps and plan-level restrictions.",
+      },
+    ],
+    medicare: [
+      {
+        title: "Retirees with chronic care needs",
+        summary: "Need stable access to specialists and medication coverage.",
+        cta: "Validate provider network and formulary alignment.",
+      },
+      {
+        title: "Cost-sensitive enrollees",
+        summary: "Focus on predictable annual healthcare expense control.",
+        cta: "Compare total yearly cost, not headline premium only.",
+      },
+      {
+        title: "First-time Medicare shoppers",
+        summary: "Need simple guidance through enrollment and plan types.",
+        cta: "Use support quality and clarity as primary filters.",
+      },
+    ],
+    renters: [
+      {
+        title: "Urban apartment renters",
+        summary: "Need practical theft/water-damage protection with easy claims.",
+        cta: "Prioritize digital claim intake and payout speed.",
+      },
+      {
+        title: "Remote workers",
+        summary: "Need better personal-property coverage for home office equipment.",
+        cta: "Review item limits and optional riders.",
+      },
+      {
+        title: "Roommate households",
+        summary: "Need clear liability and policy ownership boundaries.",
+        cta: "Confirm named-insured and shared-property rules.",
+      },
+    ],
+  };
+  const shopperProfiles = shopperProfilesBySlug[slug] ?? shopperProfilesBySlug.auto;
+
+  const shoppingChecklistBySlug: Record<string, string[]> = {
+    auto: [
+      "Set deductible range before collecting quotes.",
+      "Validate liability, collision, and comprehensive limits against your vehicle profile.",
+      "Check claim intake speed and repair network coverage in your area.",
+      "Review exclusions, usage limits, and roadside assistance terms.",
+    ],
+    life: [
+      "Calculate target death benefit based on debts, dependents, and income horizon.",
+      "Compare term length or permanent policy structure against financial goals.",
+      "Review underwriting requirements and rider costs before applying.",
+      "Confirm beneficiary setup and claim documentation expectations.",
+    ],
+    home: [
+      "Estimate rebuild cost and set dwelling limits accordingly.",
+      "Match personal property and liability limits to household risk exposure.",
+      "Compare peril-specific deductibles for storm or catastrophe claims.",
+      "Check exclusions and claims response support in your local area.",
+    ],
+    pet: [
+      "Choose annual limit and reimbursement percentage for expected vet usage.",
+      "Compare deductible and co-pay combinations across plans.",
+      "Review waiting periods and pre-existing condition rules carefully.",
+      "Confirm reimbursement timeline and claim submission workflow.",
+    ],
+    medicare: [
+      "List current doctors and medicines before comparing plan options.",
+      "Check network participation and formulary coverage first.",
+      "Estimate annual out-of-pocket totals across shortlisted plans.",
+      "Confirm enrollment windows and carrier support channels.",
+    ],
+    renters: [
+      "Estimate replacement value of personal property accurately.",
+      "Set liability and loss-of-use limits to match rental risks.",
+      "Compare deductible tiers for theft, fire, and water claims.",
+      "Check claim filing UX, payout speed, and policy exclusions.",
+    ],
+  };
+  const shoppingChecklist = shoppingChecklistBySlug[slug] ?? shoppingChecklistBySlug.auto;
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Insurance", path: "/insurance" },
@@ -69,66 +446,213 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   ]);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section className="space-y-3">
-        <p className="text-sm text-muted-foreground">Insurance / {category.title}</p>
-        <h1 className="text-3xl font-semibold tracking-tight">{category.title}</h1>
-        <p className="max-w-3xl text-muted-foreground">
-          {categorySummary ??
-            `This channel will host plan comparisons, best picks, FAQs, and trusted provider recommendations for ${category.title.toLowerCase()}.`}
-        </p>
+      <section className="space-y-6 rounded-2xl border bg-gradient-to-br from-blue-600/[0.06] via-cyan-500/[0.03] to-card p-6 lg:p-8">
+        <div className="hidden lg:grid lg:grid-cols-[1.45fr_1fr] lg:gap-6">
+          <div className="space-y-3">
+            <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+              <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
+              Insurance / {category.title}
+            </p>
+            <h1 className="text-4xl font-semibold tracking-tight">{category.title}</h1>
+            <p className="max-w-4xl text-muted-foreground">
+              {categorySummary ??
+                `Compare ${category.title.toLowerCase()} plans with practical guidance on coverage fit, deductible trade-offs, and provider trust.`}
+            </p>
+          </div>
+          <aside className="rounded-xl border bg-gradient-to-br from-cyan-500/15 via-blue-500/10 to-indigo-500/10 p-4">
+            <p className="text-sm font-semibold text-foreground">What this page helps you do</p>
+            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+              <li className="flex items-start gap-2">
+                <ShieldCheck className="mt-0.5 h-4 w-4 text-blue-600" />
+                {helpYouDoItems[0]}
+              </li>
+              <li className="flex items-start gap-2">
+                <CircleDollarSign className="mt-0.5 h-4 w-4 text-cyan-600" />
+                {helpYouDoItems[1]}
+              </li>
+              <li className="flex items-start gap-2">
+                <BadgeCheck className="mt-0.5 h-4 w-4 text-indigo-600" />
+                {helpYouDoItems[2]}
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+        <div className="space-y-4 lg:hidden">
+          <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+            <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
+            Insurance / {category.title}
+          </p>
+          <h1 className="text-3xl font-semibold tracking-tight">{category.title}</h1>
+          <p className="text-sm text-muted-foreground">
+            {categorySummary ??
+              `Compare ${category.title.toLowerCase()} plans with practical guidance on coverage fit, deductible trade-offs, and provider trust.`}
+          </p>
+          <div className="grid gap-2">
+            <article className="rounded-lg border bg-background/90 p-3">
+              <p className="text-xs font-medium text-foreground">Coverage fit</p>
+              <p className="mt-1 text-xs text-muted-foreground">{helpYouDoItems[0]}</p>
+            </article>
+            <article className="rounded-lg border bg-background/90 p-3">
+              <p className="text-xs font-medium text-foreground">Price vs deductible</p>
+              <p className="mt-1 text-xs text-muted-foreground">{helpYouDoItems[1]}</p>
+            </article>
+          </div>
+        </div>
+
+        <div className="hidden gap-3 sm:grid-cols-2 lg:grid lg:grid-cols-4">
+          <Link href="#products" className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent">
+            Compare products
+          </Link>
+          <Link href="#decision-factors" className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent">
+            Key decision factors
+          </Link>
+          <Link href="#providers" className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent">
+            Provider shortlist
+          </Link>
+          <Link href="#faqs" className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent">
+            Common questions
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-2 gap-2 lg:hidden">
+          <Link href="#products" className="rounded-lg border bg-background px-3 py-2 text-sm">
+            Products
+          </Link>
+          <Link href="#providers" className="rounded-lg border bg-background px-3 py-2 text-sm">
+            Providers
+          </Link>
+          <Link href="#decision-factors" className="rounded-lg border bg-background px-3 py-2 text-sm">
+            Decisions
+          </Link>
+          <Link href="#faqs" className="rounded-lg border bg-background px-3 py-2 text-sm">
+            FAQs
+          </Link>
+        </div>
       </section>
 
-      <div className="grid gap-3 sm:grid-cols-2">
-        <Link href="#products" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
-          CMS products
-        </Link>
-        <Link href="/guides" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
-          Insurance guides
-        </Link>
-        <Link href="#faqs" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
-          Frequently asked questions
-        </Link>
-        <Link href="#providers" className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent">
-          Recommended providers
-        </Link>
-      </div>
+      <section className="grid gap-3 rounded-2xl border bg-gradient-to-br from-cyan-500/[0.05] to-blue-500/[0.02] p-4 md:grid-cols-2 xl:grid-cols-4">
+        {glanceMetrics.map((item) => (
+          <article
+            key={item.label}
+            className="rounded-xl border bg-gradient-to-br from-blue-500/5 via-cyan-500/5 to-transparent p-4"
+          >
+            <div className="flex items-center justify-between gap-3">
+              <p className="text-sm text-muted-foreground">{item.label}</p>
+              <item.icon className="h-4 w-4 text-cyan-600" />
+            </div>
+            <p className="mt-2 text-2xl font-semibold tracking-tight">{item.value}</p>
+            <p className="mt-1 text-xs text-muted-foreground">{item.hint}</p>
+          </article>
+        ))}
+      </section>
+
+      <section className="rounded-xl border bg-gradient-to-r from-sky-500/[0.07] to-cyan-500/[0.03] p-5">
+        <h2 className="text-lg font-semibold tracking-tight">Key takeaways</h2>
+        <ul className="mt-3 grid gap-2 text-sm text-muted-foreground">
+          {keyTakeaways.map((takeaway) => (
+            <li key={takeaway} className="rounded-md border bg-gradient-to-r from-background to-cyan-500/5 px-3 py-2">
+              {takeaway}
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section
+        id="decision-factors"
+        className="space-y-3 rounded-2xl border bg-gradient-to-r from-indigo-500/[0.04] via-blue-500/[0.03] to-transparent p-4 sm:p-5"
+      >
+        <h2 className="text-xl font-semibold tracking-tight">How to choose well</h2>
+        <div className="grid gap-3 md:grid-cols-3">
+          {decisionFactors.map((factor) => (
+            <article key={factor.title} className="rounded-xl border bg-gradient-to-br from-card to-blue-500/5 p-4">
+              <p className="font-medium">{factor.title}</p>
+              <p className="mt-2 text-sm text-muted-foreground">{factor.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-xl border bg-gradient-to-br from-teal-500/[0.06] to-card p-4 sm:p-5">
+        <h2 className="text-xl font-semibold tracking-tight">Who this channel is best for</h2>
+        <div className="mt-4 grid gap-3 md:grid-cols-3">
+          {shopperProfiles.map((profile) => (
+            <article key={profile.title} className="rounded-lg border bg-muted/20 p-4">
+              <p className="font-medium">{profile.title}</p>
+              <p className="mt-2 text-sm text-muted-foreground">{profile.summary}</p>
+              <p className="mt-3 text-xs text-cyan-700">{profile.cta}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="rounded-xl border bg-gradient-to-r from-blue-600/10 via-cyan-600/10 to-teal-600/10 p-4 sm:p-5">
+        <h2 className="text-xl font-semibold tracking-tight">4-step shopping checklist</h2>
+        <ol className="mt-4 grid gap-2 text-sm text-muted-foreground md:grid-cols-2">
+          {shoppingChecklist.map((step, index) => (
+            <li key={step} className="flex items-start gap-2 rounded-md border bg-background/80 px-3 py-2">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 text-cyan-600" />
+              <span>
+                <span className="font-medium text-foreground">Step {index + 1}.</span> {step}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
 
       <AdSlot slotId="ad_in_content_1" />
 
-      <section id="products" className="space-y-3">
-        <h2 className="text-xl font-semibold tracking-tight">Products</h2>
-        <div className="grid gap-3 sm:grid-cols-2">
-          {products.length > 0 ? (
-            products.map((product) => (
-              <Link
-                key={product.id}
-                href={`/products/${product.slug}`}
-                className="rounded-lg border bg-card p-4 transition-colors hover:bg-accent"
-              >
-                <p className="font-medium">{product.name}</p>
-                {product.priceRange ? (
-                  <p className="mt-1 text-sm text-muted-foreground">Price: {product.priceRange}</p>
-                ) : null}
-              </Link>
-            ))
+      <section id="products" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card via-blue-500/[0.02] to-cyan-500/[0.03] p-5">
+        <div className="flex items-center justify-between gap-4">
+          <h2 className="text-xl font-semibold tracking-tight">Product comparison snapshot</h2>
+          <Link href="/guides" className="text-sm underline underline-offset-4">
+            More buying guides
+          </Link>
+        </div>
+        <div className="overflow-x-auto rounded-xl border bg-card">
+          {productRows.length > 0 ? (
+            <table className="w-full min-w-[720px] text-sm">
+              <thead className="bg-muted/50 text-left">
+                <tr>
+                  <th className="px-4 py-3 font-medium">Product</th>
+                  <th className="px-4 py-3 font-medium">Price range</th>
+                  <th className="px-4 py-3 font-medium">Coverage</th>
+                  <th className="px-4 py-3 font-medium">Deductible</th>
+                </tr>
+              </thead>
+              <tbody>
+                {productRows.map((product) => (
+                  <tr key={product.id} className="border-t align-top">
+                    <td className="px-4 py-3">
+                      <Link href={`/products/${product.slug}`} className="font-medium underline-offset-4 hover:underline">
+                        {product.name}
+                      </Link>
+                    </td>
+                    <td className="px-4 py-3 text-muted-foreground">{product.priceRange ?? "—"}</td>
+                    <td className="px-4 py-3 text-muted-foreground">{product.coverageAmount ?? "—"}</td>
+                    <td className="px-4 py-3 text-muted-foreground">{product.deductible ?? "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           ) : (
-            <p className="text-sm text-muted-foreground">
+            <p className="p-4 text-sm text-muted-foreground">
               CMS products for this category will appear here after publishing.
             </p>
           )}
         </div>
       </section>
 
-      <section id="faqs" className="space-y-3">
-        <h2 className="text-xl font-semibold tracking-tight">FAQs</h2>
+      <section id="faqs" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-cyan-500/[0.03] p-5">
+        <h2 className="text-xl font-semibold tracking-tight">Frequently asked questions</h2>
         <div className="grid gap-3">
-          {faqs.length > 0 ? (
-            faqs.map((faq) => (
+          {faqRows.length > 0 ? (
+            faqRows.map((faq) => (
               <article key={faq.id} className="rounded-lg border bg-card p-4">
                 <p className="font-medium">{faq.question}</p>
                 <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
@@ -142,31 +666,26 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         </div>
       </section>
 
-      <section id="providers" className="space-y-3">
-        <h2 className="text-xl font-semibold tracking-tight">Recommended Providers</h2>
+      <section id="providers" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-5">
+        <h2 className="text-xl font-semibold tracking-tight">Provider shortlist</h2>
         <div className="grid gap-3 sm:grid-cols-2">
-          {providers.length > 0 ? (
-            providers.map((provider) => (
+          {providerRows.length > 0 ? (
+            providerRows.map((provider) => (
               <article key={provider.id} className="rounded-lg border bg-card p-4">
                 <Link href={`/providers/${provider.slug}`} className="font-medium underline-offset-4 hover:underline">
                   {provider.name}
                 </Link>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Rating: {provider.rating ?? "N/A"}
+                  Rating: {provider.rating ?? "N/A"} / 5
+                </p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {provider.summary ??
+                    `${provider.name} provides coverage options for this category and can be compared by service responsiveness, pricing fit, and claim support.`}
                 </p>
                 {provider.coverageRegions && provider.coverageRegions.length > 0 ? (
                   <p className="mt-2 text-xs text-muted-foreground">
                     Regions: {provider.coverageRegions.join(", ")}
                   </p>
-                ) : null}
-                {provider.seo?.metaTitle || provider.seo?.metaDescription ? (
-                  <div className="mt-3 rounded-md border border-dashed p-2 text-xs text-muted-foreground">
-                    <p className="font-medium text-foreground/80">CMS SEO</p>
-                    {provider.seo.metaTitle ? <p className="mt-1">Title: {provider.seo.metaTitle}</p> : null}
-                    {provider.seo.metaDescription ? (
-                      <p className="mt-1">Description: {provider.seo.metaDescription}</p>
-                    ) : null}
-                  </div>
                 ) : null}
               </article>
             ))
@@ -180,7 +699,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
 
       {cmsCategory?.seo?.metaTitle || cmsCategory?.seo?.metaDescription ? (
         <section className="rounded-lg border border-dashed bg-muted/30 p-4 text-sm text-muted-foreground">
-          <h2 className="text-base font-semibold tracking-tight text-foreground">Category CMS SEO</h2>
+          <h2 className="text-base font-semibold tracking-tight text-foreground">Editorial metadata</h2>
           {cmsCategory.seo?.metaTitle ? <p className="mt-2">Meta title: {cmsCategory.seo.metaTitle}</p> : null}
           {cmsCategory.seo?.metaDescription ? (
             <p className="mt-2">Meta description: {cmsCategory.seo.metaDescription}</p>
@@ -189,13 +708,22 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       ) : null}
 
       <section className="rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Explore related channels</h2>
+        <h2 className="text-base font-semibold tracking-tight">Editorial note</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Insurhi content is structured to help readers compare options consistently. Product and
+          provider entries are surfaced from the current content source and should be reviewed
+          alongside policy wording before making a final purchase decision.
+        </p>
+      </section>
+
+      <section className="rounded-lg border bg-card p-4">
+        <h2 className="text-lg font-semibold tracking-tight">Continue researching</h2>
         <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
           <Link href="/guides" className="underline underline-offset-4">
-            Insurance guides
+            Insurance guides library
           </Link>
           <Link href="/claims" className="underline underline-offset-4">
-            Claims assistance
+            Claims playbooks
           </Link>
         </div>
       </section>

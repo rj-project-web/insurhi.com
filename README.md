@@ -52,6 +52,7 @@ Copy `.env.example` to `.env.local` and fill in project values.
 - See `RELEASE_SOP.md` for the standard production release flow.
 - Monitoring runbook: `MONITORING_RUNBOOK.md`
 - Rollback runbook: `ROLLBACK_RUNBOOK.md`
+- Multi-agent collaboration SOP: `MULTI_AGENT_SOP.md`
 
 ## Static publish workflow (local CMS -> Git -> CI)
 

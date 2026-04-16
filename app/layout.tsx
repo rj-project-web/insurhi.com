@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
+  icons: {
+    icon: "/insurhi-logo.png",
+    apple: "/insurhi-logo.png",
+  },
   title: {
     default: "Insurhi",
     template: `%s | Insurhi`,

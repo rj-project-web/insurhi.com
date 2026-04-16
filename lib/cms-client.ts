@@ -26,6 +26,8 @@ export type CmsProvider = {
   id: string;
   name: string;
   slug: string;
+  summary?: string;
+  bestFor?: string | string[] | Array<{ item?: string }>;
   rating?: number;
   coverageRegions?: string[];
   categories?: (string | CmsCategory)[];
@@ -191,6 +193,27 @@ async function getStaticContentSnapshot(): Promise<CmsContentSnapshot | null> {
   }
 
   return cachedContentSnapshotPromise;
+}
+
+async function getClaimCaseFromSnapshotFile(id: string): Promise<CmsClaimCase | null> {
+  try {
+    const { readFile } = await import("node:fs/promises");
+    const path = await import("node:path");
+    const snapshotPath =
+      process.env.CMS_CONTENT_FILE_PATH ??
+      path.join(
+        /* turbopackIgnore: fixed subfolder path for static snapshot */
+        process.cwd(),
+        "content",
+        "cms-content.json",
+      );
+    const raw = await readFile(snapshotPath, "utf8");
+    const parsed = JSON.parse(raw) as { claimCases?: CmsClaimCase[] };
+    const claimCases = toSnapshotArray<CmsClaimCase>(parsed.claimCases);
+    return claimCases.find((item) => toStringId(item.id) === id) ?? null;
+  } catch {
+    return null;
+  }
 }
 
 async function fetchCollection<T>(path: string): Promise<T[]> {
@@ -548,7 +571,7 @@ export async function getClaimCaseById(id: string) {
     });
 
     if (!response.ok) {
-      return null;
+      return getClaimCaseFromSnapshotFile(id);
     }
 
     const raw = (await response.json()) as {
@@ -565,7 +588,7 @@ export async function getClaimCaseById(id: string) {
       outcome: String(raw.outcome ?? ""),
     };
   } catch {
-    return null;
+    return getClaimCaseFromSnapshotFile(id);
   } finally {
     clearTimeout(timeout);
   }

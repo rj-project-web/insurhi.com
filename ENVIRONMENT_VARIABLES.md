@@ -17,6 +17,8 @@ Used by the Next.js website deployment.
 |---|---|---|---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | `http://localhost:3002` | `https://<preview-domain>` | `https://www.insurhi.com` | Yes | Canonical/sitemap/robots base URL. |
 | `PAYLOAD_PUBLIC_SERVER_URL` | `http://localhost:3000` | `https://<cms-preview-domain>` | `https://<cms-production-domain>` | Yes | CMS API base URL used by frontend data fetches. |
+| `CMS_CONTENT_SOURCE` | `api` | `api` or `static` | `static` (if local CMS only) | Recommended | `static` reads `content/cms-content.json` and does not call live CMS API. |
+| `CMS_CONTENT_FILE_PATH` | `content/cms-content.json` | same | same | Optional | Override exported snapshot file path when `CMS_CONTENT_SOURCE=static`. |
 | `NEXT_PUBLIC_ADSENSE_CLIENT_ID` | Optional | Optional | Optional | No | AdSense client id, e.g. `ca-pub-xxxxxxxxxxxxxxxx`. |
 
 ---

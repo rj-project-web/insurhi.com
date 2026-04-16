@@ -92,6 +92,106 @@ const FETCH_OPTIONS = { next: { revalidate: 300 } };
 const CMS_REQUEST_TIMEOUT_MS = 1500;
 /** Article lists must reflect CMS edits quickly on Vercel (avoid 5m ISR stale list). */
 const CMS_ARTICLES_TIMEOUT_MS = 8000;
+const CMS_CONTENT_SOURCE = (process.env.CMS_CONTENT_SOURCE ?? "api").trim().toLowerCase();
+
+type CmsContentSnapshot = {
+  categories: CmsCategory[];
+  providers: CmsProvider[];
+  products: CmsProduct[];
+  articles: CmsArticle[];
+  faqItems: CmsFaqItem[];
+  claimsGuides: CmsClaimsGuide[];
+  claimCases: CmsClaimCase[];
+  pages: CmsPage[];
+};
+
+let cachedContentSnapshotPromise: Promise<CmsContentSnapshot | null> | null = null;
+
+const EMPTY_STATIC_SNAPSHOT: CmsContentSnapshot = {
+  categories: [],
+  providers: [],
+  products: [],
+  articles: [],
+  faqItems: [],
+  claimsGuides: [],
+  claimCases: [],
+  pages: [],
+};
+
+function toSnapshotArray<T>(value: unknown): T[] {
+  return Array.isArray(value) ? (value as T[]) : [];
+}
+
+function toStringId(id: unknown): string {
+  return String(id ?? "");
+}
+
+async function getStaticContentSnapshot(): Promise<CmsContentSnapshot | null> {
+  if (CMS_CONTENT_SOURCE !== "static") {
+    return null;
+  }
+
+  if (!cachedContentSnapshotPromise) {
+    cachedContentSnapshotPromise = (async () => {
+      try {
+        const { readFile } = await import("node:fs/promises");
+        const path = await import("node:path");
+        const snapshotPath =
+          process.env.CMS_CONTENT_FILE_PATH ??
+          path.join(
+            /* turbopackIgnore: fixed subfolder path for static snapshot */
+            process.cwd(),
+            "content",
+            "cms-content.json",
+          );
+        const raw = await readFile(snapshotPath, "utf8");
+        const parsed = JSON.parse(raw) as Partial<CmsContentSnapshot>;
+
+        return {
+          categories: toSnapshotArray<CmsCategory>(parsed.categories).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          providers: toSnapshotArray<CmsProvider>(parsed.providers).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          products: toSnapshotArray<CmsProduct>(parsed.products).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          articles: toSnapshotArray<CmsArticle>(parsed.articles).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          faqItems: toSnapshotArray<CmsFaqItem>(parsed.faqItems).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          claimsGuides: toSnapshotArray<CmsClaimsGuide>(parsed.claimsGuides).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          claimCases: toSnapshotArray<CmsClaimCase>(parsed.claimCases).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          pages: toSnapshotArray<CmsPage>(parsed.pages).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+        };
+      } catch (error) {
+        // In static mode, never silently fall back to live API.
+        // Return empty snapshot and emit a server log for observability.
+        console.error("Failed to load static CMS snapshot:", error);
+        return EMPTY_STATIC_SNAPSHOT;
+      }
+    })();
+  }
+
+  return cachedContentSnapshotPromise;
+}
 
 async function fetchCollection<T>(path: string): Promise<T[]> {
   const controller = new AbortController();
@@ -117,6 +217,11 @@ async function fetchCollection<T>(path: string): Promise<T[]> {
 }
 
 export async function getCategoryBySlug(slug: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.categories.find((item) => item.slug === slug) ?? null;
+  }
+
   const docs = await fetchCollection<CmsCategory>(
     `/api/categories?where[slug][equals]=${encodeURIComponent(slug)}&limit=1`,
   );
@@ -125,36 +230,97 @@ export async function getCategoryBySlug(slug: string) {
 }
 
 export async function getFaqsByCategory(categoryId: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.faqItems
+      .filter((item) => {
+        if (!item.category) return false;
+        if (typeof item.category === "string") {
+          return toStringId(item.category) === categoryId;
+        }
+
+        return toStringId(item.category.id) === categoryId;
+      })
+      .slice(0, 6);
+  }
+
   return fetchCollection<CmsFaqItem>(
     `/api/faq-items?where[category][equals]=${encodeURIComponent(categoryId)}&limit=6`,
   );
 }
 
 export async function getProvidersByCategory(categoryId: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.providers
+      .filter((provider) =>
+        (provider.categories ?? []).some((category) =>
+          typeof category === "string"
+            ? toStringId(category) === categoryId
+            : toStringId(category.id) === categoryId,
+        ),
+      )
+      .slice(0, 6);
+  }
+
   return fetchCollection<CmsProvider>(
     `/api/providers?where[categories][in]=${encodeURIComponent(categoryId)}&limit=6`,
   );
 }
 
 export async function getProductsByCategory(categoryId: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.products
+      .filter((item) => {
+        if (!item.category) return false;
+        if (typeof item.category === "string") {
+          return toStringId(item.category) === categoryId;
+        }
+
+        return toStringId(item.category.id) === categoryId;
+      })
+      .slice(0, 20);
+  }
+
   return fetchCollection<CmsProduct>(
     `/api/products?where[category][equals]=${encodeURIComponent(categoryId)}&depth=1&limit=20`,
   );
 }
 
 export async function getCategories() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.categories;
+  }
+
   return fetchCollection<CmsCategory>("/api/categories?limit=50&sort=title");
 }
 
 export async function getProviders() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.providers;
+  }
+
   return fetchCollection<CmsProvider>("/api/providers?limit=100&sort=name");
 }
 
 export async function getAllPages() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.pages;
+  }
+
   return fetchCollection<CmsPage>("/api/pages?limit=100&sort=title");
 }
 
 export async function getPageBySlug(slug: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.pages.find((item) => item.slug === slug) ?? null;
+  }
+
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), CMS_REQUEST_TIMEOUT_MS);
 
@@ -181,6 +347,11 @@ export async function getPageBySlug(slug: string) {
 }
 
 export async function getProviderBySlug(slug: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.providers.find((item) => item.slug === slug) ?? null;
+  }
+
   const docs = await fetchCollection<CmsProvider>(
     `/api/providers?where[slug][equals]=${encodeURIComponent(slug)}&limit=1&depth=1`,
   );
@@ -189,6 +360,11 @@ export async function getProviderBySlug(slug: string) {
 }
 
 export async function getProductBySlug(slug: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.products.find((item) => item.slug === slug) ?? null;
+  }
+
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), CMS_REQUEST_TIMEOUT_MS);
 
@@ -241,14 +417,29 @@ async function fetchArticlesListFromCms(limit: number): Promise<CmsArticle[]> {
 }
 
 export async function getLatestArticles() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.articles.slice(0, 8);
+  }
+
   return fetchArticlesListFromCms(8);
 }
 
 export async function getArticlesList() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.articles;
+  }
+
   return fetchArticlesListFromCms(100);
 }
 
 export async function getArticleBySlug(slug: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.articles.find((item) => item.slug === slug) ?? null;
+  }
+
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), CMS_REQUEST_TIMEOUT_MS);
 
@@ -275,26 +466,56 @@ export async function getArticleBySlug(slug: string) {
 }
 
 export async function getClaimsGuides() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.claimsGuides.slice(0, 6);
+  }
+
   return fetchCollection<CmsClaimsGuide>("/api/claims-guides?limit=6");
 }
 
 export async function getClaimsGuidesList() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.claimsGuides;
+  }
+
   return fetchCollection<CmsClaimsGuide>("/api/claims-guides?limit=100&sort=title");
 }
 
 export async function getClaimCasesList() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.claimCases;
+  }
+
   return fetchCollection<CmsClaimCase>("/api/claim-cases?limit=100");
 }
 
 export async function getFaqItems() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.faqItems;
+  }
+
   return fetchCollection<CmsFaqItem>("/api/faq-items?limit=200&depth=1");
 }
 
 export async function getProducts() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.products;
+  }
+
   return fetchCollection<CmsProduct>("/api/products?limit=200&sort=name&depth=1");
 }
 
 export async function getClaimsGuideBySlug(slug: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.claimsGuides.find((item) => item.slug === slug) ?? null;
+  }
+
   const docs = await fetchCollection<CmsClaimsGuide>(
     `/api/claims-guides?where[slug][equals]=${encodeURIComponent(slug)}&limit=1`,
   );
@@ -303,10 +524,20 @@ export async function getClaimsGuideBySlug(slug: string) {
 }
 
 export async function getClaimCases() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.claimCases.slice(0, 6);
+  }
+
   return fetchCollection<CmsClaimCase>("/api/claim-cases?limit=6");
 }
 
 export async function getClaimCaseById(id: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.claimCases.find((item) => toStringId(item.id) === id) ?? null;
+  }
+
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), CMS_REQUEST_TIMEOUT_MS);
 

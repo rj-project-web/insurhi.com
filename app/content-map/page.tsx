@@ -81,7 +81,7 @@ export default async function ContentMapPage() {
               </li>
             ))
           ) : (
-            <li className="text-muted-foreground">No categories returned from the CMS API.</li>
+            <li className="text-muted-foreground">No categories found in current content source.</li>
           )}
         </ul>
       </section>
@@ -99,7 +99,7 @@ export default async function ContentMapPage() {
               </li>
             ))
           ) : (
-            <li className="text-muted-foreground">No providers returned from the CMS API.</li>
+            <li className="text-muted-foreground">No providers found in current content source.</li>
           )}
         </ul>
       </section>
@@ -129,7 +129,7 @@ export default async function ContentMapPage() {
               );
             })
           ) : (
-            <li className="text-muted-foreground">No products returned from the CMS API.</li>
+            <li className="text-muted-foreground">No products found in current content source.</li>
           )}
         </ul>
       </section>
@@ -147,7 +147,7 @@ export default async function ContentMapPage() {
               </li>
             ))
           ) : (
-            <li className="text-muted-foreground">No articles returned from the CMS API.</li>
+            <li className="text-muted-foreground">No articles found in current content source.</li>
           )}
         </ul>
       </section>
@@ -176,7 +176,7 @@ export default async function ContentMapPage() {
               );
             })
           ) : (
-            <li className="text-muted-foreground">No FAQ items returned from the CMS API.</li>
+            <li className="text-muted-foreground">No FAQ items found in current content source.</li>
           )}
         </ul>
       </section>
@@ -203,7 +203,7 @@ export default async function ContentMapPage() {
               ),
             )
           ) : (
-            <li className="text-muted-foreground">No claims guides returned from the CMS API.</li>
+            <li className="text-muted-foreground">No claims guides found in current content source.</li>
           )}
         </ul>
       </section>
@@ -221,7 +221,7 @@ export default async function ContentMapPage() {
               </li>
             ))
           ) : (
-            <li className="text-muted-foreground">No claim cases returned from the CMS API.</li>
+            <li className="text-muted-foreground">No claim cases found in current content source.</li>
           )}
         </ul>
       </section>
@@ -242,7 +242,7 @@ export default async function ContentMapPage() {
               );
             })
           ) : (
-            <li className="text-muted-foreground">No pages returned from the CMS API.</li>
+            <li className="text-muted-foreground">No pages found in current content source.</li>
           )}
         </ul>
       </section>

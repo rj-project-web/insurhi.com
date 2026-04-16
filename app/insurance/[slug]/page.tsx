@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const cmsCategory = await getCategoryBySlug(slug);
   const fallbackCategory = insuranceCategories.find((item) => item.slug === slug);
   const category = cmsCategory ?? fallbackCategory;
+  const categorySummary = cmsCategory?.summary;
 
   if (!category) {
     return buildMetadata({
@@ -37,7 +38,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     title: cmsCategory?.seo?.metaTitle ?? `${category.title} Coverage Guides`,
     description:
       cmsCategory?.seo?.metaDescription ??
-      category.summary ??
+      categorySummary ??
       `Compare ${category.title.toLowerCase()} providers, understand coverage options, and review common claim questions.`,
     path: `/insurance/${slug}`,
   });
@@ -48,6 +49,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   const fallbackCategory = insuranceCategories.find((item) => item.slug === slug);
   const cmsCategory = await getCategoryBySlug(slug);
   const category = cmsCategory ?? fallbackCategory;
+  const categorySummary = cmsCategory?.summary;
 
   if (!category) {
     notFound();
@@ -76,7 +78,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         <p className="text-sm text-muted-foreground">Insurance / {category.title}</p>
         <h1 className="text-3xl font-semibold tracking-tight">{category.title}</h1>
         <p className="max-w-3xl text-muted-foreground">
-          {category.summary ??
+          {categorySummary ??
             `This channel will host plan comparisons, best picks, FAQs, and trusted provider recommendations for ${category.title.toLowerCase()}.`}
         </p>
       </section>

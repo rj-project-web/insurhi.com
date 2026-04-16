@@ -47,6 +47,29 @@ npm run build
 
 Copy `.env.example` to `.env.local` and fill in project values.
 
+## Static publish workflow (local CMS -> Git -> CI)
+
+For "CMS + PostgreSQL local only" publishing, use exported JSON snapshot instead of runtime CMS API:
+
+1. Run and publish content in local CMS (`http://localhost:3000/admin`).
+2. Export local CMS content into this repo:
+
+```bash
+npm run export:cms-content
+```
+
+Or run one command to export + lint + build:
+
+```bash
+npm run publish:static
+```
+
+3. Commit and push `content/cms-content.json`.
+4. In Vercel, set:
+   - `CMS_CONTENT_SOURCE=static`
+   - (optional) `CMS_CONTENT_FILE_PATH=content/cms-content.json`
+5. Redeploy. Build uses exported snapshot, so production no longer depends on live CMS API.
+
 ## Current route skeleton
 
 - `/`

@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "dev:all": "bash ./scripts/dev-all.sh",
+    "export:cms-content": "node ./scripts/export-cms-content.mjs",
+    "publish:static": "bash ./scripts/publish-static.sh",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

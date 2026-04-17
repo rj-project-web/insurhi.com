@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { siteName, topNavItems } from "@/lib/site-data";
+import { topNavItems } from "@/lib/site-data";
 
 export function SiteHeader() {
   const mobileNavItems = topNavItems.filter(
@@ -11,16 +11,15 @@ export function SiteHeader() {
   return (
     <header className="border-b bg-background">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center">
           <Image
             src="/insurhi-logo.png"
-            alt={`${siteName} logo`}
-            width={56}
-            height={56}
-            className="h-12 w-12 rounded-md object-cover md:h-14 md:w-14"
+            alt="Insurhi logo"
+            width={525}
+            height={154}
+            className="h-12 w-auto md:h-14"
             priority
           />
-          <span className="text-2xl font-semibold tracking-tight md:text-[1.9rem]">{siteName}</span>
         </Link>
         <nav className="flex items-center gap-3 text-sm text-muted-foreground md:gap-4">
           {mobileNavItems.map((item) => (

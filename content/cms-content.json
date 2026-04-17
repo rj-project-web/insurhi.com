@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-04-16T03:14:14.922Z",
+    "exportedAt": "2026-04-17T09:20:50.590Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -8,67 +8,127 @@
       "id": 1,
       "title": "Auto Insurance",
       "slug": "auto",
-      "summary": "Coverage guidance for car owners in English-speaking markets.",
+      "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
       "seo": {
-        "metaTitle": "Auto Insurance Guide | Insurhi",
-        "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+        "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+        "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
       },
-      "updatedAt": "2026-04-13T10:39:43.623Z",
+      "updatedAt": "2026-04-16T07:14:17.561Z",
       "createdAt": "2026-04-13T10:39:43.623Z"
     },
     {
       "id": 3,
       "title": "Home Insurance",
       "slug": "home",
-      "summary": "Home Insurance",
+      "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
       "seo": {
-        "metaTitle": "Home Insurance",
-        "metaDescription": "Home Insurance"
+        "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+        "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
       },
-      "updatedAt": "2026-04-13T14:08:21.607Z",
+      "updatedAt": "2026-04-16T07:16:13.426Z",
       "createdAt": "2026-04-13T14:08:21.606Z"
     },
     {
       "id": 2,
       "title": "Life Insurance",
       "slug": "life",
-      "summary": "Life insurance basics, policy options, and claim preparation guidance.",
+      "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
       "seo": {
-        "metaTitle": "Life Insurance Guide | Insurhi",
-        "metaDescription": "Understand life insurance policy types and practical claim tips."
+        "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+        "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
       },
-      "updatedAt": "2026-04-13T10:39:43.629Z",
+      "updatedAt": "2026-04-16T07:15:16.975Z",
       "createdAt": "2026-04-13T10:39:43.629Z"
+    },
+    {
+      "id": 5,
+      "title": "Medicare Supplement Insurance",
+      "slug": "medicare",
+      "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+      "seo": {
+        "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+        "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+      },
+      "updatedAt": "2026-04-16T07:17:58.600Z",
+      "createdAt": "2026-04-16T07:17:58.599Z"
     },
     {
       "id": 4,
       "title": "Pet insurance",
-      "slug": "pet-insurance",
-      "summary": "Pet insurance",
+      "slug": "pet",
+      "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
       "seo": {
-        "metaTitle": "Pet insurance SEO Title",
-        "metaDescription": "Pet insurance SEO Description"
+        "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+        "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
       },
-      "updatedAt": "2026-04-14T02:43:11.266Z",
+      "updatedAt": "2026-04-16T07:16:59.766Z",
       "createdAt": "2026-04-14T02:43:11.266Z"
+    },
+    {
+      "id": 6,
+      "title": "Renters Insurance",
+      "slug": "renters",
+      "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+      "seo": {
+        "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+        "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+      },
+      "updatedAt": "2026-04-16T07:18:44.313Z",
+      "createdAt": "2026-04-16T07:18:44.313Z"
     }
   ],
   "providers": [
     {
-      "id": 1,
-      "name": "The Travelers Companies, Inc.",
-      "slug": "travelers",
+      "id": 2,
+      "name": "State Farm",
+      "slug": "state-farm-auto",
+      "summary": "Largest auto insurer in the US / Available in all 50 states / Drive Safe & Save app offers up to 30% discount / 19,000+ local agents",
+      "bestFor": [
+        {
+          "id": "69e0927296b08e3fb120aace",
+          "item": "Overall value and personalized service"
+        }
+      ],
       "categories": [
         {
           "id": 1,
           "title": "Auto Insurance",
           "slug": "auto",
-          "summary": "Coverage guidance for car owners in English-speaking markets.",
+          "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
           "seo": {
-            "metaTitle": "Auto Insurance Guide | Insurhi",
-            "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+            "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+            "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
           },
-          "updatedAt": "2026-04-13T10:39:43.623Z",
+          "updatedAt": "2026-04-16T07:14:17.561Z",
+          "createdAt": "2026-04-13T10:39:43.623Z"
+        }
+      ],
+      "rating": 4.4,
+      "coverageRegions": [],
+      "seo": {
+        "metaTitle": "State Farm Auto Insurance Review 2026 | Rates, Discounts & Coverage | Insurhi",
+        "metaDescription": "Read our State Farm auto insurance review for 2026. Compare rates, discover discounts, and learn about coverage options. Get quotes from local agents at Insurhi."
+      },
+      "updatedAt": "2026-04-16T07:40:47.926Z",
+      "createdAt": "2026-04-16T07:23:02.234Z"
+    },
+    {
+      "id": 1,
+      "name": "The Travelers Companies, Inc.",
+      "slug": "travelers",
+      "summary": null,
+      "bestFor": [],
+      "categories": [
+        {
+          "id": 1,
+          "title": "Auto Insurance",
+          "slug": "auto",
+          "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+          "seo": {
+            "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+            "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+          },
+          "updatedAt": "2026-04-16T07:14:17.561Z",
           "createdAt": "2026-04-13T10:39:43.623Z"
         }
       ],
@@ -91,12 +151,12 @@
         "id": 1,
         "title": "Auto Insurance",
         "slug": "auto",
-        "summary": "Coverage guidance for car owners in English-speaking markets.",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
         "seo": {
-          "metaTitle": "Auto Insurance Guide | Insurhi",
-          "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
         },
-        "updatedAt": "2026-04-13T10:39:43.623Z",
+        "updatedAt": "2026-04-16T07:14:17.561Z",
         "createdAt": "2026-04-13T10:39:43.623Z"
       },
       "provider": null,
@@ -119,12 +179,12 @@
         "id": 3,
         "title": "Home Insurance",
         "slug": "home",
-        "summary": "Home Insurance",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
         "seo": {
-          "metaTitle": "Home Insurance",
-          "metaDescription": "Home Insurance"
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
         },
-        "updatedAt": "2026-04-13T14:08:21.607Z",
+        "updatedAt": "2026-04-16T07:16:13.426Z",
         "createdAt": "2026-04-13T14:08:21.606Z"
       },
       "provider": null,
@@ -149,12 +209,12 @@
         "id": 2,
         "title": "Life Insurance",
         "slug": "life",
-        "summary": "Life insurance basics, policy options, and claim preparation guidance.",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
         "seo": {
-          "metaTitle": "Life Insurance Guide | Insurhi",
-          "metaDescription": "Understand life insurance policy types and practical claim tips."
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
         },
-        "updatedAt": "2026-04-13T10:39:43.629Z",
+        "updatedAt": "2026-04-16T07:15:16.975Z",
         "createdAt": "2026-04-13T10:39:43.629Z"
       },
       "body": {
@@ -890,12 +950,12 @@
         "id": 2,
         "title": "Life Insurance",
         "slug": "life",
-        "summary": "Life insurance basics, policy options, and claim preparation guidance.",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
         "seo": {
-          "metaTitle": "Life Insurance Guide | Insurhi",
-          "metaDescription": "Understand life insurance policy types and practical claim tips."
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
         },
-        "updatedAt": "2026-04-13T10:39:43.629Z",
+        "updatedAt": "2026-04-16T07:15:16.975Z",
         "createdAt": "2026-04-13T10:39:43.629Z"
       },
       "updatedAt": "2026-04-14T02:49:11.624Z",
@@ -911,12 +971,12 @@
         "id": 1,
         "title": "Auto Insurance",
         "slug": "auto",
-        "summary": "Coverage guidance for car owners in English-speaking markets.",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
         "seo": {
-          "metaTitle": "Auto Insurance Guide | Insurhi",
-          "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
         },
-        "updatedAt": "2026-04-13T10:39:43.623Z",
+        "updatedAt": "2026-04-16T07:14:17.561Z",
         "createdAt": "2026-04-13T10:39:43.623Z"
       },
       "steps": [
@@ -960,12 +1020,12 @@
         "id": 1,
         "title": "Auto Insurance",
         "slug": "auto",
-        "summary": "Coverage guidance for car owners in English-speaking markets.",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
         "seo": {
-          "metaTitle": "Auto Insurance Guide | Insurhi",
-          "metaDescription": "Compare auto insurance plans, providers, and claim steps."
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
         },
-        "updatedAt": "2026-04-13T10:39:43.623Z",
+        "updatedAt": "2026-04-16T07:14:17.561Z",
         "createdAt": "2026-04-13T10:39:43.623Z"
       },
       "scenario": "Auto Accident Claim Cases",

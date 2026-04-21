@@ -146,12 +146,19 @@ export function extractCmsText(content: unknown): string {
   return buffer.join(" ").replace(/\s+/g, " ").trim();
 }
 
-export function CmsRichText({ content }: { content: unknown }) {
+export function CmsRichText({
+  content,
+  className,
+}: {
+  content: unknown;
+  className?: string;
+}) {
+  const rootClass = className ?? "leading-7 text-foreground/90";
   if (typeof content === "string") {
-    return <div className="whitespace-pre-wrap text-sm leading-7 text-muted-foreground">{content}</div>;
+    return <div className={`whitespace-pre-wrap ${rootClass}`}>{content}</div>;
   }
   if (!isLexicalContent(content)) return null;
 
   const children = content.root?.children ?? [];
-  return <div className="text-sm leading-7 text-muted-foreground">{children.map((node, index) => <div key={index}>{renderNode(node)}</div>)}</div>;
+  return <div className={rootClass}>{children.map((node, index) => <div key={index}>{renderNode(node)}</div>)}</div>;
 }

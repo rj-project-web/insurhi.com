@@ -1,14 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BookText, CheckCircle2, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
+import { CmsRichText } from "@/components/cms-rich-text";
 import { getArticleBySlug, getArticlesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
 type GuideDetailPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+function inferInsuranceCategoryPath(slug: string, title: string): string {
+  const text = `${slug} ${title}`.toLowerCase();
+  if (text.includes("auto") || text.includes("car")) return "/insurance/auto";
+  if (text.includes("life")) return "/insurance/life";
+  if (text.includes("home")) return "/insurance/home";
+  if (text.includes("pet")) return "/insurance/pet";
+  if (text.includes("medicare") || text.includes("medigap")) return "/insurance/medicare";
+  if (text.includes("renters") || text.includes("renter")) return "/insurance/renters";
+  return "/insurance";
+}
 
 function getArticleParagraphs(article: Awaited<ReturnType<typeof getArticleBySlug>>) {
   const nodes = article?.body?.root?.children ?? [];
@@ -71,6 +83,7 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
   };
   const paragraphs = getArticleParagraphs(article);
   const keyPoints = paragraphs.slice(0, 3);
+  const categoryPath = inferInsuranceCategoryPath(article.slug, article.title);
 
   return (
     <div className="space-y-8">
@@ -88,26 +101,6 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
           Guides / {article.slug}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{article.title}</h1>
-        <div className="grid gap-2 sm:grid-cols-3">
-          <article className="rounded-lg border bg-background/90 p-3 text-sm">
-            <p className="flex items-center gap-2 font-medium">
-              <BookText className="h-4 w-4 text-blue-600" />
-              Practical guide
-            </p>
-          </article>
-          <article className="rounded-lg border bg-background/90 p-3 text-sm">
-            <p className="flex items-center gap-2 font-medium">
-              <CheckCircle2 className="h-4 w-4 text-cyan-600" />
-              Action-first structure
-            </p>
-          </article>
-          <article className="rounded-lg border bg-background/90 p-3 text-sm">
-            <p className="flex items-center gap-2 font-medium">
-              <CheckCircle2 className="h-4 w-4 text-indigo-600" />
-              CMS-synced content
-            </p>
-          </article>
-        </div>
       </section>
 
       {keyPoints.length > 0 ? (
@@ -124,12 +117,11 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
       ) : null}
 
       <section className="space-y-4 rounded-lg border bg-gradient-to-br from-card to-indigo-500/[0.03] p-5">
-        {paragraphs.length > 0 ? (
-          paragraphs.map((paragraph, index) => (
-            <p key={`${article.id}-${index}`} className="leading-7 text-foreground/90">
-              {paragraph}
-            </p>
-          ))
+        {article.body ? (
+          <CmsRichText
+            content={article.body}
+            className="leading-7 text-foreground/90 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:text-xl [&_h3]:font-semibold [&_p]:text-base [&_ul]:text-base [&_ol]:text-base"
+          />
         ) : (
           <p className="text-muted-foreground">
             This article has no published body content yet.
@@ -140,6 +132,9 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>
         <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
+          <Link href={categoryPath} className="underline underline-offset-4">
+            Related insurance category
+          </Link>
           <Link href="/guides" className="underline underline-offset-4">
             Back to guides
           </Link>

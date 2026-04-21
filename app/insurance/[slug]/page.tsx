@@ -113,45 +113,6 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       "Shortlist providers with stronger service confidence.",
     ] as [string, string, string]);
 
-  const keyTakeawaysBySlug: Record<string, [string, string, string]> = {
-    auto: [
-      "Prioritize liability limits first, then compare collision and comprehensive add-ons.",
-      "Use deductible scenarios to balance monthly premium with post-accident affordability.",
-      "Check provider claim cycle time, repair network depth, and local service consistency.",
-    ],
-    life: [
-      "Start with income replacement and debt protection to estimate baseline coverage need.",
-      "Compare term and permanent options against your expected life-stage milestones.",
-      "Review underwriting terms and beneficiary claim support before purchasing.",
-    ],
-    home: [
-      "Validate dwelling limits against rebuild cost instead of home market value alone.",
-      "Compare peril exclusions and special deductibles for weather-related claim events.",
-      "Prioritize providers with stronger catastrophe response and contractor support.",
-    ],
-    pet: [
-      "Match annual limits and reimbursement rates to your expected veterinary budget.",
-      "Compare waiting periods and exclusions, especially for hereditary conditions.",
-      "Favor providers with transparent claim wording and faster reimbursement workflows.",
-    ],
-    medicare: [
-      "Align plan choice with doctor network access and recurring prescription coverage.",
-      "Estimate yearly out-of-pocket totals, not just monthly premium differences.",
-      "Choose carriers with stronger enrollment support and ongoing member service quality.",
-    ],
-    renters: [
-      "Set personal property limits based on replacement value of your belongings.",
-      "Compare liability and loss-of-use terms for realistic apartment risk scenarios.",
-      "Evaluate digital claim experience and payout speed for small-to-mid claims.",
-    ],
-  };
-  const keyTakeaways =
-    keyTakeawaysBySlug[slug] ??
-    ([
-      `Compare ${category.title.toLowerCase()} options by coverage scope, deductible, and price range.`,
-      "Use provider profiles to validate regions and editorial notes before deciding.",
-      "Review FAQ and claims resources early so policy and claim expectations are aligned.",
-    ] as [string, string, string]);
   const productRows = products.slice(0, 6);
   const providerRows = providers.slice(0, 6);
   const faqRows = faqs.slice(0, 8);
@@ -552,14 +513,18 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       </section>
 
       <section className="rounded-xl border bg-gradient-to-r from-sky-500/[0.07] to-cyan-500/[0.03] p-5">
-        <h2 className="text-lg font-semibold tracking-tight">Key takeaways</h2>
-        <ul className="mt-3 grid gap-2 text-sm text-muted-foreground">
-          {keyTakeaways.map((takeaway) => (
-            <li key={takeaway} className="rounded-md border bg-gradient-to-r from-background to-cyan-500/5 px-3 py-2">
-              {takeaway}
-            </li>
-          ))}
-        </ul>
+        <h2 className="text-lg font-semibold tracking-tight">Guides for {category.title}</h2>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Explore practical articles to learn coverage basics, compare policies, and avoid common buying mistakes.
+        </p>
+        <div className="mt-3">
+          <Link
+            href="/guides"
+            className="inline-flex rounded-md border bg-background px-3 py-2 text-sm font-medium transition-colors hover:bg-accent"
+          >
+            Open insurance guides
+          </Link>
+        </div>
       </section>
 
       <section

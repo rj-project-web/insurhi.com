@@ -38,10 +38,56 @@ export type CmsProduct = {
   id: string;
   name: string;
   slug: string;
+  oneLineVerdict?: string;
+  editorConclusion?: string;
   coverageAmount?: string;
+  coverageDetails?: unknown;
   deductible?: string;
   priceRange?: string;
+  pricingRangeSummary?: string;
+  premiumEstimateRows?: Array<{
+    ageBand?: string;
+    region?: string;
+    profile?: string;
+    estimatedPremium?: string;
+    note?: string;
+  }>;
+  pros?: Array<{ item?: string }>;
+  cons?: Array<{ item?: string }>;
+  bestFor?: Array<{ item?: string }>;
+  notFor?: Array<{ item?: string }>;
   recommendedFor?: string;
+  claimsTurnaround?: {
+    avgDays?: number;
+    p90Days?: number;
+    dataSource?: string;
+    lastUpdated?: string;
+  };
+  competitorComparisons?: Array<{
+    competitorName?: string;
+    priceBand?: string;
+    coverageScore?: number;
+    claimsScore?: number;
+    summary?: string;
+  }>;
+  ratingDistribution?: {
+    star5?: number;
+    star4?: number;
+    star3?: number;
+    star2?: number;
+    star1?: number;
+  };
+  reviewHighlights?: unknown;
+  faqItems?: Array<{
+    question?: string;
+    answer?: unknown;
+  }>;
+  methodology?: unknown;
+  sources?: Array<{
+    sourceName?: string;
+    url?: string;
+    publishedAt?: string;
+  }>;
   category?: string | CmsCategory;
   provider?: string | CmsProvider;
   seo?: CmsSeoGroup;

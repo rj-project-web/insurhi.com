@@ -12,7 +12,6 @@ import {
   TrendingUp,
   Users,
 } from "lucide-react";
-import { AdSlot } from "@/components/ad-slot";
 import {
   getCategoryBySlug,
   getFaqsByCategory,
@@ -605,8 +604,6 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         </ol>
       </section>
 
-      <AdSlot slotId="ad_in_content_1" />
-
       <section id="products" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card via-blue-500/[0.02] to-cyan-500/[0.03] p-5">
         <div className="flex items-center justify-between gap-4">
           <h2 className="text-xl font-semibold tracking-tight">Product comparison snapshot</h2>
@@ -696,16 +693,6 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           )}
         </div>
       </section>
-
-      {cmsCategory?.seo?.metaTitle || cmsCategory?.seo?.metaDescription ? (
-        <section className="rounded-lg border border-dashed bg-muted/30 p-4 text-sm text-muted-foreground">
-          <h2 className="text-base font-semibold tracking-tight text-foreground">Editorial metadata</h2>
-          {cmsCategory.seo?.metaTitle ? <p className="mt-2">Meta title: {cmsCategory.seo.metaTitle}</p> : null}
-          {cmsCategory.seo?.metaDescription ? (
-            <p className="mt-2">Meta description: {cmsCategory.seo.metaDescription}</p>
-          ) : null}
-        </section>
-      ) : null}
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-base font-semibold tracking-tight">Editorial note</h2>

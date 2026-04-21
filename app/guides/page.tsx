@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BookOpenCheck, Clock3, Sparkles } from "lucide-react";
-import { AdSlot } from "@/components/ad-slot";
 import { getLatestArticles } from "@/lib/cms-client";
 import { buildMetadata, buildBreadcrumbJsonLd } from "@/lib/seo";
 
@@ -77,8 +76,6 @@ export default async function GuidesPage() {
           </>
         )}
       </div>
-
-      <AdSlot slotId="ad_in_content_2" />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Explore related channels</h2>

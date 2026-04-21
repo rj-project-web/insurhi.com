@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ClipboardList, Sparkles } from "lucide-react";
 
-import { AdSlot } from "@/components/ad-slot";
 import { getClaimsGuideBySlug, getClaimsGuidesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -125,8 +124,6 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
           <p className="text-sm text-muted-foreground">No checklist has been published yet.</p>
         )}
       </section>
-
-      <AdSlot slotId="ad_in_content_1" />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

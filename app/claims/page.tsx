@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { FileCheck2, ShieldAlert, Sparkles } from "lucide-react";
-import { AdSlot } from "@/components/ad-slot";
 import { getClaimCases, getClaimsGuides } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -99,8 +98,6 @@ export default async function ClaimsPage() {
           )}
         </div>
       </section>
-
-      <AdSlot slotId="ad_bottom_banner" />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Explore related channels</h2>

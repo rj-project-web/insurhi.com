@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Sparkles } from "lucide-react";
 
-import { AdSlot } from "@/components/ad-slot";
 import { getClaimCaseById, getClaimCasesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -85,8 +84,6 @@ export default async function ClaimCaseDetailPage({ params }: ClaimCaseDetailPag
         <h2 className="text-xl font-semibold tracking-tight">Outcome</h2>
         <p className="text-sm text-muted-foreground">{claimCase.outcome}</p>
       </section>
-
-      <AdSlot slotId="ad_in_content_2" />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

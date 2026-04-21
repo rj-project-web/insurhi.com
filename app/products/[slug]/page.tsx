@@ -4,7 +4,6 @@ import path from "node:path";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 
-import { AdSlot } from "@/components/ad-slot";
 import type { CmsCategory, CmsProvider } from "@/lib/cms-client";
 import { getProductBySlug, getProducts } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
@@ -188,18 +187,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <p className="whitespace-pre-wrap text-sm text-muted-foreground">{product.recommendedFor}</p>
         </section>
       ) : null}
-
-      {product.seo?.metaTitle || product.seo?.metaDescription ? (
-        <section className="rounded-lg border border-dashed bg-muted/30 p-4 text-sm text-muted-foreground">
-          <h2 className="text-base font-semibold tracking-tight text-foreground">CMS SEO</h2>
-          {product.seo.metaTitle ? <p className="mt-2">Meta title: {product.seo.metaTitle}</p> : null}
-          {product.seo.metaDescription ? (
-            <p className="mt-2">Meta description: {product.seo.metaDescription}</p>
-          ) : null}
-        </section>
-      ) : null}
-
-      <AdSlot slotId="ad_in_content_1" />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

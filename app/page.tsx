@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Link from "next/link";
 import { ArrowRight, BookOpenText, Building2, FileCheck2, Sparkles } from "lucide-react";
-import { AdSlot } from "@/components/ad-slot";
 import {
   getAllPages,
   getClaimCases,
@@ -38,58 +37,52 @@ export default async function Home() {
       getAllPages(),
     ]);
 
-  const latestArticle = articles[0];
-  const latestClaimGuide = claimsGuides[0];
-  const latestClaimCase = claimCases[0];
-  const latestProvider = providers[0];
-  const latestProduct = products[0];
-  const latestFaq = faqItems[0];
-  const latestPage = pages[0];
-  const latestDataUpdates: Array<{ key: string; label: string; href?: string }> = [];
+  const latestGuides = articles.slice(0, 5);
+  const latestClaimsUpdates: Array<{ key: string; label: string; href?: string }> = [];
+  for (let i = 0; latestClaimsUpdates.length < 5; i++) {
+    const claimGuide = claimsGuides[i];
+    const claimCase = claimCases[i];
 
-  if (latestProduct) {
-    latestDataUpdates.push({
-      key: `product-${latestProduct.id}`,
-      label: `Product: ${latestProduct.name}`,
-      href: `/products/${latestProduct.slug}`,
-    });
+    if (claimGuide) {
+      latestClaimsUpdates.push({
+        key: `claim-guide-${claimGuide.id}`,
+        label: claimGuide.title,
+        href: claimGuide.slug ? `/claims/guides/${claimGuide.slug}` : undefined,
+      });
+    }
+    if (claimCase && latestClaimsUpdates.length < 5) {
+      latestClaimsUpdates.push({
+        key: `claim-case-${claimCase.id}`,
+        label: claimCase.title,
+        href: `/claims/cases/${claimCase.id}`,
+      });
+    }
+    if (!claimGuide && !claimCase) {
+      break;
+    }
   }
-  if (latestProvider) {
-    latestDataUpdates.push({
-      key: `provider-${latestProvider.id}`,
-      label: `Provider: ${latestProvider.name}`,
-      href: `/providers/${latestProvider.slug}`,
-    });
-  }
-  if (latestFaq) {
-    latestDataUpdates.push({
-      key: `faq-${latestFaq.id}`,
-      label: `FAQ: ${latestFaq.question}`,
+  const latestDataUpdates = [
+    ...products.slice(0, 5).map((product) => ({
+      key: `product-${product.id}`,
+      label: `Product: ${product.name}`,
+      href: `/products/${product.slug}`,
+    })),
+    ...providers.slice(0, 5).map((provider) => ({
+      key: `provider-${provider.id}`,
+      label: `Provider: ${provider.name}`,
+      href: `/providers/${provider.slug}`,
+    })),
+    ...faqItems.slice(0, 5).map((faq) => ({
+      key: `faq-${faq.id}`,
+      label: `FAQ: ${faq.question}`,
       href: "/content-map",
-    });
-  }
-  if (latestPage) {
-    latestDataUpdates.push({
-      key: `page-${latestPage.id}`,
-      label: `Page: ${latestPage.title}`,
+    })),
+    ...pages.slice(0, 5).map((page) => ({
+      key: `page-${page.id}`,
+      label: `Page: ${page.title}`,
       href: "/content-map",
-    });
-  }
-
-  if (!latestDataUpdates.length && latestArticle) {
-    latestDataUpdates.push({
-      key: `article-fallback-${latestArticle.id}`,
-      label: `Guide update: ${latestArticle.title}`,
-      href: `/guides/${latestArticle.slug}`,
-    });
-  }
-  if (!latestDataUpdates.length && latestClaimCase) {
-    latestDataUpdates.push({
-      key: `claim-fallback-${latestClaimCase.id}`,
-      label: `Claim case update: ${latestClaimCase.title}`,
-      href: `/claims/cases/${latestClaimCase.id}`,
-    });
-  }
+    })),
+  ].slice(0, 5);
   if (!latestDataUpdates.length) {
     latestDataUpdates.push({
       key: "content-map-fallback",
@@ -135,8 +128,6 @@ export default async function Home() {
         </div>
       </section>
 
-      <AdSlot slotId="ad_top_banner" />
-
       <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card to-blue-500/[0.03] p-5">
         <h2 className="text-2xl font-semibold tracking-tight">Insurance Categories</h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -162,54 +153,93 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="grid gap-3 lg:grid-cols-3">
-        <article className="rounded-xl border bg-gradient-to-br from-indigo-500/[0.08] to-card p-4">
-          <p className="flex items-center gap-2 text-sm font-medium">
-            <BookOpenText className="h-4 w-4 text-indigo-600" />
-            Latest guide
+      <section
+        className="relative overflow-hidden rounded-2xl border bg-card/90 p-4 lg:p-5 dark:border-slate-700/70 dark:bg-slate-900/50"
+        style={{ backgroundImage: "url('/home-latest-bg.svg')" }}
+      >
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/70 via-blue-50/50 to-cyan-50/60 dark:from-slate-950/70 dark:via-slate-900/55 dark:to-cyan-950/35" />
+        <div className="relative grid gap-3 lg:grid-cols-3">
+          <article className="group animate-card-fade-up relative overflow-hidden rounded-2xl border border-indigo-200/70 bg-gradient-to-br from-white/95 via-indigo-50/70 to-blue-50/60 p-4 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-indigo-300/80 hover:shadow-lg dark:border-indigo-500/30 dark:from-slate-900/90 dark:via-indigo-950/30 dark:to-slate-900/80 dark:hover:border-indigo-400/50">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-white/70 to-transparent dark:from-indigo-200/10" />
+          <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-indigo-300/35 blur-2xl transition-transform duration-500 group-hover:scale-110 dark:bg-indigo-500/20" />
+          <p className="relative flex items-center gap-2 text-sm font-medium">
+            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-100 text-indigo-700 ring-1 ring-indigo-200 transition-transform duration-300 group-hover:scale-105 dark:bg-indigo-500/20 dark:text-indigo-200 dark:ring-indigo-400/30">
+              <BookOpenText className="h-4 w-4" />
+            </span>
+            Latest guides
           </p>
-          {latestArticle ? (
-            <Link href={`/guides/${latestArticle.slug}`} className="mt-3 block">
-              <p className="font-medium">{latestArticle.title}</p>
-              <p className="mt-2 text-xs text-muted-foreground">/guides/{latestArticle.slug}</p>
-            </Link>
+          {latestGuides.length ? (
+            <ul className="relative mt-3 space-y-2 text-sm text-muted-foreground">
+              {latestGuides.map((guide) => (
+                <li key={`guide-${guide.id}`}>
+                  <Link
+                    href={`/guides/${guide.slug}`}
+                    className="inline-flex transition-colors hover:text-foreground hover:underline hover:underline-offset-4"
+                  >
+                    {guide.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           ) : (
-            <p className="mt-3 text-sm text-muted-foreground">No guide published yet.</p>
+            <p className="mt-3 text-sm text-muted-foreground">No guides published yet.</p>
           )}
         </article>
 
-        <article className="rounded-xl border bg-gradient-to-br from-teal-500/[0.08] to-card p-4">
-          <p className="flex items-center gap-2 text-sm font-medium">
-            <FileCheck2 className="h-4 w-4 text-cyan-600" />
+          <article
+            className="group animate-card-fade-up relative overflow-hidden rounded-2xl border border-cyan-200/70 bg-gradient-to-br from-white/95 via-cyan-50/70 to-blue-50/60 p-4 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-300/80 hover:shadow-lg dark:border-cyan-500/30 dark:from-slate-900/90 dark:via-cyan-950/25 dark:to-slate-900/80 dark:hover:border-cyan-400/50"
+            style={{ animationDelay: "90ms" }}
+          >
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-white/70 to-transparent dark:from-cyan-200/10" />
+          <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-cyan-300/35 blur-2xl transition-transform duration-500 group-hover:scale-110 dark:bg-cyan-500/20" />
+          <p className="relative flex items-center gap-2 text-sm font-medium">
+            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-cyan-100 text-cyan-700 ring-1 ring-cyan-200 transition-transform duration-300 group-hover:scale-105 dark:bg-cyan-500/20 dark:text-cyan-200 dark:ring-cyan-400/30">
+              <FileCheck2 className="h-4 w-4" />
+            </span>
             Claims spotlight
           </p>
-          <div className="mt-3 space-y-2">
-            {latestClaimGuide?.slug ? (
-              <Link href={`/claims/guides/${latestClaimGuide.slug}`} className="block text-sm underline underline-offset-4">
-                {latestClaimGuide.title}
-              </Link>
-            ) : null}
-            {latestClaimCase ? (
-              <Link href={`/claims/cases/${latestClaimCase.id}`} className="block text-sm underline underline-offset-4">
-                {latestClaimCase.title}
-              </Link>
-            ) : null}
-            {!latestClaimGuide && !latestClaimCase ? (
-              <p className="text-sm text-muted-foreground">No claims content published yet.</p>
-            ) : null}
-          </div>
+          {latestClaimsUpdates.length ? (
+            <ul className="relative mt-3 space-y-2 text-sm text-muted-foreground">
+              {latestClaimsUpdates.map((item) => (
+                <li key={item.key}>
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="inline-flex transition-colors hover:text-foreground hover:underline hover:underline-offset-4"
+                    >
+                      {item.label}
+                    </Link>
+                  ) : (
+                    item.label
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="mt-3 text-sm text-muted-foreground">No claims content published yet.</p>
+          )}
         </article>
 
-        <article className="rounded-xl border bg-gradient-to-br from-blue-500/[0.08] to-card p-4">
-          <p className="flex items-center gap-2 text-sm font-medium">
-            <Building2 className="h-4 w-4 text-blue-600" />
+          <article
+            className="group animate-card-fade-up relative overflow-hidden rounded-2xl border border-blue-200/70 bg-gradient-to-br from-white/95 via-blue-50/70 to-sky-50/60 p-4 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-300/80 hover:shadow-lg dark:border-blue-500/30 dark:from-slate-900/90 dark:via-blue-950/25 dark:to-slate-900/80 dark:hover:border-blue-400/50"
+            style={{ animationDelay: "180ms" }}
+          >
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-white/70 to-transparent dark:from-blue-200/10" />
+          <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-blue-300/35 blur-2xl transition-transform duration-500 group-hover:scale-110 dark:bg-blue-500/20" />
+          <p className="relative flex items-center gap-2 text-sm font-medium">
+            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-blue-100 text-blue-700 ring-1 ring-blue-200 transition-transform duration-300 group-hover:scale-105 dark:bg-blue-500/20 dark:text-blue-200 dark:ring-blue-400/30">
+              <Building2 className="h-4 w-4" />
+            </span>
             Latest data updates
           </p>
-          <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+          <ul className="relative mt-3 space-y-2 text-sm text-muted-foreground">
             {latestDataUpdates.map((item) => (
               <li key={item.key}>
                 {item.href ? (
-                  <Link href={item.href} className="underline underline-offset-4">
+                  <Link
+                    href={item.href}
+                    className="inline-flex transition-colors hover:text-foreground hover:underline hover:underline-offset-4"
+                  >
                     {item.label}
                   </Link>
                 ) : (
@@ -218,7 +248,8 @@ export default async function Home() {
               </li>
             ))}
           </ul>
-        </article>
+          </article>
+        </div>
       </section>
     </div>
   );

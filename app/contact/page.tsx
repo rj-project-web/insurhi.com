@@ -40,15 +40,6 @@ export default async function ContactPage() {
           Contact channel placeholder for editorial, support, and partnership inquiries.
         </p>
       )}
-      {cmsPage?.seo?.metaTitle || cmsPage?.seo?.metaDescription ? (
-        <section className="rounded-lg border border-dashed bg-muted/30 p-4 text-sm text-muted-foreground">
-          <h2 className="text-base font-semibold tracking-tight text-foreground">CMS SEO</h2>
-          {cmsPage.seo?.metaTitle ? <p className="mt-2">Meta title: {cmsPage.seo.metaTitle}</p> : null}
-          {cmsPage.seo?.metaDescription ? (
-            <p className="mt-2">Meta description: {cmsPage.seo.metaDescription}</p>
-          ) : null}
-        </section>
-      ) : null}
     </div>
   );
 }

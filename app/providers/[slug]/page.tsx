@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { AdSlot } from "@/components/ad-slot";
 import type { CmsCategory, CmsProduct } from "@/lib/cms-client";
 import { getProducts, getProviderBySlug, getProviders } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
@@ -160,8 +159,6 @@ export default async function ProviderDetailPage({ params }: ProviderPageProps) 
           <p className="text-sm text-muted-foreground">No product relationships are published yet.</p>
         )}
       </section>
-
-      <AdSlot slotId="ad_in_content_1" />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

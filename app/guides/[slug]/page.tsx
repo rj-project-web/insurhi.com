@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BookText, CheckCircle2, Sparkles } from "lucide-react";
 
-import { AdSlot } from "@/components/ad-slot";
 import { getArticleBySlug, getArticlesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -137,18 +136,6 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
           </p>
         )}
       </section>
-
-      {article.seo?.metaTitle || article.seo?.metaDescription ? (
-        <section className="rounded-lg border border-dashed bg-muted/30 p-4 text-sm text-muted-foreground">
-          <h2 className="text-base font-semibold tracking-tight text-foreground">CMS SEO</h2>
-          {article.seo.metaTitle ? <p className="mt-2">Meta title: {article.seo.metaTitle}</p> : null}
-          {article.seo.metaDescription ? (
-            <p className="mt-2">Meta description: {article.seo.metaDescription}</p>
-          ) : null}
-        </section>
-      ) : null}
-
-      <AdSlot slotId="ad_in_content_1" />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

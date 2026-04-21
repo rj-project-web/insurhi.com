@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 
+import { CmsRichText, extractCmsText } from "@/components/cms-rich-text";
 import { getAllPages, getPageBySlug } from "@/lib/cms-client";
 import { CMS_PAGE_FIXED_PATHS, isFixedCmsPageSlug } from "@/lib/cms-page-routes";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: CmsPageProps): Promise<Metada
 
   return buildMetadata({
     title: page.seo?.metaTitle ?? page.title,
-    description: page.seo?.metaDescription ?? page.content.slice(0, 160),
+    description: page.seo?.metaDescription ?? extractCmsText(page.content).slice(0, 160),
     path: `/cms-pages/${slug}`,
   });
 }
@@ -64,8 +65,8 @@ export default async function CmsDynamicPage({ params }: CmsPageProps) {
         <h1 className="text-3xl font-semibold tracking-tight">{page.title}</h1>
       </section>
 
-      <section className="max-w-3xl whitespace-pre-wrap text-sm leading-7 text-foreground/90">
-        {page.content}
+      <section className="max-w-3xl text-foreground/90">
+        <CmsRichText content={page.content} />
       </section>
 
       <section className="rounded-lg border bg-card p-4">

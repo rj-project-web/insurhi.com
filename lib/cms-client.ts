@@ -51,7 +51,7 @@ export type CmsPage = {
   id: string;
   title: string;
   slug: string;
-  content: string;
+  content: unknown;
   seo?: CmsSeoGroup;
 };
 

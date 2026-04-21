@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { CmsRichText } from "@/components/cms-rich-text";
 import { getPageBySlug } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -32,8 +33,8 @@ export default async function TermsPage() {
       />
       <h1 className="text-3xl font-semibold tracking-tight">{cmsPage?.title ?? "Terms of Service"}</h1>
       {cmsPage?.content ? (
-        <div className="max-w-3xl whitespace-pre-wrap text-sm leading-7 text-muted-foreground">
-          {cmsPage.content}
+        <div className="max-w-3xl">
+          <CmsRichText content={cmsPage.content} />
         </div>
       ) : (
         <p className="max-w-3xl text-muted-foreground">

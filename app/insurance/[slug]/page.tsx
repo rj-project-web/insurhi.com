@@ -13,8 +13,10 @@ import {
   Users,
 } from "lucide-react";
 import {
+  getClaimsGuidesList,
   getCategoryBySlug,
   getFaqsByCategory,
+  getLatestArticles,
   getProductsByCategory,
   getProvidersByCategory,
 } from "@/lib/cms-client";
@@ -24,6 +26,17 @@ import { insuranceCategories } from "@/lib/site-data";
 type CategoryPageProps = {
   params: Promise<{ slug: string }>;
 };
+
+function guideMatchesCategory(slug: string, title: string, categorySlug: string): boolean {
+  const text = `${slug} ${title}`.toLowerCase();
+  if (categorySlug === "auto") return /\bauto\b/.test(text) || /\bcar\b/.test(text);
+  if (categorySlug === "life") return text.includes("life");
+  if (categorySlug === "home") return text.includes("home") || text.includes("property");
+  if (categorySlug === "pet") return text.includes("pet");
+  if (categorySlug === "medicare") return text.includes("medicare") || text.includes("medigap");
+  if (categorySlug === "renters") return text.includes("renters") || text.includes("renter");
+  return false;
+}
 
 export function generateStaticParams() {
   return insuranceCategories.map((category) => ({ slug: category.slug }));
@@ -65,13 +78,15 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
     notFound();
   }
 
-  const [faqs, providers, products] = cmsCategory
+  const [faqs, providers, products, latestArticles, claimsGuides] = cmsCategory
     ? await Promise.all([
         getFaqsByCategory(cmsCategory.id),
         getProvidersByCategory(cmsCategory.id),
         getProductsByCategory(cmsCategory.id),
+        getLatestArticles(),
+        getClaimsGuidesList(),
       ])
-    : [[], [], []];
+    : [[], [], [], await getLatestArticles(), await getClaimsGuidesList()];
 
   const helpYouDoBySlug: Record<string, [string, string, string]> = {
     auto: [
@@ -399,6 +414,18 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
     ],
   };
   const shoppingChecklist = shoppingChecklistBySlug[slug] ?? shoppingChecklistBySlug.auto;
+  const relatedGuides = latestArticles
+    .filter((article) => guideMatchesCategory(article.slug, article.title, slug))
+    .slice(0, 3);
+  const relatedClaimsGuides = claimsGuides
+    .filter((guide) => {
+      if (!guide.slug) return false;
+      if (guide.category && typeof guide.category !== "string") {
+        return guide.category.slug === slug;
+      }
+      return false;
+    })
+    .slice(0, 3);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Insurance", path: "/insurance" },
@@ -513,32 +540,62 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       </section>
 
       <section className="rounded-xl border bg-gradient-to-r from-sky-500/[0.07] to-cyan-500/[0.03] p-5">
-        <h2 className="text-lg font-semibold tracking-tight">Guides for {category.title}</h2>
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-lg font-semibold tracking-tight">
+            Insurance buying guides for {category.title}
+          </h2>
+          <Link href="/guides" className="text-sm underline underline-offset-4">
+            Browse all guides
+          </Link>
+        </div>
         <p className="mt-2 text-sm text-muted-foreground">
           Explore practical articles to learn coverage basics, compare policies, and avoid common buying mistakes.
         </p>
-        <div className="mt-3">
-          <Link
-            href="/guides"
-            className="inline-flex rounded-md border bg-background px-3 py-2 text-sm font-medium transition-colors hover:bg-accent"
-          >
-            Open insurance guides
-          </Link>
+        <div className="mt-3 space-y-2">
+          {relatedGuides.length > 0 ? (
+            relatedGuides.map((article) => (
+              <Link
+                key={article.id}
+                href={`/guides/${article.slug}`}
+                className="block rounded-md border bg-background px-3 py-2 text-sm transition-colors hover:bg-accent"
+              >
+                {article.title}
+              </Link>
+            ))
+          ) : (
+            <p className="rounded-md border bg-background px-3 py-2 text-sm text-muted-foreground">
+              More category-specific guides are being curated.
+            </p>
+          )}
         </div>
       </section>
 
-      <section
-        id="decision-factors"
-        className="space-y-3 rounded-2xl border bg-gradient-to-r from-indigo-500/[0.04] via-blue-500/[0.03] to-transparent p-4 sm:p-5"
-      >
-        <h2 className="text-xl font-semibold tracking-tight">How to choose well</h2>
-        <div className="grid gap-3 md:grid-cols-3">
-          {decisionFactors.map((factor) => (
-            <article key={factor.title} className="rounded-xl border bg-gradient-to-br from-card to-blue-500/5 p-4">
-              <p className="font-medium">{factor.title}</p>
-              <p className="mt-2 text-sm text-muted-foreground">{factor.description}</p>
-            </article>
-          ))}
+      <section className="rounded-xl border bg-gradient-to-r from-teal-500/[0.08] to-cyan-500/[0.04] p-5">
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-lg font-semibold tracking-tight">Claims guides (step-by-step)</h2>
+          <Link href="/claims" className="text-sm underline underline-offset-4">
+            Open claims center
+          </Link>
+        </div>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Review practical claim workflows and document checklists before incidents happen.
+        </p>
+        <div className="mt-3 space-y-2">
+          {relatedClaimsGuides.length > 0 ? (
+            relatedClaimsGuides.map((guide) => (
+              <Link
+                key={guide.id}
+                href={guide.slug ? `/claims/guides/${guide.slug}` : "/claims"}
+                className="block rounded-md border bg-background px-3 py-2 text-sm transition-colors hover:bg-accent"
+              >
+                {guide.title}
+              </Link>
+            ))
+          ) : (
+            <p className="rounded-md border bg-background px-3 py-2 text-sm text-muted-foreground">
+              No claims guides are published for this insurance category yet.
+            </p>
+          )}
         </div>
       </section>
 
@@ -629,7 +686,12 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       </section>
 
       <section id="providers" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-5">
-        <h2 className="text-xl font-semibold tracking-tight">Provider shortlist</h2>
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-xl font-semibold tracking-tight">Provider shortlist</h2>
+          <Link href="/providers" className="text-sm underline underline-offset-4">
+            View more
+          </Link>
+        </div>
         <div className="grid gap-3 sm:grid-cols-2">
           {providerRows.length > 0 ? (
             providerRows.map((provider) => (
@@ -656,6 +718,21 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
               CMS provider recommendations will appear here after content is published.
             </p>
           )}
+        </div>
+      </section>
+
+      <section
+        id="decision-factors"
+        className="space-y-3 rounded-2xl border bg-gradient-to-r from-indigo-500/[0.04] via-blue-500/[0.03] to-transparent p-4 sm:p-5"
+      >
+        <h2 className="text-xl font-semibold tracking-tight">How to choose well</h2>
+        <div className="grid gap-3 md:grid-cols-3">
+          {decisionFactors.map((factor) => (
+            <article key={factor.title} className="rounded-xl border bg-gradient-to-br from-card to-blue-500/5 p-4">
+              <p className="font-medium">{factor.title}</p>
+              <p className="mt-2 text-sm text-muted-foreground">{factor.description}</p>
+            </article>
+          ))}
         </div>
       </section>
 

@@ -122,6 +122,7 @@ export type CmsClaimsGuide = {
   id: string;
   title: string;
   slug?: string;
+  category?: string | CmsCategory;
   onlineClaimUrl?: string;
   steps?: Array<{ step: string }>;
   documentChecklist?: Array<{ item: string }>;

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-04-21T09:57:02.571Z",
+    "exportedAt": "2026-04-22T08:33:31.942Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -54625,6 +54625,381 @@
       "_status": "published"
     },
     {
+      "id": 8,
+      "title": "Auto Insurance Buying Guide (2026): How to Compare Coverage, Cost, and Claims Service",
+      "slug": "auto-insurance-buying-guide-2026",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "This guide helps you shortlist auto insurance in a practical order: coverage fit first, then deductible strategy, then claims and service quality.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "1) Start with coverage fit, not price",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Set liability limits to protect income and assets, not only state minimums.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Add collision/comprehensive based on vehicle value and replacement risk.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Check exclusions and optional add-ons (rental, roadside, uninsured motorist).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "2) Set a deductible you can pay today",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A lower premium is useful only if your deductible is still affordable in a real accident. Test your chosen deductible against your emergency cash buffer.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "3) Compare claims experience before checkout",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Look for digital FNOL (first notice of loss) and clear claim-status tracking.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Check repair-network quality and parts/warranty practices in your area.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review complaint signals around delay, estimate disputes, and payout communication.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "4) Final buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Quote at least 3 providers on the same coverage and deductible settings.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm discount rules (bundling, safe driver, telematics) and expiry terms.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Read declarations page line-by-line before payment.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Save claim phone, app, and policy docs in one place.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-04-22T08:05:09.068Z",
+      "seo": {
+        "metaTitle": "Auto Insurance Buying Guide 2026 | Compare Coverage, Cost, Claims | Insurhi",
+        "metaDescription": "Step-by-step auto insurance buying guide for 2026: compare liability limits, deductibles, claim quality, and provider reliability before you buy."
+      },
+      "updatedAt": "2026-04-22T08:05:09.073Z",
+      "createdAt": "2026-04-22T08:05:09.072Z",
+      "_status": "published"
+    },
+    {
       "id": 2,
       "title": "Auto Insurance Types Explained",
       "slug": "auto-insurance-types",
@@ -55760,9 +56135,9 @@
   ],
   "claimsGuides": [
     {
-      "id": 1,
-      "title": "Auto Accident Claim Checklist",
-      "slug": "auto-accident-claim-checklist",
+      "id": 2,
+      "title": "Auto Accident Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
+      "slug": "auto-accident-claim-guide-2026",
       "category": {
         "id": 1,
         "title": "Auto Insurance",
@@ -55777,35 +56152,379 @@
       },
       "steps": [
         {
-          "id": "69dcc7ef712b542a5b549e72",
-          "step": "Document the accident scene and gather contact details."
+          "id": "69e87685f080a55d9fce9855",
+          "step": "Secure safety, document the scene, and collect driver/witness details."
         },
         {
-          "id": "69dcc7ef712b542a5b549e73",
-          "step": "Notify your insurer and submit a claim ticket."
+          "id": "69e87685f080a55d9fce9856",
+          "step": "Open your claim immediately and request claim number + adjuster contact."
         },
         {
-          "id": "69dcc7ef712b542a5b549e74",
-          "step": "Upload required files and track claim status."
+          "id": "69e87685f080a55d9fce9857",
+          "step": "Submit complete evidence package: photos, incident report, and estimate documents."
+        },
+        {
+          "id": "69e87685f080a55d9fce9858",
+          "step": "Review insurer estimate line-by-line and request supplements for hidden damage."
+        },
+        {
+          "id": "69e87685f080a55d9fce9859",
+          "step": "Validate settlement scope, deductible logic, and reimbursement terms before accepting."
+        },
+        {
+          "id": "69e87685f080a55d9fce985a",
+          "step": "Escalate with written follow-up if delayed; use regulator complaint channel when needed."
         }
       ],
       "documentChecklist": [
         {
-          "id": "69dcc7ef712b542a5b549e75",
-          "item": "Driver license and policy number"
+          "id": "69e87685f080a55d9fce985b",
+          "item": "Driver license, registration, and policy number"
         },
         {
-          "id": "69dcc7ef712b542a5b549e76",
-          "item": "Accident photos and police report"
+          "id": "69e87685f080a55d9fce985c",
+          "item": "Accident scene photos/videos (vehicles, road signs, damage angles)"
         },
         {
-          "id": "69dcc7ef712b542a5b549e77",
-          "item": "Repair estimate or medical records"
+          "id": "69e87685f080a55d9fce985d",
+          "item": "Police/incident report number (if available)"
+        },
+        {
+          "id": "69e87685f080a55d9fce985e",
+          "item": "Repair estimate(s) and towing/storage receipts (if applicable)"
+        },
+        {
+          "id": "69e87685f080a55d9fce985f",
+          "item": "Medical records and invoices for injury-related claims"
+        },
+        {
+          "id": "69e87685f080a55d9fce9860",
+          "item": "Rental car agreement/receipts for reimbursement requests"
         }
       ],
       "onlineClaimUrl": "https://www.insurhi.com/claims",
-      "updatedAt": "2026-04-13T10:39:43.674Z",
-      "createdAt": "2026-04-13T10:39:43.674Z"
+      "updatedAt": "2026-04-22T07:19:33.612Z",
+      "createdAt": "2026-04-22T07:19:33.610Z"
+    },
+    {
+      "id": 6,
+      "title": "Home Insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
+      "slug": "home-claim-guide-2026",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "steps": [
+        {
+          "id": "69e87e863101f4e83e6fde1d",
+          "step": "Mitigate further damage first (water shutoff/tarp/temporary repairs) and document everything."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde1e",
+          "step": "Report the claim within 24 hours and request emergency service authorization if needed."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde1f",
+          "step": "Create a damaged-item inventory with purchase date, approximate value, and photos."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde20",
+          "step": "Get at least one contractor estimate and compare with adjuster scope."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde21",
+          "step": "Track additional living expenses and submit receipts in a single reimbursement batch."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "69e87e863101f4e83e6fde22",
+          "item": "Policy number and insured property address"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde23",
+          "item": "Damage photos/videos (before cleanup if safe)"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde24",
+          "item": "Emergency mitigation invoices (water extraction, tarping, boarding)"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde25",
+          "item": "Contractor estimate and damaged-item inventory"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde26",
+          "item": "Temporary housing and meal receipts (if displacement applies)"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/home",
+      "updatedAt": "2026-04-22T07:53:42.850Z",
+      "createdAt": "2026-04-22T07:53:42.850Z"
+    },
+    {
+      "id": 7,
+      "title": "Life Insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
+      "slug": "life-claim-guide-2026",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "steps": [
+        {
+          "id": "69e87e863101f4e83e6fde27",
+          "step": "Locate policy details and confirm beneficiary information before submitting."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde28",
+          "step": "Request claim packet from insurer and verify accepted document formats."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde29",
+          "step": "Submit certified death certificate plus identity and beneficiary documents."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde2a",
+          "step": "Respond quickly to insurer follow-up on medical or policy history questions."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde2b",
+          "step": "Review payout option (lump sum vs retained account) before final confirmation."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "69e87e863101f4e83e6fde2c",
+          "item": "Policy number and insurer contact record"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde2d",
+          "item": "Certified death certificate"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde2e",
+          "item": "Beneficiary government ID and relationship proof"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde2f",
+          "item": "Claim form signed by beneficiary"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde30",
+          "item": "Bank account details for payout transfer"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/life",
+      "updatedAt": "2026-04-22T07:53:42.862Z",
+      "createdAt": "2026-04-22T07:53:42.862Z"
+    },
+    {
+      "id": 4,
+      "title": "Medicare Supplement Insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
+      "slug": "medicare-claim-guide-2026",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "steps": [
+        {
+          "id": "69e87e863101f4e83e6fde09",
+          "step": "Confirm claim routing path (provider-filed or member-filed) with Medicare and supplement carrier."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde0a",
+          "step": "Collect Explanation of Benefits (EOB) and all provider billing statements."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde0b",
+          "step": "Submit supplemental claim package with coding and service-date consistency checks."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde0c",
+          "step": "Monitor processing windows and call support if claim remains pending beyond SLA."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde0d",
+          "step": "File formal reconsideration quickly when claim is reduced or denied."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "69e87e863101f4e83e6fde0e",
+          "item": "Member ID cards (Medicare + supplement plan)"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde0f",
+          "item": "EOB and provider itemized bills"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde10",
+          "item": "Referral/prior authorization records if applicable"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde11",
+          "item": "Claim forms required by supplement carrier"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde12",
+          "item": "Proof of payment for reimbursement requests"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/medicare",
+      "updatedAt": "2026-04-22T07:53:42.829Z",
+      "createdAt": "2026-04-22T07:53:42.829Z"
+    },
+    {
+      "id": 5,
+      "title": "Pet insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
+      "slug": "pet-claim-guide-2026",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "steps": [
+        {
+          "id": "69e87e863101f4e83e6fde13",
+          "step": "Visit a licensed vet promptly and collect full treatment notes."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde14",
+          "step": "Check policy waiting periods, exclusions, and annual limits before filing."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde15",
+          "step": "Submit claim with itemized invoice and diagnosis code details."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde16",
+          "step": "Upload pre-existing condition history if insurer requests verification."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde17",
+          "step": "Track reimbursement status and appeal if denied due to coding mismatch."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "69e87e863101f4e83e6fde18",
+          "item": "Policy number and pet profile details"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde19",
+          "item": "Itemized vet invoice and payment proof"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde1a",
+          "item": "Clinical notes, diagnosis, and treatment plan"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde1b",
+          "item": "Vaccination/preventive care records if requested"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde1c",
+          "item": "Any referral, lab, or imaging reports"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/pet",
+      "updatedAt": "2026-04-22T07:53:42.842Z",
+      "createdAt": "2026-04-22T07:53:42.841Z"
+    },
+    {
+      "id": 3,
+      "title": "Renters Insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
+      "slug": "renters-claim-guide-2026",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "steps": [
+        {
+          "id": "69e87e863101f4e83e6fddff",
+          "step": "Ensure personal safety, notify landlord, and prevent further property damage."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde00",
+          "step": "Document damaged or stolen belongings with photos, serial numbers, and receipts."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde01",
+          "step": "File police report for theft/vandalism and keep report number ready."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde02",
+          "step": "Submit claim with complete inventory and replacement-cost documentation."
+        },
+        {
+          "id": "69e87e863101f4e83e6fde03",
+          "step": "Track temporary living expense reimbursement and deductible impact."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "69e87e863101f4e83e6fde04",
+          "item": "Policy number and rental address"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde05",
+          "item": "Photo/video evidence of loss"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde06",
+          "item": "Police report for theft or vandalism"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde07",
+          "item": "Item inventory with estimated replacement value"
+        },
+        {
+          "id": "69e87e863101f4e83e6fde08",
+          "item": "Receipts for temporary housing/essential purchases"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/renters",
+      "updatedAt": "2026-04-22T07:53:42.796Z",
+      "createdAt": "2026-04-22T07:53:42.795Z"
     }
   ],
   "claimCases": [

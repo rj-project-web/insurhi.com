@@ -314,9 +314,29 @@ export async function getFaqsByCategory(categoryId: string) {
       .slice(0, 6);
   }
 
-  return fetchCollection<CmsFaqItem>(
-    `/api/faq-items?where[category][equals]=${encodeURIComponent(categoryId)}&limit=6`,
-  );
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), CMS_REQUEST_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(
+      `${CMS_BASE_URL}/api/faq-items?where[category][equals]=${encodeURIComponent(categoryId)}&limit=6&depth=1`,
+      {
+        cache: "no-store",
+        signal: controller.signal,
+      },
+    );
+
+    if (!response.ok) {
+      return [];
+    }
+
+    const data = (await response.json()) as PayloadList<CmsFaqItem>;
+    return data.docs ?? [];
+  } catch {
+    return [];
+  } finally {
+    clearTimeout(timeout);
+  }
 }
 
 export async function getProvidersByCategory(categoryId: string) {

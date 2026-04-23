@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   BadgeCheck,
-  CheckCircle2,
   CircleDollarSign,
   ClipboardCheck,
   ShieldCheck,
@@ -13,10 +12,10 @@ import {
   Users,
 } from "lucide-react";
 import {
+  getArticlesList,
   getClaimsGuidesList,
   getCategoryBySlug,
   getFaqsByCategory,
-  getLatestArticles,
   getProductsByCategory,
   getProvidersByCategory,
 } from "@/lib/cms-client";
@@ -78,15 +77,15 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
     notFound();
   }
 
-  const [faqs, providers, products, latestArticles, claimsGuides] = cmsCategory
+  const [faqs, providers, products, allArticles, claimsGuides] = cmsCategory
     ? await Promise.all([
         getFaqsByCategory(cmsCategory.id),
         getProvidersByCategory(cmsCategory.id),
         getProductsByCategory(cmsCategory.id),
-        getLatestArticles(),
+        getArticlesList(),
         getClaimsGuidesList(),
       ])
-    : [[], [], [], await getLatestArticles(), await getClaimsGuidesList()];
+    : [[], [], [], await getArticlesList(), await getClaimsGuidesList()];
 
   const helpYouDoBySlug: Record<string, [string, string, string]> = {
     auto: [
@@ -266,156 +265,13 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   };
   const decisionFactors = decisionFactorsBySlug[slug] ?? decisionFactorsBySlug.auto;
 
-  const shopperProfilesBySlug: Record<
-    string,
-    Array<{ title: string; summary: string; cta: string }>
-  > = {
-    auto: [
-      {
-        title: "Daily commuters",
-        summary: "Need reliable protection for frequent driving and higher incident exposure.",
-        cta: "Start with liability limits and claim response quality.",
-      },
-      {
-        title: "Family drivers",
-        summary: "Prioritize stability, roadside support, and predictable monthly cost.",
-        cta: "Compare deductible tiers and network repair options.",
-      },
-      {
-        title: "New car owners",
-        summary: "Need stronger physical damage coverage while depreciation is steep.",
-        cta: "Evaluate comprehensive and collision combinations first.",
-      },
-    ],
-    life: [
-      {
-        title: "Young families",
-        summary: "Need income replacement security during mortgage and childcare years.",
-        cta: "Model coverage horizon against family financial milestones.",
-      },
-      {
-        title: "Primary earners",
-        summary: "Require protection for debt obligations and long-term dependents.",
-        cta: "Prioritize coverage amount before optional riders.",
-      },
-      {
-        title: "Planning-focused buyers",
-        summary: "Want coverage integrated with estate and legacy planning.",
-        cta: "Compare term and permanent structures by objective.",
-      },
-    ],
-    home: [
-      {
-        title: "Homeowners in risk zones",
-        summary: "Need stronger preparation for weather-related claim scenarios.",
-        cta: "Audit deductible clauses and peril exclusions carefully.",
-      },
-      {
-        title: "First-time homeowners",
-        summary: "Need clear guardrails on rebuilding and property coverage limits.",
-        cta: "Use replacement-cost estimates as your baseline.",
-      },
-      {
-        title: "Asset-protection households",
-        summary: "Prioritize higher liability and broader endorsement options.",
-        cta: "Shortlist carriers with stronger catastrophe support.",
-      },
-    ],
-    pet: [
-      {
-        title: "Breed-sensitive owners",
-        summary: "Need policy detail for hereditary and chronic-condition handling.",
-        cta: "Check exclusions and waiting periods before enrolling.",
-      },
-      {
-        title: "Budget-conscious owners",
-        summary: "Want predictable recurring spend for unexpected vet costs.",
-        cta: "Compare premium, deductible, and reimbursement together.",
-      },
-      {
-        title: "Multi-pet households",
-        summary: "Need efficient coverage structure across multiple animals.",
-        cta: "Review annual caps and plan-level restrictions.",
-      },
-    ],
-    medicare: [
-      {
-        title: "Retirees with chronic care needs",
-        summary: "Need stable access to specialists and medication coverage.",
-        cta: "Validate provider network and formulary alignment.",
-      },
-      {
-        title: "Cost-sensitive enrollees",
-        summary: "Focus on predictable annual healthcare expense control.",
-        cta: "Compare total yearly cost, not headline premium only.",
-      },
-      {
-        title: "First-time Medicare shoppers",
-        summary: "Need simple guidance through enrollment and plan types.",
-        cta: "Use support quality and clarity as primary filters.",
-      },
-    ],
-    renters: [
-      {
-        title: "Urban apartment renters",
-        summary: "Need practical theft/water-damage protection with easy claims.",
-        cta: "Prioritize digital claim intake and payout speed.",
-      },
-      {
-        title: "Remote workers",
-        summary: "Need better personal-property coverage for home office equipment.",
-        cta: "Review item limits and optional riders.",
-      },
-      {
-        title: "Roommate households",
-        summary: "Need clear liability and policy ownership boundaries.",
-        cta: "Confirm named-insured and shared-property rules.",
-      },
-    ],
-  };
-  const shopperProfiles = shopperProfilesBySlug[slug] ?? shopperProfilesBySlug.auto;
-
-  const shoppingChecklistBySlug: Record<string, string[]> = {
-    auto: [
-      "Set deductible range before collecting quotes.",
-      "Validate liability, collision, and comprehensive limits against your vehicle profile.",
-      "Check claim intake speed and repair network coverage in your area.",
-      "Review exclusions, usage limits, and roadside assistance terms.",
-    ],
-    life: [
-      "Calculate target death benefit based on debts, dependents, and income horizon.",
-      "Compare term length or permanent policy structure against financial goals.",
-      "Review underwriting requirements and rider costs before applying.",
-      "Confirm beneficiary setup and claim documentation expectations.",
-    ],
-    home: [
-      "Estimate rebuild cost and set dwelling limits accordingly.",
-      "Match personal property and liability limits to household risk exposure.",
-      "Compare peril-specific deductibles for storm or catastrophe claims.",
-      "Check exclusions and claims response support in your local area.",
-    ],
-    pet: [
-      "Choose annual limit and reimbursement percentage for expected vet usage.",
-      "Compare deductible and co-pay combinations across plans.",
-      "Review waiting periods and pre-existing condition rules carefully.",
-      "Confirm reimbursement timeline and claim submission workflow.",
-    ],
-    medicare: [
-      "List current doctors and medicines before comparing plan options.",
-      "Check network participation and formulary coverage first.",
-      "Estimate annual out-of-pocket totals across shortlisted plans.",
-      "Confirm enrollment windows and carrier support channels.",
-    ],
-    renters: [
-      "Estimate replacement value of personal property accurately.",
-      "Set liability and loss-of-use limits to match rental risks.",
-      "Compare deductible tiers for theft, fire, and water claims.",
-      "Check claim filing UX, payout speed, and policy exclusions.",
-    ],
-  };
-  const shoppingChecklist = shoppingChecklistBySlug[slug] ?? shoppingChecklistBySlug.auto;
-  const relatedGuides = latestArticles
+  const relatedGuides = allArticles
     .filter((article) => guideMatchesCategory(article.slug, article.title, slug))
+    .sort((a, b) => {
+      const aTime = Date.parse((a as { publishedAt?: string }).publishedAt ?? "") || 0;
+      const bTime = Date.parse((b as { publishedAt?: string }).publishedAt ?? "") || 0;
+      return bTime - aTime;
+    })
     .slice(0, 3);
   const relatedClaimsGuides = claimsGuides
     .filter((guide) => {
@@ -431,6 +287,18 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
     { name: "Insurance", path: "/insurance" },
     { name: category.title, path: `/insurance/${slug}` },
   ]);
+  const featureSectionClass =
+    "relative space-y-4 overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-br from-card via-blue-500/[0.03] to-cyan-500/[0.04] p-4 shadow-sm sm:p-5";
+  const featureSectionAccentClass =
+    "pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-cyan-500/0 via-cyan-500/60 to-cyan-500/0";
+  const featureSectionHeaderClass =
+    "flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4";
+  const featureSectionTitleClass = "text-xl font-semibold tracking-tight text-foreground sm:text-2xl";
+  const featureSectionDescriptionClass = "max-w-3xl text-sm leading-6 text-muted-foreground";
+  const featureActionLinkClass =
+    "inline-flex min-h-10 items-center justify-center rounded-full border border-primary/25 bg-primary/10 px-3 text-sm font-medium text-primary transition-colors hover:border-primary/40 hover:bg-primary/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
+  const featureListItemClass =
+    "block rounded-lg border border-border/70 bg-background px-3 py-2.5 text-sm transition-colors hover:bg-accent";
 
   return (
     <div className="space-y-10">
@@ -539,97 +407,78 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         ))}
       </section>
 
-      <section className="rounded-xl border bg-gradient-to-r from-sky-500/[0.07] to-cyan-500/[0.03] p-5">
-        <div className="flex items-center justify-between gap-3">
-          <h2 className="text-lg font-semibold tracking-tight">
+      <section className={featureSectionClass}>
+        <div className={featureSectionAccentClass} />
+        <div className={featureSectionHeaderClass}>
+          <h2 className={featureSectionTitleClass}>
             Insurance buying guides for {category.title}
           </h2>
-          <Link href="/guides" className="text-sm underline underline-offset-4">
+          <Link href="/guides" className={featureActionLinkClass}>
             Browse all guides
           </Link>
         </div>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <p className={featureSectionDescriptionClass}>
           Explore practical articles to learn coverage basics, compare policies, and avoid common buying mistakes.
         </p>
-        <div className="mt-3 space-y-2">
+        <div className="space-y-2.5">
           {relatedGuides.length > 0 ? (
             relatedGuides.map((article) => (
               <Link
                 key={article.id}
                 href={`/guides/${article.slug}`}
-                className="block rounded-md border bg-background px-3 py-2 text-sm transition-colors hover:bg-accent"
+                className={featureListItemClass}
               >
                 {article.title}
               </Link>
             ))
           ) : (
-            <p className="rounded-md border bg-background px-3 py-2 text-sm text-muted-foreground">
+            <p className="rounded-lg border border-border/70 bg-background px-3 py-2.5 text-sm text-muted-foreground">
               More category-specific guides are being curated.
             </p>
           )}
         </div>
       </section>
 
-      <section className="rounded-xl border bg-gradient-to-r from-teal-500/[0.08] to-cyan-500/[0.04] p-5">
-        <div className="flex items-center justify-between gap-3">
-          <h2 className="text-lg font-semibold tracking-tight">Claims guides (step-by-step)</h2>
-          <Link href="/claims" className="text-sm underline underline-offset-4">
+      <section className={featureSectionClass}>
+        <div className={featureSectionAccentClass} />
+        <div className={featureSectionHeaderClass}>
+          <h2 className={featureSectionTitleClass}>Claims guides (step-by-step)</h2>
+          <Link href="/claims" className={featureActionLinkClass}>
             Open claims center
           </Link>
         </div>
-        <p className="mt-2 text-sm text-muted-foreground">
+        <p className={featureSectionDescriptionClass}>
           Review practical claim workflows and document checklists before incidents happen.
         </p>
-        <div className="mt-3 space-y-2">
+        <div className="space-y-2.5">
           {relatedClaimsGuides.length > 0 ? (
             relatedClaimsGuides.map((guide) => (
               <Link
                 key={guide.id}
                 href={guide.slug ? `/claims/guides/${guide.slug}` : "/claims"}
-                className="block rounded-md border bg-background px-3 py-2 text-sm transition-colors hover:bg-accent"
+                className={featureListItemClass}
               >
                 {guide.title}
               </Link>
             ))
           ) : (
-            <p className="rounded-md border bg-background px-3 py-2 text-sm text-muted-foreground">
+            <p className="rounded-lg border border-border/70 bg-background px-3 py-2.5 text-sm text-muted-foreground">
               No claims guides are published for this insurance category yet.
             </p>
           )}
         </div>
       </section>
 
-      <section className="rounded-xl border bg-gradient-to-br from-teal-500/[0.06] to-card p-4 sm:p-5">
-        <h2 className="text-xl font-semibold tracking-tight">Who this channel is best for</h2>
-        <div className="mt-4 grid gap-3 md:grid-cols-3">
-          {shopperProfiles.map((profile) => (
-            <article key={profile.title} className="rounded-lg border bg-muted/20 p-4">
-              <p className="font-medium">{profile.title}</p>
-              <p className="mt-2 text-sm text-muted-foreground">{profile.summary}</p>
-              <p className="mt-3 text-xs text-cyan-700">{profile.cta}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="rounded-xl border bg-gradient-to-r from-blue-600/10 via-cyan-600/10 to-teal-600/10 p-4 sm:p-5">
-        <h2 className="text-xl font-semibold tracking-tight">4-step shopping checklist</h2>
-        <ol className="mt-4 grid gap-2 text-sm text-muted-foreground md:grid-cols-2">
-          {shoppingChecklist.map((step, index) => (
-            <li key={step} className="flex items-start gap-2 rounded-md border bg-background/80 px-3 py-2">
-              <CheckCircle2 className="mt-0.5 h-4 w-4 text-cyan-600" />
-              <span>
-                <span className="font-medium text-foreground">Step {index + 1}.</span> {step}
-              </span>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <section id="products" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card via-blue-500/[0.02] to-cyan-500/[0.03] p-5">
-        <div className="flex items-center justify-between gap-4">
-          <h2 className="text-xl font-semibold tracking-tight">Product comparison snapshot</h2>
-          <Link href="/guides" className="text-sm underline underline-offset-4">
+      <section id="products" className={featureSectionClass}>
+        <div className={featureSectionAccentClass} />
+        <div className={featureSectionHeaderClass}>
+          <div className="space-y-1.5">
+            <h2 className={featureSectionTitleClass}>Product comparison snapshot</h2>
+            <p className={featureSectionDescriptionClass}>
+              Scan side-by-side product signals to shortlist options before reading full policy details.
+            </p>
+          </div>
+          <Link href="/guides" className={featureActionLinkClass}>
             More buying guides
           </Link>
         </div>
@@ -685,17 +534,23 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         </div>
       </section>
 
-      <section id="providers" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-5">
-        <div className="flex items-center justify-between gap-3">
-          <h2 className="text-xl font-semibold tracking-tight">Provider shortlist</h2>
-          <Link href="/providers" className="text-sm underline underline-offset-4">
+      <section id="providers" className={featureSectionClass}>
+        <div className={featureSectionAccentClass} />
+        <div className={featureSectionHeaderClass}>
+          <div className="space-y-1.5">
+            <h2 className={featureSectionTitleClass}>Provider shortlist</h2>
+            <p className={featureSectionDescriptionClass}>
+              Review insurers by service quality, claim handling, and regional coverage fit.
+            </p>
+          </div>
+          <Link href="/providers" className={featureActionLinkClass}>
             View more
           </Link>
         </div>
         <div className="grid gap-3 sm:grid-cols-2">
           {providerRows.length > 0 ? (
             providerRows.map((provider) => (
-              <article key={provider.id} className="rounded-lg border bg-card p-4">
+              <article key={provider.id} className="rounded-xl border border-border/70 bg-card p-4 shadow-sm">
                 <Link href={`/providers/${provider.slug}`} className="font-medium underline-offset-4 hover:underline">
                   {provider.name}
                 </Link>
@@ -734,15 +589,6 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
             </article>
           ))}
         </div>
-      </section>
-
-      <section className="rounded-lg border bg-card p-4">
-        <h2 className="text-base font-semibold tracking-tight">Editorial note</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Insurhi content is structured to help readers compare options consistently. Product and
-          provider entries are surfaced from the current content source and should be reviewed
-          alongside policy wording before making a final purchase decision.
-        </p>
       </section>
 
       <section className="rounded-lg border bg-card p-4">

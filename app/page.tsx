@@ -94,6 +94,33 @@ export default async function Home() {
   const heroDescription = isMobile
     ? "Compare plans and claims help on the go."
     : "Insurhi helps users compare options, learn coverage basics, and handle claims with practical guidance.";
+  const quickPaths = [
+    {
+      title: "Compare insurance products",
+      description: "Review product snapshots, pricing ranges, and deductible details side by side.",
+      href: "/products",
+      cta: "Open products",
+    },
+    {
+      title: "Browse provider shortlist",
+      description: "Check provider strengths, regional support, and service quality indicators.",
+      href: "/providers",
+      cta: "Open providers",
+    },
+    {
+      title: "Use claims center",
+      description: "Read step-by-step guides and practical case references before filing.",
+      href: "/claims",
+      cta: "Open claims center",
+    },
+    {
+      title: "Explore guide library",
+      description: "Learn coverage basics, decision factors, and buying mistakes to avoid.",
+      href: "/guides",
+      cta: "Open guides",
+    },
+  ];
+  const featuredFaqs = faqItems.slice(0, 4);
 
   return (
     <div className="space-y-10">
@@ -250,6 +277,91 @@ export default async function Home() {
           </ul>
           </article>
         </div>
+      </section>
+
+      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card via-cyan-500/[0.02] to-blue-500/[0.03] p-5">
+        <h2 className="text-2xl font-semibold tracking-tight">How Insurhi helps you decide</h2>
+        <p className="max-w-3xl text-sm text-muted-foreground">
+          Follow a simple decision workflow: pick your insurance channel, compare products and providers,
+          then prepare claim steps before incidents happen.
+        </p>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <article className="rounded-xl border bg-background/90 p-4">
+            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 1</p>
+            <p className="mt-2 font-medium">Choose insurance category</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Start from life, auto, home, pet, medicare, or renters based on your current need.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-background/90 p-4">
+            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 2</p>
+            <p className="mt-2 font-medium">Compare products</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Use product snapshots to evaluate price range, coverage fit, and deductible strategy.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-background/90 p-4">
+            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 3</p>
+            <p className="mt-2 font-medium">Shortlist providers</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Narrow options with provider service quality, claim responsiveness, and region coverage.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-background/90 p-4">
+            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 4</p>
+            <p className="mt-2 font-medium">Prepare claims readiness</p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Review claims guides and real cases so documentation and timelines are clearer in advance.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-5">
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-2xl font-semibold tracking-tight">Quick paths</h2>
+          <Link href="/content-map" className="text-sm font-medium text-primary underline-offset-4 hover:underline">
+            Open content map
+          </Link>
+        </div>
+        <div className="grid gap-3 md:grid-cols-2">
+          {quickPaths.map((path) => (
+            <article key={path.href} className="rounded-xl border bg-background/90 p-4 shadow-sm">
+              <p className="font-medium">{path.title}</p>
+              <p className="mt-2 text-sm text-muted-foreground">{path.description}</p>
+              <Link
+                href={path.href}
+                className="mt-3 inline-flex items-center text-sm font-medium text-primary underline-offset-4 hover:underline"
+              >
+                {path.cta}
+                <ArrowRight className="ml-1 h-3.5 w-3.5" />
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card to-cyan-500/[0.03] p-5">
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-2xl font-semibold tracking-tight">Featured FAQs</h2>
+          <Link href="/content-map" className="text-sm font-medium text-primary underline-offset-4 hover:underline">
+            View full content map
+          </Link>
+        </div>
+        {featuredFaqs.length ? (
+          <div className="grid gap-3 md:grid-cols-2">
+            {featuredFaqs.map((faq) => (
+              <article key={faq.id} className="rounded-xl border bg-background/90 p-4">
+                <p className="font-medium">{faq.question}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <p className="rounded-lg border bg-background p-4 text-sm text-muted-foreground">
+            FAQ content will appear here once entries are published.
+          </p>
+        )}
       </section>
     </div>
   );

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-04-23T09:02:55.638Z",
+    "exportedAt": "2026-04-28T08:31:30.291Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -54625,6 +54625,792 @@
       "_status": "published"
     },
     {
+      "id": 13,
+      "title": "Renters Roommate Coverage Split Guide (2026): What Is Shared vs Individual",
+      "slug": "renters-roommate-coverage-split-guide-2026",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Who this is best for",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for shared-apartment renters who need clear boundaries for property, liability, and claim responsibility before incidents happen.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Core comparison dimensions",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Coverage: identify which belongings are individually insured versus shared household items.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Deductible: decide whether separate policies reduce conflict over out-of-pocket claim costs.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Premium: compare one named-insured structure versus separate policies by roommate profile.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claims service: verify theft and water-loss claim document requirements for multi-occupant units.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Document each roommate's high-value items with photos, serials, and ownership notes.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Clarify liability split for guest injury and accidental property damage scenarios.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm landlord-required minimum liability limits and additional insured wording.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review claim flow at /claims/renters before lease renewal.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare policy options from /insurance/renters and /products/renters-insurance.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Does one policy cover all roommates by default? No, only named insured persons are generally covered.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Who files if roommate caused damage? The affected party should file with clear incident attribution and documentation.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Can separate policies reduce disputes? Yes, separate policies often simplify ownership and deductible responsibility.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-04-28T08:26:44.835Z",
+      "seo": {
+        "metaTitle": "Renters Roommate Coverage Guide 2026 | Shared vs Individual",
+        "metaDescription": "Understand how renters insurance works with roommates, including personal property split, liability boundaries, deductible impact, and claim workflow for shared apartments."
+      },
+      "updatedAt": "2026-04-28T08:26:44.837Z",
+      "createdAt": "2026-04-28T08:26:44.837Z",
+      "_status": "published"
+    },
+    {
+      "id": 12,
+      "title": "Medicare Annual Enrollment Timing Guide (2026): Avoid Penalties and Coverage Gaps",
+      "slug": "medicare-annual-enrollment-timing-guide-2026",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Who this is best for",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for Medicare members reviewing plan changes, prescription needs, or provider access before Annual Enrollment closes.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Core comparison dimensions",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Coverage: compare plan formularies, specialist access, and out-of-network rules before switching.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Deductible and cost layer: evaluate annual deductible, copay drift, and out-of-pocket max changes.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Premium: model monthly premium against expected annual utilization, not headline rate only.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claims service: check denial appeal support and billing dispute resolution responsiveness.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Set a calendar checkpoint 45, 30, and 10 days before enrollment deadline.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Export current medication list and verify formulary status for each shortlisted plan.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm provider network participation for primary and high-frequency specialists.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review claims and billing help channels at /claims/medicare.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Use /insurance/medicare and /products/medicare-supplement for side-by-side comparison.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Can I switch after deadline if my drug list changes? Usually only with a qualifying event; verify SEP eligibility.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Will changing plans interrupt active treatment? It can if network/formulary differs, so confirm continuity before submitting.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "How do I reduce billing surprises after switching? Keep enrollment confirmation and EOB records from month one.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-04-28T08:26:44.814Z",
+      "seo": {
+        "metaTitle": "Medicare Enrollment Timing Guide 2026 | Avoid Gaps",
+        "metaDescription": "Plan Medicare Annual Enrollment timing with deadline checkpoints, plan-switch strategy, and claim continuity tips to avoid late penalties and prevent coverage gaps."
+      },
+      "updatedAt": "2026-04-28T08:26:44.821Z",
+      "createdAt": "2026-04-28T08:26:44.820Z",
+      "_status": "published"
+    },
+    {
       "id": 10,
       "title": "Home Insurance Endorsement Guide (2026): Water Backup, Equipment Breakdown, and More",
       "slug": "home-endorsement-selection-guide-2026",
@@ -57284,6 +58070,120 @@
   ],
   "faqItems": [
     {
+      "id": 13,
+      "question": "Does renters insurance cover work-from-home electronics in a shared apartment?",
+      "answer": "Often yes for personal-use items, but business-use limits may apply. Check sublimits and add endorsements if your equipment value exceeds standard coverage.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-04-28T08:26:44.891Z",
+      "createdAt": "2026-04-28T08:26:44.891Z"
+    },
+    {
+      "id": 12,
+      "question": "What proof do I need for a renters theft claim if I lost receipts?",
+      "answer": "Use alternative proof such as card statements, warranty records, serial numbers, photos, and replacement links. Provide a police report and timeline summary.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-04-28T08:26:44.887Z",
+      "createdAt": "2026-04-28T08:26:44.887Z"
+    },
+    {
+      "id": 11,
+      "question": "If my roommate caused water damage, does my renters insurance still cover my property loss?",
+      "answer": "It may cover your insured belongings depending on policy wording and cause. Document ownership clearly and file quickly with incident details and photos.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-04-28T08:26:44.882Z",
+      "createdAt": "2026-04-28T08:26:44.882Z"
+    },
+    {
+      "id": 10,
+      "question": "What documents reduce Medicare Supplement claim processing time for out-of-network care?",
+      "answer": "Submit member ID details, EOB, itemized invoice, provider notes, and proof of payment in one package. Missing coding details are a common delay trigger.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-04-28T08:26:44.877Z",
+      "createdAt": "2026-04-28T08:26:44.877Z"
+    },
+    {
+      "id": 9,
+      "question": "How do I fix a Medicare billing code error before my supplement claim is delayed?",
+      "answer": "Request a corrected itemized bill with matching service codes and resubmit it with your EOB immediately. Include a short error summary and track case ID for follow-up.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-04-28T08:26:44.874Z",
+      "createdAt": "2026-04-28T08:26:44.874Z"
+    },
+    {
+      "id": 8,
+      "question": "Can I switch Medicare plans after the Annual Enrollment deadline if my prescriptions changed?",
+      "answer": "Only in specific Special Enrollment Period scenarios. First verify SEP eligibility, then compare formularies and submit change requests with supporting event documentation.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-04-28T08:26:44.871Z",
+      "createdAt": "2026-04-28T08:26:44.871Z"
+    },
+    {
       "id": 7,
       "question": "Should I file small pet claims or save them for major events?",
       "answer": "File when net reimbursement after deductible is meaningful and claim history impact is acceptable. Track annual deductible progress to decide if late-year small claims are worthwhile.",
@@ -57563,6 +58463,78 @@
       "createdAt": "2026-04-23T06:15:29.683Z"
     },
     {
+      "id": 10,
+      "title": "Home Hail Damage Claim Guide (2026): Timeline, Evidence, and Denial Prevention",
+      "slug": "home-hail-damage-claim-guide-2026",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "steps": [
+        {
+          "id": "69f06f44a47a1b86151018a1",
+          "step": "Photograph roof, siding, gutters, and interior leak signs immediately after the storm window."
+        },
+        {
+          "id": "69f06f44a47a1b86151018a2",
+          "step": "Open the claim within 24 hours and request adjuster inspection timeline in writing."
+        },
+        {
+          "id": "69f06f44a47a1b86151018a3",
+          "step": "Gather contractor inspection report with hail impact markings and measurement details."
+        },
+        {
+          "id": "69f06f44a47a1b86151018a4",
+          "step": "Submit complete package: photos, weather-event date, contractor scope, and emergency mitigation receipts."
+        },
+        {
+          "id": "69f06f44a47a1b86151018a5",
+          "step": "Review adjuster estimate line-by-line and request supplement for omitted line items."
+        },
+        {
+          "id": "69f06f44a47a1b86151018a6",
+          "step": "Appeal partial denial quickly with comparative scope and policy-language references."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "69f06f44a47a1b86151018a7",
+          "item": "Policy number and insured property address"
+        },
+        {
+          "id": "69f06f44a47a1b86151018a8",
+          "item": "Dated hail damage photos/videos from multiple angles"
+        },
+        {
+          "id": "69f06f44a47a1b86151018a9",
+          "item": "Contractor inspection report with annotated damage map"
+        },
+        {
+          "id": "69f06f44a47a1b86151018aa",
+          "item": "Emergency repair and mitigation receipts"
+        },
+        {
+          "id": "69f06f44a47a1b86151018ab",
+          "item": "Weather event reference (date/time/location)"
+        },
+        {
+          "id": "69f06f44a47a1b86151018ac",
+          "item": "Prior roof condition records if available"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/home",
+      "updatedAt": "2026-04-28T08:26:44.853Z",
+      "createdAt": "2026-04-28T08:26:44.853Z"
+    },
+    {
       "id": 6,
       "title": "Home Insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
       "slug": "home-claim-guide-2026",
@@ -57625,6 +58597,78 @@
       "onlineClaimUrl": "https://www.insurhi.com/claims/home",
       "updatedAt": "2026-04-22T07:53:42.850Z",
       "createdAt": "2026-04-22T07:53:42.850Z"
+    },
+    {
+      "id": 11,
+      "title": "Life Contestability Period Claim Guide (2026): Documents, Delays, and Appeal Steps",
+      "slug": "life-contestability-period-claim-guide-2026",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "steps": [
+        {
+          "id": "69f06f44a47a1b86151018ad",
+          "step": "Confirm policy issue date and determine whether claim falls inside contestability period."
+        },
+        {
+          "id": "69f06f44a47a1b86151018ae",
+          "step": "Request insurer's exact documentation checklist and review timelines in writing."
+        },
+        {
+          "id": "69f06f44a47a1b86151018af",
+          "step": "Submit certified death certificate, beneficiary ID, claim form, and policy records together."
+        },
+        {
+          "id": "69f06f44a47a1b86151018b0",
+          "step": "Respond promptly to underwriting-history requests to avoid avoidable delays."
+        },
+        {
+          "id": "69f06f44a47a1b86151018b1",
+          "step": "Track all insurer communications with date, representative, and requested follow-up."
+        },
+        {
+          "id": "69f06f44a47a1b86151018b2",
+          "step": "If denied or reduced, file formal appeal with medical records and clarifying statements."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "69f06f44a47a1b86151018b3",
+          "item": "Policy number and effective date proof"
+        },
+        {
+          "id": "69f06f44a47a1b86151018b4",
+          "item": "Certified death certificate"
+        },
+        {
+          "id": "69f06f44a47a1b86151018b5",
+          "item": "Beneficiary government ID and relationship documents"
+        },
+        {
+          "id": "69f06f44a47a1b86151018b6",
+          "item": "Completed insurer claim form"
+        },
+        {
+          "id": "69f06f44a47a1b86151018b7",
+          "item": "Relevant medical history requested by insurer"
+        },
+        {
+          "id": "69f06f44a47a1b86151018b8",
+          "item": "Written timeline log of all claim interactions"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/life",
+      "updatedAt": "2026-04-28T08:26:44.866Z",
+      "createdAt": "2026-04-28T08:26:44.866Z"
     },
     {
       "id": 7,

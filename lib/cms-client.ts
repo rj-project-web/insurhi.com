@@ -105,6 +105,8 @@ export type CmsArticle = {
   id: string;
   title: string;
   slug: string;
+  category?: string | CmsCategory;
+  publishedAt?: string;
   seo?: CmsSeoGroup;
   body?: {
     root?: {
@@ -486,7 +488,7 @@ async function fetchArticlesListFromCms(limit: number): Promise<CmsArticle[]> {
 
   try {
     const response = await fetch(
-      `${CMS_BASE_URL}/api/articles?sort=-publishedAt&limit=${encodeURIComponent(String(limit))}`,
+      `${CMS_BASE_URL}/api/articles?sort=-publishedAt&limit=${encodeURIComponent(String(limit))}&depth=1`,
       {
         cache: "no-store",
         signal: controller.signal,

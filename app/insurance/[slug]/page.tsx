@@ -26,15 +26,36 @@ type CategoryPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+function articleCategorySlug(article: { category?: string | { slug?: string } }): string | undefined {
+  const category = article.category;
+  if (!category) return undefined;
+  if (typeof category === "string") return category;
+  return category.slug;
+}
+
 function guideMatchesCategory(slug: string, title: string, categorySlug: string): boolean {
   const text = `${slug} ${title}`.toLowerCase();
   if (categorySlug === "auto") return /\bauto\b/.test(text) || /\bcar\b/.test(text);
-  if (categorySlug === "life") return text.includes("life");
-  if (categorySlug === "home") return text.includes("home") || text.includes("property");
-  if (categorySlug === "pet") return text.includes("pet");
-  if (categorySlug === "medicare") return text.includes("medicare") || text.includes("medigap");
-  if (categorySlug === "renters") return text.includes("renters") || text.includes("renter");
+  if (categorySlug === "life") return /\blife\b/.test(text);
+  if (categorySlug === "home") {
+    if (/\brenters?\b/.test(text)) return false;
+    return /\bhome\b/.test(text) || /\bhomeowners?\b/.test(text);
+  }
+  if (categorySlug === "pet") return /\bpet\b/.test(text);
+  if (categorySlug === "medicare") return /\bmedicare\b/.test(text) || /\bmedigap\b/.test(text);
+  if (categorySlug === "renters") return /\brenters?\b/.test(text);
   return false;
+}
+
+function articleMatchesCategory(
+  article: { slug: string; title: string; category?: string | { slug?: string } },
+  categorySlug: string,
+): boolean {
+  const cmsCategorySlug = articleCategorySlug(article);
+  if (cmsCategorySlug) {
+    return cmsCategorySlug === categorySlug;
+  }
+  return guideMatchesCategory(article.slug, article.title, categorySlug);
 }
 
 export function generateStaticParams() {
@@ -266,10 +287,10 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   const decisionFactors = decisionFactorsBySlug[slug] ?? decisionFactorsBySlug.auto;
 
   const relatedGuides = allArticles
-    .filter((article) => guideMatchesCategory(article.slug, article.title, slug))
+    .filter((article) => articleMatchesCategory(article, slug))
     .sort((a, b) => {
-      const aTime = Date.parse((a as { publishedAt?: string }).publishedAt ?? "") || 0;
-      const bTime = Date.parse((b as { publishedAt?: string }).publishedAt ?? "") || 0;
+      const aTime = Date.parse(a.publishedAt ?? "") || 0;
+      const bTime = Date.parse(b.publishedAt ?? "") || 0;
       return bTime - aTime;
     })
     .slice(0, 3);

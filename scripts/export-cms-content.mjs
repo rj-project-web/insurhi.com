@@ -35,7 +35,7 @@ async function main() {
       fetchCollection("/api/categories?limit=200&sort=title"),
       fetchCollection("/api/providers?limit=500&sort=name&depth=1"),
       fetchCollection("/api/products?limit=500&sort=name&depth=1"),
-      fetchCollection("/api/articles?limit=500&sort=-publishedAt"),
+      fetchCollection("/api/articles?limit=500&sort=-publishedAt&depth=1"),
       fetchCollection("/api/faq-items?limit=500&depth=1"),
       fetchCollection("/api/claims-guides?limit=200&sort=title"),
       fetchCollection("/api/claim-cases?limit=500"),

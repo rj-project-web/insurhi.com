@@ -94,3 +94,12 @@
 - Agent C：统一卡片密度、标题层级、移动端间距与换行策略
 
 完成后再复制同样流程到 `/guides/[slug]` 和 `/claims/*`。
+
+## 8）发布后 24 小时检查表
+
+- [ ] 关键 URL 全部 200：`/insurance/*`、`/products`、`/providers`、`/methodology`、`/claims/guides/*`
+- [ ] 分类页 Buying guides 仅显示本险种文章（优先 CMS `category`，勿仅靠标题关键词）
+- [ ] 分类页 Claims guides 仅显示本险种理赔指引
+- [ ] 无禁用外链（如 `medicare.gov`、`content.naic.org`）
+- [ ] Vercel Production 部署为 Latest，无 build 报错
+- [ ] `CMS_CONTENT_SOURCE=static` 时确认 `content/cms-content.json` 已更新并推送

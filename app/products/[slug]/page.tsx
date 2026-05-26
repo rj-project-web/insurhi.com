@@ -7,6 +7,7 @@ import { notFound, redirect } from "next/navigation";
 import { BadgeCheck, CircleDollarSign, ShieldCheck, Sparkles, Timer } from "lucide-react";
 
 import { CmsRichText, extractCmsText } from "@/components/cms-rich-text";
+import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
 import type { CmsCategory, CmsProvider } from "@/lib/cms-client";
 import { getProductBySlug, getProducts } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
@@ -71,6 +72,8 @@ async function getProductFromSnapshot(slug: string) {
         category?: string | CmsCategory;
         provider?: string | CmsProvider;
         seo?: { metaTitle?: string; metaDescription?: string };
+        updatedAt?: string;
+        createdAt?: string;
       }>;
     };
 
@@ -108,6 +111,8 @@ async function getProductFromSnapshot(slug: string) {
       category: matched.category,
       provider: matched.provider,
       seo: matched.seo,
+      updatedAt: matched.updatedAt,
+      createdAt: matched.createdAt,
     };
   } catch {
     return null;
@@ -284,6 +289,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               {product.pricingRangeSummary}
             </p>
           ) : null}
+          <LastUpdated
+            updatedAt={product.updatedAt}
+            createdAt={product.createdAt}
+            className="inline-flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground"
+          />
         </div>
       </section>
 
@@ -515,6 +525,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           </ul>
         </section>
       ) : null}
+
+      <EditorialDisclosure />
 
       <section className="rounded-xl border bg-gradient-to-br from-card to-cyan-500/[0.02] p-5">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

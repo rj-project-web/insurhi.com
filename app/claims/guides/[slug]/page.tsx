@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ClipboardList, Sparkles } from "lucide-react";
 
+import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
 import { getClaimsGuideBySlug, getClaimsGuidesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -79,6 +80,7 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
           Claims / Guide / {slug}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{guide.title}</h1>
+        <LastUpdated updatedAt={guide.updatedAt} createdAt={guide.createdAt} />
         <div className="rounded-lg border bg-background/90 p-3 text-sm">
           <p className="flex items-center gap-2 font-medium">
             <ClipboardList className="h-4 w-4 text-cyan-600" />
@@ -124,6 +126,8 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
           <p className="text-sm text-muted-foreground">No checklist has been published yet.</p>
         )}
       </section>
+
+      <EditorialDisclosure />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

@@ -38,6 +38,8 @@ export type CmsProduct = {
   id: string;
   name: string;
   slug: string;
+  updatedAt?: string;
+  createdAt?: string;
   oneLineVerdict?: string;
   editorConclusion?: string;
   coverageAmount?: string;
@@ -107,6 +109,8 @@ export type CmsArticle = {
   slug: string;
   category?: string | CmsCategory;
   publishedAt?: string;
+  updatedAt?: string;
+  createdAt?: string;
   seo?: CmsSeoGroup;
   body?: {
     root?: {
@@ -128,6 +132,8 @@ export type CmsClaimsGuide = {
   onlineClaimUrl?: string;
   steps?: Array<{ step: string }>;
   documentChecklist?: Array<{ item: string }>;
+  updatedAt?: string;
+  createdAt?: string;
 };
 
 export type CmsClaimCase = {

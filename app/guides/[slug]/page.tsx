@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Sparkles } from "lucide-react";
 
 import { CmsRichText } from "@/components/cms-rich-text";
+import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
 import { getArticleBySlug, getArticlesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -101,6 +102,11 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
           Guides / {article.slug}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{article.title}</h1>
+        <LastUpdated
+          updatedAt={article.updatedAt}
+          publishedAt={article.publishedAt}
+          createdAt={article.createdAt}
+        />
       </section>
 
       {keyPoints.length > 0 ? (
@@ -128,6 +134,8 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
           </p>
         )}
       </section>
+
+      <EditorialDisclosure />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

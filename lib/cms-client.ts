@@ -132,6 +132,11 @@ export type CmsClaimsGuide = {
   onlineClaimUrl?: string;
   steps?: Array<{ step: string }>;
   documentChecklist?: Array<{ item: string }>;
+  denialReasons?: Array<{ reason: string; explanation?: string }>;
+  delayCauses?: Array<{ cause: string; explanation?: string }>;
+  supplementalDocuments?: Array<{ scenario: string; documents?: string }>;
+  nextActions?: Array<{ action: string }>;
+  communicationNotes?: Array<{ note: string }>;
   updatedAt?: string;
   createdAt?: string;
 };

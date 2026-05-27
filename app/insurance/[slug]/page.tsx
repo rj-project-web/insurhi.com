@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
+  ArrowRight,
   BadgeCheck,
+  BookOpen,
   CircleDollarSign,
   ClipboardCheck,
+  Compass,
+  FileText,
+  Layers,
   ShieldCheck,
   Sparkles,
   Timer,
@@ -56,6 +61,218 @@ function articleMatchesCategory(
     return cmsCategorySlug === categorySlug;
   }
   return guideMatchesCategory(article.slug, article.title, categorySlug);
+}
+
+type TopicClusterItem = {
+  title: string;
+  description: string;
+  href: string;
+  icon: typeof BookOpen;
+};
+
+type CategoryHub = {
+  intro: string;
+  topicCluster: TopicClusterItem[];
+  scenarios: string[];
+};
+
+const categoryHubBySlug: Record<string, CategoryHub> = {
+  auto: {
+    intro:
+      "Auto insurance shapes how quickly you recover after a crash, how much you pay out of pocket, and whether your settlement covers a hit-and-run. This hub focuses on what most drivers actually decide: liability and deductible levels, uninsured/underinsured motorist coverage, repair-network quality, and what to expect on claim day from major US carriers in 2026.",
+    topicCluster: [
+      {
+        title: "Learn the basics",
+        description:
+          "Buying guides on liability limits, deductibles, and the UM/UIM gap most drivers underestimate.",
+        href: "#buying-guides",
+        icon: BookOpen,
+      },
+      {
+        title: "Compare products & providers",
+        description:
+          "Scan price ranges, coverage, and deductibles before reading full policy language.",
+        href: "#products",
+        icon: Compass,
+      },
+      {
+        title: "File a claim with confidence",
+        description:
+          "Step-by-step claim workflows for accidents, total loss, and uninsured-driver scenarios.",
+        href: "#claims-guides",
+        icon: FileText,
+      },
+    ],
+    scenarios: [
+      "Comparing quotes after a teen joins your policy",
+      "Settling a not-at-fault claim with an uninsured driver",
+      "Switching carriers after a rate hike at renewal",
+    ],
+  },
+  home: {
+    intro:
+      "Home insurance decisions get tested at the worst time—after a fire, hailstorm, or break-in. This hub explains what dwelling and contents limits actually cover, why replacement-cost vs actual-cash-value language matters more than the headline premium, and which provider behaviors lead to faster claim recovery for owner-occupied homes in 2026.",
+    topicCluster: [
+      {
+        title: "Learn the basics",
+        description:
+          "HO-3 vs HO-5 forms, deductible types, and the roof endorsements that quietly convert RCV to ACV.",
+        href: "#buying-guides",
+        icon: BookOpen,
+      },
+      {
+        title: "Compare products & providers",
+        description:
+          "Review coverage limits, premium ranges, and provider claim service across major carriers.",
+        href: "#products",
+        icon: Compass,
+      },
+      {
+        title: "File a claim with confidence",
+        description:
+          "Walk through hail, fire, and water-damage workflows with proof-of-loss checklists.",
+        href: "#claims-guides",
+        icon: FileText,
+      },
+    ],
+    scenarios: [
+      "Disputing a depreciated roof settlement after hail damage",
+      "Filing a kitchen fire claim with mixed RCV/ACV contents",
+      "Reviewing your dwelling limit after a renovation",
+    ],
+  },
+  life: {
+    intro:
+      "Life insurance is bought for someone else, so the right policy depends on income replacement needs, time horizon, and how much complexity your family can manage. This hub covers term vs whole life trade-offs, beneficiary claim rules, the contestability period, and how to evaluate carriers on underwriting transparency and claim turnaround.",
+    topicCluster: [
+      {
+        title: "Learn the basics",
+        description:
+          "Compare term, whole, and universal structures against income-replacement goals.",
+        href: "#buying-guides",
+        icon: BookOpen,
+      },
+      {
+        title: "Compare products & providers",
+        description:
+          "Look at premium ranges, coverage amounts, and carrier underwriting clarity.",
+        href: "#products",
+        icon: Compass,
+      },
+      {
+        title: "File a claim with confidence",
+        description:
+          "Beneficiaries: gather documents, navigate contestability, and avoid common delays.",
+        href: "#claims-guides",
+        icon: FileText,
+      },
+    ],
+    scenarios: [
+      "Buying term coverage after a new mortgage or child",
+      "Filing as a beneficiary within the contestability window",
+      "Comparing two carriers when premiums look similar",
+    ],
+  },
+  pet: {
+    intro:
+      "Pet insurance pays best when you enroll early and read the small print on pre-existing conditions. This hub explains how 2026 carriers actually define waiting periods, bilateral exclusions, curable vs incurable conditions, and which reimbursement models work for puppies, kittens, and senior pets across breeds with known predispositions.",
+    topicCluster: [
+      {
+        title: "Learn the basics",
+        description:
+          "Waiting periods, exclusions, and reimbursement models explained without marketing fluff.",
+        href: "#buying-guides",
+        icon: BookOpen,
+      },
+      {
+        title: "Compare products & providers",
+        description:
+          "Compare annual limits, deductibles, and reimbursement percentages.",
+        href: "#products",
+        icon: Compass,
+      },
+      {
+        title: "File a claim with confidence",
+        description:
+          "Submit clinic invoices and avoid the pre-existing condition denials that surprise first-time owners.",
+        href: "#claims-guides",
+        icon: FileText,
+      },
+    ],
+    scenarios: [
+      "Enrolling a puppy before any pre-existing flag exists",
+      "Disputing a bilateral cruciate exclusion",
+      "Comparing accident-only vs comprehensive plans",
+    ],
+  },
+  medicare: {
+    intro:
+      "Medicare decisions affect annual out-of-pocket cost more than almost any other insurance choice, yet the standardized plan letters hide important pricing differences between carriers. This hub explains Original Medicare vs Medicare Advantage trade-offs, Medigap Plan G/N/HD comparisons, Part D coordination, and how birthday-rule states let you switch supplements later without underwriting.",
+    topicCluster: [
+      {
+        title: "Learn the basics",
+        description:
+          "Original Medicare + Medigap vs Medicare Advantage: who each path actually fits.",
+        href: "#buying-guides",
+        icon: BookOpen,
+      },
+      {
+        title: "Compare products & providers",
+        description:
+          "Review supplement plans by carrier rate-history and household discounts.",
+        href: "#products",
+        icon: Compass,
+      },
+      {
+        title: "File a claim with confidence",
+        description:
+          "Coordinate Part A/B claims, supplement reimbursement, and Part D coverage.",
+        href: "#claims-guides",
+        icon: FileText,
+      },
+    ],
+    scenarios: [
+      "Choosing a Medigap letter during your initial open enrollment",
+      "Switching plans during a birthday-rule window",
+      "Coordinating a hospital claim across Part A, B, and Medigap",
+    ],
+  },
+  renters: {
+    intro:
+      "Renters insurance is one of the cheapest policies most renters will buy, but theft and water-damage claims surface sub-limits that surprise first-time filers. This hub covers personal property and liability sizing, sub-limits on jewelry/electronics/bicycles, scheduling rules, and how to file theft claims that don't get partially denied in 2026.",
+    topicCluster: [
+      {
+        title: "Learn the basics",
+        description:
+          "Set personal property and liability limits that fit your rental.",
+        href: "#buying-guides",
+        icon: BookOpen,
+      },
+      {
+        title: "Compare products & providers",
+        description:
+          "Compare premium, deductible, and personal property coverage by carrier.",
+        href: "#products",
+        icon: Compass,
+      },
+      {
+        title: "File a claim with confidence",
+        description:
+          "Document a theft or water-damage loss with police report and inventory.",
+        href: "#claims-guides",
+        icon: FileText,
+      },
+    ],
+    scenarios: [
+      "Filing a theft claim with mixed scheduled and unscheduled items",
+      "Comparing sub-limits on jewelry and electronics across carriers",
+      "Reviewing roommate liability coverage",
+    ],
+  },
+};
+
+function getCategoryHub(slug: string): CategoryHub {
+  return categoryHubBySlug[slug] ?? categoryHubBySlug.auto;
 }
 
 export function generateStaticParams() {
@@ -286,13 +503,24 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   };
   const decisionFactors = decisionFactorsBySlug[slug] ?? decisionFactorsBySlug.auto;
 
-  const relatedGuides = allArticles
+  const categoryHub = getCategoryHub(slug);
+  const heroIntro =
+    categorySummary && categorySummary.length > 0
+      ? categorySummary
+      : categoryHub.intro;
+
+  const sortedArticles = allArticles
     .filter((article) => articleMatchesCategory(article, slug))
     .sort((a, b) => {
       const aTime = Date.parse(a.publishedAt ?? "") || 0;
       const bTime = Date.parse(b.publishedAt ?? "") || 0;
       return bTime - aTime;
-    })
+    });
+  const featuredGuide =
+    sortedArticles.find((article) => /-deep-guide-2026$/.test(article.slug)) ??
+    sortedArticles[0];
+  const relatedGuides = sortedArticles
+    .filter((article) => article.id !== featuredGuide?.id)
     .slice(0, 3);
   const relatedClaimsGuides = claimsGuides
     .filter((guide) => {
@@ -303,6 +531,9 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       return false;
     })
     .slice(0, 3);
+  const relatedCategories = insuranceCategories.filter(
+    (item) => item.slug !== slug,
+  );
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Insurance", path: "/insurance" },
@@ -335,9 +566,10 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
               Insurance / {category.title}
             </p>
             <h1 className="text-4xl font-semibold tracking-tight">{category.title}</h1>
-            <p className="max-w-4xl text-muted-foreground">
-              {categorySummary ??
-                `Compare ${category.title.toLowerCase()} plans with practical guidance on coverage fit, deductible trade-offs, and provider trust.`}
+            <p className="max-w-4xl text-base leading-7 text-muted-foreground">{heroIntro}</p>
+            <p className="max-w-4xl text-sm leading-6 text-muted-foreground/90">
+              <span className="font-medium text-foreground">Common reader scenarios:</span>{" "}
+              {categoryHub.scenarios.join(" · ")}
             </p>
           </div>
           <aside className="rounded-xl border bg-gradient-to-br from-cyan-500/15 via-blue-500/10 to-indigo-500/10 p-4">
@@ -365,10 +597,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
             Insurance / {category.title}
           </p>
           <h1 className="text-3xl font-semibold tracking-tight">{category.title}</h1>
-          <p className="text-sm text-muted-foreground">
-            {categorySummary ??
-              `Compare ${category.title.toLowerCase()} plans with practical guidance on coverage fit, deductible trade-offs, and provider trust.`}
-          </p>
+          <p className="text-sm leading-6 text-muted-foreground">{heroIntro}</p>
           <div className="grid gap-2">
             <article className="rounded-lg border bg-background/90 p-3">
               <p className="text-xs font-medium text-foreground">Coverage fit</p>
@@ -428,30 +657,120 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         ))}
       </section>
 
-      <section className={featureSectionClass}>
+      <section
+        id="topic-cluster"
+        aria-label="Topic cluster"
+        className="space-y-4 rounded-2xl border bg-gradient-to-br from-card via-indigo-500/[0.04] to-blue-500/[0.04] p-5"
+      >
+        <div className="flex flex-col gap-1">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+            Topic hub
+          </p>
+          <h2 className="text-xl font-semibold tracking-tight">
+            How to use this {category.title.toLowerCase()} hub
+          </h2>
+          <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
+            Three connected sections—learn the basics, compare options, and prepare for a claim—form one
+            decision-ready cluster. Use them in order or jump straight to the section you need.
+          </p>
+        </div>
+        <div className="grid gap-3 md:grid-cols-3">
+          {categoryHub.topicCluster.map((item) => (
+            <Link
+              key={item.title}
+              href={item.href}
+              className="group flex h-full flex-col justify-between gap-3 rounded-xl border border-border/70 bg-background p-4 shadow-sm transition-colors hover:border-primary/40 hover:bg-accent/40"
+            >
+              <div className="space-y-2">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <item.icon className="h-4 w-4" />
+                </span>
+                <p className="text-base font-semibold tracking-tight text-foreground">{item.title}</p>
+                <p className="text-sm leading-6 text-muted-foreground">{item.description}</p>
+              </div>
+              <span className="inline-flex items-center gap-1 text-sm font-medium text-primary">
+                Jump to section
+                <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {featuredGuide ? (
+        <section
+          aria-label="Featured deep guide"
+          className="relative overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-blue-600/[0.10] via-indigo-500/[0.06] to-card p-5 shadow-sm sm:p-6"
+        >
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-primary/0 via-primary/70 to-primary/0" />
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-2">
+              <p className="inline-flex items-center gap-1 rounded-full border border-primary/40 bg-background/80 px-3 py-1 text-xs font-medium text-primary">
+                <Sparkles className="h-3.5 w-3.5" />
+                Featured deep guide
+              </p>
+              <h2 className="text-xl font-semibold tracking-tight sm:text-2xl">
+                {featuredGuide.title}
+              </h2>
+              <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
+                {featuredGuide.seo?.metaDescription ??
+                  `Read our editor-curated deep dive into the ${category.title.toLowerCase()} decisions that change real claim outcomes—structured for skim and reread.`}
+              </p>
+            </div>
+            <Link
+              href={`/guides/${featuredGuide.slug}`}
+              className="inline-flex shrink-0 items-center justify-center gap-1 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/15"
+            >
+              Read the deep guide
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+      ) : null}
+
+      <section id="buying-guides" className={featureSectionClass}>
         <div className={featureSectionAccentClass} />
         <div className={featureSectionHeaderClass}>
-          <h2 className={featureSectionTitleClass}>
-            Insurance buying guides for {category.title}
-          </h2>
+          <div className="space-y-1.5">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Step 1 — Learn the basics
+            </p>
+            <h2 className={featureSectionTitleClass}>
+              Buying guides for {category.title}
+            </h2>
+            <p className={featureSectionDescriptionClass}>
+              Practical articles on coverage basics, comparing policies, and the buying mistakes most
+              shoppers make in {category.title.toLowerCase()} insurance.
+            </p>
+          </div>
           <Link href="/guides" className={featureActionLinkClass}>
             Browse all guides
           </Link>
         </div>
-        <p className={featureSectionDescriptionClass}>
-          Explore practical articles to learn coverage basics, compare policies, and avoid common buying mistakes.
-        </p>
         <div className="space-y-2.5">
           {relatedGuides.length > 0 ? (
             relatedGuides.map((article) => (
               <Link
                 key={article.id}
                 href={`/guides/${article.slug}`}
-                className={featureListItemClass}
+                className={`${featureListItemClass} group flex items-start justify-between gap-3`}
               >
-                {article.title}
+                <span className="flex-1">
+                  <span className="block font-medium text-foreground">{article.title}</span>
+                  {article.seo?.metaDescription ? (
+                    <span className="mt-1 block text-xs leading-5 text-muted-foreground">
+                      {article.seo.metaDescription}
+                    </span>
+                  ) : null}
+                </span>
+                <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
               </Link>
             ))
+          ) : featuredGuide ? (
+            <p className="rounded-lg border border-border/70 bg-background px-3 py-2.5 text-sm text-muted-foreground">
+              The featured deep guide above is currently the only published article in this category.
+              More buying guides are being curated.
+            </p>
           ) : (
             <p className="rounded-lg border border-border/70 bg-background px-3 py-2.5 text-sm text-muted-foreground">
               More category-specific guides are being curated.
@@ -460,26 +779,33 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         </div>
       </section>
 
-      <section className={featureSectionClass}>
+      <section id="claims-guides" className={featureSectionClass}>
         <div className={featureSectionAccentClass} />
         <div className={featureSectionHeaderClass}>
-          <h2 className={featureSectionTitleClass}>Claims guides (step-by-step)</h2>
+          <div className="space-y-1.5">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Step 3 — File a claim
+            </p>
+            <h2 className={featureSectionTitleClass}>Claims guides (step-by-step)</h2>
+            <p className={featureSectionDescriptionClass}>
+              Document checklists and claim workflows specific to {category.title.toLowerCase()}—useful
+              before you file, not just after.
+            </p>
+          </div>
           <Link href="/claims" className={featureActionLinkClass}>
             Open claims center
           </Link>
         </div>
-        <p className={featureSectionDescriptionClass}>
-          Review practical claim workflows and document checklists before incidents happen.
-        </p>
         <div className="space-y-2.5">
           {relatedClaimsGuides.length > 0 ? (
             relatedClaimsGuides.map((guide) => (
               <Link
                 key={guide.id}
                 href={guide.slug ? `/claims/guides/${guide.slug}` : "/claims"}
-                className={featureListItemClass}
+                className={`${featureListItemClass} group flex items-start justify-between gap-3`}
               >
-                {guide.title}
+                <span className="font-medium text-foreground">{guide.title}</span>
+                <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
               </Link>
             ))
           ) : (
@@ -494,13 +820,17 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         <div className={featureSectionAccentClass} />
         <div className={featureSectionHeaderClass}>
           <div className="space-y-1.5">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Step 2 — Compare options
+            </p>
             <h2 className={featureSectionTitleClass}>Product comparison snapshot</h2>
             <p className={featureSectionDescriptionClass}>
-              Scan side-by-side product signals to shortlist options before reading full policy details.
+              Side-by-side {category.title.toLowerCase()} product signals so you can shortlist options
+              before reading full policy details.
             </p>
           </div>
-          <Link href="/guides" className={featureActionLinkClass}>
-            More buying guides
+          <Link href="/products" className={featureActionLinkClass}>
+            All products
           </Link>
         </div>
         <div className="overflow-x-auto rounded-xl border bg-card">
@@ -612,6 +942,49 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         </div>
       </section>
 
+      <section
+        aria-label="Related insurance categories"
+        className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-blue-500/[0.04] p-5"
+      >
+        <div className="flex items-start justify-between gap-3">
+          <div className="space-y-1">
+            <p className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              <Layers className="h-3.5 w-3.5" />
+              Cross-category
+            </p>
+            <h2 className="text-xl font-semibold tracking-tight">Other insurance topics</h2>
+            <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
+              Many readers researching {category.title.toLowerCase()} also compare adjacent coverage.
+              Each link opens a topic hub built the same way.
+            </p>
+          </div>
+        </div>
+        <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {relatedCategories.map((item) => {
+            const hub = categoryHubBySlug[item.slug];
+            const blurb = hub?.intro?.split(".")[0] ?? "";
+            return (
+              <Link
+                key={item.slug}
+                href={`/insurance/${item.slug}`}
+                className="group flex items-start gap-3 rounded-xl border border-border/70 bg-background p-3 transition-colors hover:border-primary/40 hover:bg-accent/40"
+              >
+                <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <Compass className="h-3.5 w-3.5" />
+                </span>
+                <span className="flex-1 space-y-1">
+                  <span className="block text-sm font-semibold text-foreground">{item.title}</span>
+                  {blurb ? (
+                    <span className="block text-xs leading-5 text-muted-foreground">{blurb}.</span>
+                  ) : null}
+                </span>
+                <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue researching</h2>
         <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
@@ -620,6 +993,15 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           </Link>
           <Link href="/claims" className="underline underline-offset-4">
             Claims playbooks
+          </Link>
+          <Link href="/methodology" className="underline underline-offset-4">
+            Editorial methodology
+          </Link>
+          <Link href="/providers" className="underline underline-offset-4">
+            All providers
+          </Link>
+          <Link href="/products" className="underline underline-offset-4">
+            All products
           </Link>
         </div>
       </section>

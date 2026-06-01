@@ -1,0 +1,61 @@
+{
+  "capturedAt": "2026-06-01T08:29:32.947Z",
+  "siteUrl": "https://www.insurhi.com",
+  "results": [
+    {
+      "id": "home",
+      "path": "/",
+      "url": "https://www.insurhi.com/",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 2130,
+      "cls": 0
+    },
+    {
+      "id": "insurance-home",
+      "path": "/insurance/home",
+      "url": "https://www.insurhi.com/insurance/home",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 2199.7215,
+      "cls": 0
+    },
+    {
+      "id": "guide-deep",
+      "path": "/guides/home-replacement-cost-vs-acv-deep-guide-2026",
+      "url": "https://www.insurhi.com/guides/home-replacement-cost-vs-acv-deep-guide-2026",
+      "performance": 99,
+      "accessibility": 91,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 2142.865,
+      "cls": 0
+    },
+    {
+      "id": "product-flagship",
+      "path": "/products/amica-home",
+      "url": "https://www.insurhi.com/products/amica-home",
+      "performance": 100,
+      "accessibility": 92,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 1380,
+      "cls": 0
+    },
+    {
+      "id": "claims-guide",
+      "path": "/claims/guides/home-hail-damage-claim-guide-2026",
+      "url": "https://www.insurhi.com/claims/guides/home-hail-damage-claim-guide-2026",
+      "performance": 99,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 100,
+      "lcpMs": 2055,
+      "cls": 0
+    }
+  ]
+}

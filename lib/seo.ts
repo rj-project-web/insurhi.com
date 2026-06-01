@@ -102,14 +102,58 @@ export function buildArticleJsonLd(input: ArticleJsonLdInput) {
   };
 }
 
+type RatingDistribution = {
+  star5?: number;
+  star4?: number;
+  star3?: number;
+  star2?: number;
+  star1?: number;
+};
+
+function buildAggregateRatingFromDistribution(distribution?: RatingDistribution) {
+  if (!distribution) return null;
+
+  const buckets: Array<[number, number | undefined]> = [
+    [5, distribution.star5],
+    [4, distribution.star4],
+    [3, distribution.star3],
+    [2, distribution.star2],
+    [1, distribution.star1],
+  ];
+  let total = 0;
+  let weighted = 0;
+
+  for (const [stars, count] of buckets) {
+    const safeCount = count ?? 0;
+    total += safeCount;
+    weighted += stars * safeCount;
+  }
+
+  if (total === 0) {
+    return null;
+  }
+
+  return {
+    "@type": "AggregateRating" as const,
+    ratingValue: Math.round((weighted / total) * 10) / 10,
+    reviewCount: total,
+    bestRating: 5,
+    worstRating: 1,
+  };
+}
+
 export type ProductJsonLdInput = {
   name: string;
   url: string;
   description?: string;
   brand?: string;
+  priceRange?: string;
+  ratingDistribution?: RatingDistribution;
 };
 
 export function buildProductJsonLd(input: ProductJsonLdInput) {
+  const aggregateRating = buildAggregateRatingFromDistribution(input.ratingDistribution);
+
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -121,6 +165,18 @@ export function buildProductJsonLd(input: ProductJsonLdInput) {
           brand: {
             "@type": "Brand",
             name: input.brand,
+          },
+        }
+      : {}),
+    ...(aggregateRating ? { aggregateRating } : {}),
+    ...(input.priceRange
+      ? {
+          offers: {
+            "@type": "Offer",
+            priceCurrency: "USD",
+            description: input.priceRange,
+            availability: "https://schema.org/InStock",
+            url: input.url,
           },
         }
       : {}),
@@ -157,6 +213,8 @@ export type HowToJsonLdInput = {
   url: string;
   steps: string[];
   description?: string;
+  datePublished?: string;
+  dateModified?: string;
 };
 
 export function buildHowToJsonLd(input: HowToJsonLdInput) {
@@ -166,6 +224,10 @@ export function buildHowToJsonLd(input: HowToJsonLdInput) {
     name: input.name,
     url: input.url,
     ...(input.description ? { description: input.description } : {}),
+    ...(input.datePublished ? { datePublished: input.datePublished } : {}),
+    ...(input.dateModified ? { dateModified: input.dateModified } : {}),
+    author: publisherOrganization,
+    publisher: publisherOrganization,
     step: input.steps.map((text, index) => ({
       "@type": "HowToStep",
       position: index + 1,

@@ -67,7 +67,10 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
   const howToJsonLd = buildHowToJsonLd({
     name: guide.title,
     url: absoluteUrl(`/claims/guides/${slug}`),
+    description: `Follow ${guide.title} with claim steps and required document checklist.`,
     steps: (guide.steps ?? []).map((step) => step.step).filter(Boolean),
+    datePublished: guide.createdAt,
+    dateModified: guide.updatedAt ?? guide.createdAt,
   });
 
   return (

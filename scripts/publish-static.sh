@@ -10,7 +10,7 @@ echo "==> [1/4] Export CMS content snapshot"
 npm run export:cms-content
 
 echo "==> [2/4] Validate CMS content snapshot"
-npm run validate:content -- --warn-only
+npm run validate:content
 
 echo "==> [3/4] Run lint"
 npm run lint

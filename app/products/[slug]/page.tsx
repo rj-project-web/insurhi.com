@@ -220,6 +220,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
     url: absoluteUrl(`/products/${slug}`),
     description: productDescription,
     brand: provider?.name,
+    priceRange: product.priceRange ?? product.pricingRangeSummary,
+    ratingDistribution: product.ratingDistribution,
   });
   const faqPageJsonLd = buildFaqPageJsonLd(
     faqItems.map((item) => ({

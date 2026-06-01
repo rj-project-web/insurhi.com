@@ -13,7 +13,12 @@ import {
 
 import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
 import { getClaimsGuideBySlug, getClaimsGuidesList } from "@/lib/cms-client";
-import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import {
+  absoluteUrl,
+  buildBreadcrumbJsonLd,
+  buildHowToJsonLd,
+  buildMetadata,
+} from "@/lib/seo";
 
 type ClaimsGuideDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -59,18 +64,11 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
     { name: "Claims", path: "/claims" },
     { name: guide.title, path: `/claims/guides/${slug}` },
   ]);
-  const howToJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
+  const howToJsonLd = buildHowToJsonLd({
     name: guide.title,
     url: absoluteUrl(`/claims/guides/${slug}`),
-    step:
-      guide.steps?.map((step, index) => ({
-        "@type": "HowToStep",
-        position: index + 1,
-        text: step.step,
-      })) ?? [],
-  };
+    steps: (guide.steps ?? []).map((step) => step.step).filter(Boolean),
+  });
 
   return (
     <div className="space-y-8">

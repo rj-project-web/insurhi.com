@@ -24,7 +24,7 @@ import {
   getProductsByCategory,
   getProvidersByCategory,
 } from "@/lib/cms-client";
-import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { buildBreadcrumbJsonLd, buildFaqPageJsonLd, buildMetadata } from "@/lib/seo";
 import { insuranceCategories } from "@/lib/site-data";
 
 type CategoryPageProps = {
@@ -539,6 +539,12 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
     { name: "Insurance", path: "/insurance" },
     { name: category.title, path: `/insurance/${slug}` },
   ]);
+  const faqPageJsonLd = buildFaqPageJsonLd(
+    faqRows.map((faq) => ({
+      question: faq.question,
+      answer: faq.answer,
+    })),
+  );
   const featureSectionClass =
     "relative space-y-4 overflow-hidden rounded-2xl border border-border/70 bg-gradient-to-br from-card via-blue-500/[0.03] to-cyan-500/[0.04] p-4 shadow-sm sm:p-5";
   const featureSectionAccentClass =
@@ -558,6 +564,12 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqPageJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd) }}
+        />
+      ) : null}
       <section className="space-y-6 rounded-2xl border bg-gradient-to-br from-blue-600/[0.06] via-cyan-500/[0.03] to-card p-6 lg:p-8">
         <div className="hidden lg:grid lg:grid-cols-[1.45fr_1fr] lg:gap-6">
           <div className="space-y-3">

@@ -6,7 +6,12 @@ import { Sparkles } from "lucide-react";
 import { CmsRichText } from "@/components/cms-rich-text";
 import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
 import { getArticleBySlug, getArticlesList } from "@/lib/cms-client";
-import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import {
+  absoluteUrl,
+  buildArticleJsonLd,
+  buildBreadcrumbJsonLd,
+  buildMetadata,
+} from "@/lib/seo";
 
 type GuideDetailPageProps = {
   params: Promise<{ slug: string }>;
@@ -75,13 +80,13 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
     { name: "Guides", path: "/guides" },
     { name: article.title, path: `/guides/${article.slug}` },
   ]);
-  const articleJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
+  const articleJsonLd = buildArticleJsonLd({
     headline: article.title,
-    mainEntityOfPage: absoluteUrl(`/guides/${article.slug}`),
     url: absoluteUrl(`/guides/${article.slug}`),
-  };
+    datePublished: article.publishedAt ?? article.createdAt,
+    dateModified: article.updatedAt ?? article.publishedAt ?? article.createdAt,
+    description: article.seo?.metaDescription,
+  });
   const paragraphs = getArticleParagraphs(article);
   const keyPoints = paragraphs.slice(0, 3);
   const categoryPath = inferInsuranceCategoryPath(article.slug, article.title);

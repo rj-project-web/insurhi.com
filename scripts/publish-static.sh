@@ -6,13 +6,16 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 cd "${ROOT_DIR}"
 
-echo "==> [1/3] Export CMS content snapshot"
+echo "==> [1/4] Export CMS content snapshot"
 npm run export:cms-content
 
-echo "==> [2/3] Run lint"
+echo "==> [2/4] Validate CMS content snapshot"
+npm run validate:content -- --warn-only
+
+echo "==> [3/4] Run lint"
 npm run lint
 
-echo "==> [3/3] Build static site artifacts"
+echo "==> [4/4] Build static site artifacts"
 npm run build
 
 echo ""

@@ -30,13 +30,14 @@ async function fetchCollection(endpoint) {
 }
 
 async function main() {
-  const [categories, providers, products, articles, faqItems, claimsGuides, claimCases, pages] =
+  const [categories, providers, products, articles, faqItems, glossaryTerms, claimsGuides, claimCases, pages] =
     await Promise.all([
       fetchCollection("/api/categories?limit=200&sort=title"),
       fetchCollection("/api/providers?limit=500&sort=name&depth=1"),
       fetchCollection("/api/products?limit=500&sort=name&depth=1"),
       fetchCollection("/api/articles?limit=500&sort=-publishedAt&depth=1"),
       fetchCollection("/api/faq-items?limit=500&depth=1"),
+      fetchCollection("/api/glossary-terms?limit=500&sort=term&depth=1"),
       fetchCollection("/api/claims-guides?limit=200&sort=title"),
       fetchCollection("/api/claim-cases?limit=500"),
       fetchCollection("/api/pages?limit=500&sort=title"),
@@ -52,6 +53,7 @@ async function main() {
     products,
     articles,
     faqItems,
+    glossaryTerms,
     claimsGuides,
     claimCases,
     pages,
@@ -62,7 +64,7 @@ async function main() {
 
   console.log(`Exported CMS content to ${OUTPUT_PATH}`);
   console.log(
-    `Counts -> categories:${categories.length}, providers:${providers.length}, products:${products.length}, articles:${articles.length}, faqItems:${faqItems.length}, claimsGuides:${claimsGuides.length}, claimCases:${claimCases.length}, pages:${pages.length}`,
+    `Counts -> categories:${categories.length}, providers:${providers.length}, products:${products.length}, articles:${articles.length}, faqItems:${faqItems.length}, glossaryTerms:${glossaryTerms.length}, claimsGuides:${claimsGuides.length}, claimCases:${claimCases.length}, pages:${pages.length}`,
   );
 }
 

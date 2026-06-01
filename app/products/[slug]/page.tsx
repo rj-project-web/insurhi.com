@@ -10,7 +10,13 @@ import { CmsRichText, extractCmsText } from "@/components/cms-rich-text";
 import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
 import type { CmsCategory, CmsProvider } from "@/lib/cms-client";
 import { getProductBySlug, getProducts } from "@/lib/cms-client";
-import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import {
+  absoluteUrl,
+  buildBreadcrumbJsonLd,
+  buildFaqPageJsonLd,
+  buildMetadata,
+  buildProductJsonLd,
+} from "@/lib/seo";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
@@ -205,6 +211,22 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       : [{ name: "Insurance", path: "/insurance" }]),
     { name: product.name, path: `/products/${slug}` },
   ]);
+  const productDescription =
+    product.oneLineVerdict ||
+    extractCmsText(product.editorConclusion).slice(0, 160) ||
+    product.recommendedFor;
+  const productJsonLd = buildProductJsonLd({
+    name: product.name,
+    url: absoluteUrl(`/products/${slug}`),
+    description: productDescription,
+    brand: provider?.name,
+  });
+  const faqPageJsonLd = buildFaqPageJsonLd(
+    faqItems.map((item) => ({
+      question: item.question ?? "",
+      answer: extractCmsText(item.answer),
+    })),
+  );
 
   return (
     <div className="space-y-8">
@@ -212,6 +234,16 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      {faqPageJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd) }}
+        />
+      ) : null}
       <section
         className="relative overflow-hidden rounded-2xl border bg-card p-6 lg:p-8"
         style={{ backgroundImage: "url('/home-latest-bg.svg')" }}

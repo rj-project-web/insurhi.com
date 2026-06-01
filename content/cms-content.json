@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-05-27T02:39:43.495Z",
+    "exportedAt": "2026-06-01T08:01:56.909Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -67144,6 +67144,7 @@
       "createdAt": "2026-04-13T10:39:43.649Z"
     }
   ],
+  "glossaryTerms": [],
   "claimsGuides": [
     {
       "id": 2,

@@ -6,6 +6,7 @@ import {
   getCategories,
   getClaimCasesList,
   getClaimsGuidesList,
+  getGlossaryTerms,
   getProducts,
   getProviders,
 } from "@/lib/cms-client";
@@ -27,9 +28,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/products",
     "/providers",
     "/methodology",
+    "/glossary",
   ];
 
-  const [cmsCategories, articles, claimsGuides, claimCases, providers, products, pages] = await Promise.all([
+  const [cmsCategories, articles, claimsGuides, claimCases, providers, products, pages, glossaryTerms] =
+    await Promise.all([
     getCategories(),
     getArticlesList(),
     getClaimsGuidesList(),
@@ -37,6 +40,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getProviders(),
     getProducts(),
     getAllPages(),
+    getGlossaryTerms(),
   ]);
 
   const insuranceCategorySlugs = Array.from(
@@ -94,6 +98,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: absoluteUrl(path),
       changeFrequency: "monthly" as const,
       priority: 0.6,
+    })),
+    ...glossaryTerms.map((term) => ({
+      url: absoluteUrl(`/glossary/${term.slug}`),
+      changeFrequency: "monthly" as const,
+      priority: 0.65,
     })),
   ];
 

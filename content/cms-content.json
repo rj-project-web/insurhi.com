@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-01T08:51:05.749Z",
+    "exportedAt": "2026-06-01T09:13:59.723Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -66555,6 +66555,557 @@
   ],
   "faqItems": [
     {
+      "id": 60,
+      "question": "How long do renters theft claims take to settle?",
+      "answer": "With police report, inventory, and receipts, many theft claims resolve in 2–3 weeks. Missing serial numbers, inconsistent statements, or prior claims can extend review.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.880Z",
+      "createdAt": "2026-06-01T09:13:46.880Z"
+    },
+    {
+      "id": 59,
+      "question": "How much renters liability insurance should I carry?",
+      "answer": "$100,000 is a common minimum; $300,000 is a safer default if you entertain guests or have assets. Landlords may require proof of minimum liability coverage.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.867Z",
+      "createdAt": "2026-06-01T09:13:46.867Z"
+    },
+    {
+      "id": 58,
+      "question": "Does renters insurance cover theft outside my apartment?",
+      "answer": "Many policies cover personal property away from home worldwide, subject to limits and perils. Laptops and bikes may have lower sub-limits—verify off-premises coverage.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.862Z",
+      "createdAt": "2026-06-01T09:13:46.862Z"
+    },
+    {
+      "id": 57,
+      "question": "What is a typical renters insurance sub-limit for jewelry?",
+      "answer": "Standard renters policies often cap theft of jewelry at $1,000–$2,500 unless scheduled. High-value items need a scheduled personal property endorsement with appraisal.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.857Z",
+      "createdAt": "2026-06-01T09:13:46.857Z"
+    },
+    {
+      "id": 56,
+      "question": "Why was my Medicare supplement claim delayed?",
+      "answer": "Delays often trace to provider billing errors, missing crossover from Medicare, or supplemental paperwork. Ask for Medicare EOB, provider claim number, and carrier trace ID.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.851Z",
+      "createdAt": "2026-06-01T09:13:46.851Z"
+    },
+    {
+      "id": 55,
+      "question": "Does Medigap cover prescriptions?",
+      "answer": "No. Medigap supplements Original Medicare medical gaps; Part D covers prescriptions separately. Compare Part D plans annually during open enrollment.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.836Z",
+      "createdAt": "2026-06-01T09:13:46.836Z"
+    },
+    {
+      "id": 54,
+      "question": "When is Medigap guaranteed issue enrollment available?",
+      "answer": "Many states offer guaranteed-issue windows when you are new to Medicare Part B, lose employer coverage, or leave certain Medicare Advantage plans. Dates and rules vary by state.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.831Z",
+      "createdAt": "2026-06-01T09:13:46.831Z"
+    },
+    {
+      "id": 53,
+      "question": "Plan G vs Plan N: which Medigap plan costs less long term?",
+      "answer": "Plan N usually has lower premiums with copays for some office and ER visits. Plan G covers more gaps upfront but costs more monthly—compare 5–10 year total cost in your state.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.826Z",
+      "createdAt": "2026-06-01T09:13:46.826Z"
+    },
+    {
+      "id": 52,
+      "question": "Why was my pet claim denied for a pre-existing condition?",
+      "answer": "Conditions showing symptoms or treatment before enrollment or during waiting periods are typically excluded permanently. Request written denial reasons and policy clause citations.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.820Z",
+      "createdAt": "2026-06-01T09:13:46.820Z"
+    },
+    {
+      "id": 51,
+      "question": "Are exam fees covered under pet insurance?",
+      "answer": "Many base plans exclude exam fees unless you add a rider or choose a plan that bundles office visit coverage. Confirm before assuming wellness visits are reimbursable.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.816Z",
+      "createdAt": "2026-06-01T09:13:46.816Z"
+    },
+    {
+      "id": 50,
+      "question": "How much does pet insurance cost for a healthy dog in 2026?",
+      "answer": "Accident-illness plans for young dogs often run roughly $35–$70/month depending on breed, ZIP, reimbursement %, and deductible. Wellness add-ons increase premium separately.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.811Z",
+      "createdAt": "2026-06-01T09:13:46.811Z"
+    },
+    {
+      "id": 49,
+      "question": "What is a bilateral exclusion in pet insurance?",
+      "answer": "If a condition affects one side of a paired body part (e.g., ACL), some policies exclude the opposite side even if it was healthy at enrollment. Read bilateral clauses before buying.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.803Z",
+      "createdAt": "2026-06-01T09:13:46.803Z"
+    },
+    {
+      "id": 48,
+      "question": "Can a life insurance claim be denied for non-payment?",
+      "answer": "Yes. Lapsed policies after grace periods generally do not pay death benefits. Keep autopay active and confirm reinstatement rules if a payment is missed.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.790Z",
+      "createdAt": "2026-06-01T09:13:46.790Z"
+    },
+    {
+      "id": 47,
+      "question": "What is the contestability period on a new life policy?",
+      "answer": "During the first two years in most states, carriers can investigate material misstatements on the application. Accurate health and lifestyle disclosures reduce denial risk later.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.779Z",
+      "createdAt": "2026-06-01T09:13:46.779Z"
+    },
+    {
+      "id": 46,
+      "question": "How long does a beneficiary life insurance claim usually take?",
+      "answer": "Straightforward claims with complete forms and a certified death certificate often pay in 2–4 weeks. Contestability reviews, missing records, or estate disputes can extend timelines.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.773Z",
+      "createdAt": "2026-06-01T09:13:46.772Z"
+    },
+    {
+      "id": 45,
+      "question": "How often should I update my home inventory for claims?",
+      "answer": "Review major purchases quarterly and do a full photo/video inventory annually. Store receipts and serial numbers off-site or in cloud storage for faster personal property claims.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.756Z",
+      "createdAt": "2026-06-01T09:13:46.756Z"
+    },
+    {
+      "id": 44,
+      "question": "Should I buy water backup coverage on home insurance?",
+      "answer": "If your basement or lower level has finished space or storage, water backup endorsement is often worth the modest premium. Standard policies usually exclude sewer/drain backup.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.749Z",
+      "createdAt": "2026-06-01T09:13:46.749Z"
+    },
+    {
+      "id": 43,
+      "question": "Why do home claims get denied for maintenance issues?",
+      "answer": "Gradual damage, long-term leaks, mold from neglect, and wear-and-tear are commonly excluded. Sudden and accidental events are covered; document timeline and mitigation steps.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.739Z",
+      "createdAt": "2026-06-01T09:13:46.739Z"
+    },
+    {
+      "id": 42,
+      "question": "How long does a home claim take from inspection to payment?",
+      "answer": "Minor claims may close in 2–4 weeks; large losses with structural scope often take 6–12 weeks. Supplemental estimates, code upgrades, and mortgage company approval add time.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.734Z",
+      "createdAt": "2026-06-01T09:13:46.734Z"
+    },
+    {
+      "id": 41,
+      "question": "What is a typical home insurance deductible for wind or hail?",
+      "answer": "Wind or hail deductibles are often 1–2% of dwelling coverage in high-risk regions, separate from the standard all-peril deductible. Confirm both on your declarations page.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.723Z",
+      "createdAt": "2026-06-01T09:13:46.723Z"
+    },
+    {
+      "id": 40,
+      "question": "How much home insurance dwelling coverage do I need?",
+      "answer": "Base dwelling limits on rebuild cost, not market value. Use a replacement-cost estimator and add extended replacement cost or ordinance/law coverage if available in your area.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.716Z",
+      "createdAt": "2026-06-01T09:13:46.716Z"
+    },
+    {
+      "id": 39,
+      "question": "Replacement cost vs ACV: which pays more after a loss?",
+      "answer": "Replacement cost typically pays to rebuild or replace at current prices minus deductible. ACV subtracts depreciation, which can create a large gap on older roofs and finishes.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.701Z",
+      "createdAt": "2026-06-01T09:13:46.701Z"
+    },
+    {
+      "id": 38,
+      "question": "Is gap insurance worth it on a new car loan?",
+      "answer": "Gap coverage can help when loan balance exceeds actual cash value after a total loss. It matters most with low down payments, long loan terms, and rapid depreciation vehicles.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.690Z",
+      "createdAt": "2026-06-01T09:13:46.690Z"
+    },
+    {
+      "id": 37,
+      "question": "Why was my auto claim denied for late reporting?",
+      "answer": "Carriers may deny or limit coverage when delayed notice prevents inspection, witness contact, or fraud review. Always file FNOL quickly and keep a written confirmation number.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.677Z",
+      "createdAt": "2026-06-01T09:13:46.677Z"
+    },
+    {
+      "id": 36,
+      "question": "How long do I have to file an auto claim after an accident?",
+      "answer": "Notify your carrier as soon as practical—often within 24–72 hours. Statutes of limitations for lawsuits vary by state, but delayed notice can complicate coverage and investigation.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.658Z",
+      "createdAt": "2026-06-01T09:13:46.658Z"
+    },
+    {
+      "id": 35,
+      "question": "When should I raise my auto deductible to save premium?",
+      "answer": "Raise deductibles only if you can pay the amount out of pocket without hardship. A higher deductible helps steady drivers; frequent claim filers usually benefit from lower deductibles.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.641Z",
+      "createdAt": "2026-06-01T09:13:46.641Z"
+    },
+    {
+      "id": 34,
+      "question": "What raises auto insurance rates after a clean year?",
+      "answer": "Rate increases can come from carrier-wide filings, ZIP-level loss trends, credit-based scoring where allowed, vehicle changes, and reduced discounts—not only from new claims.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.634Z",
+      "createdAt": "2026-06-01T09:13:46.634Z"
+    },
+    {
+      "id": 33,
+      "question": "Does stacking UM/UIM coverage still make sense?",
+      "answer": "Stacking can increase payout when you insure multiple vehicles on one policy, but it raises premium. Compare stacked vs non-stacked quotes on identical limits before buying.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.612Z",
+      "createdAt": "2026-06-01T09:13:46.612Z"
+    },
+    {
+      "id": 32,
+      "question": "How much UM/UIM coverage should I carry in 2026?",
+      "answer": "Many drivers match UM/UIM limits to bodily injury liability limits. If you have significant assets or dependents, consider limits at or above $250,000/$500,000 where available and affordable.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-01T09:13:46.519Z",
+      "createdAt": "2026-06-01T09:13:46.516Z"
+    },
+    {
       "id": 31,
       "question": "Does renters insurance cover roommates' belongings?",
       "answer": "Usually only the named insured is covered. Each roommate should buy their own policy or be explicitly added with insurer approval.",
@@ -67144,7 +67695,407 @@
       "createdAt": "2026-04-13T10:39:43.649Z"
     }
   ],
-  "glossaryTerms": [],
+  "glossaryTerms": [
+    {
+      "id": 1,
+      "term": "Actual Cash Value (ACV)",
+      "slug": "actual-cash-value",
+      "definition": "Actual cash value is replacement cost minus depreciation for age and wear. On home and auto claims, ACV settlements can be materially lower than replacement-cost payouts for older items.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "relatedSlugs": "replacement-cost,recoverable-depreciation",
+      "updatedAt": "2026-06-01T09:13:46.888Z",
+      "createdAt": "2026-06-01T09:13:46.888Z"
+    },
+    {
+      "id": 9,
+      "term": "Bilateral Exclusion",
+      "slug": "bilateral-exclusion",
+      "definition": "A bilateral exclusion treats paired body parts as one condition. If one knee was treated pre-policy, the insurer may exclude both knees even if the second was never symptomatic.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "relatedSlugs": "pre-existing-condition",
+      "updatedAt": "2026-06-01T09:13:46.970Z",
+      "createdAt": "2026-06-01T09:13:46.970Z"
+    },
+    {
+      "id": 6,
+      "term": "Contestability Period",
+      "slug": "contestability-period",
+      "definition": "The contestability period—typically two years after issue—lets life insurers review application accuracy. Material misrepresentations discovered during this window can affect claim outcomes.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "relatedSlugs": "premium",
+      "updatedAt": "2026-06-01T09:13:46.930Z",
+      "createdAt": "2026-06-01T09:13:46.930Z"
+    },
+    {
+      "id": 3,
+      "term": "Deductible",
+      "slug": "deductible",
+      "definition": "A deductible is the amount you pay out of pocket before insurance responds to a covered loss. Higher deductibles usually lower premium but increase your cost at claim time.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "relatedSlugs": "hail-deductible,premium",
+      "updatedAt": "2026-06-01T09:13:46.904Z",
+      "createdAt": "2026-06-01T09:13:46.904Z"
+    },
+    {
+      "id": 15,
+      "term": "Extended Replacement Cost",
+      "slug": "extended-replacement-cost",
+      "definition": "Extended replacement cost adds a percentage buffer above dwelling limits when rebuild costs spike after widespread disasters. It helps avoid underinsurance when labor and materials surge.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "relatedSlugs": "replacement-cost,actual-cash-value",
+      "updatedAt": "2026-06-01T09:13:47.016Z",
+      "createdAt": "2026-06-01T09:13:47.016Z"
+    },
+    {
+      "id": 17,
+      "term": "First Notice of Loss (FNOL)",
+      "slug": "fnol",
+      "definition": "FNOL is your initial report to the insurer after a loss. Prompt FNOL preserves coverage, assigns an adjuster, and starts the documentation trail for liability and damage review.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "relatedSlugs": "subrogation",
+      "updatedAt": "2026-06-01T09:13:47.033Z",
+      "createdAt": "2026-06-01T09:13:47.033Z"
+    },
+    {
+      "id": 12,
+      "term": "Hail Deductible",
+      "slug": "hail-deductible",
+      "definition": "A separate hail or wind deductible—often a percentage of dwelling coverage—applies in storm-prone regions. It can be higher than your standard all-peril deductible.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "relatedSlugs": "deductible,actual-cash-value",
+      "updatedAt": "2026-06-01T09:13:46.997Z",
+      "createdAt": "2026-06-01T09:13:46.997Z"
+    },
+    {
+      "id": 4,
+      "term": "Liability Limit",
+      "slug": "liability-limit",
+      "definition": "Liability limits cap what your policy pays for bodily injury and property damage you cause to others. Split limits (e.g., 100/300/100) define per-person, per-accident, and property caps.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "relatedSlugs": "uninsured-motorist-coverage",
+      "updatedAt": "2026-06-01T09:13:46.913Z",
+      "createdAt": "2026-06-01T09:13:46.913Z"
+    },
+    {
+      "id": 11,
+      "term": "Loss of Use",
+      "slug": "loss-of-use",
+      "definition": "Loss of use (additional living expense) covers temporary housing and extra costs when a covered peril makes your home or rental uninhabitable during repairs.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "relatedSlugs": "sub-limit",
+      "updatedAt": "2026-06-01T09:13:46.988Z",
+      "createdAt": "2026-06-01T09:13:46.988Z"
+    },
+    {
+      "id": 7,
+      "term": "Medigap Plan G",
+      "slug": "medigap-plan-g",
+      "definition": "Medigap Plan G covers most Medicare cost gaps except the Part B deductible. It is a common choice for new enrollees comparing predictable supplement coverage against Plan N copays.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "relatedSlugs": "premium",
+      "updatedAt": "2026-06-01T09:13:46.939Z",
+      "createdAt": "2026-06-01T09:13:46.939Z"
+    },
+    {
+      "id": 8,
+      "term": "Pre-existing Condition",
+      "slug": "pre-existing-condition",
+      "definition": "A pre-existing condition showed signs, symptoms, or treatment before policy effective date or waiting periods ended. Pet and some health policies often exclude these conditions permanently.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "relatedSlugs": "waiting-period,bilateral-exclusion",
+      "updatedAt": "2026-06-01T09:13:46.946Z",
+      "createdAt": "2026-06-01T09:13:46.946Z"
+    },
+    {
+      "id": 19,
+      "term": "Premium",
+      "slug": "premium",
+      "definition": "Premium is the price you pay to keep coverage active—monthly or annually. It reflects risk factors, limits, deductibles, discounts, and carrier pricing filings in your state.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "relatedSlugs": "deductible",
+      "updatedAt": "2026-06-01T09:13:47.055Z",
+      "createdAt": "2026-06-01T09:13:47.055Z"
+    },
+    {
+      "id": 16,
+      "term": "Recoverable Depreciation",
+      "slug": "recoverable-depreciation",
+      "definition": "On replacement-cost claims, carriers may hold back depreciation until repairs are completed and invoiced. Recoverable depreciation is the withheld amount you can claim after work is done.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "relatedSlugs": "actual-cash-value,replacement-cost",
+      "updatedAt": "2026-06-01T09:13:47.027Z",
+      "createdAt": "2026-06-01T09:13:47.027Z"
+    },
+    {
+      "id": 2,
+      "term": "Replacement Cost",
+      "slug": "replacement-cost",
+      "definition": "Replacement cost pays to repair or replace damaged property with similar materials at current prices, subject to policy limits and deductibles. It is the default goal for dwelling coverage on many homeowners policies.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "relatedSlugs": "actual-cash-value,extended-replacement-cost",
+      "updatedAt": "2026-06-01T09:13:46.895Z",
+      "createdAt": "2026-06-01T09:13:46.895Z"
+    },
+    {
+      "id": 13,
+      "term": "Scheduled Personal Property",
+      "slug": "scheduled-personal-property",
+      "definition": "Scheduling adds specific high-value items (jewelry, bikes, cameras) with agreed limits and sometimes lower deductibles. It fixes gaps left by standard personal property sub-limits.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "relatedSlugs": "sub-limit",
+      "updatedAt": "2026-06-01T09:13:47.004Z",
+      "createdAt": "2026-06-01T09:13:47.004Z"
+    },
+    {
+      "id": 14,
+      "term": "Sub-limit",
+      "slug": "sub-limit",
+      "definition": "Sub-limits cap payout for certain categories—jewelry, cash, water backup—below your total personal property limit. They are a common reason theft claims pay less than expected.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "relatedSlugs": "scheduled-personal-property",
+      "updatedAt": "2026-06-01T09:13:47.007Z",
+      "createdAt": "2026-06-01T09:13:47.007Z"
+    },
+    {
+      "id": 18,
+      "term": "Subrogation",
+      "slug": "subrogation",
+      "definition": "Subrogation lets your insurer recover claim payments from an at-fault party after paying you. Your cooperation and accurate statements during FNOL support successful subrogation.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "relatedSlugs": "uninsured-motorist-coverage,fnol",
+      "updatedAt": "2026-06-01T09:13:47.044Z",
+      "createdAt": "2026-06-01T09:13:47.044Z"
+    },
+    {
+      "id": 5,
+      "term": "Uninsured / Underinsured Motorist (UM/UIM)",
+      "slug": "uninsured-motorist-coverage",
+      "definition": "UM/UIM coverage pays when an at-fault driver has no insurance or limits too low to cover your injuries. Limits and stacking rules vary by state and materially affect serious accident recovery.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "relatedSlugs": "liability-limit,subrogation",
+      "updatedAt": "2026-06-01T09:13:46.921Z",
+      "createdAt": "2026-06-01T09:13:46.921Z"
+    },
+    {
+      "id": 10,
+      "term": "Waiting Period",
+      "slug": "waiting-period",
+      "definition": "Waiting periods delay coverage for accidents or illnesses after enrollment—commonly 14 days for accidents and longer for orthopedic or cruciate conditions. Claims during waits are usually denied.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "relatedSlugs": "pre-existing-condition",
+      "updatedAt": "2026-06-01T09:13:46.976Z",
+      "createdAt": "2026-06-01T09:13:46.976Z"
+    }
+  ],
   "claimsGuides": [
     {
       "id": 2,

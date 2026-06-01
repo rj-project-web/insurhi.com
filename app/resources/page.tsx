@@ -18,6 +18,13 @@ export default function ResourcesPage() {
       icon: FileSearch,
     },
     {
+      title: "Coverage term glossary",
+      description: "Plain-language definitions for deductibles, replacement cost, UM/UIM, Medigap, and more.",
+      href: "/glossary",
+      cta: "Open glossary",
+      icon: BookOpenText,
+    },
+    {
       title: "Comparison track",
       description: "Compare products and providers with a consistent channel-by-channel framework.",
       href: "/insurance",
@@ -27,7 +34,6 @@ export default function ResourcesPage() {
   ];
   const upcomingTools = [
     "Premium and deductible scenario calculator",
-    "Coverage term glossary for faster policy reading",
     "State and regional insurance requirement references",
     "Plan comparison worksheets for family decision-making",
   ];
@@ -64,7 +70,7 @@ export default function ResourcesPage() {
 
       <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card via-cyan-500/[0.02] to-blue-500/[0.03] p-5">
         <h2 className="text-2xl font-semibold tracking-tight">Resource tracks</h2>
-        <div className="grid gap-3 md:grid-cols-3">
+        <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-4">
           {resourceTracks.map((track) => (
             <article key={track.title} className="rounded-xl border bg-background/90 p-4 shadow-sm">
               <p className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-cyan-100 text-cyan-700">

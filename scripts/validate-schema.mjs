@@ -19,6 +19,10 @@ const CHECKS = [
     path: "/insurance/home",
     requiredTypes: ["FAQPage", "BreadcrumbList"],
   },
+  {
+    path: "/glossary/deductible",
+    requiredTypes: ["DefinedTerm", "BreadcrumbList"],
+  },
 ];
 
 function collectJsonLdTypes(html) {

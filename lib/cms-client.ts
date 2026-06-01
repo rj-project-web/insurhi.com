@@ -22,6 +22,17 @@ export type CmsFaqItem = {
   category?: string | CmsCategory;
 };
 
+export type CmsGlossaryTerm = {
+  id: string;
+  term: string;
+  slug: string;
+  definition: string;
+  category?: string | CmsCategory;
+  relatedSlugs?: string;
+  updatedAt?: string;
+  createdAt?: string;
+};
+
 export type CmsProvider = {
   id: string;
   name: string;
@@ -162,6 +173,7 @@ type CmsContentSnapshot = {
   products: CmsProduct[];
   articles: CmsArticle[];
   faqItems: CmsFaqItem[];
+  glossaryTerms: CmsGlossaryTerm[];
   claimsGuides: CmsClaimsGuide[];
   claimCases: CmsClaimCase[];
   pages: CmsPage[];
@@ -175,6 +187,7 @@ const EMPTY_STATIC_SNAPSHOT: CmsContentSnapshot = {
   products: [],
   articles: [],
   faqItems: [],
+  glossaryTerms: [],
   claimsGuides: [],
   claimCases: [],
   pages: [],
@@ -227,6 +240,10 @@ async function getStaticContentSnapshot(): Promise<CmsContentSnapshot | null> {
             id: toStringId(item.id),
           })),
           faqItems: toSnapshotArray<CmsFaqItem>(parsed.faqItems).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          glossaryTerms: toSnapshotArray<CmsGlossaryTerm>(parsed.glossaryTerms).map((item) => ({
             ...item,
             id: toStringId(item.id),
           })),
@@ -602,6 +619,28 @@ export async function getFaqItems() {
   }
 
   return fetchCollection<CmsFaqItem>("/api/faq-items?limit=200&depth=1");
+}
+
+export async function getGlossaryTerms() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.glossaryTerms.slice().sort((a, b) => a.term.localeCompare(b.term));
+  }
+
+  return fetchCollection<CmsGlossaryTerm>("/api/glossary-terms?limit=200&sort=term&depth=1");
+}
+
+export async function getGlossaryTermBySlug(slug: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.glossaryTerms.find((item) => item.slug === slug) ?? null;
+  }
+
+  const docs = await fetchCollection<CmsGlossaryTerm>(
+    `/api/glossary-terms?where[slug][equals]=${encodeURIComponent(slug)}&limit=1&depth=1`,
+  );
+
+  return docs[0] ?? null;
 }
 
 export async function getProducts() {

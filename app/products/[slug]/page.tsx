@@ -7,7 +7,7 @@ import { notFound, redirect } from "next/navigation";
 import { BadgeCheck, CircleDollarSign, ShieldCheck, Sparkles, Timer } from "lucide-react";
 
 import { CmsRichText, extractCmsText } from "@/components/cms-rich-text";
-import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
+import { EditorialDisclosure, EditorialMetadata } from "@/components/editorial-disclosure";
 import type { CmsCategory, CmsProvider } from "@/lib/cms-client";
 import { getProductBySlug, getProducts } from "@/lib/cms-client";
 import {
@@ -323,9 +323,11 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               {product.pricingRangeSummary}
             </p>
           ) : null}
-          <LastUpdated
+          <EditorialMetadata
             updatedAt={product.updatedAt}
             createdAt={product.createdAt}
+            reviewedBy={product.reviewedBy}
+            lastReviewedAt={product.lastReviewedAt}
             className="inline-flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground"
           />
         </div>

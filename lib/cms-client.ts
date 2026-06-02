@@ -15,6 +15,14 @@ export type CmsCategory = {
   seo?: CmsSeoGroup;
 };
 
+export type CmsAuthor = {
+  id: string;
+  name: string;
+  slug: string;
+  role?: string;
+  credentials?: string;
+};
+
 export type CmsFaqItem = {
   id: string;
   question: string;
@@ -104,6 +112,8 @@ export type CmsProduct = {
   category?: string | CmsCategory;
   provider?: string | CmsProvider;
   seo?: CmsSeoGroup;
+  reviewedBy?: string | CmsAuthor;
+  lastReviewedAt?: string;
 };
 
 export type CmsPage = {
@@ -122,6 +132,8 @@ export type CmsArticle = {
   publishedAt?: string;
   updatedAt?: string;
   createdAt?: string;
+  reviewedBy?: string | CmsAuthor;
+  lastReviewedAt?: string;
   seo?: CmsSeoGroup;
   body?: {
     root?: {
@@ -150,6 +162,8 @@ export type CmsClaimsGuide = {
   communicationNotes?: Array<{ note: string }>;
   updatedAt?: string;
   createdAt?: string;
+  reviewedBy?: string | CmsAuthor;
+  lastReviewedAt?: string;
 };
 
 export type CmsClaimCase = {
@@ -174,6 +188,7 @@ type CmsContentSnapshot = {
   articles: CmsArticle[];
   faqItems: CmsFaqItem[];
   glossaryTerms: CmsGlossaryTerm[];
+  authors: CmsAuthor[];
   claimsGuides: CmsClaimsGuide[];
   claimCases: CmsClaimCase[];
   pages: CmsPage[];
@@ -188,6 +203,7 @@ const EMPTY_STATIC_SNAPSHOT: CmsContentSnapshot = {
   articles: [],
   faqItems: [],
   glossaryTerms: [],
+  authors: [],
   claimsGuides: [],
   claimCases: [],
   pages: [],
@@ -244,6 +260,10 @@ async function getStaticContentSnapshot(): Promise<CmsContentSnapshot | null> {
             id: toStringId(item.id),
           })),
           glossaryTerms: toSnapshotArray<CmsGlossaryTerm>(parsed.glossaryTerms).map((item) => ({
+            ...item,
+            id: toStringId(item.id),
+          })),
+          authors: toSnapshotArray<CmsAuthor>(parsed.authors).map((item) => ({
             ...item,
             id: toStringId(item.id),
           })),

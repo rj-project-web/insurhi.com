@@ -1,11 +1,23 @@
 import Link from "next/link";
 import { Info, ShieldAlert } from "lucide-react";
 
+export type CmsAuthorRef = {
+  name?: string;
+  slug?: string;
+  role?: string;
+  credentials?: string;
+};
+
 type LastUpdatedProps = {
   updatedAt?: string;
   createdAt?: string;
   publishedAt?: string;
   className?: string;
+};
+
+export type EditorialMetadataProps = LastUpdatedProps & {
+  reviewedBy?: string | CmsAuthorRef | null;
+  lastReviewedAt?: string;
 };
 
 function formatDate(input?: string): string | null {
@@ -18,16 +30,25 @@ function formatDate(input?: string): string | null {
   return `${yyyy}-${mm}-${dd}`;
 }
 
-export function LastUpdated({
+function resolveAuthor(reviewedBy?: string | CmsAuthorRef | null): CmsAuthorRef | null {
+  if (!reviewedBy || typeof reviewedBy === "string") return null;
+  return reviewedBy;
+}
+
+export function EditorialMetadata({
   updatedAt,
   createdAt,
   publishedAt,
+  reviewedBy,
+  lastReviewedAt,
   className,
-}: LastUpdatedProps) {
+}: EditorialMetadataProps) {
   const updated = formatDate(updatedAt);
   const published = formatDate(publishedAt ?? createdAt);
+  const reviewed = formatDate(lastReviewedAt);
+  const author = resolveAuthor(reviewedBy);
 
-  if (!updated && !published) return null;
+  if (!updated && !published && !reviewed && !author?.name) return null;
 
   return (
     <p
@@ -36,6 +57,14 @@ export function LastUpdated({
         "inline-flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground"
       }
     >
+      {author?.name ? (
+        <span>
+          Reviewed by{" "}
+          <span className="font-medium text-foreground">{author.name}</span>
+          {author.role ? ` (${author.role})` : ""}
+        </span>
+      ) : null}
+      {reviewed ? <span>Last reviewed: {reviewed}</span> : null}
       {published ? <span>Published: {published}</span> : null}
       {updated ? <span>Last updated: {updated}</span> : null}
       <Link href="/methodology" className="underline-offset-4 hover:underline">
@@ -43,6 +72,11 @@ export function LastUpdated({
       </Link>
     </p>
   );
+}
+
+/** @deprecated Use EditorialMetadata */
+export function LastUpdated(props: LastUpdatedProps) {
+  return <EditorialMetadata {...props} />;
 }
 
 type EditorialDisclosureProps = {

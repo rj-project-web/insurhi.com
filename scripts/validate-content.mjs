@@ -14,7 +14,13 @@ const META_TITLE_MAX = 60;
 const META_DESC_MIN = 110;
 const META_DESC_MAX = 160;
 
-const FLAGSHIP_PRODUCT_SLUGS = new Set(["amica-home", "aarp-uhc-medicare", "lemonade-renters"]);
+const FLAGSHIP_PRODUCT_SLUGS = new Set([
+  "amica-home",
+  "aarp-uhc-medicare",
+  "lemonade-renters",
+  "state-farm-home",
+  "trupanion-pet",
+]);
 
 function pushIssue(bucket, scope, id, message) {
   bucket.push({ scope, id, message });

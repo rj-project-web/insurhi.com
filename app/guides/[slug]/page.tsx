@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Sparkles } from "lucide-react";
 
 import { CmsRichText } from "@/components/cms-rich-text";
-import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
+import { EditorialDisclosure, EditorialMetadata } from "@/components/editorial-disclosure";
 import { getArticleBySlug, getArticlesList } from "@/lib/cms-client";
 import {
   absoluteUrl,
@@ -80,12 +80,17 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
     { name: "Guides", path: "/guides" },
     { name: article.title, path: `/guides/${article.slug}` },
   ]);
+  const reviewer =
+    typeof article.reviewedBy === "object" && article.reviewedBy?.name ?
+      article.reviewedBy.name
+    : undefined;
   const articleJsonLd = buildArticleJsonLd({
     headline: article.title,
     url: absoluteUrl(`/guides/${article.slug}`),
     datePublished: article.publishedAt ?? article.createdAt,
-    dateModified: article.updatedAt ?? article.publishedAt ?? article.createdAt,
+    dateModified: article.lastReviewedAt ?? article.updatedAt ?? article.publishedAt ?? article.createdAt,
     description: article.seo?.metaDescription,
+    authorName: reviewer,
   });
   const paragraphs = getArticleParagraphs(article);
   const keyPoints = paragraphs.slice(0, 3);
@@ -107,10 +112,12 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
           Guides / {article.slug}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{article.title}</h1>
-        <LastUpdated
+        <EditorialMetadata
           updatedAt={article.updatedAt}
           publishedAt={article.publishedAt}
           createdAt={article.createdAt}
+          reviewedBy={article.reviewedBy}
+          lastReviewedAt={article.lastReviewedAt}
         />
       </section>
 

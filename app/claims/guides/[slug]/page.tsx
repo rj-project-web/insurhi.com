@@ -11,7 +11,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import { EditorialDisclosure, LastUpdated } from "@/components/editorial-disclosure";
+import { EditorialDisclosure, EditorialMetadata } from "@/components/editorial-disclosure";
 import { getClaimsGuideBySlug, getClaimsGuidesList } from "@/lib/cms-client";
 import {
   absoluteUrl,
@@ -89,7 +89,12 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
           Claims / Guide / {slug}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{guide.title}</h1>
-        <LastUpdated updatedAt={guide.updatedAt} createdAt={guide.createdAt} />
+        <EditorialMetadata
+          updatedAt={guide.updatedAt}
+          createdAt={guide.createdAt}
+          reviewedBy={guide.reviewedBy}
+          lastReviewedAt={guide.lastReviewedAt}
+        />
         <div className="rounded-lg border bg-background/90 p-3 text-sm">
           <p className="flex items-center gap-2 font-medium">
             <ClipboardList className="h-4 w-4 text-cyan-600" />

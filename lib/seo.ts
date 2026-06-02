@@ -79,9 +79,15 @@ export type ArticleJsonLdInput = {
   datePublished?: string;
   dateModified?: string;
   description?: string;
+  authorName?: string;
 };
 
 export function buildArticleJsonLd(input: ArticleJsonLdInput) {
+  const author =
+    input.authorName ?
+      { "@type": "Person" as const, name: input.authorName }
+    : publisherOrganization;
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -91,7 +97,7 @@ export function buildArticleJsonLd(input: ArticleJsonLdInput) {
     ...(input.description ? { description: input.description } : {}),
     ...(input.datePublished ? { datePublished: input.datePublished } : {}),
     ...(input.dateModified ? { dateModified: input.dateModified } : {}),
-    author: publisherOrganization,
+    author,
     publisher: {
       ...publisherOrganization,
       logo: {

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ArrowRight, BookOpenText, Calculator, FileSearch, ShieldCheck } from "lucide-react";
 
+import { CATEGORY_SLUGS, categoryContentHubs } from "@/lib/category-content-hub";
+
 export default function ResourcesPage() {
   const resourceTracks = [
     {
@@ -87,6 +89,50 @@ export default function ResourcesPage() {
               </Link>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card to-violet-500/[0.03] p-5">
+        <h2 className="text-2xl font-semibold tracking-tight">Browse by insurance category</h2>
+        <p className="max-w-3xl text-sm text-muted-foreground">
+          Each hub connects buying guides, product comparisons, claims playbooks, FAQs, and glossary terms.
+        </p>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {CATEGORY_SLUGS.map((slug) => {
+            const hub = categoryContentHubs[slug];
+            return (
+              <article key={slug} className="rounded-xl border bg-background/90 p-4 shadow-sm">
+                <Link
+                  href={`/insurance/${slug}`}
+                  className="font-medium text-primary underline-offset-4 hover:underline"
+                >
+                  {hub.title}
+                </Link>
+                <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
+                  <li>
+                    <Link href={`/guides/${hub.deepGuide.slug}`} className="hover:text-foreground hover:underline">
+                      {hub.deepGuide.label}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={`/products/${hub.flagshipProduct.slug}`} className="hover:text-foreground hover:underline">
+                      {hub.flagshipProduct.label}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={`/claims/${slug}`} className="hover:text-foreground hover:underline">
+                      Claims center
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={`/insurance/${slug}#glossary`} className="hover:text-foreground hover:underline">
+                      Key terms
+                    </Link>
+                  </li>
+                </ul>
+              </article>
+            );
+          })}
         </div>
       </section>
 

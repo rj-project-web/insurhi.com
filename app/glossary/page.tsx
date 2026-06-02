@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BookOpen, Sparkles } from "lucide-react";
 
 import { getGlossaryTerms } from "@/lib/cms-client";
+import { CATEGORY_SLUGS, categoryContentHubs } from "@/lib/category-content-hub";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
@@ -44,6 +45,17 @@ export default async function GlossaryPage() {
           comparison guides. Each entry links to related guides and category hubs.
         </p>
         <p className="text-sm text-muted-foreground">{terms.length} terms indexed</p>
+        <div className="flex flex-wrap gap-2 pt-1">
+          {CATEGORY_SLUGS.map((slug) => (
+            <Link
+              key={slug}
+              href={`/insurance/${slug}#glossary`}
+              className="rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground hover:text-foreground"
+            >
+              {categoryContentHubs[slug].title}
+            </Link>
+          ))}
+        </div>
       </section>
 
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

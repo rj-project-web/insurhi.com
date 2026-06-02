@@ -5,7 +5,9 @@ import { Sparkles } from "lucide-react";
 
 import { CmsRichText } from "@/components/cms-rich-text";
 import { EditorialDisclosure, EditorialMetadata } from "@/components/editorial-disclosure";
+import { RelatedContentPanel } from "@/components/related-content-panel";
 import { getArticleBySlug, getArticlesList } from "@/lib/cms-client";
+import { getRelatedContentForGuide } from "@/lib/content-links";
 import {
   absoluteUrl,
   buildArticleJsonLd,
@@ -26,6 +28,13 @@ function inferInsuranceCategoryPath(slug: string, title: string): string {
   if (text.includes("medicare") || text.includes("medigap")) return "/insurance/medicare";
   if (text.includes("renters") || text.includes("renter")) return "/insurance/renters";
   return "/insurance";
+}
+
+function categorySlugFromArticle(category: unknown): string | null {
+  if (!category) return null;
+  if (typeof category === "string") return category;
+  if (typeof category === "object") return (category as { slug?: string }).slug ?? null;
+  return null;
 }
 
 function getArticleParagraphs(article: Awaited<ReturnType<typeof getArticleBySlug>>) {
@@ -95,6 +104,7 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
   const paragraphs = getArticleParagraphs(article);
   const keyPoints = paragraphs.slice(0, 3);
   const categoryPath = inferInsuranceCategoryPath(article.slug, article.title);
+  const relatedContent = getRelatedContentForGuide(article.slug, article.category);
 
   return (
     <div className="space-y-8">
@@ -149,12 +159,23 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
 
       <EditorialDisclosure />
 
+      <RelatedContentPanel bundle={relatedContent} />
+
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>
         <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
-          <Link href={categoryPath} className="underline underline-offset-4">
-            Related insurance category
-          </Link>
+          {categorySlugFromArticle(article.category) ? (
+            <Link
+              href={`/insurance/${categorySlugFromArticle(article.category)}`}
+              className="underline underline-offset-4"
+            >
+              Related insurance category
+            </Link>
+          ) : (
+            <Link href={categoryPath} className="underline underline-offset-4">
+              Related insurance category
+            </Link>
+          )}
           <Link href="/guides" className="underline underline-offset-4">
             Back to guides
           </Link>

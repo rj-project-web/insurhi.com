@@ -8,8 +8,10 @@ import { BadgeCheck, CircleDollarSign, ShieldCheck, Sparkles, Timer } from "luci
 
 import { CmsRichText, extractCmsText } from "@/components/cms-rich-text";
 import { EditorialDisclosure, EditorialMetadata } from "@/components/editorial-disclosure";
+import { RelatedContentPanel } from "@/components/related-content-panel";
 import type { CmsCategory, CmsProvider } from "@/lib/cms-client";
 import { getProductBySlug, getProducts } from "@/lib/cms-client";
+import { getRelatedContentForProduct } from "@/lib/content-links";
 import {
   absoluteUrl,
   buildBreadcrumbJsonLd,
@@ -195,6 +197,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
   const category = resolveRelation<CmsCategory>(product.category);
   const provider = resolveRelation<CmsProvider>(product.provider);
+  const relatedContent = getRelatedContentForProduct(slug, category ?? product.category);
   const pros = listItems(product.pros);
   const cons = listItems(product.cons);
   const bestFor = listItems(product.bestFor);
@@ -563,6 +566,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       ) : null}
 
       <EditorialDisclosure />
+
+      <RelatedContentPanel bundle={relatedContent} />
 
       <section className="rounded-xl border bg-gradient-to-br from-card to-cyan-500/[0.02] p-5">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

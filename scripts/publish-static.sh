@@ -9,13 +9,16 @@ cd "${ROOT_DIR}"
 echo "==> [1/4] Export CMS content snapshot"
 npm run export:cms-content
 
-echo "==> [2/4] Validate CMS content snapshot"
+echo "==> [2/5] Validate CMS content snapshot"
 npm run validate:content
 
-echo "==> [3/4] Run lint"
+echo "==> [3/5] Validate internal link graph"
+npm run validate:internal-links
+
+echo "==> [4/5] Run lint"
 npm run lint
 
-echo "==> [4/4] Build static site artifacts"
+echo "==> [5/5] Build static site artifacts"
 npm run build
 
 echo ""

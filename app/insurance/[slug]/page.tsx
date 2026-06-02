@@ -24,6 +24,7 @@ import {
   getProductsByCategory,
   getProvidersByCategory,
 } from "@/lib/cms-client";
+import { categoryContentHubs, isCategorySlug } from "@/lib/category-content-hub";
 import { buildBreadcrumbJsonLd, buildFaqPageJsonLd, buildMetadata } from "@/lib/seo";
 import { insuranceCategories } from "@/lib/site-data";
 
@@ -504,6 +505,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   const decisionFactors = decisionFactorsBySlug[slug] ?? decisionFactorsBySlug.auto;
 
   const categoryHub = getCategoryHub(slug);
+  const contentHub = isCategorySlug(slug) ? categoryContentHubs[slug] : null;
   const heroIntro =
     categorySummary && categorySummary.length > 0
       ? categorySummary
@@ -622,7 +624,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           </div>
         </div>
 
-        <div className="hidden gap-3 sm:grid-cols-2 lg:grid lg:grid-cols-4">
+        <div className="hidden gap-3 sm:grid-cols-2 lg:grid lg:grid-cols-5">
           <Link href="#products" className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent">
             Compare products
           </Link>
@@ -634,6 +636,9 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           </Link>
           <Link href="#faqs" className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent">
             Common questions
+          </Link>
+          <Link href="#glossary" className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent">
+            Key terms
           </Link>
         </div>
 
@@ -896,6 +901,79 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           )}
         </div>
       </section>
+
+      {contentHub ? (
+        <section
+          id="glossary"
+          className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-violet-500/[0.04] p-5"
+        >
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+            <div className="space-y-1">
+              <p className="inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+                <BookOpen className="h-3.5 w-3.5" />
+                Content spine
+              </p>
+              <h2 className="text-xl font-semibold tracking-tight">Guides, claims, products & terms</h2>
+              <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
+                Follow this path from learning to comparison to claims—and look up policy terms as you go.
+              </p>
+            </div>
+            <Link href="/glossary" className={featureActionLinkClass}>
+              Full glossary
+            </Link>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <article className="rounded-xl border bg-background p-4">
+              <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Deep guide</p>
+              <Link
+                href={`/guides/${contentHub.deepGuide.slug}`}
+                className="mt-2 block text-sm font-medium underline-offset-4 hover:underline"
+              >
+                {contentHub.deepGuide.label}
+              </Link>
+            </article>
+            <article className="rounded-xl border bg-background p-4">
+              <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Featured review</p>
+              <Link
+                href={`/products/${contentHub.flagshipProduct.slug}`}
+                className="mt-2 block text-sm font-medium underline-offset-4 hover:underline"
+              >
+                {contentHub.flagshipProduct.label}
+              </Link>
+            </article>
+            <article className="rounded-xl border bg-background p-4">
+              <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Claims</p>
+              <ul className="mt-2 space-y-1">
+                {contentHub.claimsGuides.map((item) => (
+                  <li key={item.slug}>
+                    <Link
+                      href={`/claims/guides/${item.slug}`}
+                      className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </article>
+            <article className="rounded-xl border bg-background p-4">
+              <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Key terms</p>
+              <ul className="mt-2 space-y-1">
+                {contentHub.glossaryTerms.slice(0, 4).map((item) => (
+                  <li key={item.slug}>
+                    <Link
+                      href={`/glossary/${item.slug}`}
+                      className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        </section>
+      ) : null}
 
       <section id="providers" className={featureSectionClass}>
         <div className={featureSectionAccentClass} />

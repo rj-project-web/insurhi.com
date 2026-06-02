@@ -12,7 +12,15 @@ import {
 } from "@/lib/cms-client";
 import { cmsPagePublicPath } from "@/lib/cms-page-routes";
 import { absoluteUrl } from "@/lib/seo";
+import { categoryContentHubs, CATEGORY_SLUGS } from "@/lib/category-content-hub";
 import { insuranceCategories } from "@/lib/site-data";
+
+const DEEP_GUIDE_SLUGS = new Set(
+  CATEGORY_SLUGS.map((slug) => categoryContentHubs[slug].deepGuide.slug),
+);
+const FLAGSHIP_PRODUCT_SLUGS = new Set(
+  CATEGORY_SLUGS.map((slug) => categoryContentHubs[slug].flagshipProduct.slug),
+);
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPaths = [
@@ -65,12 +73,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...insuranceCategorySlugs.map((slug) => ({
       url: absoluteUrl(`/insurance/${slug}`),
       changeFrequency: "weekly" as const,
-      priority: 0.8,
+      priority: 0.85,
+    })),
+    ...insuranceCategorySlugs.map((slug) => ({
+      url: absoluteUrl(`/claims/${slug}`),
+      changeFrequency: "weekly" as const,
+      priority: 0.75,
     })),
     ...articles.map((article) => ({
       url: absoluteUrl(`/guides/${article.slug}`),
       changeFrequency: "weekly" as const,
-      priority: 0.7,
+      priority: DEEP_GUIDE_SLUGS.has(article.slug) ? 0.82 : 0.7,
     })),
     ...claimsGuides
       .filter((guide) => Boolean(guide.slug))
@@ -92,7 +105,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...products.map((product) => ({
       url: absoluteUrl(`/products/${product.slug}`),
       changeFrequency: "weekly" as const,
-      priority: 0.7,
+      priority: FLAGSHIP_PRODUCT_SLUGS.has(product.slug) ? 0.8 : 0.7,
     })),
     ...pagePaths.map((path) => ({
       url: absoluteUrl(path),
@@ -102,7 +115,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...glossaryTerms.map((term) => ({
       url: absoluteUrl(`/glossary/${term.slug}`),
       changeFrequency: "monthly" as const,
-      priority: 0.65,
+      priority: 0.7,
     })),
   ];
 

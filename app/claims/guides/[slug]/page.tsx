@@ -12,7 +12,9 @@ import {
 } from "lucide-react";
 
 import { EditorialDisclosure, EditorialMetadata } from "@/components/editorial-disclosure";
+import { RelatedContentPanel } from "@/components/related-content-panel";
 import { getClaimsGuideBySlug, getClaimsGuidesList } from "@/lib/cms-client";
+import { getRelatedContentForClaimsGuide } from "@/lib/content-links";
 import {
   absoluteUrl,
   buildBreadcrumbJsonLd,
@@ -72,6 +74,7 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
     datePublished: guide.createdAt,
     dateModified: guide.updatedAt ?? guide.createdAt,
   });
+  const relatedContent = getRelatedContentForClaimsGuide(slug, guide.category);
 
   return (
     <div className="space-y-8">
@@ -260,6 +263,8 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
       ) : null}
 
       <EditorialDisclosure />
+
+      <RelatedContentPanel bundle={relatedContent} title="Before and after you file" />
 
       <section className="rounded-lg border bg-card p-4">
         <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>

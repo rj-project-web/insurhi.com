@@ -12,10 +12,10 @@ import {
   Layers,
   ShieldCheck,
   Sparkles,
-  Timer,
-  TrendingUp,
   Users,
 } from "lucide-react";
+import { EditorialDisclosure } from "@/components/editorial-disclosure";
+import { HomeHeroBadges } from "@/components/home-hero-badges";
 import {
   getArticlesList,
   getClaimsGuidesList,
@@ -25,6 +25,7 @@ import {
   getProvidersByCategory,
 } from "@/lib/cms-client";
 import { categoryContentHubs, isCategorySlug } from "@/lib/category-content-hub";
+import { categoryDescriptions } from "@/lib/home-content";
 import { buildBreadcrumbJsonLd, buildFaqPageJsonLd, buildMetadata } from "@/lib/seo";
 import { insuranceCategories } from "@/lib/site-data";
 
@@ -310,7 +311,6 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   const fallbackCategory = insuranceCategories.find((item) => item.slug === slug);
   const cmsCategory = await getCategoryBySlug(slug);
   const category = cmsCategory ?? fallbackCategory;
-  const categorySummary = cmsCategory?.summary;
 
   if (!category) {
     notFound();
@@ -369,32 +369,6 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   const productRows = products.slice(0, 6);
   const providerRows = providers.slice(0, 6);
   const faqRows = faqs.slice(0, 8);
-  const glanceMetrics = [
-    {
-      label: "Products compared",
-      value: productRows.length > 0 ? String(productRows.length) : "0",
-      hint: "Live CMS entries",
-      icon: ClipboardCheck,
-    },
-    {
-      label: "Provider shortlist",
-      value: providerRows.length > 0 ? String(providerRows.length) : "0",
-      hint: "With regional support",
-      icon: Users,
-    },
-    {
-      label: "Decision horizon",
-      value: "15 min",
-      hint: "To shortlist options",
-      icon: Timer,
-    },
-    {
-      label: "Review confidence",
-      value: "High",
-      hint: "Coverage-first framework",
-      icon: TrendingUp,
-    },
-  ];
   const decisionFactorsBySlug: Record<
     string,
     Array<{ title: string; description: string }>
@@ -506,10 +480,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
 
   const categoryHub = getCategoryHub(slug);
   const contentHub = isCategorySlug(slug) ? categoryContentHubs[slug] : null;
-  const heroIntro =
-    categorySummary && categorySummary.length > 0
-      ? categorySummary
-      : categoryHub.intro;
+  const heroIntro = categoryHub.intro;
 
   const sortedArticles = allArticles
     .filter((article) => articleMatchesCategory(article, slug))
@@ -533,6 +504,39 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       return false;
     })
     .slice(0, 3);
+  const categoryClaimsCount = claimsGuides.filter((guide) => {
+    if (!guide.slug) return false;
+    if (guide.category && typeof guide.category !== "string") {
+      return guide.category.slug === slug;
+    }
+    return false;
+  }).length;
+  const glanceMetrics = [
+    {
+      label: "Products compared",
+      value: String(products.length),
+      hint: "Live CMS entries",
+      icon: ClipboardCheck,
+    },
+    {
+      label: "Provider shortlist",
+      value: String(providers.length),
+      hint: "Regional coverage data",
+      icon: Users,
+    },
+    {
+      label: "Editorial guides",
+      value: String(sortedArticles.length),
+      hint: "Buying & deep guides",
+      icon: BookOpen,
+    },
+    {
+      label: "Claims playbooks",
+      value: String(categoryClaimsCount),
+      hint: "Category workflows",
+      icon: FileText,
+    },
+  ];
   const relatedCategories = insuranceCategories.filter(
     (item) => item.slug !== slug,
   );
@@ -572,7 +576,8 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd) }}
         />
       ) : null}
-      <section className="space-y-6 rounded-2xl border bg-gradient-to-br from-blue-600/[0.06] via-cyan-500/[0.03] to-card p-6 lg:p-8">
+      <section className="space-y-6 rounded-2xl border border-blue-200/50 bg-gradient-to-br from-blue-800/[0.06] via-sky-500/[0.03] to-card p-6 lg:p-8">
+        <HomeHeroBadges />
         <div className="hidden lg:grid lg:grid-cols-[1.45fr_1fr] lg:gap-6">
           <div className="space-y-3">
             <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
@@ -586,7 +591,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
               {categoryHub.scenarios.join(" · ")}
             </p>
           </div>
-          <aside className="rounded-xl border bg-gradient-to-br from-cyan-500/15 via-blue-500/10 to-indigo-500/10 p-4">
+          <aside className="rounded-xl border border-blue-100 bg-gradient-to-br from-sky-50/80 via-blue-50/60 to-white p-4 dark:border-blue-500/25 dark:from-blue-950/30 dark:to-card">
             <p className="text-sm font-semibold text-foreground">What this page helps you do</p>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
@@ -598,7 +603,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
                 {helpYouDoItems[1]}
               </li>
               <li className="flex items-start gap-2">
-                <BadgeCheck className="mt-0.5 h-4 w-4 text-indigo-600" />
+                <BadgeCheck className="mt-0.5 h-4 w-4 text-sky-600" />
                 {helpYouDoItems[2]}
               </li>
             </ul>
@@ -674,10 +679,12 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         ))}
       </section>
 
+      <EditorialDisclosure variant="homepage" />
+
       <section
         id="topic-cluster"
         aria-label="Topic cluster"
-        className="space-y-4 rounded-2xl border bg-gradient-to-br from-card via-indigo-500/[0.04] to-blue-500/[0.04] p-5"
+        className="space-y-4 rounded-2xl border bg-gradient-to-br from-card via-sky-500/[0.04] to-blue-500/[0.04] p-5"
       >
         <div className="flex flex-col gap-1">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
@@ -717,7 +724,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       {featuredGuide ? (
         <section
           aria-label="Featured deep guide"
-          className="relative overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-blue-600/[0.10] via-indigo-500/[0.06] to-card p-5 shadow-sm sm:p-6"
+          className="relative overflow-hidden rounded-2xl border border-sky-300/40 bg-gradient-to-br from-blue-800/[0.08] via-sky-500/[0.05] to-card p-5 shadow-sm sm:p-6"
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-primary/0 via-primary/70 to-primary/0" />
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
@@ -884,13 +891,15 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         </div>
       </section>
 
-      <section id="faqs" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-cyan-500/[0.03] p-5">
-        <h2 className="text-xl font-semibold tracking-tight">Frequently asked questions</h2>
+      <section id="faqs" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-sky-500/[0.03] p-5">
+        <h2 className="text-xl font-semibold tracking-tight text-blue-950 dark:text-blue-50">
+          Frequently asked questions
+        </h2>
         <div className="grid gap-3">
           {faqRows.length > 0 ? (
             faqRows.map((faq) => (
               <article key={faq.id} className="rounded-lg border bg-card p-4">
-                <p className="font-medium">{faq.question}</p>
+                <h3 className="font-medium">{faq.question}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
               </article>
             ))
@@ -905,7 +914,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       {contentHub ? (
         <section
           id="glossary"
-          className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-violet-500/[0.04] p-5"
+          className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-sky-500/[0.04] p-5"
         >
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div className="space-y-1">
@@ -1019,7 +1028,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
 
       <section
         id="decision-factors"
-        className="space-y-3 rounded-2xl border bg-gradient-to-r from-indigo-500/[0.04] via-blue-500/[0.03] to-transparent p-4 sm:p-5"
+        className="space-y-3 rounded-2xl border bg-gradient-to-r from-sky-500/[0.04] via-blue-500/[0.03] to-transparent p-4 sm:p-5"
       >
         <h2 className="text-xl font-semibold tracking-tight">How to choose well</h2>
         <div className="grid gap-3 md:grid-cols-3">
@@ -1051,8 +1060,8 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
         </div>
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {relatedCategories.map((item) => {
-            const hub = categoryHubBySlug[item.slug];
-            const blurb = hub?.intro?.split(".")[0] ?? "";
+            const blurb =
+              isCategorySlug(item.slug) ? categoryDescriptions[item.slug] : undefined;
             return (
               <Link
                 key={item.slug}
@@ -1065,7 +1074,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
                 <span className="flex-1 space-y-1">
                   <span className="block text-sm font-semibold text-foreground">{item.title}</span>
                   {blurb ? (
-                    <span className="block text-xs leading-5 text-muted-foreground">{blurb}.</span>
+                    <span className="block text-xs leading-5 text-muted-foreground">{blurb}</span>
                   ) : null}
                 </span>
                 <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />

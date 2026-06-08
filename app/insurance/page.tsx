@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, ShieldCheck, Sparkles } from "lucide-react";
-import { getCategories } from "@/lib/cms-client";
+import { ArrowRight } from "lucide-react";
+import { HomeHeroBadges } from "@/components/home-hero-badges";
+import { getCategories, getClaimCases, getClaimsGuides, getLatestArticles, getProducts } from "@/lib/cms-client";
+import { categoryDescriptions } from "@/lib/home-content";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 import { insuranceCategories } from "@/lib/site-data";
+import type { CategorySlug } from "@/lib/category-content-hub";
 
 export const metadata: Metadata = buildMetadata({
   title: "Insurance Categories",
@@ -13,154 +16,166 @@ export const metadata: Metadata = buildMetadata({
 });
 
 export default async function InsurancePage() {
-  const cmsCategories = await getCategories();
+  const [cmsCategories, articles, products, claimsGuides, claimCases] = await Promise.all([
+    getCategories(),
+    getLatestArticles(),
+    getProducts(),
+    getClaimsGuides(),
+    getClaimCases(),
+  ]);
+
   const categories =
     cmsCategories.length > 0
       ? cmsCategories.map((category) => ({ slug: category.slug, title: category.title }))
       : insuranceCategories;
+
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Insurance", path: "/insurance" },
   ]);
-  const quickActions = [
-    {
-      title: "Compare insurance products",
-      description: "Open side-by-side snapshots for pricing, coverage amount, and deductible signals.",
-      href: "/products",
-      cta: "Browse products",
-    },
-    {
-      title: "Review provider shortlist",
-      description: "Check provider pages for ratings, summaries, and regional availability context.",
-      href: "/providers",
-      cta: "Browse providers",
-    },
-    {
-      title: "Prepare for claims",
-      description: "Use claims guides and case references to understand document and timeline expectations.",
-      href: "/claims",
-      cta: "Open claims center",
-    },
-  ];
-  const comparisonHighlights = [
-    "Category-specific guidance for major insurance needs.",
-    "Coverage, deductible, and provider confidence context in one flow.",
-    "Mobile-friendly structure for fast scanning and quick decisions.",
+
+  const stats = [
+    { label: "Categories", value: `${categories.length} deep hubs` },
+    { label: "Products", value: `${products.length} reviews` },
+    { label: "Guides", value: `${articles.length} articles` },
+    { label: "Claims", value: `${claimsGuides.length + claimCases.length} resources` },
   ];
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-blue-600/[0.08] via-cyan-500/[0.05] to-card p-6 lg:p-8">
-        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
-          Insurance decision hub
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">Insurance Channels</h1>
-        <p className="max-w-3xl text-muted-foreground">
-          Browse category-specific comparisons, recommended plans, FAQs, and provider snapshots.
-        </p>
-        <div className="grid gap-2 sm:grid-cols-2 lg:max-w-2xl">
-          <article className="rounded-lg border bg-background/90 p-3">
-            <p className="flex items-center gap-2 text-sm font-medium">
-              <ShieldCheck className="h-4 w-4 text-blue-600" />
-              Coverage-first framework
-            </p>
-          </article>
-          <article className="rounded-lg border bg-background/90 p-3">
-            <p className="flex items-center gap-2 text-sm font-medium">
-              <ShieldCheck className="h-4 w-4 text-cyan-600" />
-              Claims and FAQ context included
-            </p>
-          </article>
-        </div>
-      </section>
 
-      <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {categories.map((category) => (
-          <Link
-            key={category.slug}
-            href={`/insurance/${category.slug}`}
-            className="rounded-xl border bg-gradient-to-br from-card to-blue-500/[0.03] p-4 transition-colors hover:bg-accent"
+      <section
+        aria-labelledby="insurance-hub-heading"
+        className="space-y-6 rounded-2xl border border-blue-200/50 bg-gradient-to-br from-blue-800/[0.07] via-sky-500/[0.05] to-white p-6 text-center lg:p-10 dark:to-card"
+      >
+        <HomeHeroBadges />
+        <div className="mx-auto max-w-3xl space-y-4">
+          <h1
+            id="insurance-hub-heading"
+            className="text-3xl font-semibold tracking-tight text-blue-950 sm:text-4xl dark:text-blue-50"
           >
-            <p className="font-medium">{category.title}</p>
-            <p className="mt-2 inline-flex items-center text-xs text-muted-foreground">
-              View channel
-              <ArrowRight className="ml-1 h-3.5 w-3.5" />
-            </p>
-          </Link>
-        ))}
-      </section>
-
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card via-cyan-500/[0.02] to-blue-500/[0.03] p-5">
-        <div className="space-y-2">
-          <h2 className="text-2xl font-semibold tracking-tight">How to use this insurance hub</h2>
-          <p className="max-w-3xl text-sm text-muted-foreground">
-            Pick your channel first, then compare products and providers before opening claims guides.
-            This keeps your decision process consistent across categories.
+            Insurance categories
+          </h1>
+          <p className="text-base leading-7 text-muted-foreground">
+            Browse category hubs with product comparisons, provider shortlists, buying guides, and
+            claims playbooks — structured the same way across every line.
           </p>
         </div>
-        <div className="grid gap-3 md:grid-cols-3">
-          <article className="rounded-xl border bg-background/90 p-4">
-            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 1</p>
-            <p className="mt-2 font-medium">Choose category</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Start with auto, life, home, pet, medicare, or renters based on your current need.
-            </p>
-          </article>
-          <article className="rounded-xl border bg-background/90 p-4">
-            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 2</p>
-            <p className="mt-2 font-medium">Compare options</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Review product snapshots and provider entries to shortlist the best-fit choices.
-            </p>
-          </article>
-          <article className="rounded-xl border bg-background/90 p-4">
-            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 3</p>
-            <p className="mt-2 font-medium">Plan claims readiness</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Check claims resources early so filing steps are clearer if incidents happen.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-5">
-        <div className="flex items-center justify-between gap-3">
-          <h2 className="text-2xl font-semibold tracking-tight">Quick paths</h2>
-          <Link href="/content-map" className="text-sm font-medium text-primary underline-offset-4 hover:underline">
-            Open content map
-          </Link>
-        </div>
-        <div className="grid gap-3 md:grid-cols-3">
-          {quickActions.map((action) => (
-            <article key={action.href} className="rounded-xl border bg-background/90 p-4 shadow-sm">
-              <p className="font-medium">{action.title}</p>
-              <p className="mt-2 text-sm text-muted-foreground">{action.description}</p>
-              <Link
-                href={action.href}
-                className="mt-3 inline-flex items-center text-sm font-medium text-primary underline-offset-4 hover:underline"
-              >
-                {action.cta}
-                <ArrowRight className="ml-1 h-3.5 w-3.5" />
-              </Link>
+        <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {stats.map((stat) => (
+            <article
+              key={stat.label}
+              className="rounded-xl border border-blue-100 bg-white/90 px-4 py-4 text-center shadow-sm dark:bg-background/95"
+            >
+              <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                {stat.label}
+              </p>
+              <p className="mt-1 text-lg font-semibold text-blue-900 dark:text-blue-100">{stat.value}</p>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-cyan-500/[0.03] p-5">
-        <h2 className="text-2xl font-semibold tracking-tight">Why compare by channel first</h2>
-        <ul className="grid gap-3 md:grid-cols-3">
-          {comparisonHighlights.map((item) => (
-            <li key={item} className="rounded-xl border bg-background/90 p-4 text-sm text-muted-foreground">
-              {item}
-            </li>
+      <section aria-labelledby="channels-heading" className="space-y-5">
+        <div className="space-y-2 text-center">
+          <h2
+            id="channels-heading"
+            className="text-2xl font-semibold tracking-tight text-blue-950 dark:text-blue-50"
+          >
+            Choose your coverage line
+          </h2>
+          <p className="mx-auto max-w-2xl text-sm leading-6 text-muted-foreground">
+            Each channel bundles deep guides, flagship reviews, provider data, category FAQs, and
+            claims workflows.
+          </p>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {categories.map((category) => (
+            <Link
+              key={category.slug}
+              href={`/insurance/${category.slug}`}
+              className="rounded-xl border border-blue-100 bg-white p-5 transition-colors hover:border-sky-300/80 hover:bg-blue-50/40 dark:bg-card"
+            >
+              <p className="font-semibold text-blue-900 dark:text-blue-100">{category.title}</p>
+              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                {categoryDescriptions[category.slug as CategorySlug] ??
+                  "Guides, products, and claims help."}
+              </p>
+              <p className="mt-3 inline-flex items-center text-sm font-medium text-sky-800 dark:text-sky-400">
+                Open hub
+                <ArrowRight className="ml-1 h-3.5 w-3.5" aria-hidden />
+              </p>
+            </Link>
           ))}
-        </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="workflow-heading" className="space-y-4 rounded-2xl border bg-card p-5 lg:p-6">
+        <h2
+          id="workflow-heading"
+          className="text-2xl font-semibold tracking-tight text-blue-950 dark:text-blue-50"
+        >
+          How to use each hub
+        </h2>
+        <ol className="grid gap-3 md:grid-cols-3">
+          <li className="rounded-xl border border-blue-100 bg-background p-4">
+            <p className="text-xs font-medium uppercase tracking-wide text-sky-700 dark:text-sky-400">
+              Step 1
+            </p>
+            <p className="mt-2 font-medium">Read the buying guide</p>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              Understand limits, deductibles, and exclusions before comparing premiums.
+            </p>
+          </li>
+          <li className="rounded-xl border border-blue-100 bg-background p-4">
+            <p className="text-xs font-medium uppercase tracking-wide text-sky-700 dark:text-sky-400">
+              Step 2
+            </p>
+            <p className="mt-2 font-medium">Compare products &amp; providers</p>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              Shortlist options using editorial reviews, price bands, and service signals.
+            </p>
+          </li>
+          <li className="rounded-xl border border-blue-100 bg-background p-4">
+            <p className="text-xs font-medium uppercase tracking-wide text-sky-700 dark:text-sky-400">
+              Step 3
+            </p>
+            <p className="mt-2 font-medium">Bookmark claims playbooks</p>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              Save FNOL steps and checklists before an incident compresses your timeline.
+            </p>
+          </li>
+        </ol>
+        <div className="flex flex-wrap gap-4 text-sm">
+          <Link
+            href="/products"
+            className="font-medium text-sky-800 underline-offset-4 hover:underline dark:text-sky-400"
+          >
+            All products
+          </Link>
+          <Link
+            href="/providers"
+            className="font-medium text-sky-800 underline-offset-4 hover:underline dark:text-sky-400"
+          >
+            All providers
+          </Link>
+          <Link
+            href="/claims"
+            className="font-medium text-sky-800 underline-offset-4 hover:underline dark:text-sky-400"
+          >
+            Claims center
+          </Link>
+          <Link
+            href="/methodology"
+            className="font-medium text-sky-800 underline-offset-4 hover:underline dark:text-sky-400"
+          >
+            Editorial methodology
+          </Link>
+        </div>
       </section>
     </div>
   );

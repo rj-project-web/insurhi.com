@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import Link from "next/link";
-import { ArrowRight, BookOpenText, Building2, FileCheck2, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { EditorialDisclosure } from "@/components/editorial-disclosure";
+import { HomeHeroBadges } from "@/components/home-hero-badges";
+import { HomeLatestFeed } from "@/components/home-latest-feed";
 import {
-  getAllPages,
   getClaimCases,
   getClaimsGuides,
   getFaqItems,
@@ -11,8 +12,8 @@ import {
   getProducts,
   getProviders,
 } from "@/lib/cms-client";
-import { isMobileUserAgent } from "@/lib/device";
-import { buildMetadata, buildWebSiteJsonLd } from "@/lib/seo";
+import { categoryDescriptions } from "@/lib/home-content";
+import { buildFaqPageJsonLd, buildMetadata, buildWebSiteJsonLd } from "@/lib/seo";
 import { insuranceCategories } from "@/lib/site-data";
 
 export const metadata: Metadata = buildMetadata({
@@ -24,103 +25,27 @@ export const metadata: Metadata = buildMetadata({
 
 export default async function Home() {
   const webSiteJsonLd = buildWebSiteJsonLd();
-  const userAgent = (await headers()).get("user-agent") ?? "";
-  const isMobile = isMobileUserAgent(userAgent);
-  const [articles, claimsGuides, claimCases, providers, products, faqItems, pages] =
-    await Promise.all([
-      getLatestArticles(),
-      getClaimsGuides(),
-      getClaimCases(),
-      getProviders(),
-      getProducts(),
-      getFaqItems(),
-      getAllPages(),
-    ]);
+  const [articles, claimsGuides, claimCases, products, providers, faqItems] = await Promise.all([
+    getLatestArticles(),
+    getClaimsGuides(),
+    getClaimCases(),
+    getProducts(),
+    getProviders(),
+    getFaqItems(),
+  ]);
 
-  const latestGuides = articles.slice(0, 5);
-  const latestClaimsUpdates: Array<{ key: string; label: string; href?: string }> = [];
-  for (let i = 0; latestClaimsUpdates.length < 5; i++) {
-    const claimGuide = claimsGuides[i];
-    const claimCase = claimCases[i];
-
-    if (claimGuide) {
-      latestClaimsUpdates.push({
-        key: `claim-guide-${claimGuide.id}`,
-        label: claimGuide.title,
-        href: claimGuide.slug ? `/claims/guides/${claimGuide.slug}` : undefined,
-      });
-    }
-    if (claimCase && latestClaimsUpdates.length < 5) {
-      latestClaimsUpdates.push({
-        key: `claim-case-${claimCase.id}`,
-        label: claimCase.title,
-        href: `/claims/cases/${claimCase.id}`,
-      });
-    }
-    if (!claimGuide && !claimCase) {
-      break;
-    }
-  }
-  const latestDataUpdates = [
-    ...products.slice(0, 5).map((product) => ({
-      key: `product-${product.id}`,
-      label: `Product: ${product.name}`,
-      href: `/products/${product.slug}`,
-    })),
-    ...providers.slice(0, 5).map((provider) => ({
-      key: `provider-${provider.id}`,
-      label: `Provider: ${provider.name}`,
-      href: `/providers/${provider.slug}`,
-    })),
-    ...faqItems.slice(0, 5).map((faq) => ({
-      key: `faq-${faq.id}`,
-      label: `FAQ: ${faq.question}`,
-      href: "/content-map",
-    })),
-    ...pages.slice(0, 5).map((page) => ({
-      key: `page-${page.id}`,
-      label: `Page: ${page.title}`,
-      href: "/content-map",
-    })),
-  ].slice(0, 5);
-  if (!latestDataUpdates.length) {
-    latestDataUpdates.push({
-      key: "content-map-fallback",
-      label: "Open content map for full latest data",
-      href: "/content-map",
-    });
-  }
-
-  const heroDescription = isMobile
-    ? "Compare plans and claims help on the go."
-    : "Insurhi helps users compare options, learn coverage basics, and handle claims with practical guidance.";
-  const quickPaths = [
-    {
-      title: "Compare insurance products",
-      description: "Review product snapshots, pricing ranges, and deductible details side by side.",
-      href: "/products",
-      cta: "Open products",
-    },
-    {
-      title: "Browse provider shortlist",
-      description: "Check provider strengths, regional support, and service quality indicators.",
-      href: "/providers",
-      cta: "Open providers",
-    },
-    {
-      title: "Use claims center",
-      description: "Read step-by-step guides and practical case references before filing.",
-      href: "/claims",
-      cta: "Open claims center",
-    },
-    {
-      title: "Explore guide library",
-      description: "Learn coverage basics, decision factors, and buying mistakes to avoid.",
-      href: "/guides",
-      cta: "Open guides",
-    },
-  ];
   const featuredFaqs = faqItems.slice(0, 4);
+  const faqPageJsonLd = buildFaqPageJsonLd(
+    featuredFaqs.map((faq) => ({ question: faq.question, answer: faq.answer })),
+  );
+  const claimsResourceCount = claimsGuides.length + claimCases.length;
+
+  const heroStats = [
+    { label: "Categories", value: `${insuranceCategories.length} deep hubs` },
+    { label: "Analysis", value: `${products.length} products` },
+    { label: "Expertise", value: `${articles.length} guides` },
+    { label: "Support", value: `${claimsResourceCount} claims resources` },
+  ] as const;
 
   return (
     <div className="space-y-10">
@@ -128,232 +53,115 @@ export default async function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteJsonLd) }}
       />
-      <section className="space-y-5 rounded-2xl border bg-gradient-to-br from-blue-600/[0.08] via-cyan-500/[0.05] to-card p-6 lg:p-8">
-        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
-          Insurance content hub
+      {faqPageJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd) }}
+        />
+      ) : null}
+
+      <section
+        aria-labelledby="home-hero-heading"
+        className="space-y-5 rounded-2xl border border-blue-200/50 bg-gradient-to-br from-blue-800/[0.06] via-sky-500/[0.05] to-card p-6 lg:p-8"
+      >
+        <HomeHeroBadges />
+        <h1
+          id="home-hero-heading"
+          className="text-3xl font-semibold tracking-tight text-blue-950 sm:text-4xl dark:text-blue-50"
+        >
+          Compare Insurance Options &amp; Claims Guidance
+        </h1>
+        <p className="max-w-2xl text-base leading-7 text-muted-foreground">
+          Insurhi provides independent research across auto, home, life, Medicare, pet, and renters.
+          Category playbooks help you compare coverage and navigate claims with confidence.
         </p>
-        <h1 className="text-4xl font-semibold tracking-tight">Insurance clarity, made simple.</h1>
-        <p className="max-w-2xl text-muted-foreground">{heroDescription}</p>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <article className="rounded-lg border bg-background/90 p-3">
-            <p className="text-xs text-muted-foreground">Categories</p>
-            <p className="mt-1 text-xl font-semibold">{insuranceCategories.length}</p>
-          </article>
-          <article className="rounded-lg border bg-background/90 p-3">
-            <p className="text-xs text-muted-foreground">Products</p>
-            <p className="mt-1 text-xl font-semibold">{products.length}</p>
-          </article>
-          <article className="rounded-lg border bg-background/90 p-3">
-            <p className="text-xs text-muted-foreground">Guides</p>
-            <p className="mt-1 text-xl font-semibold">{articles.length}</p>
-          </article>
-          <article className="rounded-lg border bg-background/90 p-3">
-            <p className="text-xs text-muted-foreground">Claims resources</p>
-            <p className="mt-1 text-xl font-semibold">{claimsGuides.length + claimCases.length}</p>
-          </article>
+          {heroStats.map((stat) => (
+            <article
+              key={stat.label}
+              className="rounded-lg border border-blue-100 bg-background/95 px-4 py-3"
+            >
+              <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                {stat.label}
+              </p>
+              <p className="mt-1 text-lg font-semibold capitalize text-blue-900 dark:text-blue-100">
+                {stat.value}
+              </p>
+            </article>
+          ))}
         </div>
+        <EditorialDisclosure variant="compact" />
       </section>
 
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card to-blue-500/[0.03] p-5">
-        <h2 className="text-2xl font-semibold tracking-tight">Insurance Categories</h2>
+      <section aria-labelledby="categories-heading" className="space-y-4 rounded-2xl border bg-card p-5 lg:p-6">
+        <div className="space-y-2">
+          <h2
+            id="categories-heading"
+            className="text-2xl font-semibold tracking-tight text-blue-950 dark:text-blue-50"
+          >
+            Insurance categories
+          </h2>
+          <p className="max-w-3xl text-sm leading-6 text-muted-foreground">
+            Access comprehensive hubs for specialized coverage with expert reviews and step-by-step
+            claims playbooks.
+          </p>
+        </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {insuranceCategories.map((category) => (
             <Link
               key={category.slug}
               href={`/insurance/${category.slug}`}
-              className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent"
+              className="rounded-xl border border-blue-100 bg-background p-4 transition-colors hover:border-sky-300/80 hover:bg-blue-50/40"
             >
-              <p className="font-medium">{category.title}</p>
-              <p className="mt-2 inline-flex items-center text-xs text-muted-foreground">
-                Explore channel
-                <ArrowRight className="ml-1 h-3.5 w-3.5" />
+              <p className="font-semibold text-blue-900 dark:text-blue-100">{category.title}</p>
+              <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                {categoryDescriptions[category.slug as keyof typeof categoryDescriptions] ??
+                  "Guides, products, and claims help."}
               </p>
             </Link>
           ))}
           <Link
             href="/resources"
-            className="rounded-lg border bg-background p-4 transition-colors hover:bg-accent"
+            className="flex flex-col justify-center rounded-xl border border-dashed border-blue-200 bg-blue-50/30 p-4 transition-colors hover:border-sky-400/80 hover:bg-blue-50/60 dark:border-blue-500/30 dark:bg-blue-950/15"
           >
-            <p className="font-medium">Explore more insurance resources</p>
+            <p className="font-semibold text-blue-900 dark:text-blue-100">View all resources</p>
+            <p className="mt-2 text-sm text-muted-foreground">Glossary, FAQs, and editorial deep dives.</p>
+            <span className="mt-3 inline-flex items-center text-sm font-medium text-sky-800 dark:text-sky-400">
+              Open resource hub
+              <ArrowRight className="ml-1 h-3.5 w-3.5" aria-hidden />
+            </span>
           </Link>
         </div>
       </section>
 
-      <section
-        className="relative overflow-hidden rounded-2xl border bg-card/90 p-4 lg:p-5 dark:border-slate-700/70 dark:bg-slate-900/50"
-        style={{ backgroundImage: "url('/home-latest-bg.svg')" }}
-      >
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/70 via-blue-50/50 to-cyan-50/60 dark:from-slate-950/70 dark:via-slate-900/55 dark:to-cyan-950/35" />
-        <div className="relative grid gap-3 lg:grid-cols-3">
-          <article className="group animate-card-fade-up relative overflow-hidden rounded-2xl border border-indigo-200/70 bg-gradient-to-br from-white/95 via-indigo-50/70 to-blue-50/60 p-4 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-indigo-300/80 hover:shadow-lg dark:border-indigo-500/30 dark:from-slate-900/90 dark:via-indigo-950/30 dark:to-slate-900/80 dark:hover:border-indigo-400/50">
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-white/70 to-transparent dark:from-indigo-200/10" />
-          <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-indigo-300/35 blur-2xl transition-transform duration-500 group-hover:scale-110 dark:bg-indigo-500/20" />
-          <p className="relative flex items-center gap-2 text-sm font-medium">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-indigo-100 text-indigo-700 ring-1 ring-indigo-200 transition-transform duration-300 group-hover:scale-105 dark:bg-indigo-500/20 dark:text-indigo-200 dark:ring-indigo-400/30">
-              <BookOpenText className="h-4 w-4" />
-            </span>
-            Latest guides
-          </p>
-          {latestGuides.length ? (
-            <ul className="relative mt-3 space-y-2 text-sm text-muted-foreground">
-              {latestGuides.map((guide) => (
-                <li key={`guide-${guide.id}`}>
-                  <Link
-                    href={`/guides/${guide.slug}`}
-                    className="inline-flex transition-colors hover:text-foreground hover:underline hover:underline-offset-4"
-                  >
-                    {guide.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mt-3 text-sm text-muted-foreground">No guides published yet.</p>
-          )}
-        </article>
+      <HomeLatestFeed
+        articles={articles}
+        claimsGuides={claimsGuides}
+        claimCases={claimCases}
+        products={products}
+        providers={providers}
+      />
 
-          <article
-            className="group animate-card-fade-up relative overflow-hidden rounded-2xl border border-cyan-200/70 bg-gradient-to-br from-white/95 via-cyan-50/70 to-blue-50/60 p-4 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-300/80 hover:shadow-lg dark:border-cyan-500/30 dark:from-slate-900/90 dark:via-cyan-950/25 dark:to-slate-900/80 dark:hover:border-cyan-400/50"
-            style={{ animationDelay: "90ms" }}
+      <section aria-labelledby="faq-heading" className="space-y-4 rounded-2xl border bg-card p-5 lg:p-6">
+        <div className="space-y-2">
+          <h2
+            id="faq-heading"
+            className="text-2xl font-semibold tracking-tight text-blue-950 dark:text-blue-50"
           >
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-white/70 to-transparent dark:from-cyan-200/10" />
-          <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-cyan-300/35 blur-2xl transition-transform duration-500 group-hover:scale-110 dark:bg-cyan-500/20" />
-          <p className="relative flex items-center gap-2 text-sm font-medium">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-cyan-100 text-cyan-700 ring-1 ring-cyan-200 transition-transform duration-300 group-hover:scale-105 dark:bg-cyan-500/20 dark:text-cyan-200 dark:ring-cyan-400/30">
-              <FileCheck2 className="h-4 w-4" />
-            </span>
-            Claims spotlight
+            Frequently asked questions
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            Common questions about our research, independence, and how to use Insurhi.
           </p>
-          {latestClaimsUpdates.length ? (
-            <ul className="relative mt-3 space-y-2 text-sm text-muted-foreground">
-              {latestClaimsUpdates.map((item) => (
-                <li key={item.key}>
-                  {item.href ? (
-                    <Link
-                      href={item.href}
-                      className="inline-flex transition-colors hover:text-foreground hover:underline hover:underline-offset-4"
-                    >
-                      {item.label}
-                    </Link>
-                  ) : (
-                    item.label
-                  )}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="mt-3 text-sm text-muted-foreground">No claims content published yet.</p>
-          )}
-        </article>
-
-          <article
-            className="group animate-card-fade-up relative overflow-hidden rounded-2xl border border-blue-200/70 bg-gradient-to-br from-white/95 via-blue-50/70 to-sky-50/60 p-4 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-300/80 hover:shadow-lg dark:border-blue-500/30 dark:from-slate-900/90 dark:via-blue-950/25 dark:to-slate-900/80 dark:hover:border-blue-400/50"
-            style={{ animationDelay: "180ms" }}
-          >
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-white/70 to-transparent dark:from-blue-200/10" />
-          <div className="pointer-events-none absolute -right-10 -top-10 h-28 w-28 rounded-full bg-blue-300/35 blur-2xl transition-transform duration-500 group-hover:scale-110 dark:bg-blue-500/20" />
-          <p className="relative flex items-center gap-2 text-sm font-medium">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-blue-100 text-blue-700 ring-1 ring-blue-200 transition-transform duration-300 group-hover:scale-105 dark:bg-blue-500/20 dark:text-blue-200 dark:ring-blue-400/30">
-              <Building2 className="h-4 w-4" />
-            </span>
-            Latest data updates
-          </p>
-          <ul className="relative mt-3 space-y-2 text-sm text-muted-foreground">
-            {latestDataUpdates.map((item) => (
-              <li key={item.key}>
-                {item.href ? (
-                  <Link
-                    href={item.href}
-                    className="inline-flex transition-colors hover:text-foreground hover:underline hover:underline-offset-4"
-                  >
-                    {item.label}
-                  </Link>
-                ) : (
-                  item.label
-                )}
-              </li>
-            ))}
-          </ul>
-          </article>
-        </div>
-      </section>
-
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card via-cyan-500/[0.02] to-blue-500/[0.03] p-5">
-        <h2 className="text-2xl font-semibold tracking-tight">How Insurhi helps you decide</h2>
-        <p className="max-w-3xl text-sm text-muted-foreground">
-          Follow a simple decision workflow: pick your insurance channel, compare products and providers,
-          then prepare claim steps before incidents happen.
-        </p>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <article className="rounded-xl border bg-background/90 p-4">
-            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 1</p>
-            <p className="mt-2 font-medium">Choose insurance category</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Start from life, auto, home, pet, medicare, or renters based on your current need.
-            </p>
-          </article>
-          <article className="rounded-xl border bg-background/90 p-4">
-            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 2</p>
-            <p className="mt-2 font-medium">Compare products</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Use product snapshots to evaluate price range, coverage fit, and deductible strategy.
-            </p>
-          </article>
-          <article className="rounded-xl border bg-background/90 p-4">
-            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 3</p>
-            <p className="mt-2 font-medium">Shortlist providers</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Narrow options with provider service quality, claim responsiveness, and region coverage.
-            </p>
-          </article>
-          <article className="rounded-xl border bg-background/90 p-4">
-            <p className="text-xs font-medium uppercase tracking-wide text-cyan-700">Step 4</p>
-            <p className="mt-2 font-medium">Prepare claims readiness</p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Review claims guides and real cases so documentation and timelines are clearer in advance.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-5">
-        <div className="flex items-center justify-between gap-3">
-          <h2 className="text-2xl font-semibold tracking-tight">Quick paths</h2>
-          <Link href="/content-map" className="text-sm font-medium text-primary underline-offset-4 hover:underline">
-            Open content map
-          </Link>
-        </div>
-        <div className="grid gap-3 md:grid-cols-2">
-          {quickPaths.map((path) => (
-            <article key={path.href} className="rounded-xl border bg-background/90 p-4 shadow-sm">
-              <p className="font-medium">{path.title}</p>
-              <p className="mt-2 text-sm text-muted-foreground">{path.description}</p>
-              <Link
-                href={path.href}
-                className="mt-3 inline-flex items-center text-sm font-medium text-primary underline-offset-4 hover:underline"
-              >
-                {path.cta}
-                <ArrowRight className="ml-1 h-3.5 w-3.5" />
-              </Link>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-card to-cyan-500/[0.03] p-5">
-        <div className="flex items-center justify-between gap-3">
-          <h2 className="text-2xl font-semibold tracking-tight">Featured FAQs</h2>
-          <Link href="/content-map" className="text-sm font-medium text-primary underline-offset-4 hover:underline">
-            View full content map
-          </Link>
         </div>
         {featuredFaqs.length ? (
-          <div className="grid gap-3 md:grid-cols-2">
+          <div className="grid gap-4 md:grid-cols-2">
             {featuredFaqs.map((faq) => (
-              <article key={faq.id} className="rounded-xl border bg-background/90 p-4">
-                <p className="font-medium">{faq.question}</p>
-                <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
+              <article key={faq.id} className="rounded-xl border border-blue-100 bg-background p-4">
+                <h3 className="text-base font-semibold text-blue-950 dark:text-blue-50">
+                  {faq.question}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">{faq.answer}</p>
               </article>
             ))}
           </div>
@@ -362,6 +170,26 @@ export default async function Home() {
             FAQ content will appear here once entries are published.
           </p>
         )}
+        <div className="flex flex-wrap gap-4 text-sm">
+          <Link
+            href="/methodology"
+            className="font-medium text-sky-800 underline-offset-4 hover:underline dark:text-sky-400"
+          >
+            Editorial methodology
+          </Link>
+          <Link
+            href="/glossary"
+            className="font-medium text-sky-800 underline-offset-4 hover:underline dark:text-sky-400"
+          >
+            Insurance glossary
+          </Link>
+          <Link
+            href="/contact"
+            className="font-medium text-sky-800 underline-offset-4 hover:underline dark:text-sky-400"
+          >
+            Contact editorial
+          </Link>
+        </div>
       </section>
     </div>
   );

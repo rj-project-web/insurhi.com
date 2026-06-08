@@ -3,19 +3,22 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   ArrowRight,
-  BadgeCheck,
   BookOpen,
-  CircleDollarSign,
   ClipboardCheck,
   Compass,
   FileText,
   Layers,
-  ShieldCheck,
   Sparkles,
   Users,
 } from "lucide-react";
 import { EditorialDisclosure } from "@/components/editorial-disclosure";
 import { HomeHeroBadges } from "@/components/home-hero-badges";
+import {
+  CategoryIconBadge,
+  InsuranceScenarioGallery,
+  InsuranceVisualDashboard,
+  InsuranceVisualHero,
+} from "@/components/insurance-visuals";
 import {
   getArticlesList,
   getClaimsGuidesList,
@@ -326,46 +329,6 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       ])
     : [[], [], [], await getArticlesList(), await getClaimsGuidesList()];
 
-  const helpYouDoBySlug: Record<string, [string, string, string]> = {
-    auto: [
-      "Match liability, collision, and comprehensive limits to your driving exposure.",
-      "Balance premium savings with deductibles you can realistically pay after an accident.",
-      "Compare providers on claim speed, repair network quality, and roadside support.",
-    ],
-    life: [
-      "Estimate coverage needed to protect income replacement and long-term family goals.",
-      "Compare term vs whole life structures against your budget and timeline.",
-      "Shortlist insurers with stronger underwriting clarity and beneficiary support.",
-    ],
-    home: [
-      "Align dwelling and personal property limits with your home's rebuild risk.",
-      "Compare deductible options for weather, fire, and theft claim scenarios.",
-      "Evaluate provider claim handling for local catastrophe and contractor coordination.",
-    ],
-    pet: [
-      "Match accident and illness coverage to your pet's age and breed risk profile.",
-      "Compare reimbursement rates, annual limits, and waiting periods side by side.",
-      "Shortlist providers with clearer exclusions and faster veterinary reimbursements.",
-    ],
-    medicare: [
-      "Compare Medicare plan structures based on provider access and prescription needs.",
-      "Review premium and out-of-pocket trade-offs for predictable annual healthcare costs.",
-      "Choose carriers with stronger member support and enrollment guidance.",
-    ],
-    renters: [
-      "Set personal property and liability limits that fit your rental lifestyle.",
-      "Compare premiums with deductibles for theft, fire, and water damage scenarios.",
-      "Identify providers with smoother digital claims and temporary living support.",
-    ],
-  };
-  const helpYouDoItems =
-    helpYouDoBySlug[slug] ??
-    ([
-      "Identify policy terms that match your risk profile.",
-      "Compare premium and deductible trade-offs quickly.",
-      "Shortlist providers with stronger service confidence.",
-    ] as [string, string, string]);
-
   const productRows = products.slice(0, 6);
   const providerRows = providers.slice(0, 6);
   const faqRows = faqs.slice(0, 8);
@@ -481,6 +444,9 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
   const categoryHub = getCategoryHub(slug);
   const contentHub = isCategorySlug(slug) ? categoryContentHubs[slug] : null;
   const heroIntro = categoryHub.intro;
+  const heroSummary = isCategorySlug(slug)
+    ? categoryDescriptions[slug]
+    : `${heroIntro.split(".")[0]}.`;
 
   const sortedArticles = allArticles
     .filter((article) => articleMatchesCategory(article, slug))
@@ -585,29 +551,19 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
               Insurance / {category.title}
             </p>
             <h1 className="text-4xl font-semibold tracking-tight">{category.title}</h1>
-            <p className="max-w-4xl text-base leading-7 text-muted-foreground">{heroIntro}</p>
-            <p className="max-w-4xl text-sm leading-6 text-muted-foreground/90">
-              <span className="font-medium text-foreground">Common reader scenarios:</span>{" "}
-              {categoryHub.scenarios.join(" · ")}
-            </p>
+            <p className="max-w-3xl text-base leading-7 text-muted-foreground">{heroSummary}</p>
+            <div className="flex flex-wrap gap-2">
+              {categoryHub.scenarios.map((scenario) => (
+                <span
+                  key={scenario}
+                  className="rounded-full border border-blue-100 bg-background/80 px-3 py-1 text-xs text-muted-foreground"
+                >
+                  {scenario}
+                </span>
+              ))}
+            </div>
           </div>
-          <aside className="rounded-xl border border-blue-100 bg-gradient-to-br from-sky-50/80 via-blue-50/60 to-white p-4 dark:border-blue-500/25 dark:from-blue-950/30 dark:to-card">
-            <p className="text-sm font-semibold text-foreground">What this page helps you do</p>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li className="flex items-start gap-2">
-                <ShieldCheck className="mt-0.5 h-4 w-4 text-blue-600" />
-                {helpYouDoItems[0]}
-              </li>
-              <li className="flex items-start gap-2">
-                <CircleDollarSign className="mt-0.5 h-4 w-4 text-cyan-600" />
-                {helpYouDoItems[1]}
-              </li>
-              <li className="flex items-start gap-2">
-                <BadgeCheck className="mt-0.5 h-4 w-4 text-sky-600" />
-                {helpYouDoItems[2]}
-              </li>
-            </ul>
-          </aside>
+          <InsuranceVisualHero slug={slug} title={category.title} />
         </div>
 
         <div className="space-y-4 lg:hidden">
@@ -616,17 +572,8 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
             Insurance / {category.title}
           </p>
           <h1 className="text-3xl font-semibold tracking-tight">{category.title}</h1>
-          <p className="text-sm leading-6 text-muted-foreground">{heroIntro}</p>
-          <div className="grid gap-2">
-            <article className="rounded-lg border bg-background/90 p-3">
-              <p className="text-xs font-medium text-foreground">Coverage fit</p>
-              <p className="mt-1 text-xs text-muted-foreground">{helpYouDoItems[0]}</p>
-            </article>
-            <article className="rounded-lg border bg-background/90 p-3">
-              <p className="text-xs font-medium text-foreground">Price vs deductible</p>
-              <p className="mt-1 text-xs text-muted-foreground">{helpYouDoItems[1]}</p>
-            </article>
-          </div>
+          <p className="text-sm leading-6 text-muted-foreground">{heroSummary}</p>
+          <InsuranceVisualHero slug={slug} title={category.title} />
         </div>
 
         <div className="hidden gap-3 sm:grid-cols-2 lg:grid lg:grid-cols-5">
@@ -678,6 +625,17 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
           </article>
         ))}
       </section>
+
+      <InsuranceVisualDashboard
+        slug={slug}
+        title={category.title}
+        productCount={products.length}
+        providerCount={providers.length}
+        guideCount={sortedArticles.length}
+        claimsCount={categoryClaimsCount}
+      />
+
+      <InsuranceScenarioGallery scenarios={categoryHub.scenarios} />
 
       <EditorialDisclosure variant="homepage" />
 
@@ -857,34 +815,54 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
             All products
           </Link>
         </div>
-        <div className="overflow-x-auto rounded-xl border bg-card">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {productRows.length > 0 ? (
-            <table className="w-full min-w-[720px] text-sm">
-              <thead className="bg-muted/50 text-left">
-                <tr>
-                  <th className="px-4 py-3 font-medium">Product</th>
-                  <th className="px-4 py-3 font-medium">Price range</th>
-                  <th className="px-4 py-3 font-medium">Coverage</th>
-                  <th className="px-4 py-3 font-medium">Deductible</th>
-                </tr>
-              </thead>
-              <tbody>
-                {productRows.map((product) => (
-                  <tr key={product.id} className="border-t align-top">
-                    <td className="px-4 py-3">
-                      <Link href={`/products/${product.slug}`} className="font-medium underline-offset-4 hover:underline">
-                        {product.name}
-                      </Link>
-                    </td>
-                    <td className="px-4 py-3 text-muted-foreground">{product.priceRange ?? "—"}</td>
-                    <td className="px-4 py-3 text-muted-foreground">{product.coverageAmount ?? "—"}</td>
-                    <td className="px-4 py-3 text-muted-foreground">{product.deductible ?? "—"}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            productRows.map((product, index) => (
+              <Link
+                key={product.id}
+                href={`/products/${product.slug}`}
+                className="group overflow-hidden rounded-xl border border-blue-100 bg-background shadow-sm transition-colors hover:border-sky-300/80 hover:bg-blue-50/30"
+              >
+                <div className="h-20 bg-gradient-to-br from-blue-900 via-blue-700 to-sky-500 p-3">
+                  <div className="flex items-center justify-between text-white/90">
+                    <span className="rounded-full bg-white/15 px-2 py-1 text-[10px] font-semibold uppercase tracking-wide">
+                      Review
+                    </span>
+                    <span className="text-2xl font-semibold text-white/25">0{index + 1}</span>
+                  </div>
+                </div>
+                <div className="space-y-3 p-4">
+                  <p className="font-medium text-foreground group-hover:underline group-hover:underline-offset-4">
+                    {product.name}
+                  </p>
+                  <div className="space-y-2 text-xs text-muted-foreground">
+                    <p>
+                      <span className="font-medium text-foreground">Price:</span>{" "}
+                      {product.priceRange ?? "See details"}
+                    </p>
+                    <p>
+                      <span className="font-medium text-foreground">Coverage:</span>{" "}
+                      {product.coverageAmount ?? "Coverage varies"}
+                    </p>
+                    <p>
+                      <span className="font-medium text-foreground">Deductible:</span>{" "}
+                      {product.deductible ?? "See policy"}
+                    </p>
+                  </div>
+                  <div className="space-y-1.5">
+                    <div className="h-1.5 rounded-full bg-blue-100 dark:bg-blue-950">
+                      <div
+                        className="h-full rounded-full bg-sky-600"
+                        style={{ width: `${58 + (index % 3) * 13}%` }}
+                      />
+                    </div>
+                    <p className="text-[11px] text-muted-foreground">Coverage signal</p>
+                  </div>
+                </div>
+              </Link>
+            ))
           ) : (
-            <p className="p-4 text-sm text-muted-foreground">
+            <p className="rounded-lg border border-border/70 bg-background px-3 py-2.5 text-sm text-muted-foreground">
               CMS products for this category will appear here after publishing.
             </p>
           )}
@@ -1068,9 +1046,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
                 href={`/insurance/${item.slug}`}
                 className="group flex items-start gap-3 rounded-xl border border-border/70 bg-background p-3 transition-colors hover:border-primary/40 hover:bg-accent/40"
               >
-                <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                  <Compass className="h-3.5 w-3.5" />
-                </span>
+                <CategoryIconBadge slug={item.slug} label={item.title} />
                 <span className="flex-1 space-y-1">
                   <span className="block text-sm font-semibold text-foreground">{item.title}</span>
                   {blurb ? (

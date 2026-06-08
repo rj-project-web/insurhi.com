@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { HomeHeroBadges } from "@/components/home-hero-badges";
+import {
+  CategoryIconBadge,
+  InsuranceCategoryPoster,
+  InsuranceJourneyVisual,
+} from "@/components/insurance-visuals";
 import { getCategories, getClaimCases, getClaimsGuides, getLatestArticles, getProducts } from "@/lib/cms-client";
 import { categoryDescriptions } from "@/lib/home-content";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
@@ -50,33 +55,38 @@ export default async function InsurancePage() {
 
       <section
         aria-labelledby="insurance-hub-heading"
-        className="space-y-6 rounded-2xl border border-blue-200/50 bg-gradient-to-br from-blue-800/[0.07] via-sky-500/[0.05] to-white p-6 text-center lg:p-10 dark:to-card"
+        className="rounded-2xl border border-blue-200/50 bg-gradient-to-br from-blue-800/[0.07] via-sky-500/[0.05] to-white p-6 lg:p-10 dark:to-card"
       >
-        <HomeHeroBadges />
-        <div className="mx-auto max-w-3xl space-y-4">
-          <h1
-            id="insurance-hub-heading"
-            className="text-3xl font-semibold tracking-tight text-blue-950 sm:text-4xl dark:text-blue-50"
-          >
-            Insurance categories
-          </h1>
-          <p className="text-base leading-7 text-muted-foreground">
-            Browse category hubs with product comparisons, provider shortlists, buying guides, and
-            claims playbooks — structured the same way across every line.
-          </p>
-        </div>
-        <div className="mx-auto grid max-w-4xl gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((stat) => (
-            <article
-              key={stat.label}
-              className="rounded-xl border border-blue-100 bg-white/90 px-4 py-4 text-center shadow-sm dark:bg-background/95"
-            >
-              <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
-                {stat.label}
+        <div className="grid gap-6 lg:grid-cols-[1fr_0.95fr] lg:items-center">
+          <div className="space-y-5 text-center lg:text-left">
+            <HomeHeroBadges />
+            <div className="space-y-4">
+              <h1
+                id="insurance-hub-heading"
+                className="text-3xl font-semibold tracking-tight text-blue-950 sm:text-4xl dark:text-blue-50"
+              >
+                Insurance categories
+              </h1>
+              <p className="max-w-2xl text-base leading-7 text-muted-foreground">
+                Pick a coverage line, then compare guides, products, providers, and claims workflows
+                in one visual hub.
               </p>
-              <p className="mt-1 text-lg font-semibold text-blue-900 dark:text-blue-100">{stat.value}</p>
-            </article>
-          ))}
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              {stats.map((stat) => (
+                <article
+                  key={stat.label}
+                  className="rounded-xl border border-blue-100 bg-white/90 px-4 py-4 shadow-sm dark:bg-background/95"
+                >
+                  <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                    {stat.label}
+                  </p>
+                  <p className="mt-1 text-lg font-semibold text-blue-900 dark:text-blue-100">{stat.value}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+          <InsuranceJourneyVisual />
         </div>
       </section>
 
@@ -100,15 +110,48 @@ export default async function InsurancePage() {
               href={`/insurance/${category.slug}`}
               className="rounded-xl border border-blue-100 bg-white p-5 transition-colors hover:border-sky-300/80 hover:bg-blue-50/40 dark:bg-card"
             >
-              <p className="font-semibold text-blue-900 dark:text-blue-100">{category.title}</p>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                {categoryDescriptions[category.slug as CategorySlug] ??
-                  "Guides, products, and claims help."}
-              </p>
+              <div className="flex items-start gap-3">
+                <CategoryIconBadge slug={category.slug} label={category.title} />
+                <div>
+                  <p className="font-semibold text-blue-900 dark:text-blue-100">{category.title}</p>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                    {categoryDescriptions[category.slug as CategorySlug] ??
+                      "Guides, products, and claims help."}
+                  </p>
+                </div>
+              </div>
               <p className="mt-3 inline-flex items-center text-sm font-medium text-sky-800 dark:text-sky-400">
                 Open hub
                 <ArrowRight className="ml-1 h-3.5 w-3.5" aria-hidden />
               </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="visual-gallery-heading" className="space-y-5">
+        <div className="space-y-2 text-center">
+          <h2
+            id="visual-gallery-heading"
+            className="text-2xl font-semibold tracking-tight text-blue-950 dark:text-blue-50"
+          >
+            Visual coverage gallery
+          </h2>
+          <p className="mx-auto max-w-2xl text-sm leading-6 text-muted-foreground">
+            A faster way to scan the six major insurance lines before opening the full hub.
+          </p>
+        </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {categories.map((category) => (
+            <Link key={`poster-${category.slug}`} href={`/insurance/${category.slug}`}>
+              <InsuranceCategoryPoster
+                slug={category.slug}
+                title={category.title}
+                description={
+                  categoryDescriptions[category.slug as CategorySlug] ??
+                  "Guides, products, and claims help."
+                }
+              />
             </Link>
           ))}
         </div>

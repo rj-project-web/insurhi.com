@@ -9,6 +9,7 @@ import type {
   CmsProvider,
 } from "@/lib/cms-client";
 import type { CmsAuthorRef } from "@/components/editorial-disclosure";
+import { CATEGORY_SLUGS, categoryContentHubs } from "@/lib/category-content-hub";
 
 type FeedItem = {
   key: string;
@@ -37,37 +38,52 @@ function resolveAuthor(reviewedBy?: string | CmsAuthorRef | null): CmsAuthorRef 
   return reviewedBy;
 }
 
+function shortenTitle(title: string, max = 64): string {
+  const trimmed = title.trim();
+  const colonIndex = trimmed.indexOf(":");
+  if (colonIndex > 0 && colonIndex <= max) {
+    return trimmed.slice(0, colonIndex);
+  }
+  if (trimmed.length <= max) return trimmed;
+  return `${trimmed.slice(0, max - 1).trim()}…`;
+}
+
 function guideSubtitle(article: CmsArticle): string {
   const author = resolveAuthor(article.reviewedBy);
   if (author?.name) {
     const creds = author.credentials ? `, ${author.credentials}` : author.role ? `, ${author.role}` : "";
-    return `Reviewed by ${author.name}${creds}`;
+    return `Written by ${author.name}${creds}`;
   }
   const reviewed = formatDate(article.lastReviewedAt);
-  if (reviewed) return `Last reviewed ${reviewed}`;
+  if (reviewed) return `Fact-checked · Updated ${reviewed}`;
   const published = formatDate(article.publishedAt ?? article.updatedAt ?? article.createdAt);
   if (published) return `Published ${published}`;
   return "Editorial guide";
 }
 
 function claimsSubtitle(guide: CmsClaimsGuide): string {
-  const parts: string[] = [];
+  const parts: string[] = ["Claims playbook"];
   if (guide.steps?.length) parts.push(`${guide.steps.length} steps`);
-  if (guide.documentChecklist?.length) parts.push(`${guide.documentChecklist.length} checklist items`);
   const reviewed = formatDate(guide.lastReviewedAt ?? guide.updatedAt);
   if (reviewed) parts.push(`Updated ${reviewed}`);
-  return parts.length ? parts.join(" · ") : "Claims playbook";
+  return parts.join(" · ");
 }
 
 function caseSubtitle(claimCase: CmsClaimCase): string {
-  const excerpt = claimCase.scenario?.trim();
-  if (excerpt && excerpt.length <= 72) return excerpt;
-  if (excerpt) return `${excerpt.slice(0, 69)}…`;
+  const scenario = claimCase.scenario?.trim();
+  if (scenario && scenario.toLowerCase() !== claimCase.title.trim().toLowerCase()) {
+    if (scenario.length <= 72) return scenario;
+    return `${scenario.slice(0, 69)}…`;
+  }
+  if (claimCase.outcome?.trim()) {
+    const outcome = claimCase.outcome.trim();
+    return outcome.length <= 72 ? outcome : `${outcome.slice(0, 69)}…`;
+  }
   return "Case study";
 }
 
 function buildGuideItems(articles: CmsArticle[]): FeedItem[] {
-  return articles.slice(0, 6).map((article) => ({
+  return articles.slice(0, 5).map((article) => ({
     key: `guide-${article.id}`,
     title: article.title,
     subtitle: guideSubtitle(article),
@@ -77,18 +93,18 @@ function buildGuideItems(articles: CmsArticle[]): FeedItem[] {
 
 function buildClaimsItems(claimsGuides: CmsClaimsGuide[], claimCases: CmsClaimCase[]): FeedItem[] {
   const items: FeedItem[] = [];
-  for (let i = 0; items.length < 6; i++) {
+  for (let i = 0; items.length < 5; i++) {
     const guide = claimsGuides[i];
     const claimCase = claimCases[i];
     if (guide) {
       items.push({
         key: `claim-guide-${guide.id}`,
-        title: guide.title,
+        title: shortenTitle(guide.title),
         subtitle: claimsSubtitle(guide),
         href: guide.slug ? `/claims/guides/${guide.slug}` : "/claims",
       });
     }
-    if (claimCase && items.length < 6) {
+    if (claimCase && items.length < 5) {
       items.push({
         key: `claim-case-${claimCase.id}`,
         title: claimCase.title,
@@ -101,36 +117,44 @@ function buildClaimsItems(claimsGuides: CmsClaimsGuide[], claimCases: CmsClaimCa
   return items;
 }
 
+function productMarketSubtitle(product: CmsProduct): string {
+  if (product.priceRange) return product.priceRange;
+  if (product.oneLineVerdict) return product.oneLineVerdict.slice(0, 72);
+  return "Product review";
+}
+
 function buildMarketItems(products: CmsProduct[], providers: CmsProvider[]): FeedItem[] {
-  const productItems = products
-    .filter((item) => item.slug)
-    .map((product) => ({
-      key: `product-${product.id}`,
-      title: product.name,
-      subtitle:
-        product.priceRange ??
-        product.oneLineVerdict?.slice(0, 72) ??
-        product.coverageAmount ??
-        "Product review",
-      href: `/products/${product.slug}`,
-      sortKey: product.updatedAt ?? product.createdAt ?? "",
-    }));
+  const items: FeedItem[] = [];
 
-  const providerItems = providers
-    .filter((item) => item.slug)
-    .map((provider) => ({
-      key: `provider-${provider.id}`,
-      title: provider.name,
-      subtitle:
-        provider.summary?.slice(0, 72) ??
-        (provider.rating ? `Editorial rating ${provider.rating}/5` : "Provider profile"),
-      href: `/providers/${provider.slug}`,
-      sortKey: "",
-    }));
+  for (const slug of CATEGORY_SLUGS) {
+    const flagshipSlug = categoryContentHubs[slug].flagshipProduct.slug;
+    const product = products.find((item) => item.slug === flagshipSlug);
+    if (product) {
+      items.push({
+        key: `product-${product.id}`,
+        title: categoryContentHubs[slug].flagshipProduct.label,
+        subtitle: productMarketSubtitle(product),
+        href: `/products/${product.slug}`,
+      });
+    }
+  }
 
-  return [...productItems, ...providerItems]
-    .slice(0, 6)
-    .map(({ key, title, subtitle, href }) => ({ key, title, subtitle, href }));
+  if (items.length < 5) {
+    for (const provider of providers) {
+      if (!provider.slug || items.length >= 5) break;
+      if (items.some((item) => item.href === `/providers/${provider.slug}`)) continue;
+      items.push({
+        key: `provider-${provider.id}`,
+        title: provider.name,
+        subtitle:
+          provider.summary?.slice(0, 72) ??
+          (provider.rating ? `Service quality · ${provider.rating}/5` : "Provider profile"),
+        href: `/providers/${provider.slug}`,
+      });
+    }
+  }
+
+  return items.slice(0, 5);
 }
 
 function FeedColumn({
@@ -149,7 +173,7 @@ function FeedColumn({
   viewAllLabel: string;
 }) {
   return (
-    <article className="rounded-2xl border border-blue-100 bg-gradient-to-br from-white to-blue-50/50 p-4 dark:border-blue-500/25 dark:from-card dark:to-blue-950/20">
+    <article className="rounded-2xl border border-blue-100 bg-white p-5 shadow-sm dark:border-blue-500/25 dark:bg-card">
       <p className="flex items-center gap-2 text-sm font-semibold text-blue-900 dark:text-blue-100">
         <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-blue-100 text-blue-800 dark:bg-blue-500/20 dark:text-blue-200">
           <Icon className="h-4 w-4" aria-hidden />
@@ -157,14 +181,11 @@ function FeedColumn({
         {title}
       </p>
       {items.length ? (
-        <ul className="mt-4 space-y-3">
+        <ul className="mt-4 space-y-4">
           {items.map((item) => (
             <li key={item.key}>
-              <Link
-                href={item.href}
-                className="group block rounded-lg px-1 py-0.5 transition-colors hover:bg-blue-50/80 dark:hover:bg-blue-950/30"
-              >
-                <p className="text-sm font-medium leading-snug text-foreground group-hover:underline group-hover:underline-offset-4">
+              <Link href={item.href} className="group block">
+                <p className="text-sm font-medium leading-snug text-foreground group-hover:text-sky-800 group-hover:underline group-hover:underline-offset-4 dark:group-hover:text-sky-400">
                   {item.title}
                 </p>
                 <p className="mt-1 text-xs leading-5 text-muted-foreground">{item.subtitle}</p>
@@ -197,49 +218,31 @@ export function HomeLatestFeed({
   const marketItems = buildMarketItems(products, providers);
 
   return (
-    <section
-      aria-labelledby="latest-feed-heading"
-      className="relative overflow-hidden rounded-2xl border bg-card/90 p-4 lg:p-5"
-      style={{ backgroundImage: "url('/home-latest-bg.svg')" }}
-    >
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/75 via-blue-50/50 to-sky-50/55 dark:from-slate-950/70 dark:via-blue-950/30 dark:to-sky-950/25" />
-      <div className="relative space-y-4">
-        <h2
-          id="latest-feed-heading"
-          className="text-2xl font-semibold tracking-tight text-blue-950 dark:text-blue-50"
-        >
-          Latest from the editorial desk
-        </h2>
-        <p className="max-w-3xl text-sm text-muted-foreground">
-          Guides, claims playbooks, and product data pulled live from the CMS — refreshed on each visit.
-        </p>
-        <div className="grid gap-3 lg:grid-cols-3">
-          <FeedColumn
-            title="Expert guides"
-            icon={BookOpenText}
-            items={guideItems}
-            emptyMessage="Guides will appear here once published."
-            viewAllHref="/guides"
-            viewAllLabel="View all guides"
-          />
-          <FeedColumn
-            title="Claims spotlight"
-            icon={FileCheck2}
-            items={claimsItems}
-            emptyMessage="Claims content will appear here once published."
-            viewAllHref="/claims"
-            viewAllLabel="Open claims center"
-          />
-          <FeedColumn
-            title="Market data"
-            icon={Building2}
-            items={marketItems}
-            emptyMessage="Products and providers will appear here once published."
-            viewAllHref="/products"
-            viewAllLabel="Browse products"
-          />
-        </div>
-      </div>
+    <section aria-label="Editorial updates" className="grid gap-4 lg:grid-cols-3">
+      <FeedColumn
+        title="Expert guides"
+        icon={BookOpenText}
+        items={guideItems}
+        emptyMessage="Guides will appear here once published."
+        viewAllHref="/guides"
+        viewAllLabel="View all guides"
+      />
+      <FeedColumn
+        title="Claims spotlight"
+        icon={FileCheck2}
+        items={claimsItems}
+        emptyMessage="Claims content will appear here once published."
+        viewAllHref="/claims"
+        viewAllLabel="Open claims center"
+      />
+      <FeedColumn
+        title="Market data"
+        icon={Building2}
+        items={marketItems}
+        emptyMessage="Products and providers will appear here once published."
+        viewAllHref="/products"
+        viewAllLabel="Browse products"
+      />
     </section>
   );
 }

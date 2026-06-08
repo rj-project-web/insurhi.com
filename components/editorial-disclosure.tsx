@@ -80,7 +80,7 @@ export function LastUpdated(props: LastUpdatedProps) {
 }
 
 type EditorialDisclosureProps = {
-  variant?: "compact" | "full";
+  variant?: "compact" | "full" | "homepage";
   className?: string;
 };
 
@@ -88,6 +88,33 @@ export function EditorialDisclosure({
   variant = "full",
   className,
 }: EditorialDisclosureProps) {
+  if (variant === "homepage") {
+    return (
+      <section
+        className={
+          className ??
+          "rounded-xl border border-blue-200/70 bg-blue-50/50 p-4 text-sm leading-6 text-blue-950 dark:border-blue-500/30 dark:bg-blue-950/25 dark:text-blue-100"
+        }
+      >
+        <p className="text-sm font-semibold text-blue-900 dark:text-blue-100">Editorial disclosure</p>
+        <p className="mt-2 text-sm text-blue-900/85 dark:text-blue-100/85">
+          Our goal is to help you make informed insurance decisions with research-backed guides and
+          comparisons. While we may receive compensation from some partners, this does not influence
+          our editors&apos; evaluations. We maintain a strict separation between editorial review and
+          business relationships so guidance stays objective and data-driven.
+        </p>
+        <p className="mt-2 text-xs text-muted-foreground">
+          Content is not legal, financial, or insurance advice. Errors? Email{" "}
+          <span className="font-medium text-foreground">editorial@insurhi.com</span> for a 48-hour
+          review.{" "}
+          <Link href="/methodology" className="font-medium underline underline-offset-4">
+            See methodology
+          </Link>
+        </p>
+      </section>
+    );
+  }
+
   if (variant === "compact") {
     return (
       <p

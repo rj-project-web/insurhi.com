@@ -75,11 +75,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: 0.85,
     })),
-    ...insuranceCategorySlugs.map((slug) => ({
-      url: absoluteUrl(`/claims/${slug}`),
-      changeFrequency: "weekly" as const,
-      priority: 0.75,
-    })),
     ...articles.map((article) => ({
       url: absoluteUrl(`/guides/${article.slug}`),
       changeFrequency: "weekly" as const,

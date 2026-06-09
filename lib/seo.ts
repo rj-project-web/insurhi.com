@@ -58,12 +58,40 @@ export function buildBreadcrumbJsonLd(items: BreadcrumbItem[]) {
   };
 }
 
+export function organizationId() {
+  return `${getSiteUrl()}/#organization`;
+}
+
+export function buildOrganizationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": organizationId(),
+    name: siteName,
+    url: getSiteUrl(),
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteUrl("/insurhi-logo.png"),
+    },
+    description:
+      "Insurhi publishes independent, expert fact-checked insurance guides, product comparisons, and claims help.",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "editorial",
+      email: "editorial@insurhi.com",
+    },
+  };
+}
+
 export function buildWebSiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: siteName,
     url: getSiteUrl(),
+    publisher: {
+      "@id": organizationId(),
+    },
   };
 }
 

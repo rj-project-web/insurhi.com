@@ -571,7 +571,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
             <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
             Insurance / {category.title}
           </p>
-          <h1 className="text-3xl font-semibold tracking-tight">{category.title}</h1>
+          <p className="text-3xl font-semibold tracking-tight text-foreground">{category.title}</p>
           <p className="text-sm leading-6 text-muted-foreground">{heroSummary}</p>
           <InsuranceVisualHero slug={slug} title={category.title} />
         </div>

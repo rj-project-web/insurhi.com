@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-02T01:11:25.603Z",
+    "exportedAt": "2026-06-09T01:27:05.590Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -53654,6 +53654,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 1
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related resources",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "For out-of-network billing disputes, follow /claims/guides/medicare-out-of-network-claim-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review how we evaluate plans at /methodology before comparing supplement options.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -53663,10 +53731,10 @@
       "reviewedBy": null,
       "lastReviewedAt": null,
       "seo": {
-        "metaTitle": "What Is Medicare? Parts A, B, C, D Explained (2026 Guide) | Insurhi",
-        "metaDescription": "Medicare explained simply. Understand the 4 parts (A, B, C, D), when to enroll, costs, and whether Original Medicare or Medicare Advantage is right for you. Complete 2026 guide."
+        "metaTitle": "Medicare Basics Guide 2026 | Enrollment Checklist",
+        "metaDescription": "Learn Medicare parts, supplement timing, and enrollment penalties with a practical checklist. Includes claim routing and methodology links for plan comparison."
       },
-      "updatedAt": "2026-04-21T09:51:40.411Z",
+      "updatedAt": "2026-06-09T01:25:18.560Z",
       "createdAt": "2026-04-21T09:49:46.309Z",
       "_status": "published"
     },
@@ -55921,6 +55989,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 1
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review wildfire endorsement options in /guides/home-wildfire-endorsement-guide-2026 before changing limits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review claim steps at /claims/home before renewal.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -55930,10 +56066,10 @@
       "reviewedBy": null,
       "lastReviewedAt": null,
       "seo": {
-        "metaTitle": "What Does Homeowners Insurance Cover? 6 Coverage Types Explained (2026) | Insurhi",
-        "metaDescription": "Learn what homeowners insurance actually covers. We break down the 6 coverage types, what's excluded, and how to make sure your home and belongings are properly protected."
+        "metaTitle": "Home Insurance Coverage Types 2026 | Limits Guide",
+        "metaDescription": "Understand home insurance coverage types, roof settlement rules, deductible trade-offs, and wildfire endorsement options with a practical renewal checklist."
       },
-      "updatedAt": "2026-04-21T09:47:01.424Z",
+      "updatedAt": "2026-06-09T01:16:00.331Z",
       "createdAt": "2026-04-21T09:47:01.423Z",
       "_status": "published"
     },
@@ -56896,10 +57032,10 @@
       "reviewedBy": null,
       "lastReviewedAt": null,
       "seo": {
-        "metaTitle": "Term vs Whole Life Insurance: Which Is Right for You? (2026) | Insurhi",
-        "metaDescription": "Compare term and whole life insurance side by side — costs, benefits, cash value, and when each makes sense. Get the facts to choose the right life insurance for your family's needs."
+        "metaTitle": "Term vs Whole Life 2026 | Cost and Flexibility",
+        "metaDescription": "Compare term and whole life by long-term cost, flexibility, and claim administration. Match policy type to family protection goals and budget."
       },
-      "updatedAt": "2026-04-21T09:46:04.826Z",
+      "updatedAt": "2026-06-09T01:25:18.597Z",
       "createdAt": "2026-04-21T09:46:04.826Z",
       "_status": "published"
     },
@@ -57628,6 +57764,74 @@
               "direction": "ltr",
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review beneficiary setup and claim readiness in /guides/life-beneficiary-claim-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review claim steps at /claims/life before binding coverage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": "ltr"
@@ -57637,11 +57841,2847 @@
       "reviewedBy": null,
       "lastReviewedAt": null,
       "seo": {
-        "metaTitle": null,
-        "metaDescription": null
+        "metaTitle": "Life Insurance Basics 2026 | First Policy Checklist",
+        "metaDescription": "Learn life insurance basics for new policyholders: coverage sizing, beneficiary setup, premium trade-offs, and claim preparation with practical next steps."
       },
-      "updatedAt": "2026-04-13T13:47:38.596Z",
+      "updatedAt": "2026-06-09T01:25:18.583Z",
       "createdAt": "2026-04-13T10:39:43.690Z",
+      "_status": "published"
+    },
+    {
+      "id": 21,
+      "title": "Life Insurance Beneficiary Claims (2026): How to File, Avoid Delays, and Handle Contested Payouts",
+      "slug": "life-beneficiary-claim-deep-guide-2026",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Filing a life insurance claim should be the simplest interaction with the insurance system, yet beneficiaries routinely face week-long delays, missing-document loops, and confusion about contestability. This guide walks beneficiaries through the actual steps in 2026, what documents speed payment, and how to respond when a claim is delayed, denied, or split among multiple parties.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "One-line verdict",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "File quickly with a certified death certificate and the original policy reference, expect 14–60 days for a clean claim, and escalate in writing the moment the carrier raises a contestability investigation, beneficiary dispute, or missing-document loop—those three causes account for most delays.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Who this fits (best for)",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Primary beneficiaries (spouse, adult child, sibling) who must navigate the claim alone after a loss.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Estate executors handling multiple policies, including small employer-provided group life policies.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Trusts named as beneficiary; trustees need certified copies and trust documents in hand before filing.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Anyone whose loved one purchased a policy within the last 2 years (contestability period still applies).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Who should look elsewhere (not for)",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Policyowners who simply want to update beneficiaries—use the carrier's beneficiary change form, not a claim guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Cases involving suspected fraud where law enforcement is already involved; coordinate with counsel before submitting documents.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claims under foreign policies subject to different jurisdictional rules; consult a licensed agent or attorney in that country.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Group accidental death (AD&D) only claims—the document trail differs and often needs employer HR involvement first.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Real scenarios",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario 1: Death within the 2-year contestability period",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "The insured passed away 16 months after the policy issue date. The carrier opens a contestability review and requests medical records covering the application period. The beneficiary's clean route forward: respond promptly to the medical authorization request, keep a written log of every call, and ask the carrier in writing for a target decision date. Most contestability reviews close in 60–120 days; the cleaner the application history, the faster the decision.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario 2: Beneficiary designation outdated after divorce",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Policy still names the ex-spouse as primary; current spouse believes she should be paid. State law varies—some states automatically revoke ex-spouse designations on divorce, others do not. The carrier will pay according to the policy's last valid beneficiary designation unless a court order says otherwise. Path forward: gather the divorce decree, any beneficiary change forms the insured signed afterward, and consult a probate or family law attorney before filing—do not let the claim be paid before the dispute is documented.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Locate the policy document or recent statement; if unknown, check NAIC Life Insurance Policy Locator and the deceased's mail/email for premium notices.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Order at least 3 certified death certificates from the funeral home or vital records office (employer life, auto loan life, and the main policy may each request one).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Gather the beneficiary's government ID, Social Security number (for tax reporting if proceeds earn interest), and bank account information for direct deposit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Call the carrier's claims line, request the claim packet by email, and confirm the carrier's preferred submission method (portal vs paper).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Submit the claim form, certified death certificate, and policy number; do not submit photocopies of the death certificate unless the carrier explicitly accepts them.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 6,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Keep a written log of every call: date, agent name, claim number, and next steps with a target date.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 7,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "If the policy is within the 2-year contestability window, expect a medical records request—respond within the carrier's deadline to avoid further delay.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 8,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "If denied, request the denial in writing with the policy provision cited; you have rights to appeal under state law.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "How long does a life insurance claim take?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A clean, non-contestable claim with full documentation typically pays in 14–60 days. Contestability reviews, missing documents, or beneficiary disputes can extend to 90–180+ days. Some states require interest to be paid on the proceeds if the carrier exceeds statutory deadlines—ask the carrier in writing.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What is the contestability period and does it mean my claim will be denied?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Most policies have a 2-year contestability period during which the carrier can investigate the application for misrepresentation. Most contestability reviews still pay; denials happen mainly when material misrepresentation is documented (undisclosed health conditions, smoking status, or risky activities). Cooperating quickly with records requests is the fastest way through.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What if multiple beneficiaries disagree?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "The carrier pays according to the policy's last valid beneficiary designation. If beneficiaries dispute among themselves, the carrier may interplead the funds with the court and let a judge decide. Resolve disputes with counsel before filing if possible.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Are life insurance proceeds taxable?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Death benefits paid to a named beneficiary are generally federal income-tax-free. Interest paid by the carrier on delayed proceeds is taxable. Estate tax can apply if the policy is owned by the deceased and the estate exceeds federal/state thresholds—talk to a CPA.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Sources & methodology",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Steps reflect the standard claim process across major US life insurance carriers in 2026, drawn from policy forms, state insurance department consumer guides, and NAIC public resources. Specific timelines and rules vary by state and carrier; always confirm with the issuing carrier and consult a licensed attorney or agent for contested cases.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "NAIC Life Insurance Policy Locator Service (free public tool).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "State insurance department consumer guides on life insurance claim deadlines and prompt-pay rules.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "IRS Publication 525 and Publication 559 on taxation of life insurance proceeds and final returns.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Carrier policy form and contestability provisions (referenced from issued policy documents).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "State-specific divorce revocation statutes for beneficiary designations (varies by state).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Bottom line",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Beneficiaries who file fast, document every call, and respond promptly to records requests typically see payment within 60 days. Most delays come from contestability investigations, beneficiary disputes, or incomplete document submissions—not from the carrier intentionally stalling. Treat it like a process, not a fight.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides and claims",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "If claim delay occurs in early policy years, use /claims/guides/life-contestability-period-claim-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Start with policy basics in /guides/life-insurance-basics before updating beneficiaries.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review claim workflow resources at /claims/life and category context at /insurance/life.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-09T01:26:28.689Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Life Beneficiary Claim Deep Guide 2026 | Setup Tips",
+        "metaDescription": "Deep guide for life insurance beneficiaries: naming rules, minor-child structures, claim document prep, and links to contestability-period claim support."
+      },
+      "updatedAt": "2026-06-09T01:26:28.694Z",
+      "createdAt": "2026-05-27T00:53:45.366Z",
+      "_status": "published"
+    },
+    {
+      "id": 20,
+      "title": "Home Insurance Replacement Cost vs Actual Cash Value (2026): How to Avoid a 30%+ Settlement Gap",
+      "slug": "home-replacement-cost-vs-acv-deep-guide-2026",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "After a kitchen fire or a major storm, the difference between replacement cost (RCV) and actual cash value (ACV) is often a five-figure swing in your settlement. Most homeowners only learn the difference during a claim, when the adjuster's worksheet shows depreciation lines they did not expect. This guide explains how each valuation method works, where the largest gaps appear in 2026 policies, and how to verify your dwelling and contents are actually covered the way the cover page suggests.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "One-line verdict",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Choose replacement cost on both dwelling and contents, accept a higher deductible if needed to fund it, and read every roof or windstorm endorsement before binding—those endorsements are where insurers quietly convert RCV back to ACV.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Who this fits (best for)",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Owner-occupants of single-family homes who would have to rebuild or rebuy items out of pocket if a settlement is short.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Households with finished basements, recent renovations, or above-average personal property (cameras, instruments, tools).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Homes older than 15 years where roof and HVAC depreciation can wipe out a meaningful portion of an ACV claim.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Buyers in states where insurers are pushing roof endorsements—you need to evaluate them line by line.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Who should look elsewhere (not for)",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Investors or landlords whose lender or accountant specifically requires ACV for tax or rate reasons (verify with both before switching).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Owners of structures already underinsured below 80% of replacement cost; fix the dwelling limit first—coverage method matters less if the limit itself is wrong.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Vacant or seasonal properties subject to vacancy clauses; many policies restrict RCV regardless of the declarations page after 30–60 days unoccupied.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Mobile or manufactured homes where the carrier only writes on an ACV form; you may need a specialty policy instead of debating endorsements.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Real scenarios",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario 1: 18-year-old roof damaged by hail",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "An ACV roof endorsement values the damaged shingles at depreciated value. A $24,000 replacement bid pays out around $9,000–$12,000 after depreciation on an 18-year roof, leaving the homeowner to fund the gap. With full RCV (no roof endorsement), the carrier pays the recoverable holdback once the work is completed and invoiced—often the difference between repairing and not repairing.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario 2: Kitchen fire destroying contents",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Contents at ACV depreciate appliances, electronics, and furniture by age and condition. A 7-year-old refrigerator listed at $2,400 retail might settle at $900 ACV. Contents at RCV pays the depreciated amount first, then releases the holdback once you provide receipts for replacement purchases—this is why keeping a simple inventory and saving receipts changes the outcome.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm dwelling coverage method: RCV with extended/guaranteed replacement, RCV only, or ACV.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm contents coverage method: RCV with recoverable holdback, or ACV.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Read every roof, siding, and windstorm endorsement—look for words like 'roof surfacing payment schedule,' 'cosmetic exclusion,' or 'ACV settlement for roofs over X years.'",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Verify dwelling limit is at least 100% of estimated replacement cost; 80% co-insurance penalties hurt RCV claims.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Update contents limit to reflect renovations, finished basements, and high-value items; consider scheduling jewelry, cameras, and bikes.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 6,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Photograph each room and store the inventory off-site (cloud) so a total loss claim does not require memory-only recall.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 7,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Check ordinance or law coverage—rebuilding to current code adds 10–25% in many regions.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 8,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Save the declarations page and all endorsements as PDFs at every renewal; carriers can change endorsement language at renewal.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Is replacement cost always worth the higher premium?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "For most owner-occupants, yes. The premium delta is typically 5–15% but the settlement delta on a serious loss can exceed 30–50% on aging components. The exception is when your dwelling limit is so low that fixing the limit must come first.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What is recoverable depreciation?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "It is the difference between RCV and ACV that the carrier holds back until you complete repairs and submit invoices. This is normal on RCV claims; what matters is that the holdback is recoverable, not permanently withheld.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Does extended replacement cost mean unlimited?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "No. Extended replacement cost typically adds 25–50% above the dwelling limit; guaranteed replacement cost (where offered) removes the cap subject to underwriting. Read the exact endorsement and any conditions like requiring you to insure to 100% of replacement cost.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h3",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Why did my roof claim get reduced even though I have RCV?",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A roof endorsement may have converted roof surfacing to ACV based on age, or applied a payment schedule. The dwelling can be RCV while a single component is ACV—this is where most settlement disputes start.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Sources & methodology",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "We compared HO-3 and HO-5 policy forms across multiple national carriers in 2026, focusing on language differences in dwelling valuation, roof surfacing endorsements, contents settlement, and recoverable depreciation handling. Settlement examples reflect adjuster worksheets reviewed for editorial purposes—your specific claim outcome depends on policy language, state regulations, and documentation. Always read your declarations page and all endorsements before assuming RCV is in force.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "State insurance department consumer guides on replacement cost vs actual cash value (search your state's DOI website).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "NAIC Consumer Information Source policy form library for HO-3, HO-5, and HO-8 differences.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Carrier-issued declarations page and endorsements (HO-300 series and roof surfacing endorsements vary by insurer and state).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Independent claim adjuster industry associations on recoverable depreciation worksheet practices.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Insurance Information Institute primers on home insurance valuation methods.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Bottom line",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Treat replacement cost as the default and ACV as the exception. The biggest settlement gaps come not from the headline coverage method but from endorsements that quietly convert one component (often the roof) back to ACV. Verify both before you renew, not after a loss.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides and claims",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare wildfire endorsement options in /guides/home-wildfire-endorsement-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review hail damage claim timing in /claims/guides/home-hail-damage-claim-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "See coverage-type basics at /guides/home-insurance-coverage and products at /insurance/home.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-09T01:26:28.648Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Home RC vs ACV Deep Guide 2026 | Rebuild Coverage",
+        "metaDescription": "Deep guide to replacement cost vs ACV for home insurance: settlement scenarios, roof-age risk, and claim-readiness links for wildfire and hail losses."
+      },
+      "updatedAt": "2026-06-09T01:26:28.671Z",
+      "createdAt": "2026-05-27T00:53:45.268Z",
+      "_status": "published"
+    },
+    {
+      "id": 26,
+      "title": "Home Wildfire Endorsement Guide (2026): Coverage Gaps, Endorsements, and Claim Readiness",
+      "slug": "home-wildfire-endorsement-guide-2026",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for homeowners in wildfire-prone regions who need clearer endorsement choices, deductible planning, and faster claim preparation before peak fire season.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Core comparison dimensions",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Coverage: confirm wildfire/peril wording, defensible-space requirements, and rebuilding limits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Deductible: test fixed vs percentage deductibles under high-loss scenarios.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Premium: compare endorsement cost against expected wildfire exposure, not headline premium only.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claims service: verify emergency mitigation authorization and contractor coordination speed.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Request itemized wildfire endorsement pricing from at least two carriers.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Document home hardening upgrades and keep receipts for claim support.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm evacuation and temporary housing reimbursement rules in writing.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review claim workflow at /claims/home before renewal.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare options from /insurance/home and /products/home-insurance.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Is wildfire always included in standard home policies? Not always; policy wording and state rules vary.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Should I buy separate wildfire coverage? Consider it when standard policy limits or exclusions create material gaps.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Can endorsements speed up claims? They reduce coverage disputes by clarifying peril scope in advance.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-09T01:15:49.575Z",
+      "reviewedBy": null,
+      "lastReviewedAt": null,
+      "seo": {
+        "metaTitle": "Home Wildfire Endorsement Guide 2026 | Coverage Gaps",
+        "metaDescription": "Compare home wildfire endorsements, FAIR-plan gaps, and deductible trade-offs. Use a practical checklist to improve claim readiness before wildfire season."
+      },
+      "updatedAt": "2026-06-09T01:15:49.582Z",
+      "createdAt": "2026-06-09T01:15:49.582Z",
+      "_status": "published"
+    },
+    {
+      "id": 25,
+      "title": "Auto Teen Driver Rates Guide (2026): Add-a-Teen Cost and Coverage Checklist",
+      "slug": "auto-teen-driver-rates-guide-2026",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for parents adding a teen driver who need predictable premium planning, stronger liability protection, and a clear claim workflow before the first accident.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Core comparison dimensions",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Coverage: raise liability and uninsured motorist limits before optimizing deductibles for a new driver.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Deductible: keep collision/comprehensive deductibles realistic for likely minor incidents.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Premium: compare add-driver cost, good-student discounts, and telematics trade-offs side by side.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claims service: verify FNOL speed, repair network quality, and rental reimbursement rules.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Quote the same policy with and without the teen driver on identical limits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Set a household premium ceiling and test deductible tiers against that cap.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm whether driver-training or good-student discounts apply in your state.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review claim steps at /claims/auto before binding changes.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare options from /insurance/auto and /products/auto-insurance.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Is adding a teen always expensive? Usually yes, but limit structure and discounts can reduce the spike.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Should teens have their own policy? Often a named driver on a parent policy is simpler and cheaper.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Does telematics help teens? It can, but hard-braking penalties vary by carrier and should be tested first.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-08T07:34:58.263Z",
+      "reviewedBy": null,
+      "lastReviewedAt": null,
+      "seo": {
+        "metaTitle": "Teen Driver Auto Insurance Guide 2026 | Add-a-Teen Costs",
+        "metaDescription": "Compare add-a-teen auto insurance costs, liability limits, and deductible strategy. Use a practical checklist to control premium spikes and avoid claim gaps."
+      },
+      "updatedAt": "2026-06-08T07:34:58.272Z",
+      "createdAt": "2026-06-08T07:34:58.271Z",
       "_status": "published"
     },
     {
@@ -61543,1916 +64583,6 @@
       },
       "updatedAt": "2026-06-02T00:40:26.763Z",
       "createdAt": "2026-05-27T00:53:45.397Z",
-      "_status": "published"
-    },
-    {
-      "id": 21,
-      "title": "Life Insurance Beneficiary Claims (2026): How to File, Avoid Delays, and Handle Contested Payouts",
-      "slug": "life-beneficiary-claim-deep-guide-2026",
-      "category": {
-        "id": 2,
-        "title": "Life Insurance",
-        "slug": "life",
-        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
-        "seo": {
-          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
-          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
-        },
-        "updatedAt": "2026-04-16T07:15:16.975Z",
-        "createdAt": "2026-04-13T10:39:43.629Z"
-      },
-      "body": {
-        "root": {
-          "type": "root",
-          "format": "",
-          "indent": 0,
-          "version": 1,
-          "children": [
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Filing a life insurance claim should be the simplest interaction with the insurance system, yet beneficiaries routinely face week-long delays, missing-document loops, and confusion about contestability. This guide walks beneficiaries through the actual steps in 2026, what documents speed payment, and how to respond when a claim is delayed, denied, or split among multiple parties.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "One-line verdict",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "File quickly with a certified death certificate and the original policy reference, expect 14–60 days for a clean claim, and escalate in writing the moment the carrier raises a contestability investigation, beneficiary dispute, or missing-document loop—those three causes account for most delays.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Who this fits (best for)",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "list",
-              "start": 1,
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "type": "listitem",
-                  "value": 1,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Primary beneficiaries (spouse, adult child, sibling) who must navigate the claim alone after a loss.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 2,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Estate executors handling multiple policies, including small employer-provided group life policies.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 3,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Trusts named as beneficiary; trustees need certified copies and trust documents in hand before filing.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 4,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Anyone whose loved one purchased a policy within the last 2 years (contestability period still applies).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                }
-              ],
-              "listType": "bullet",
-              "direction": null
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Who should look elsewhere (not for)",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "list",
-              "start": 1,
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "type": "listitem",
-                  "value": 1,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Policyowners who simply want to update beneficiaries—use the carrier's beneficiary change form, not a claim guide.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 2,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Cases involving suspected fraud where law enforcement is already involved; coordinate with counsel before submitting documents.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 3,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Claims under foreign policies subject to different jurisdictional rules; consult a licensed agent or attorney in that country.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 4,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Group accidental death (AD&D) only claims—the document trail differs and often needs employer HR involvement first.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                }
-              ],
-              "listType": "bullet",
-              "direction": null
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Real scenarios",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Scenario 1: Death within the 2-year contestability period",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "The insured passed away 16 months after the policy issue date. The carrier opens a contestability review and requests medical records covering the application period. The beneficiary's clean route forward: respond promptly to the medical authorization request, keep a written log of every call, and ask the carrier in writing for a target decision date. Most contestability reviews close in 60–120 days; the cleaner the application history, the faster the decision.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Scenario 2: Beneficiary designation outdated after divorce",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Policy still names the ex-spouse as primary; current spouse believes she should be paid. State law varies—some states automatically revoke ex-spouse designations on divorce, others do not. The carrier will pay according to the policy's last valid beneficiary designation unless a court order says otherwise. Path forward: gather the divorce decree, any beneficiary change forms the insured signed afterward, and consult a probate or family law attorney before filing—do not let the claim be paid before the dispute is documented.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Action checklist",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "list",
-              "start": 1,
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "type": "listitem",
-                  "value": 1,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Locate the policy document or recent statement; if unknown, check NAIC Life Insurance Policy Locator and the deceased's mail/email for premium notices.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 2,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Order at least 3 certified death certificates from the funeral home or vital records office (employer life, auto loan life, and the main policy may each request one).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 3,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Gather the beneficiary's government ID, Social Security number (for tax reporting if proceeds earn interest), and bank account information for direct deposit.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 4,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Call the carrier's claims line, request the claim packet by email, and confirm the carrier's preferred submission method (portal vs paper).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 5,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Submit the claim form, certified death certificate, and policy number; do not submit photocopies of the death certificate unless the carrier explicitly accepts them.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 6,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Keep a written log of every call: date, agent name, claim number, and next steps with a target date.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 7,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "If the policy is within the 2-year contestability window, expect a medical records request—respond within the carrier's deadline to avoid further delay.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 8,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "If denied, request the denial in writing with the policy provision cited; you have rights to appeal under state law.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                }
-              ],
-              "listType": "bullet",
-              "direction": null
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "FAQ",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "How long does a life insurance claim take?",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "A clean, non-contestable claim with full documentation typically pays in 14–60 days. Contestability reviews, missing documents, or beneficiary disputes can extend to 90–180+ days. Some states require interest to be paid on the proceeds if the carrier exceeds statutory deadlines—ask the carrier in writing.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "What is the contestability period and does it mean my claim will be denied?",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Most policies have a 2-year contestability period during which the carrier can investigate the application for misrepresentation. Most contestability reviews still pay; denials happen mainly when material misrepresentation is documented (undisclosed health conditions, smoking status, or risky activities). Cooperating quickly with records requests is the fastest way through.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "What if multiple beneficiaries disagree?",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "The carrier pays according to the policy's last valid beneficiary designation. If beneficiaries dispute among themselves, the carrier may interplead the funds with the court and let a judge decide. Resolve disputes with counsel before filing if possible.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Are life insurance proceeds taxable?",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Death benefits paid to a named beneficiary are generally federal income-tax-free. Interest paid by the carrier on delayed proceeds is taxable. Estate tax can apply if the policy is owned by the deceased and the estate exceeds federal/state thresholds—talk to a CPA.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Sources & methodology",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Steps reflect the standard claim process across major US life insurance carriers in 2026, drawn from policy forms, state insurance department consumer guides, and NAIC public resources. Specific timelines and rules vary by state and carrier; always confirm with the issuing carrier and consult a licensed attorney or agent for contested cases.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "type": "list",
-              "start": 1,
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "type": "listitem",
-                  "value": 1,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "NAIC Life Insurance Policy Locator Service (free public tool).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 2,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "State insurance department consumer guides on life insurance claim deadlines and prompt-pay rules.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 3,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "IRS Publication 525 and Publication 559 on taxation of life insurance proceeds and final returns.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 4,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Carrier policy form and contestability provisions (referenced from issued policy documents).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 5,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "State-specific divorce revocation statutes for beneficiary designations (varies by state).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                }
-              ],
-              "listType": "bullet",
-              "direction": null
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Bottom line",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Beneficiaries who file fast, document every call, and respond promptly to records requests typically see payment within 60 days. Most delays come from contestability investigations, beneficiary disputes, or incomplete document submissions—not from the carrier intentionally stalling. Treat it like a process, not a fight.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            }
-          ],
-          "direction": null
-        }
-      },
-      "publishedAt": "2026-05-27T00:55:21.930Z",
-      "reviewedBy": {
-        "id": 3,
-        "name": "Health & Life Editor",
-        "slug": "health-life-editor",
-        "role": "Life and Medicare supplement",
-        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
-        "updatedAt": "2026-06-02T00:40:26.519Z",
-        "createdAt": "2026-06-02T00:40:26.519Z"
-      },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "seo": {
-        "metaTitle": "Life Insurance Beneficiary Claim Guide (2026) | Insurhi",
-        "metaDescription": "Step-by-step life insurance beneficiary claim guide for 2026: required documents, contestability period, common delays, and what to do if denied or contested."
-      },
-      "updatedAt": "2026-06-02T00:40:26.712Z",
-      "createdAt": "2026-05-27T00:53:45.366Z",
-      "_status": "published"
-    },
-    {
-      "id": 20,
-      "title": "Home Insurance Replacement Cost vs Actual Cash Value (2026): How to Avoid a 30%+ Settlement Gap",
-      "slug": "home-replacement-cost-vs-acv-deep-guide-2026",
-      "category": {
-        "id": 3,
-        "title": "Home Insurance",
-        "slug": "home",
-        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
-        "seo": {
-          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
-          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
-        },
-        "updatedAt": "2026-04-16T07:16:13.426Z",
-        "createdAt": "2026-04-13T14:08:21.606Z"
-      },
-      "body": {
-        "root": {
-          "type": "root",
-          "format": "",
-          "indent": 0,
-          "version": 1,
-          "children": [
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "After a kitchen fire or a major storm, the difference between replacement cost (RCV) and actual cash value (ACV) is often a five-figure swing in your settlement. Most homeowners only learn the difference during a claim, when the adjuster's worksheet shows depreciation lines they did not expect. This guide explains how each valuation method works, where the largest gaps appear in 2026 policies, and how to verify your dwelling and contents are actually covered the way the cover page suggests.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "One-line verdict",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Choose replacement cost on both dwelling and contents, accept a higher deductible if needed to fund it, and read every roof or windstorm endorsement before binding—those endorsements are where insurers quietly convert RCV back to ACV.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Who this fits (best for)",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "list",
-              "start": 1,
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "type": "listitem",
-                  "value": 1,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Owner-occupants of single-family homes who would have to rebuild or rebuy items out of pocket if a settlement is short.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 2,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Households with finished basements, recent renovations, or above-average personal property (cameras, instruments, tools).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 3,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Homes older than 15 years where roof and HVAC depreciation can wipe out a meaningful portion of an ACV claim.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 4,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Buyers in states where insurers are pushing roof endorsements—you need to evaluate them line by line.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                }
-              ],
-              "listType": "bullet",
-              "direction": null
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Who should look elsewhere (not for)",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "list",
-              "start": 1,
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "type": "listitem",
-                  "value": 1,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Investors or landlords whose lender or accountant specifically requires ACV for tax or rate reasons (verify with both before switching).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 2,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Owners of structures already underinsured below 80% of replacement cost; fix the dwelling limit first—coverage method matters less if the limit itself is wrong.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 3,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Vacant or seasonal properties subject to vacancy clauses; many policies restrict RCV regardless of the declarations page after 30–60 days unoccupied.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 4,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Mobile or manufactured homes where the carrier only writes on an ACV form; you may need a specialty policy instead of debating endorsements.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                }
-              ],
-              "listType": "bullet",
-              "direction": null
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Real scenarios",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Scenario 1: 18-year-old roof damaged by hail",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "An ACV roof endorsement values the damaged shingles at depreciated value. A $24,000 replacement bid pays out around $9,000–$12,000 after depreciation on an 18-year roof, leaving the homeowner to fund the gap. With full RCV (no roof endorsement), the carrier pays the recoverable holdback once the work is completed and invoiced—often the difference between repairing and not repairing.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Scenario 2: Kitchen fire destroying contents",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Contents at ACV depreciate appliances, electronics, and furniture by age and condition. A 7-year-old refrigerator listed at $2,400 retail might settle at $900 ACV. Contents at RCV pays the depreciated amount first, then releases the holdback once you provide receipts for replacement purchases—this is why keeping a simple inventory and saving receipts changes the outcome.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Action checklist",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "list",
-              "start": 1,
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "type": "listitem",
-                  "value": 1,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Confirm dwelling coverage method: RCV with extended/guaranteed replacement, RCV only, or ACV.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 2,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Confirm contents coverage method: RCV with recoverable holdback, or ACV.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 3,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Read every roof, siding, and windstorm endorsement—look for words like 'roof surfacing payment schedule,' 'cosmetic exclusion,' or 'ACV settlement for roofs over X years.'",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 4,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Verify dwelling limit is at least 100% of estimated replacement cost; 80% co-insurance penalties hurt RCV claims.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 5,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Update contents limit to reflect renovations, finished basements, and high-value items; consider scheduling jewelry, cameras, and bikes.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 6,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Photograph each room and store the inventory off-site (cloud) so a total loss claim does not require memory-only recall.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 7,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Check ordinance or law coverage—rebuilding to current code adds 10–25% in many regions.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 8,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Save the declarations page and all endorsements as PDFs at every renewal; carriers can change endorsement language at renewal.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                }
-              ],
-              "listType": "bullet",
-              "direction": null
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "FAQ",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Is replacement cost always worth the higher premium?",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "For most owner-occupants, yes. The premium delta is typically 5–15% but the settlement delta on a serious loss can exceed 30–50% on aging components. The exception is when your dwelling limit is so low that fixing the limit must come first.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "What is recoverable depreciation?",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "It is the difference between RCV and ACV that the carrier holds back until you complete repairs and submit invoices. This is normal on RCV claims; what matters is that the holdback is recoverable, not permanently withheld.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Does extended replacement cost mean unlimited?",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "No. Extended replacement cost typically adds 25–50% above the dwelling limit; guaranteed replacement cost (where offered) removes the cap subject to underwriting. Read the exact endorsement and any conditions like requiring you to insure to 100% of replacement cost.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h3",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Why did my roof claim get reduced even though I have RCV?",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "A roof endorsement may have converted roof surfacing to ACV based on age, or applied a payment schedule. The dwelling can be RCV while a single component is ACV—this is where most settlement disputes start.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Sources & methodology",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "We compared HO-3 and HO-5 policy forms across multiple national carriers in 2026, focusing on language differences in dwelling valuation, roof surfacing endorsements, contents settlement, and recoverable depreciation handling. Settlement examples reflect adjuster worksheets reviewed for editorial purposes—your specific claim outcome depends on policy language, state regulations, and documentation. Always read your declarations page and all endorsements before assuming RCV is in force.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            },
-            {
-              "type": "list",
-              "start": 1,
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "type": "listitem",
-                  "value": 1,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "State insurance department consumer guides on replacement cost vs actual cash value (search your state's DOI website).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 2,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "NAIC Consumer Information Source policy form library for HO-3, HO-5, and HO-8 differences.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 3,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Carrier-issued declarations page and endorsements (HO-300 series and roof surfacing endorsements vary by insurer and state).",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 4,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Independent claim adjuster industry associations on recoverable depreciation worksheet practices.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                },
-                {
-                  "type": "listitem",
-                  "value": 5,
-                  "format": "",
-                  "indent": 0,
-                  "version": 1,
-                  "children": [
-                    {
-                      "mode": "normal",
-                      "text": "Insurance Information Institute primers on home insurance valuation methods.",
-                      "type": "text",
-                      "style": "",
-                      "detail": 0,
-                      "format": 0,
-                      "version": 1
-                    }
-                  ],
-                  "direction": null
-                }
-              ],
-              "listType": "bullet",
-              "direction": null
-            },
-            {
-              "tag": "h2",
-              "type": "heading",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Bottom line",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null
-            },
-            {
-              "type": "paragraph",
-              "format": "",
-              "indent": 0,
-              "version": 1,
-              "children": [
-                {
-                  "mode": "normal",
-                  "text": "Treat replacement cost as the default and ACV as the exception. The biggest settlement gaps come not from the headline coverage method but from endorsements that quietly convert one component (often the roof) back to ACV. Verify both before you renew, not after a loss.",
-                  "type": "text",
-                  "style": "",
-                  "detail": 0,
-                  "format": 0,
-                  "version": 1
-                }
-              ],
-              "direction": null,
-              "textStyle": "",
-              "textFormat": 0
-            }
-          ],
-          "direction": null
-        }
-      },
-      "publishedAt": "2026-05-27T00:55:21.691Z",
-      "reviewedBy": {
-        "id": 2,
-        "name": "Auto & Property Editor",
-        "slug": "auto-property-editor",
-        "role": "Auto and property insurance",
-        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
-        "updatedAt": "2026-06-02T00:40:26.509Z",
-        "createdAt": "2026-06-02T00:40:26.509Z"
-      },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "seo": {
-        "metaTitle": "Replacement Cost vs ACV Home Insurance Guide 2026 | Insurhi",
-        "metaDescription": "Replacement cost vs actual cash value on dwelling and contents: depreciation, recoverable holdback, and roof endorsements explained for 2026 home claims."
-      },
-      "updatedAt": "2026-06-02T00:40:26.631Z",
-      "createdAt": "2026-05-27T00:53:45.268Z",
       "_status": "published"
     },
     {
@@ -67663,6 +68793,25 @@
                     }
                   ],
                   "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review add-a-teen premium impact in /guides/auto-teen-driver-rates-guide-2026 before changing limits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
                 }
               ],
               "listType": "bullet",
@@ -67676,10 +68825,10 @@
       "reviewedBy": null,
       "lastReviewedAt": null,
       "seo": {
-        "metaTitle": "Auto Insurance Buying Guide 2026 | Compare Coverage, Cost, Claims | Insurhi",
-        "metaDescription": "Step-by-step auto insurance buying guide for 2026: compare liability limits, deductibles, claim quality, and provider reliability before you buy."
+        "metaTitle": "Auto Insurance Buying Guide 2026 | Coverage and Claims",
+        "metaDescription": "Step-by-step auto insurance buying guide for 2026: compare liability limits, deductibles, teen-driver costs, and claim service quality before you buy."
       },
-      "updatedAt": "2026-04-22T08:05:09.073Z",
+      "updatedAt": "2026-06-08T07:34:58.318Z",
       "createdAt": "2026-04-22T08:05:09.072Z",
       "_status": "published"
     },
@@ -68799,6 +69948,120 @@
     }
   ],
   "faqItems": [
+    {
+      "id": 66,
+      "question": "Should I file a home claim for a slow plumbing leak discovered over months?",
+      "answer": "Check policy language first. Many policies exclude long-term seepage; document sudden-damage portions and obtain plumber findings before filing.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-09T01:16:00.315Z",
+      "createdAt": "2026-06-09T01:16:00.315Z"
+    },
+    {
+      "id": 65,
+      "question": "What is the fastest way to get ALE reimbursement after a water loss?",
+      "answer": "Track hotel, meal, and laundry receipts daily, then submit one categorized reimbursement package with claim number and displacement dates.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-09T01:16:00.310Z",
+      "createdAt": "2026-06-09T01:16:00.310Z"
+    },
+    {
+      "id": 64,
+      "question": "Will a 17-year-old roof trigger actual cash value settlement at renewal?",
+      "answer": "It can on some policies. Request roof underwriting review before renewal and confirm whether settlement basis is replacement cost or actual cash value.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-09T01:16:00.305Z",
+      "createdAt": "2026-06-09T01:16:00.305Z"
+    },
+    {
+      "id": 63,
+      "question": "Can telematics hard-braking scores increase my renewal premium?",
+      "answer": "Yes, some carriers apply surcharge tiers from telematics behavior. Run a 30-day trial quote and compare against a non-telematics option before enrolling.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-08T07:34:58.302Z",
+      "createdAt": "2026-06-08T07:34:58.302Z"
+    },
+    {
+      "id": 62,
+      "question": "Do I need gap insurance after a total loss if I still owe on my car loan?",
+      "answer": "If loan balance can exceed insurer payout, gap coverage helps avoid paying the difference out of pocket. Confirm lender requirements and gap terms before declining.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-08T07:34:58.298Z",
+      "createdAt": "2026-06-08T07:34:58.298Z"
+    },
+    {
+      "id": 61,
+      "question": "Should I raise my deductible to lower premium if I rarely file claims?",
+      "answer": "Only if your emergency fund can cover the higher out-of-pocket after a real accident. Compare three-year premium savings against one likely claim cost before switching.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-08T07:34:58.293Z",
+      "createdAt": "2026-06-08T07:34:58.293Z"
+    },
     {
       "id": 60,
       "question": "How long do renters theft claims take to settle?",
@@ -71596,6 +72859,85 @@
       "createdAt": "2026-04-22T07:53:42.862Z"
     },
     {
+      "id": 13,
+      "title": "Medicare Out-of-Network Claim Guide (2026): EOB Errors, Supplement Filing, and Timelines",
+      "slug": "medicare-out-of-network-claim-guide-2026",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "steps": [
+        {
+          "id": "6a276b78efd364bd780a98cb",
+          "step": "Confirm whether the claim should be filed by provider, Medicare, or your supplement carrier."
+        },
+        {
+          "id": "6a276b78efd364bd780a98cc",
+          "step": "Collect EOB statements, itemized bills, and corrected coding documents for each disputed line."
+        },
+        {
+          "id": "6a276b78efd364bd780a98cd",
+          "step": "Submit a complete out-of-network package with matching service dates and diagnosis codes."
+        },
+        {
+          "id": "6a276b78efd364bd780a98ce",
+          "step": "Track acknowledgment within 48 hours and request case ID plus expected resolution date."
+        },
+        {
+          "id": "6a276b78efd364bd780a98cf",
+          "step": "Escalate coding mismatches quickly with written follow-up and supervisor review request."
+        },
+        {
+          "id": "6a276b78efd364bd780a98d0",
+          "step": "File formal appeal immediately when payment is reduced or denied after correction."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a276b78efd364bd780a98d1",
+          "item": "Medicare and supplement member ID details"
+        },
+        {
+          "id": "6a276b78efd364bd780a98d2",
+          "item": "Explanation of Benefits (EOB) for each disputed service"
+        },
+        {
+          "id": "6a276b78efd364bd780a98d3",
+          "item": "Corrected provider invoice with CPT/HCPCS and diagnosis codes"
+        },
+        {
+          "id": "6a276b78efd364bd780a98d4",
+          "item": "Provider notes or correction letter (if available)"
+        },
+        {
+          "id": "6a276b78efd364bd780a98d5",
+          "item": "Timeline log of calls, case IDs, and representative names"
+        },
+        {
+          "id": "6a276b78efd364bd780a98d6",
+          "item": "Banking and mailing details for reimbursement"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/medicare",
+      "denialReasons": [],
+      "delayCauses": [],
+      "supplementalDocuments": [],
+      "nextActions": [],
+      "communicationNotes": [],
+      "reviewedBy": null,
+      "lastReviewedAt": null,
+      "updatedAt": "2026-06-09T01:25:12.307Z",
+      "createdAt": "2026-06-09T01:25:12.306Z"
+    },
+    {
       "id": 4,
       "title": "Medicare Supplement Insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
       "slug": "medicare-claim-guide-2026",
@@ -71777,6 +73119,85 @@
       "lastReviewedAt": "2026-06-01T12:00:00.000Z",
       "updatedAt": "2026-06-02T00:40:27.395Z",
       "createdAt": "2026-04-22T07:53:42.829Z"
+    },
+    {
+      "id": 12,
+      "title": "Pet Chronic Condition Claim Guide (2026): Recurring Vet Claims, Denials, and Appeals",
+      "slug": "pet-chronic-condition-claim-guide-2026",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "steps": [
+        {
+          "id": "6a27695025ce37a73b40c42f",
+          "step": "Confirm waiting-period completion and whether the condition is treated as chronic or pre-existing."
+        },
+        {
+          "id": "6a27695025ce37a73b40c430",
+          "step": "Collect full treatment timeline before filing, including prior visits and medication history."
+        },
+        {
+          "id": "6a27695025ce37a73b40c431",
+          "step": "Submit itemized invoices with diagnosis codes within 24 hours after each treatment cycle."
+        },
+        {
+          "id": "6a27695025ce37a73b40c432",
+          "step": "Respond same day to insurer requests for continuity-of-care documentation."
+        },
+        {
+          "id": "6a27695025ce37a73b40c433",
+          "step": "Track partial denials and file appeal with veterinarian medical-necessity notes."
+        },
+        {
+          "id": "6a27695025ce37a73b40c434",
+          "step": "Escalate unresolved coding disputes in writing with case ID and deadline expectations."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a27695025ce37a73b40c435",
+          "item": "Policy number and pet profile details"
+        },
+        {
+          "id": "6a27695025ce37a73b40c436",
+          "item": "Veterinary SOAP notes across prior visits"
+        },
+        {
+          "id": "6a27695025ce37a73b40c437",
+          "item": "Itemized invoice with procedure and diagnosis codes"
+        },
+        {
+          "id": "6a27695025ce37a73b40c438",
+          "item": "Medication refill and treatment timeline records"
+        },
+        {
+          "id": "6a27695025ce37a73b40c439",
+          "item": "Payment receipts and claim submission confirmation"
+        },
+        {
+          "id": "6a27695025ce37a73b40c43a",
+          "item": "Appeal correspondence log with representative names"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/pet",
+      "denialReasons": [],
+      "delayCauses": [],
+      "supplementalDocuments": [],
+      "nextActions": [],
+      "communicationNotes": [],
+      "reviewedBy": null,
+      "lastReviewedAt": null,
+      "updatedAt": "2026-06-09T01:16:00.285Z",
+      "createdAt": "2026-06-09T01:16:00.284Z"
     },
     {
       "id": 9,

@@ -3,6 +3,7 @@ import type { MetadataRoute } from "next";
 import {
   getAllPages,
   getArticlesList,
+  getAuthors,
   getCategories,
   getClaimCasesList,
   getClaimsGuidesList,
@@ -22,6 +23,15 @@ const FLAGSHIP_PRODUCT_SLUGS = new Set(
   CATEGORY_SLUGS.map((slug) => categoryContentHubs[slug].flagshipProduct.slug),
 );
 
+function lastModified(...candidates: Array<string | undefined>): Date | undefined {
+  for (const value of candidates) {
+    if (!value) continue;
+    const date = new Date(value);
+    if (!Number.isNaN(date.getTime())) return date;
+  }
+  return undefined;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPaths = [
     "/",
@@ -37,9 +47,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/providers",
     "/methodology",
     "/glossary",
+    "/authors",
   ];
 
-  const [cmsCategories, articles, claimsGuides, claimCases, providers, products, pages, glossaryTerms] =
+  const [cmsCategories, articles, claimsGuides, claimCases, providers, products, pages, glossaryTerms, authors] =
     await Promise.all([
     getCategories(),
     getArticlesList(),
@@ -49,6 +60,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getProducts(),
     getAllPages(),
     getGlossaryTerms(),
+    getAuthors(),
   ]);
 
   const insuranceCategorySlugs = Array.from(
@@ -77,6 +89,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...articles.map((article) => ({
       url: absoluteUrl(`/guides/${article.slug}`),
+      lastModified: lastModified(article.lastReviewedAt, article.updatedAt, article.publishedAt, article.createdAt),
       changeFrequency: "weekly" as const,
       priority: DEEP_GUIDE_SLUGS.has(article.slug) ? 0.82 : 0.7,
     })),
@@ -84,6 +97,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       .filter((guide) => Boolean(guide.slug))
       .map((guide) => ({
         url: absoluteUrl(`/claims/guides/${guide.slug}`),
+        lastModified: lastModified(guide.lastReviewedAt, guide.updatedAt, guide.createdAt),
         changeFrequency: "weekly" as const,
         priority: 0.7,
       })),
@@ -99,6 +113,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...products.map((product) => ({
       url: absoluteUrl(`/products/${product.slug}`),
+      lastModified: lastModified(product.lastReviewedAt, product.updatedAt, product.createdAt),
       changeFrequency: "weekly" as const,
       priority: FLAGSHIP_PRODUCT_SLUGS.has(product.slug) ? 0.8 : 0.7,
     })),
@@ -109,8 +124,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...glossaryTerms.map((term) => ({
       url: absoluteUrl(`/glossary/${term.slug}`),
+      lastModified: lastModified(term.updatedAt, term.createdAt),
       changeFrequency: "monthly" as const,
       priority: 0.7,
+    })),
+    ...authors.map((author) => ({
+      url: absoluteUrl(`/authors/${author.slug}`),
+      lastModified: lastModified(author.updatedAt, author.createdAt),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
     })),
   ];
 

@@ -101,6 +101,31 @@ const publisherOrganization = {
   url: getSiteUrl(),
 };
 
+export type PersonJsonLdInput = {
+  name: string;
+  url: string;
+  jobTitle?: string;
+  description?: string;
+};
+
+export function buildPersonJsonLd(input: PersonJsonLdInput) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${input.url}#person`,
+    name: input.name,
+    url: input.url,
+    ...(input.jobTitle ? { jobTitle: input.jobTitle } : {}),
+    ...(input.description ? { description: input.description } : {}),
+    worksFor: {
+      "@id": organizationId(),
+      "@type": "Organization",
+      name: siteName,
+      url: getSiteUrl(),
+    },
+  };
+}
+
 export type ArticleJsonLdInput = {
   headline: string;
   url: string;
@@ -108,12 +133,19 @@ export type ArticleJsonLdInput = {
   dateModified?: string;
   description?: string;
   authorName?: string;
+  authorUrl?: string;
+  authorJobTitle?: string;
 };
 
 export function buildArticleJsonLd(input: ArticleJsonLdInput) {
   const author =
     input.authorName ?
-      { "@type": "Person" as const, name: input.authorName }
+      {
+        "@type": "Person" as const,
+        name: input.authorName,
+        ...(input.authorUrl ? { url: input.authorUrl } : {}),
+        ...(input.authorJobTitle ? { jobTitle: input.authorJobTitle } : {}),
+      }
     : publisherOrganization;
 
   return {

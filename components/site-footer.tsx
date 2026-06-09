@@ -12,6 +12,7 @@ const resourceLinks = [
 
 const companyLinks = [
   { href: "/methodology", label: "Our methodology" },
+  { href: "/authors", label: "Editorial team" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact us" },
   ...legalLinks,

@@ -21,6 +21,8 @@ export type CmsAuthor = {
   slug: string;
   role?: string;
   credentials?: string;
+  updatedAt?: string;
+  createdAt?: string;
 };
 
 export type CmsFaqItem = {
@@ -344,6 +346,28 @@ export async function getCategoryBySlug(slug: string) {
 
   const docs = await fetchCollection<CmsCategory>(
     `/api/categories?where[slug][equals]=${encodeURIComponent(slug)}&limit=1`,
+  );
+
+  return docs[0] ?? null;
+}
+
+export async function getAuthors() {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.authors.slice().sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  return fetchCollection<CmsAuthor>("/api/authors?limit=100&sort=name");
+}
+
+export async function getAuthorBySlug(slug: string) {
+  const snapshot = await getStaticContentSnapshot();
+  if (snapshot) {
+    return snapshot.authors.find((item) => item.slug === slug) ?? null;
+  }
+
+  const docs = await fetchCollection<CmsAuthor>(
+    `/api/authors?where[slug][equals]=${encodeURIComponent(slug)}&limit=1`,
   );
 
   return docs[0] ?? null;

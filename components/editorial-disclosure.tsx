@@ -60,7 +60,16 @@ export function EditorialMetadata({
       {author?.name ? (
         <span>
           Reviewed by{" "}
-          <span className="font-medium text-foreground">{author.name}</span>
+          {author.slug ? (
+            <Link
+              href={`/authors/${author.slug}`}
+              className="font-medium text-foreground underline-offset-4 hover:underline"
+            >
+              {author.name}
+            </Link>
+          ) : (
+            <span className="font-medium text-foreground">{author.name}</span>
+          )}
           {author.role ? ` (${author.role})` : ""}
         </span>
       ) : null}

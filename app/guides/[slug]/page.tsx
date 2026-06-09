@@ -89,17 +89,17 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
     { name: "Guides", path: "/guides" },
     { name: article.title, path: `/guides/${article.slug}` },
   ]);
-  const reviewer =
-    typeof article.reviewedBy === "object" && article.reviewedBy?.name ?
-      article.reviewedBy.name
-    : undefined;
+  const reviewerAuthor =
+    typeof article.reviewedBy === "object" && article.reviewedBy?.name ? article.reviewedBy : undefined;
   const articleJsonLd = buildArticleJsonLd({
     headline: article.title,
     url: absoluteUrl(`/guides/${article.slug}`),
     datePublished: article.publishedAt ?? article.createdAt,
     dateModified: article.lastReviewedAt ?? article.updatedAt ?? article.publishedAt ?? article.createdAt,
     description: article.seo?.metaDescription,
-    authorName: reviewer,
+    authorName: reviewerAuthor?.name,
+    authorUrl: reviewerAuthor?.slug ? absoluteUrl(`/authors/${reviewerAuthor.slug}`) : undefined,
+    authorJobTitle: reviewerAuthor?.role,
   });
   const paragraphs = getArticleParagraphs(article);
   const keyPoints = paragraphs.slice(0, 3);

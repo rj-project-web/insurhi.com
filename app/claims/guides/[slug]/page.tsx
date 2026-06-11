@@ -14,6 +14,7 @@ import {
 import { EditorialDisclosure, EditorialMetadata } from "@/components/editorial-disclosure";
 import { RelatedContentPanel } from "@/components/related-content-panel";
 import { getClaimsGuideBySlug, getClaimsGuidesList } from "@/lib/cms-client";
+import { buildClaimsGuidePageTitle } from "@/lib/page-titles";
 import { getRelatedContentForClaimsGuide } from "@/lib/content-links";
 import {
   absoluteUrl,
@@ -48,9 +49,10 @@ export async function generateMetadata({
   }
 
   return buildMetadata({
-    title: guide.title,
+    title: buildClaimsGuidePageTitle(guide.title),
     description: `Follow ${guide.title} with claim steps and required document checklist.`,
     path: `/claims/guides/${slug}`,
+    ogImagePath: null,
   });
 }
 

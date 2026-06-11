@@ -12,6 +12,7 @@ import { RelatedContentPanel } from "@/components/related-content-panel";
 import type { CmsCategory, CmsProvider } from "@/lib/cms-client";
 import { getProductBySlug, getProducts } from "@/lib/cms-client";
 import { getRelatedContentForProduct } from "@/lib/content-links";
+import { buildProductPageTitle } from "@/lib/page-titles";
 import {
   absoluteUrl,
   buildBreadcrumbJsonLd,
@@ -164,9 +165,10 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     `${product.name} coverage and pricing notes from the CMS.`;
 
   return buildMetadata({
-    title: product.seo?.metaTitle ?? product.name,
+    title: buildProductPageTitle(product),
     description: derivedDescription,
     path: `/products/${slug}`,
+    ogImagePath: null,
   });
 }
 

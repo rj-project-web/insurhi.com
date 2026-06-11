@@ -6,6 +6,12 @@ type BuildMetadataInput = {
   title: string;
   description: string;
   path: string;
+  /**
+   * Open Graph image path. Defaults to the site-wide "/opengraph-image".
+   * Pass `null` on routes that ship their own `opengraph-image.tsx` file,
+   * since config-based images override file-based ones.
+   */
+  ogImagePath?: string | null;
 };
 
 type BreadcrumbItem = {
@@ -21,25 +27,72 @@ export function absoluteUrl(path: string) {
   return new URL(path, getSiteUrl()).toString();
 }
 
-export function buildMetadata({ title, description, path }: BuildMetadataInput): Metadata {
+/**
+ * Max title length before the layout template appends " | Insurhi" (10 chars),
+ * keeping the full rendered title near Google's ~60-char display limit.
+ */
+const META_TITLE_BUDGET = 55;
+
+/**
+ * Sanitizes CMS-authored meta titles:
+ * - strips duplicated trailing brand segments ("... | Insurhi | Insurhi")
+ * - drops truncated trailing fragments ("... | I…")
+ * - shortens over-budget titles by dropping trailing pipe segments,
+ *   then cutting single-segment titles at the first ": ".
+ */
+export function normalizeMetaTitle(raw: string): string {
+  let segments = raw
+    .split("|")
+    .map((segment) => segment.trim())
+    .filter(Boolean);
+
+  while (segments.length > 1 && /^insurhi$/i.test(segments[segments.length - 1])) {
+    segments.pop();
+  }
+  if (segments.length > 1 && /(…|\.\.\.)$/.test(segments[segments.length - 1])) {
+    segments.pop();
+  }
+  while (segments.length > 1 && segments.join(" | ").length > META_TITLE_BUDGET) {
+    segments.pop();
+  }
+
+  let title = segments.join(" | ").replace(/(…|\.\.\.)$/, "").trim();
+  if (title.length > META_TITLE_BUDGET) {
+    const colonIndex = title.indexOf(": ");
+    if (colonIndex > 20) {
+      title = title.slice(0, colonIndex).trim();
+    }
+  }
+
+  return title || raw.trim();
+}
+
+export function buildMetadata({
+  title,
+  description,
+  path,
+  ogImagePath = "/opengraph-image",
+}: BuildMetadataInput): Metadata {
   const url = absoluteUrl(path);
+  const normalizedTitle = normalizeMetaTitle(title);
 
   return {
-    title,
+    title: normalizedTitle,
     description,
     alternates: {
       canonical: path,
     },
     openGraph: {
-      title,
+      title: normalizedTitle,
       description,
       url,
       siteName,
       type: "website",
+      ...(ogImagePath ? { images: [{ url: ogImagePath, width: 1200, height: 630 }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: normalizedTitle,
       description,
     },
   };

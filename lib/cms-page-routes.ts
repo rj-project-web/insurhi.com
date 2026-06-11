@@ -2,6 +2,7 @@
 export const CMS_PAGE_FIXED_PATHS: Record<string, string> = {
   about: "/about",
   contact: "/contact",
+  methodology: "/methodology",
   "privacy-policy": "/privacy-policy",
   terms: "/terms",
 };

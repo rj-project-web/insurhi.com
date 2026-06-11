@@ -50,6 +50,7 @@ export async function generateMetadata({ params }: AuthorPageProps): Promise<Met
       author.credentials ??
       `${author.name} reviews Insurhi insurance guides, product comparisons, and claims help.`,
     path: `/authors/${author.slug}`,
+    ogImagePath: null,
   });
 }
 

@@ -20,3 +20,11 @@ export const legalLinks = [
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Service" },
 ];
+
+/**
+ * Duplicate provider entities in the CMS. Key pages canonicalize to the value
+ * page and are excluded from the sitemap until the CMS data is merged.
+ */
+export const providerCanonicalAliases: Record<string, string> = {
+  "state-farm-auto": "state-farm",
+};

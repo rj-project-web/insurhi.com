@@ -11,10 +11,10 @@ import {
   getProducts,
   getProviders,
 } from "@/lib/cms-client";
-import { cmsPagePublicPath } from "@/lib/cms-page-routes";
+import { cmsPagePublicPath, isFixedCmsPageSlug } from "@/lib/cms-page-routes";
 import { absoluteUrl } from "@/lib/seo";
 import { categoryContentHubs, CATEGORY_SLUGS } from "@/lib/category-content-hub";
-import { insuranceCategories } from "@/lib/site-data";
+import { insuranceCategories, providerCanonicalAliases } from "@/lib/site-data";
 
 const DEEP_GUIDE_SLUGS = new Set(
   CATEGORY_SLUGS.map((slug) => categoryContentHubs[slug].deepGuide.slug),
@@ -71,8 +71,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     new Set(
       pages
         .map((page) => page.slug?.trim())
-        .filter(Boolean)
-        .map((slug) => cmsPagePublicPath(slug as string)),
+        .filter((slug): slug is string => Boolean(slug) && !isFixedCmsPageSlug(slug))
+        .map((slug) => cmsPagePublicPath(slug)),
     ),
   );
 
@@ -106,7 +106,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
-    ...providers.map((provider) => ({
+    ...providers
+      .filter((provider) => !providerCanonicalAliases[provider.slug])
+      .map((provider) => ({
       url: absoluteUrl(`/providers/${provider.slug}`),
       changeFrequency: "weekly" as const,
       priority: 0.7,

@@ -306,6 +306,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       categorySummary ??
       `Compare ${category.title.toLowerCase()} providers, understand coverage options, and review common claim questions.`,
     path: `/insurance/${slug}`,
+    ogImagePath: null,
   });
 }
 

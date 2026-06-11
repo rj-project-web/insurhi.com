@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 import type { CmsCategory, CmsProduct } from "@/lib/cms-client";
 import { getProducts, getProviderBySlug, getProviders } from "@/lib/cms-client";
+import { buildProviderPageTitle } from "@/lib/page-titles";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { providerCanonicalAliases } from "@/lib/site-data";
 
 type ProviderPageProps = {
   params: Promise<{ slug: string }>;
@@ -44,12 +46,15 @@ function providerMatchesProduct(product: CmsProduct, providerSlug: string, provi
 
 export async function generateStaticParams() {
   const providers = await getProviders();
-  return providers.map((provider) => ({ slug: provider.slug }));
+  return providers
+    .filter((provider) => !providerCanonicalAliases[provider.slug])
+    .map((provider) => ({ slug: provider.slug }));
 }
 
 export async function generateMetadata({ params }: ProviderPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const provider = await getProviderBySlug(slug);
+  const resolvedSlug = providerCanonicalAliases[slug] ?? slug;
+  const provider = await getProviderBySlug(resolvedSlug);
 
   if (!provider) {
     return buildMetadata({
@@ -60,16 +65,22 @@ export async function generateMetadata({ params }: ProviderPageProps): Promise<M
   }
 
   return buildMetadata({
-    title: provider.seo?.metaTitle ?? provider.name,
+    title: buildProviderPageTitle(provider),
     description:
       provider.seo?.metaDescription ??
-      `Compare ${provider.name} coverage regions and linked insurance categories.`,
-    path: `/providers/${slug}`,
+      `Compare ${provider.name} coverage regions, linked products, and claims quality across insurance categories.`,
+    path: `/providers/${resolvedSlug}`,
+    ogImagePath: null,
   });
 }
 
 export default async function ProviderDetailPage({ params }: ProviderPageProps) {
   const { slug } = await params;
+  const canonicalSlug = providerCanonicalAliases[slug];
+  if (canonicalSlug) {
+    redirect(`/providers/${canonicalSlug}`);
+  }
+
   const provider = await getProviderBySlug(slug);
 
   if (!provider) {

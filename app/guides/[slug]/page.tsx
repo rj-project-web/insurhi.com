@@ -74,6 +74,7 @@ export async function generateMetadata({ params }: GuideDetailPageProps): Promis
       article.seo?.metaDescription ??
       `Read ${article.title} to understand key insurance decisions and next actions.`,
     path: `/guides/${article.slug}`,
+    ogImagePath: null,
   });
 }
 

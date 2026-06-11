@@ -52,6 +52,7 @@ export async function generateMetadata({ params }: GlossaryTermPageProps): Promi
     title: `${term.term} | Insurance Glossary`,
     description: term.definition.slice(0, 160),
     path: `/glossary/${term.slug}`,
+    ogImagePath: null,
   });
 }
 

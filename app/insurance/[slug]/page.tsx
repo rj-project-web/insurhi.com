@@ -333,7 +333,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
 
   const productRows = products.slice(0, 6);
   const providerRows = providers.slice(0, 6);
-  const faqRows = faqs.slice(0, 8);
+  const faqRows = faqs;
   const decisionFactorsBySlug: Record<
     string,
     Array<{ title: string; description: string }>
@@ -872,9 +872,19 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
       </section>
 
       <section id="faqs" className="space-y-3 rounded-2xl border bg-gradient-to-br from-card to-sky-500/[0.03] p-5">
-        <h2 className="text-xl font-semibold tracking-tight text-blue-950 dark:text-blue-50">
-          Frequently asked questions
-        </h2>
+        <div className="flex flex-col gap-1 sm:flex-row sm:items-end sm:justify-between">
+          <h2 className="text-xl font-semibold tracking-tight text-blue-950 dark:text-blue-50">
+            Frequently asked questions
+          </h2>
+          {faqRows.length > 0 ? (
+            <p className="text-xs text-muted-foreground">
+              Latest {faqRows.length} FAQs ·{" "}
+              <Link href={`/guides`} className="underline underline-offset-4">
+                More in guides
+              </Link>
+            </p>
+          ) : null}
+        </div>
         <div className="grid gap-3">
           {faqRows.length > 0 ? (
             faqRows.map((faq) => (

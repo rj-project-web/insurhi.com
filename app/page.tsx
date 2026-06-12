@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { LinkifiedText } from "@/components/cms-rich-text";
 import { EditorialDisclosure } from "@/components/editorial-disclosure";
 import { HomeHeroBadges } from "@/components/home-hero-badges";
 import { HomeLatestFeed } from "@/components/home-latest-feed";
@@ -162,7 +163,7 @@ export default async function Home() {
               <h3 className="text-base font-semibold text-blue-950 dark:text-blue-50">
                 {faq.question}
               </h3>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">{faq.answer}</p>
+              <LinkifiedText text={faq.answer} className="mt-2 block text-sm leading-6 text-muted-foreground" />
             </article>
           ))}
         </div>

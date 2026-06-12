@@ -34,7 +34,7 @@ export type CmsFaqItem = {
   createdAt?: string;
 };
 
-const FAQ_CATEGORY_LIMIT = 8;
+const FAQ_CATEGORY_LIMIT = 12;
 
 function sortFaqsByRecent<T extends { updatedAt?: string; createdAt?: string }>(items: T[]): T[] {
   return [...items].sort((a, b) => {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-12T01:28:49.549Z",
+    "exportedAt": "2026-06-12T06:34:44.595Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -76693,9 +76693,17 @@
           "note": "Request written confirmation when a corrected claim is accepted for reprocessing."
         }
       ],
-      "reviewedBy": null,
-      "lastReviewedAt": null,
-      "updatedAt": "2026-06-12T00:49:24.927Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-08T14:00:00.000Z",
+      "updatedAt": "2026-06-12T06:34:40.759Z",
       "createdAt": "2026-06-12T00:49:24.927Z"
     },
     {
@@ -76767,14 +76775,131 @@
         }
       ],
       "onlineClaimUrl": "https://www.insurhi.com/claims/medicare",
-      "denialReasons": [],
-      "delayCauses": [],
-      "supplementalDocuments": [],
-      "nextActions": [],
-      "communicationNotes": [],
-      "reviewedBy": null,
-      "lastReviewedAt": null,
-      "updatedAt": "2026-06-09T01:25:12.307Z",
+      "denialReasons": [
+        {
+          "id": "6a2ba88055866e61f9edf47e",
+          "reason": "Out-of-network provider balance billing",
+          "explanation": "Providers that do not accept Medicare assignment may bill you for the difference between their charge and Medicare's allowed amount. Medigap may cover Part B excess charges only on plans that include that benefit (e.g., Plan F, G in some cases)."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf47f",
+          "reason": "Medicare Advantage out-of-network rules (not Medigap)",
+          "explanation": "If you have Medicare Advantage, non-emergency out-of-network care is often denied except in PPO plans with higher cost-sharing. Confirm plan type before assuming Medigap-style coverage."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf480",
+          "reason": "Service not medically necessary per Medicare",
+          "explanation": "Medicare may deny the underlying service before your supplement pays. Fix the primary Medicare determination first—supplement follows Medicare's yes/no."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf481",
+          "reason": "Medigap plan does not include foreign travel or excess charge benefit",
+          "explanation": "Not every Medigap letter covers foreign emergency care or Part B excess charges. Check your plan letter before expecting payment on OON bills."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf482",
+          "reason": "Assignment not accepted—patient responsible for upfront balance",
+          "explanation": "When a provider refuses Medicare assignment, you may need to pay upfront and seek reimbursement. Keep all EOBs and proof of payment for supplement filing."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a2ba88055866e61f9edf483",
+          "cause": "Medicare primary claim pending before supplement can pay",
+          "explanation": "Supplement carriers usually wait for Medicare's final EOB. OON claims can take 30–60 days at Medicare before the supplement processes."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf484",
+          "cause": "Provider rebilling with corrected NPI or place-of-service codes",
+          "explanation": "OON denials often trace to coding errors. Provider must resubmit to Medicare; each cycle adds 2–4 weeks."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf485",
+          "cause": "Balance-bill negotiation between provider and patient",
+          "explanation": "Some providers accept Medicare rates after appeal even when they initially balance-billed. Negotiation time can delay supplement filing."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf486",
+          "cause": "Crossover claim not auto-forwarded to supplement",
+          "explanation": "If Medicare did not crossover to your supplement, you must file manually with Medicare EOB attached—adds 1–2 weeks if not caught early."
+        }
+      ],
+      "supplementalDocuments": [
+        {
+          "id": "6a2ba88055866e61f9edf487",
+          "scenario": "Balance bill from out-of-network specialist",
+          "documents": "Medicare EOB, provider itemized bill, proof of Medicare assignment status, and supplement policy page showing excess charge or OON benefits."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf488",
+          "scenario": "Emergency care while traveling",
+          "documents": "Foreign hospital invoice, translated itemized bill, Medicare EOB if submitted, travel dates, and emergency admission records."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf489",
+          "scenario": "Dispute over allowed amount vs charged amount",
+          "documents": "Medicare allowable amount documentation, comparable in-network rates, and written appeal to Medicare before supplement re-file."
+        }
+      ],
+      "nextActions": [
+        {
+          "id": "6a2ba88055866e61f9edf48a",
+          "action": "Confirm whether you have Original Medicare + Medigap or Medicare Advantage—OON rules differ completely."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf48b",
+          "action": "Request Medicare redetermination in writing before paying a balance bill you believe is incorrect."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf48c",
+          "action": "Ask your supplement carrier which plan letter benefits apply to excess charges and foreign emergency care."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf48d",
+          "action": "Negotiate with the provider using Medicare allowable amounts as a benchmark before paying in full."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf48e",
+          "action": "File supplement claim with Medicare EOB, proof of payment, and itemized provider bill within your policy's filing window."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf48f",
+          "action": "Escalate to your state SHIP counselor or Department of Insurance if both Medicare and supplement deny without clear policy citation."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a2ba88055866e61f9edf490",
+          "note": "Always get the provider's Medicare participation status in writing before elective OON care."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf491",
+          "note": "Save every EOB—supplement claims require line-by-line match to Medicare's allowed amounts."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf492",
+          "note": "Use certified mail or portal uploads with delivery confirmation for appeals; phone-only disputes rarely stick."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf493",
+          "note": "Reference your Medigap plan letter by name when calling the supplement carrier—not just 'my secondary insurance.'"
+        },
+        {
+          "id": "6a2ba88055866e61f9edf494",
+          "note": "For billing code fixes first, see /claims/guides/medicare-billing-error-claim-guide-2026 before pursuing OON balance disputes."
+        }
+      ],
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-08T14:00:00.000Z",
+      "updatedAt": "2026-06-12T06:34:40.860Z",
       "createdAt": "2026-06-09T01:25:12.306Z"
     },
     {
@@ -77037,14 +77162,131 @@
         }
       ],
       "onlineClaimUrl": "https://www.insurhi.com/claims/pet",
-      "denialReasons": [],
-      "delayCauses": [],
-      "supplementalDocuments": [],
-      "nextActions": [],
-      "communicationNotes": [],
-      "reviewedBy": null,
-      "lastReviewedAt": null,
-      "updatedAt": "2026-06-09T01:16:00.285Z",
+      "denialReasons": [
+        {
+          "id": "6a2ba88055866e61f9edf495",
+          "reason": "Condition classified as pre-existing from prior vet notes",
+          "explanation": "Chronic claims trigger full medical-history review. Any prior mention of symptoms—even resolved—can classify diabetes, allergies, or orthopedic issues as pre-existing."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf496",
+          "reason": "Bilateral exclusion on chronic orthopedic or ear conditions",
+          "explanation": "If one side was treated before enrollment, the carrier may deny the other side as bilateral pre-existing even when only one side is currently symptomatic."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf497",
+          "reason": "Annual or lifetime benefit cap reached",
+          "explanation": "Chronic year-over-year treatment can exhaust annual limits on lower-tier plans. Once capped, remaining claims in the policy year are denied as limit exhaustion—not claim error."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf498",
+          "reason": "Treatment during illness waiting period",
+          "explanation": "Diagnosis or symptoms before the waiting period ends exclude the condition permanently on many policies. Chronic claims on new policies are scrutinized for start dates."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf499",
+          "reason": "Excluded hereditary condition without rider",
+          "explanation": "Breed-predisposed chronic conditions (hip dysplasia, heart disease) may need a hereditary rider. Without it, recurring claims get denied as known breed risk."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a2ba88055866e61f9edf49a",
+          "cause": "Full lifetime vet record request on first chronic claim",
+          "explanation": "Carriers often pull 12–24 months of records (sometimes lifetime) before approving ongoing treatment. Incomplete records add 2–6 weeks per round."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf49b",
+          "cause": "Itemized invoices missing diagnosis or procedure codes",
+          "explanation": "Chronic refill and follow-up visits need clear codes. Vague 'recheck' lines are returned for revision before reimbursement."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf49c",
+          "cause": "Annual deductible not yet met on first chronic claim of the year",
+          "explanation": "Looks like a denial but is policy mechanics—you pay deductible before reimbursement percentage applies."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf49d",
+          "cause": "Specialist report requested to confirm chronic vs acute flare",
+          "explanation": "Carriers may pause payment until a specialist letter distinguishes a new acute episode from ongoing chronic management."
+        }
+      ],
+      "supplementalDocuments": [
+        {
+          "id": "6a2ba88055866e61f9edf49e",
+          "scenario": "First chronic condition claim on a new policy",
+          "documents": "Complete vet records from all clinics, enrollment-date exam notes, and timeline showing symptom onset after waiting periods."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf49f",
+          "scenario": "Ongoing allergy or diabetes management",
+          "documents": "Lab results with dates, treatment plan, prescription history, and proof condition was first diagnosed after policy effective date."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4a0",
+          "scenario": "Bilateral orthopedic chronic claim",
+          "documents": "Specialist letter confirming anatomical side, imaging reports, and prior records scoped to the affected limb only."
+        }
+      ],
+      "nextActions": [
+        {
+          "id": "6a2ba88055866e61f9edf4a1",
+          "action": "Request written pre-existing classification citing exact record language and dates."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4a2",
+          "action": "Ask your vet for a letter tying diagnosis date to post-enrollment exam findings."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4a3",
+          "action": "Appeal in writing with one clear argument—timing, anatomy, or diagnosis name—not general frustration."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4a4",
+          "action": "Track annual limit usage monthly so you know when cap exhaustion will shift costs to you."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4a5",
+          "action": "Compare renewal options if chronic claims are routinely delayed—switching restarts waiting periods, so plan carefully."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4a6",
+          "action": "For surgery escalation on chronic issues, cross-read /claims/guides/pet-surgery-claim-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a2ba88055866e61f9edf4a7",
+          "note": "Submit chronic claims monthly with consistent file naming (pet name + date + clinic)."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4a8",
+          "note": "Keep enrollment-day vet exam PDFs permanently—they are your best defense on chronic disputes."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4a9",
+          "note": "Do not let vets use speculative notes ('monitor if recurs')—ask for objective exam findings only."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4aa",
+          "note": "Save every partial-payment explanation of benefits to prove deductible and annual limit status."
+        },
+        {
+          "id": "6a2ba88055866e61f9edf4ab",
+          "note": "Reference /guides/pet-pre-existing-waiting-period-deep-guide-2026 when appealing bilateral or pre-existing calls."
+        }
+      ],
+      "reviewedBy": {
+        "id": 1,
+        "name": "Insurhi Editorial Team",
+        "slug": "editorial-team",
+        "role": "Insurance research & editorial",
+        "credentials": "Cross-category coverage reviews, claims workflow checks, and policy form comparisons.",
+        "updatedAt": "2026-06-02T00:40:26.499Z",
+        "createdAt": "2026-06-02T00:40:26.496Z"
+      },
+      "lastReviewedAt": "2026-06-08T14:00:00.000Z",
+      "updatedAt": "2026-06-12T06:34:40.900Z",
       "createdAt": "2026-06-09T01:16:00.284Z"
     },
     {
@@ -77756,9 +77998,17 @@
           "note": "Keep a log of every call with date, representative name, and promised follow-up deadline."
         }
       ],
-      "reviewedBy": null,
-      "lastReviewedAt": null,
-      "updatedAt": "2026-06-12T00:49:24.826Z",
+      "reviewedBy": {
+        "id": 1,
+        "name": "Insurhi Editorial Team",
+        "slug": "editorial-team",
+        "role": "Insurance research & editorial",
+        "credentials": "Cross-category coverage reviews, claims workflow checks, and policy form comparisons.",
+        "updatedAt": "2026-06-02T00:40:26.499Z",
+        "createdAt": "2026-06-02T00:40:26.496Z"
+      },
+      "lastReviewedAt": "2026-06-08T14:00:00.000Z",
+      "updatedAt": "2026-06-12T06:34:40.940Z",
       "createdAt": "2026-06-12T00:49:24.825Z"
     }
   ],
@@ -78931,10 +79181,10 @@
         }
       },
       "seo": {
-        "metaTitle": "Editorial Methodology | How Insurhi Reviews Insurance Products & Providers",
+        "metaTitle": "Editorial Methodology | Insurhi Insurance Reviews",
         "metaDescription": "How Insurhi evaluates insurance: coverage clarity, pricing context, claim experience, and suitability. Independent rankings, public sources, and update cadence."
       },
-      "updatedAt": "2026-05-26T01:03:25.912Z",
+      "updatedAt": "2026-06-12T06:34:40.611Z",
       "createdAt": "2026-05-26T01:03:25.911Z",
       "_status": "published"
     },
@@ -79935,9 +80185,9 @@
       },
       "seo": {
         "metaTitle": "Privacy Policy | Insurhi Platform Data Practices",
-        "metaDescription": "Read Insurhi privacy practices for a platform insurance website, including data collection, legal bases, sharing, retention, user rights, and security safeguards."
+        "metaDescription": "Insurhi privacy practices: data collection, legal bases, sharing, retention, user rights, and security safeguards for our insurance education site."
       },
-      "updatedAt": "2026-04-23T08:57:06.147Z",
+      "updatedAt": "2026-06-12T06:34:40.645Z",
       "createdAt": "2026-04-23T08:57:06.146Z",
       "_status": "published"
     },
@@ -80640,9 +80890,9 @@
       },
       "seo": {
         "metaTitle": "Terms of Service | Insurhi Platform Rules",
-        "metaDescription": "Review Insurhi terms for platform use, service scope, third-party links, liability limits, user obligations, and legal conditions for insurance information and comparison services."
+        "metaDescription": "Insurhi terms of service: platform use, service scope, third-party links, liability limits, and conditions for insurance information and comparisons."
       },
-      "updatedAt": "2026-04-23T08:58:51.950Z",
+      "updatedAt": "2026-06-12T06:34:40.701Z",
       "createdAt": "2026-04-23T08:58:51.949Z",
       "_status": "published"
     }

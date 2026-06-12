@@ -14,6 +14,18 @@ export const metadata: Metadata = buildMetadata({
   path: "/guides",
 });
 
+function categorySlugFromArticle(category: unknown): string | null {
+  if (!category) return null;
+  if (typeof category === "string") return category;
+  if (typeof category === "object") return (category as { slug?: string }).slug ?? null;
+  return null;
+}
+
+function categoryTitleFromArticle(category: unknown): string | null {
+  if (!category || typeof category !== "object") return null;
+  return (category as { title?: string }).title ?? null;
+}
+
 export default async function GuidesPage() {
   const articles = await getLatestArticles();
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
@@ -55,16 +67,26 @@ export default async function GuidesPage() {
 
       <div className="grid gap-3 sm:grid-cols-2">
         {articles.length > 0 ? (
-          articles.map((article) => (
-            <Link
-              key={article.id}
-              href={`/guides/${article.slug}`}
-              className="rounded-xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-4 transition-colors hover:bg-accent"
-            >
-              <p className="font-medium">{article.title}</p>
-              <p className="mt-1 text-sm text-muted-foreground">/{article.slug}</p>
-            </Link>
-          ))
+          articles.map((article) => {
+            const categorySlug = categorySlugFromArticle(article.category);
+            const categoryTitle = categoryTitleFromArticle(article.category);
+            return (
+              <Link
+                key={article.id}
+                href={`/guides/${article.slug}`}
+                className="rounded-xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-4 transition-colors hover:bg-accent"
+              >
+                <p className="font-medium">{article.title}</p>
+                {categorySlug && categoryTitle ? (
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    <span className="text-foreground/80">{categoryTitle}</span>
+                  </p>
+                ) : (
+                  <p className="mt-1 text-sm text-muted-foreground">Insurance guide</p>
+                )}
+              </Link>
+            );
+          })
         ) : (
           <>
             <article className="rounded-lg border bg-card p-4">Beginner starter guide</article>

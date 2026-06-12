@@ -27,6 +27,18 @@ type ClaimsGuideDetailPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+function categorySlugFromGuide(category: unknown): string | null {
+  if (!category) return null;
+  if (typeof category === "string") return category;
+  if (typeof category === "object") return (category as { slug?: string }).slug ?? null;
+  return null;
+}
+
+function categoryTitleFromGuide(category: unknown): string | null {
+  if (!category || typeof category !== "object") return null;
+  return (category as { title?: string }).title ?? null;
+}
+
 export async function generateStaticParams() {
   const guides = await getClaimsGuidesList();
   return guides
@@ -77,6 +89,8 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
     dateModified: guide.updatedAt ?? guide.createdAt,
   });
   const relatedContent = getRelatedContentForClaimsGuide(slug, guide.category);
+  const categorySlug = categorySlugFromGuide(guide.category);
+  const categoryTitle = categoryTitleFromGuide(guide.category);
 
   return (
     <div className="space-y-8">
@@ -89,9 +103,19 @@ export default async function ClaimsGuideDetailPage({ params }: ClaimsGuideDetai
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
       <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-teal-500/[0.08] via-cyan-500/[0.06] to-card p-6 lg:p-8">
-        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
-          Claims / Guide / {slug}
+        <p className="inline-flex flex-wrap items-center gap-1 rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+          <Sparkles className="h-3.5 w-3.5 text-cyan-600" />
+          <Link href="/claims" className="hover:text-foreground">
+            Claims
+          </Link>
+          <span>/</span>
+          {categorySlug && categoryTitle ? (
+            <Link href={`/insurance/${categorySlug}`} className="hover:text-foreground">
+              {categoryTitle}
+            </Link>
+          ) : (
+            <span>Insurance</span>
+          )}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{guide.title}</h1>
         <EditorialMetadata

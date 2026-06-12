@@ -41,7 +41,7 @@ const META_TITLE_BUDGET = 55;
  *   then cutting single-segment titles at the first ": ".
  */
 export function normalizeMetaTitle(raw: string): string {
-  let segments = raw
+  const segments = raw
     .split("|")
     .map((segment) => segment.trim())
     .filter(Boolean);

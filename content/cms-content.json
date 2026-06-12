@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-09T01:27:05.590Z",
+    "exportedAt": "2026-06-12T00:51:30.503Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -57849,6 +57849,1118 @@
       "_status": "published"
     },
     {
+      "id": 28,
+      "title": "Renters Sublease Insurance Guide (2026): Airbnb, Guests, and Coverage Gaps",
+      "slug": "renters-sublease-coverage-guide-2026",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for renters who sublet, host short-term guests, or list a room on Airbnb. Standard renters policies often exclude business use—paid guests can create liability gaps if you do not disclose and adjust coverage.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Sublease vs roommate coverage",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Roommates: each adult typically needs their own policy—see /guides/renters-roommate-coverage-split-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Sublease/short-term rental: may trigger business-use exclusions even if you still live in the unit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Landlord lease rules: many leases prohibit subletting without written approval.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Liability risks with paying guests",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Guest injury on your property can become a liability claim—exclusions may apply if the stay is commercial.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Property damage caused by guests may not be covered if the carrier classifies hosting as business activity.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Higher foot traffic increases theft and water-damage risk—document condition before each stay.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: weekend Airbnb in your spare room",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "You rent your second bedroom two weekends per month. Your carrier asks whether any rental income is generated. If yes, a standard HO-4 may exclude guest-related liability. Options: stop paid stays, buy a home-sharing endorsement if offered, or switch to a landlord policy structure with landlord permission.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: full-unit sublease while traveling",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "You sublet the entire apartment for three months. You may no longer qualify as an occupant, which can void renters coverage for contents left behind. The subtenant should buy their own renters policy; you may need vacant-dwelling or landlord coverage depending on lease terms.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Read your lease subletting and short-term rental clauses before listing.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Disclose hosting or sublease activity to your renters insurer in writing.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm liability limits ($300K minimum recommended for guest exposure).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Separate guest agreements from your insurance—insurance does not replace contracts.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review water and theft claim prep at /claims/guides/renters-water-damage-claim-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Roommate split coverage: /guides/renters-roommate-coverage-split-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Buying basics: /guides/renters-insurance-buying-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare providers: /insurance/renters",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-12T00:49:24.905Z",
+      "reviewedBy": null,
+      "lastReviewedAt": null,
+      "seo": {
+        "metaTitle": "Renters Sublease Insurance Guide 2026 | Airbnb Gaps",
+        "metaDescription": "Renters insurance for subleases and short-term guests: business-use exclusions, liability risks, lease disclosure, and when you need landlord approval or extra coverage."
+      },
+      "updatedAt": "2026-06-12T00:49:24.906Z",
+      "createdAt": "2026-06-12T00:49:24.906Z",
+      "_status": "published"
+    },
+    {
+      "id": 27,
+      "title": "Pet Dental Insurance Guide (2026): Cleanings, Extractions, and Wellness Add-Ons",
+      "slug": "pet-dental-coverage-guide-2026",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for pet owners comparing accident-and-illness plans who want predictable dental costs. Most standard plans treat cleanings as optional—wellness riders change the math only when annual care is predictable.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Dental illness vs wellness cleanings",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Dental illness coverage: extractions, oral infections, and injury-related tooth damage—often subject to annual caps and waiting periods.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Wellness dental riders: routine cleanings and exams—typically $200–$500 annual benefit limits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Accident-only plans: generally exclude dental illness and wellness entirely.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Who should buy a wellness dental rider",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Good fit: breeds prone to periodontal disease, senior pets with recurring tartar buildup, owners who want budget smoothing.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Poor fit: young healthy pets with low dental risk, owners comfortable paying cleanings out of pocket.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: young dog with annual cleaning",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A 3-year-old mixed breed needs one $350 cleaning per year. A wellness rider costing $15/month ($180/year) with a $250 dental cap may not break even unless it also covers vaccines and exams you would pay anyway.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: senior dog needing extractions",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A 10-year-old spaniel needs two extractions ($1,200) after a covered dental illness waiting period. Accident-and-illness dental coverage with a $1,000 annual cap leaves $200 out of pocket—still better than no coverage if pre-existing rules do not apply.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm whether cleanings are covered under illness or only via wellness rider.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Check annual dental sub-limits and whether extractions share the illness cap.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review waiting periods for dental illness vs wellness benefits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare total premium with and without wellness for your pet's age and breed.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Read pre-existing rules in /guides/pet-pre-existing-waiting-period-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Q: Does pet insurance cover routine dental cleanings? A: Usually only with a wellness rider; standard illness plans focus on disease and extractions.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Q: What annual dental limit is typical? A: $200–$500 on wellness plans; illness caps vary by carrier.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Q: Is wellness worth it for a healthy young dog? A: Often break-even—compare rider cost to expected annual vet spend.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pre-existing and waiting periods: /guides/pet-pre-existing-waiting-period-deep-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Surgery claims: /claims/guides/pet-surgery-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare plans: /insurance/pet",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-12T00:49:24.692Z",
+      "reviewedBy": null,
+      "lastReviewedAt": null,
+      "seo": {
+        "metaTitle": "Pet Dental Insurance Guide 2026 | Cleanings & Limits",
+        "metaDescription": "Compare pet dental coverage: illness vs wellness riders, annual limits, waiting periods, and when dental add-ons beat paying out of pocket for routine care."
+      },
+      "updatedAt": "2026-06-12T00:49:24.700Z",
+      "createdAt": "2026-06-12T00:49:24.700Z",
+      "_status": "published"
+    },
+    {
       "id": 21,
       "title": "Life Insurance Beneficiary Claims (2026): How to File, Avoid Delays, and Handle Contested Payouts",
       "slug": "life-beneficiary-claim-deep-guide-2026",
@@ -64946,6 +66058,45 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Short-term rental note",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "If you sublet or host paid guests, review business-use exclusions in /guides/renters-sublease-coverage-guide-2026 before relying on standard liability limits.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -64955,10 +66106,10 @@
       "reviewedBy": null,
       "lastReviewedAt": null,
       "seo": {
-        "metaTitle": "Renters Insurance Buying Guide 2026 | Property, Liability, Claims | Insurhi",
-        "metaDescription": "Renters insurance buying guide for 2026: set personal property and liability limits, choose deductibles, and shortlist insurers with fast digital claims."
+        "metaTitle": "Renters Insurance Buying Guide 2026 | Coverage Tips",
+        "metaDescription": "Compare renters insurance by personal property limits, liability, deductibles, and sub-limits. Includes short-term rental and roommate coverage considerations."
       },
-      "updatedAt": "2026-05-20T01:20:09.751Z",
+      "updatedAt": "2026-06-12T00:49:25.164Z",
       "createdAt": "2026-05-20T01:20:09.751Z",
       "_status": "published"
     },
@@ -65700,6 +66851,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Action checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare dental illness caps and wellness riders in /guides/pet-dental-coverage-guide-2026 before choosing reimbursement level.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review pre-existing rules in /guides/pet-pre-existing-waiting-period-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -65709,10 +66928,10 @@
       "reviewedBy": null,
       "lastReviewedAt": null,
       "seo": {
-        "metaTitle": "Pet Insurance Buying Guide 2026 | Coverage, Reimbursement, Waits | Insurhi",
-        "metaDescription": "How to buy pet insurance in 2026: pick coverage limits, reimbursement levels, deductibles, and shortlist insurers with fast claim reimbursement."
+        "metaTitle": "Pet Insurance Buying Guide 2026 | Coverage & Claims",
+        "metaDescription": "Compare pet insurance plans by reimbursement, annual limits, waiting periods, and dental coverage. Use a practical checklist before binding coverage."
       },
-      "updatedAt": "2026-05-20T01:20:09.689Z",
+      "updatedAt": "2026-06-12T00:49:25.042Z",
       "createdAt": "2026-05-20T01:20:09.689Z",
       "_status": "published"
     },
@@ -69949,6 +71168,120 @@
   ],
   "faqItems": [
     {
+      "id": 72,
+      "question": "Will a slow plumbing leak be covered if I discovered it after several weeks?",
+      "answer": "Usually no—gradual leaks are a common denial trigger. Policies focus on sudden pipe bursts or accidental discharge. Maintenance-related seepage is typically excluded.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-12T00:49:25.015Z",
+      "createdAt": "2026-06-12T00:49:25.015Z"
+    },
+    {
+      "id": 71,
+      "question": "How do I document water damage for a renters claim in the first 24 hours?",
+      "answer": "Take timestamped photos and video of ceilings, walls, floors, and damaged belongings. Note when you discovered the loss, save plumber or maintenance reports, and keep written notice to your landlord and neighbor.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-12T00:49:25.001Z",
+      "createdAt": "2026-06-12T00:49:25.001Z"
+    },
+    {
+      "id": 70,
+      "question": "Does renters insurance cover water damage from an upstairs neighbor's leak?",
+      "answer": "Often yes when the leak is sudden and accidental—not a long-term gradual seepage. Document discovery time, notify your landlord in writing, and file quickly. See /claims/guides/renters-water-damage-claim-guide-2026 for steps.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-12T00:49:24.985Z",
+      "createdAt": "2026-06-12T00:49:24.985Z"
+    },
+    {
+      "id": 69,
+      "question": "Is a pet wellness add-on worth it if my dog only needs annual cleanings?",
+      "answer": "Compare the rider's annual cost to expected cleanings plus other wellness services you would use. For many young healthy dogs, paying cash for one cleaning per year is cheaper than a full wellness package.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-12T00:49:24.968Z",
+      "createdAt": "2026-06-12T00:49:24.968Z"
+    },
+    {
+      "id": 68,
+      "question": "What is a typical annual dental benefit limit on pet wellness plans?",
+      "answer": "Wellness dental benefits often range from $200 to $500 per year. Once the cap is used, remaining cleanings are out of pocket. Check whether extractions share the illness cap or have a separate limit.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-12T00:49:24.961Z",
+      "createdAt": "2026-06-12T00:49:24.961Z"
+    },
+    {
+      "id": 67,
+      "question": "Does pet insurance cover routine dental cleanings?",
+      "answer": "Most accident-and-illness plans do not include routine cleanings unless you add a wellness rider. Illness-related extractions may be covered separately with annual caps. Compare options in /guides/pet-dental-coverage-guide-2026.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-12T00:49:24.949Z",
+      "createdAt": "2026-06-12T00:49:24.949Z"
+    },
+    {
       "id": 66,
       "question": "Should I file a home claim for a slow plumbing leak discovered over months?",
       "answer": "Check policy language first. Many policies exclude long-term seepage; document sudden-damage portions and obtain plumber findings before filing.",
@@ -72859,6 +74192,130 @@
       "createdAt": "2026-04-22T07:53:42.862Z"
     },
     {
+      "id": 15,
+      "title": "Medicare Billing Error Claim Guide (2026): Wrong Codes, EOB Mismatches, and Appeals",
+      "slug": "medicare-billing-error-claim-guide-2026",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "steps": [
+        {
+          "id": "6a2b5794e90a4919632465c7",
+          "step": "Compare Medicare EOB, provider bill, and supplement EOB line by line for each disputed service."
+        },
+        {
+          "id": "6a2b5794e90a4919632465c8",
+          "step": "Contact the provider billing office first to correct CPT/HCPCS or diagnosis code errors."
+        },
+        {
+          "id": "6a2b5794e90a4919632465c9",
+          "step": "Request a corrected claim resubmission to Medicare before re-filing your supplement."
+        },
+        {
+          "id": "6a2b5794e90a4919632465ca",
+          "step": "File or re-file the supplement claim with corrected Medicare crossover documentation."
+        },
+        {
+          "id": "6a2b5794e90a4919632465cb",
+          "step": "Track acknowledgment within 48 hours and record case ID plus expected resolution date."
+        },
+        {
+          "id": "6a2b5794e90a4919632465cc",
+          "step": "File a formal appeal if payment remains reduced after corrected claims are processed."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a2b5794e90a4919632465cd",
+          "item": "Medicare and supplement member ID cards"
+        },
+        {
+          "id": "6a2b5794e90a4919632465ce",
+          "item": "Original and corrected provider itemized bills"
+        },
+        {
+          "id": "6a2b5794e90a4919632465cf",
+          "item": "Medicare Summary Notice or EOB for each date of service"
+        },
+        {
+          "id": "6a2b5794e90a4919632465d0",
+          "item": "Supplement EOB showing underpayment or denial"
+        },
+        {
+          "id": "6a2b5794e90a4919632465d1",
+          "item": "Written correspondence with provider billing department"
+        },
+        {
+          "id": "6a2b5794e90a4919632465d2",
+          "item": "Call log with representative names, dates, and reference numbers"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/medicare",
+      "denialReasons": [
+        {
+          "id": "6a2b5794e90a4919632465d3",
+          "reason": "Duplicate charge or already-paid service",
+          "explanation": "Medicare may deny if the same service was billed twice or previously adjudicated. Request line-item reconciliation."
+        },
+        {
+          "id": "6a2b5794e90a4919632465d4",
+          "reason": "Wrong place of service or modifier code",
+          "explanation": "Telehealth vs office visit coding errors change allowed amounts. Provider must rebill with correct modifiers."
+        },
+        {
+          "id": "6a2b5794e90a4919632465d5",
+          "reason": "Medicare crossover not completed before supplement filing",
+          "explanation": "Supplement carriers often pend claims until Medicare finalizes the primary payment. Wait for Medicare EOB before re-filing."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a2b5794e90a4919632465d6",
+          "cause": "Provider slow to issue corrected claim",
+          "explanation": "Billing offices may take 2–4 weeks to reprocess. Follow up weekly in writing."
+        },
+        {
+          "id": "6a2b5794e90a4919632465d7",
+          "cause": "Mismatched service dates across forms",
+          "explanation": "Even one-day date errors between provider bill and EOB can halt supplement processing."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a2b5794e90a4919632465d8",
+          "action": "For out-of-network disputes after codes are correct, see /claims/guides/medicare-out-of-network-claim-guide-2026."
+        },
+        {
+          "id": "6a2b5794e90a4919632465d9",
+          "action": "Review plan comparison methods at /methodology before switching supplement carriers."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a2b5794e90a4919632465da",
+          "note": "Ask both Medicare and your supplement carrier which party must file the corrected claim."
+        },
+        {
+          "id": "6a2b5794e90a4919632465db",
+          "note": "Request written confirmation when a corrected claim is accepted for reprocessing."
+        }
+      ],
+      "reviewedBy": null,
+      "lastReviewedAt": null,
+      "updatedAt": "2026-06-12T00:49:24.927Z",
+      "createdAt": "2026-06-12T00:49:24.927Z"
+    },
+    {
       "id": 13,
       "title": "Medicare Out-of-Network Claim Guide (2026): EOB Errors, Supplement Filing, and Timelines",
       "slug": "medicare-out-of-network-claim-guide-2026",
@@ -73083,6 +74540,14 @@
         {
           "id": "6a1653a5abefb0405cd5b5f9",
           "action": "File a complaint with your state Department of Insurance for unreasonable supplement claim handling."
+        },
+        {
+          "id": "6a2b5795e90a4919632465de",
+          "action": "Billing code errors: /claims/guides/medicare-billing-error-claim-guide-2026"
+        },
+        {
+          "id": "6a2b5795e90a4919632465df",
+          "action": "Out-of-network disputes: /claims/guides/medicare-out-of-network-claim-guide-2026"
         }
       ],
       "communicationNotes": [
@@ -73117,7 +74582,7 @@
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
       "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "updatedAt": "2026-06-02T00:40:27.395Z",
+      "updatedAt": "2026-06-12T00:49:25.141Z",
       "createdAt": "2026-04-22T07:53:42.829Z"
     },
     {
@@ -73678,6 +75143,11 @@
           "id": "6a1653a5abefb0405cd5b603",
           "reason": "Damage from negligence or pet bite excluded by endorsement",
           "explanation": "Some policies exclude specific dog breeds or apply liability sub-limits to pet incidents. Confirm whether your policy has a pet-related endorsement."
+        },
+        {
+          "id": "6a2b5795e90a4919632465dc",
+          "reason": "Gradual water leak classified as maintenance",
+          "explanation": "Slow leaks discovered weeks after onset are often denied. For sudden water losses, follow /claims/guides/renters-water-damage-claim-guide-2026."
         }
       ],
       "delayCauses": [
@@ -73743,6 +75213,10 @@
         {
           "id": "6a1653a5abefb0405cd5b610",
           "action": "Consult a licensed attorney for liability-related claims with potential injury exposure."
+        },
+        {
+          "id": "6a2b5795e90a4919632465dd",
+          "action": "Water damage claim walkthrough: /claims/guides/renters-water-damage-claim-guide-2026"
         }
       ],
       "communicationNotes": [
@@ -73777,8 +75251,132 @@
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
       "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "updatedAt": "2026-06-02T00:40:27.493Z",
+      "updatedAt": "2026-06-12T00:49:25.080Z",
       "createdAt": "2026-04-22T07:53:42.795Z"
+    },
+    {
+      "id": 14,
+      "title": "Renters Water Damage Claim Guide (2026): Burst Pipes, Slow Leaks, and Denials",
+      "slug": "renters-water-damage-claim-guide-2026",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "steps": [
+        {
+          "id": "6a2b5794e90a4919632465b2",
+          "step": "Stop active water flow, protect belongings, and notify your landlord in writing immediately."
+        },
+        {
+          "id": "6a2b5794e90a4919632465b3",
+          "step": "Photograph and video all damage within 24 hours—including ceilings, floors, and damaged items."
+        },
+        {
+          "id": "6a2b5794e90a4919632465b4",
+          "step": "Record when you discovered the loss and whether the source was sudden (burst pipe) vs gradual."
+        },
+        {
+          "id": "6a2b5794e90a4919632465b5",
+          "step": "File the claim with your carrier and request a claim number plus adjuster assignment timeline."
+        },
+        {
+          "id": "6a2b5794e90a4919632465b6",
+          "step": "Submit an itemized inventory with replacement-cost estimates for damaged personal property."
+        },
+        {
+          "id": "6a2b5794e90a4919632465b7",
+          "step": "Track additional living expense (ALE) receipts if your unit is temporarily uninhabitable."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a2b5794e90a4919632465b8",
+          "item": "Policy number and rental unit address"
+        },
+        {
+          "id": "6a2b5794e90a4919632465b9",
+          "item": "Timestamped photos and video of all water damage"
+        },
+        {
+          "id": "6a2b5794e90a4919632465ba",
+          "item": "Written notice to landlord and neighbor (if upstairs leak)"
+        },
+        {
+          "id": "6a2b5794e90a4919632465bb",
+          "item": "Plumber or maintenance report describing cause of loss"
+        },
+        {
+          "id": "6a2b5794e90a4919632465bc",
+          "item": "Item inventory with replacement values and receipts where available"
+        },
+        {
+          "id": "6a2b5794e90a4919632465bd",
+          "item": "ALE receipts for hotel, meals, or essential purchases"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/renters",
+      "denialReasons": [
+        {
+          "id": "6a2b5794e90a4919632465be",
+          "reason": "Gradual leak or long-term seepage",
+          "explanation": "Policies cover sudden and accidental water damage—not maintenance neglect or leaks discovered weeks later. Document discovery time carefully."
+        },
+        {
+          "id": "6a2b5794e90a4919632465bf",
+          "reason": "Flood or surface water exclusion",
+          "explanation": "Renters HO-4 forms exclude flood and often groundwater intrusion. Separate flood coverage is required for those perils."
+        },
+        {
+          "id": "6a2b5794e90a4919632465c0",
+          "reason": "Landlord structural damage only",
+          "explanation": "Your renters policy covers your belongings and ALE—not the building structure, which is the landlord's insurance responsibility."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a2b5794e90a4919632465c1",
+          "cause": "Missing cause-of-loss documentation",
+          "explanation": "Adjusters need proof the event was sudden. Delay plumber reports and you may wait weeks for inspection."
+        },
+        {
+          "id": "6a2b5794e90a4919632465c2",
+          "cause": "Incomplete personal property inventory",
+          "explanation": "Vague loss lists trigger repeated supplement requests. Submit room-by-room inventories early."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a2b5794e90a4919632465c3",
+          "action": "If denied for gradual damage, request a written denial citing policy language and ask for supervisor review."
+        },
+        {
+          "id": "6a2b5794e90a4919632465c4",
+          "action": "For theft-related water damage documentation, see /guides/renters-theft-claim-evidence-deep-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a2b5794e90a4919632465c5",
+          "note": "Ask the adjuster whether mold remediation for covered water damage is included under your policy limits."
+        },
+        {
+          "id": "6a2b5794e90a4919632465c6",
+          "note": "Keep a log of every call with date, representative name, and promised follow-up deadline."
+        }
+      ],
+      "reviewedBy": null,
+      "lastReviewedAt": null,
+      "updatedAt": "2026-06-12T00:49:24.826Z",
+      "createdAt": "2026-06-12T00:49:24.825Z"
     }
   ],
   "claimCases": [

@@ -37,6 +37,11 @@ function categorySlugFromArticle(category: unknown): string | null {
   return null;
 }
 
+function categoryTitleFromArticle(category: unknown): string | null {
+  if (!category || typeof category !== "object") return null;
+  return (category as { title?: string }).title ?? null;
+}
+
 function getArticleParagraphs(article: Awaited<ReturnType<typeof getArticleBySlug>>) {
   const nodes = article?.body?.root?.children ?? [];
 
@@ -105,6 +110,8 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
   const paragraphs = getArticleParagraphs(article);
   const keyPoints = paragraphs.slice(0, 3);
   const categoryPath = inferInsuranceCategoryPath(article.slug, article.title);
+  const categorySlug = categorySlugFromArticle(article.category);
+  const categoryTitle = categoryTitleFromArticle(article.category);
   const relatedContent = getRelatedContentForGuide(article.slug, article.category);
 
   return (
@@ -118,9 +125,19 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
       <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-indigo-500/[0.08] via-blue-500/[0.06] to-card p-6 lg:p-8">
-        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
-          Guides / {article.slug}
+        <p className="inline-flex flex-wrap items-center gap-1 rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
+          <Sparkles className="h-3.5 w-3.5 text-cyan-600" />
+          <Link href="/guides" className="hover:text-foreground">
+            Guides
+          </Link>
+          <span>/</span>
+          {categorySlug && categoryTitle ? (
+            <Link href={`/insurance/${categorySlug}`} className="hover:text-foreground">
+              {categoryTitle}
+            </Link>
+          ) : (
+            <span>Insurance</span>
+          )}
         </p>
         <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{article.title}</h1>
         <EditorialMetadata

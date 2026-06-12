@@ -30,7 +30,19 @@ export type CmsFaqItem = {
   question: string;
   answer: string;
   category?: string | CmsCategory;
+  updatedAt?: string;
+  createdAt?: string;
 };
+
+const FAQ_CATEGORY_LIMIT = 8;
+
+function sortFaqsByRecent<T extends { updatedAt?: string; createdAt?: string }>(items: T[]): T[] {
+  return [...items].sort((a, b) => {
+    const aTime = new Date(a.updatedAt ?? a.createdAt ?? 0).getTime();
+    const bTime = new Date(b.updatedAt ?? b.createdAt ?? 0).getTime();
+    return bTime - aTime;
+  });
+}
 
 export type CmsGlossaryTerm = {
   id: string;
@@ -376,16 +388,16 @@ export async function getAuthorBySlug(slug: string) {
 export async function getFaqsByCategory(categoryId: string) {
   const snapshot = await getStaticContentSnapshot();
   if (snapshot) {
-    return snapshot.faqItems
-      .filter((item) => {
+    return sortFaqsByRecent(
+      snapshot.faqItems.filter((item) => {
         if (!item.category) return false;
         if (typeof item.category === "string") {
           return toStringId(item.category) === categoryId;
         }
 
         return toStringId(item.category.id) === categoryId;
-      })
-      .slice(0, 6);
+      }),
+    ).slice(0, FAQ_CATEGORY_LIMIT);
   }
 
   const controller = new AbortController();
@@ -393,7 +405,7 @@ export async function getFaqsByCategory(categoryId: string) {
 
   try {
     const response = await fetch(
-      `${CMS_BASE_URL}/api/faq-items?where[category][equals]=${encodeURIComponent(categoryId)}&limit=6&depth=1`,
+      `${CMS_BASE_URL}/api/faq-items?where[category][equals]=${encodeURIComponent(categoryId)}&limit=${FAQ_CATEGORY_LIMIT}&sort=-updatedAt&depth=1`,
       {
         cache: "no-store",
         signal: controller.signal,

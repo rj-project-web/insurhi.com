@@ -11,6 +11,7 @@ import {
   Sparkles,
   Users,
 } from "lucide-react";
+import { LinkifiedText } from "@/components/cms-rich-text";
 import { EditorialDisclosure } from "@/components/editorial-disclosure";
 import { HomeHeroBadges } from "@/components/home-hero-badges";
 import {
@@ -879,7 +880,7 @@ export default async function InsuranceCategoryPage({ params }: CategoryPageProp
             faqRows.map((faq) => (
               <article key={faq.id} className="rounded-lg border bg-card p-4">
                 <h3 className="font-medium">{faq.question}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
+                <LinkifiedText text={faq.answer} className="mt-2 block text-sm text-muted-foreground" />
               </article>
             ))
           ) : (

@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Sparkles } from "lucide-react";
+import { BookOpen, ClipboardList, FileSearch } from "lucide-react";
 
+import { claimCaseSections, ClaimCaseContent } from "@/components/claim-case-content";
+import { ClaimCaseHero } from "@/components/claim-case-hero";
+import { DetailPageSidebar } from "@/components/detail-page-sidebar";
+import { HubQuickPaths } from "@/components/hub-quick-paths";
+import { InsurancePageBand } from "@/components/insurance-page-band";
 import { getClaimCaseById, getClaimCasesList } from "@/lib/cms-client";
 import { absoluteUrl, buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -10,7 +14,6 @@ type ClaimCaseDetailPageProps = {
   params: Promise<{ id: string }>;
 };
 
-/** CMS edits must show immediately; avoid SSG snapshot + long-lived fetch cache. */
 export const dynamic = "force-dynamic";
 
 export async function generateStaticParams() {
@@ -41,9 +44,8 @@ export default async function ClaimCaseDetailPage({ params }: ClaimCaseDetailPag
   const { id } = await params;
   const claimCase = await getClaimCaseById(id);
 
-  if (!claimCase) {
-    notFound();
-  }
+  if (!claimCase) notFound();
+
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Claims", path: "/claims" },
@@ -58,7 +60,7 @@ export default async function ClaimCaseDetailPage({ params }: ClaimCaseDetailPag
   };
 
   return (
-    <div className="space-y-8">
+    <div className="-mx-4 -my-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -67,35 +69,59 @@ export default async function ClaimCaseDetailPage({ params }: ClaimCaseDetailPag
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-indigo-500/[0.07] via-blue-500/[0.05] to-card p-6 lg:p-8">
-        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="mr-1 h-3.5 w-3.5 text-blue-600" />
-          Claims / Case / {claimCase.id}
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{claimCase.title}</h1>
-      </section>
 
-      <section className="space-y-3 rounded-lg border bg-gradient-to-br from-card to-indigo-500/[0.03] p-4">
-        <h2 className="text-xl font-semibold tracking-tight">Scenario</h2>
-        <p className="text-sm text-muted-foreground">{claimCase.scenario}</p>
-      </section>
+      <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
+        <ClaimCaseHero
+          title={claimCase.title}
+          id={String(claimCase.id)}
+          scenario={claimCase.scenario}
+        />
+      </InsurancePageBand>
 
-      <section className="space-y-3 rounded-lg border bg-gradient-to-br from-card to-blue-500/[0.03] p-4">
-        <h2 className="text-xl font-semibold tracking-tight">Outcome</h2>
-        <p className="text-sm text-muted-foreground">{claimCase.outcome}</p>
-      </section>
-
-      <section className="rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>
-        <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
-          <Link href="/claims" className="underline underline-offset-4">
-            Back to claims
-          </Link>
-          <Link href="/guides" className="underline underline-offset-4">
-            Insurance guides
-          </Link>
+      <InsurancePageBand tone="surface" innerClassName="py-8 sm:py-10">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_17rem] xl:grid-cols-[minmax(0,1fr)_18rem]">
+          <div className="min-w-0">
+            <ClaimCaseContent scenario={claimCase.scenario} outcome={claimCase.outcome} />
+          </div>
+          <DetailPageSidebar
+            sections={claimCaseSections}
+            hubLinks={[
+              { href: "/claims#claims-playbooks", label: "Claim playbooks" },
+              { href: "/claims", label: "Claims center" },
+              { href: "/guides", label: "Buying guides" },
+            ]}
+          />
         </div>
-      </section>
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">
+        <HubQuickPaths
+          description="Use this case alongside step-by-step playbooks and buying guides."
+          paths={[
+            {
+              key: "claims",
+              icon: ClipboardList,
+              title: "Claims playbooks",
+              description: "Step-by-step filing workflows and checklists.",
+              href: "/claims#claims-playbooks",
+            },
+            {
+              key: "guides",
+              icon: BookOpen,
+              title: "Buying guides",
+              description: "Understand coverage before an incident happens.",
+              href: "/guides",
+            },
+            {
+              key: "cases",
+              icon: FileSearch,
+              title: "All case examples",
+              description: "Return to the claims center case library.",
+              href: "/claims",
+            },
+          ]}
+        />
+      </InsurancePageBand>
     </div>
   );
 }

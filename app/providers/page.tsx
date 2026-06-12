@@ -1,6 +1,23 @@
-import Link from "next/link";
+import {
+  Building2,
+  FolderKanban,
+  ShieldCheck,
+  Sparkles,
+  Star,
+} from "lucide-react";
+
+import { HubCategoryGrid } from "@/components/hub-category-grid";
+import { HubGroupedSection } from "@/components/hub-grouped-section";
+import { HubIndexHero } from "@/components/hub-index-hero";
+import { HubQuickPaths } from "@/components/hub-quick-paths";
+import { InsurancePageBand } from "@/components/insurance-page-band";
+import { ProviderListCard } from "@/components/provider-list-card";
 import { getProviders } from "@/lib/cms-client";
+import { buildProviderCategoryGroups } from "@/lib/hub-list-utils";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { insuranceCategories, providerCanonicalAliases } from "@/lib/site-data";
+
+const PROVIDERS_PER_CATEGORY = 6;
 
 export const metadata = buildMetadata({
   title: "Compare Insurance Providers 2026 | Ratings, Strengths, Coverage | Insurhi",
@@ -9,77 +26,150 @@ export const metadata = buildMetadata({
   path: "/providers",
 });
 
-const breadcrumbJsonLd = buildBreadcrumbJsonLd([
-  { name: "Home", path: "/" },
-  { name: "Providers", path: "/providers" },
-]);
+function providerCategoryCount(provider: Awaited<ReturnType<typeof getProviders>>[number]): number {
+  const categories = provider.categories ?? [];
+  return categories.filter((item) => typeof item === "object" && item !== null).length;
+}
 
 export default async function ProvidersPage() {
-  const providers = (await getProviders()).filter((item) => item.slug);
+  const providers = await getProviders();
+  const publishedProviders = providers.filter(
+    (item) => item.slug && !providerCanonicalAliases[item.slug],
+  );
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Providers", path: "/providers" },
+  ]);
+
+  const ratedCount = publishedProviders.filter((provider) => typeof provider.rating === "number").length;
+  const multiLineCount = publishedProviders.filter((provider) => providerCategoryCount(provider) > 1).length;
+  const avgCategories =
+    publishedProviders.length > 0
+      ? (
+          publishedProviders.reduce((sum, provider) => sum + providerCategoryCount(provider), 0) /
+          publishedProviders.length
+        ).toFixed(1)
+      : "0";
+
+  const stats = [
+    { label: "Providers", value: `${publishedProviders.length} profiles`, icon: Building2 },
+    { label: "Rated", value: `${ratedCount} with scores`, icon: Star },
+    { label: "Multi-line", value: `${multiLineCount} carriers`, icon: FolderKanban },
+    { label: "Avg lines", value: `${avgCategories} per carrier`, icon: ShieldCheck },
+  ];
+
+  const categoryItems = insuranceCategories.map((category) => {
+    const count = publishedProviders.filter((provider) =>
+      (provider.categories ?? []).some(
+        (item) => typeof item === "object" && item !== null && item.slug === category.slug,
+      ),
+    ).length;
+    return {
+      slug: category.slug,
+      title: category.title,
+      meta:
+        count > 0
+          ? `${count} provider${count === 1 ? "" : "s"} in category`
+          : "Hub + provider comparisons",
+      href: `/insurance/${category.slug}#compare`,
+      linkLabel: "View providers in hub",
+    };
+  });
+
+  const groupedProviders = buildProviderCategoryGroups(
+    publishedProviders,
+    insuranceCategories,
+    PROVIDERS_PER_CATEGORY,
+  );
 
   return (
-    <div className="space-y-6">
+    <div className="-mx-4 -my-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <section className="rounded-2xl border bg-gradient-to-br from-card via-indigo-500/[0.05] to-blue-500/[0.04] p-6">
-        <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          Insurance / Providers
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight">Insurance providers</h1>
-        <p className="mt-2 max-w-3xl text-sm leading-6 text-muted-foreground">
-          Review insurers by service quality, category coverage, and claim handling. Use provider pages alongside
-          product comparisons to find the right combination of price and reliability.
-        </p>
-        <div className="mt-3 flex flex-wrap gap-2 text-sm">
-          <Link
-            href="/insurance"
-            className="rounded-full border bg-background px-3 py-1.5 transition-colors hover:bg-accent"
-          >
-            Insurance categories
-          </Link>
-          <Link
-            href="/products"
-            className="rounded-full border bg-background px-3 py-1.5 transition-colors hover:bg-accent"
-          >
-            Insurance products
-          </Link>
-          <Link
-            href="/methodology"
-            className="rounded-full border bg-background px-3 py-1.5 transition-colors hover:bg-accent"
-          >
-            Review methodology
-          </Link>
-        </div>
-      </section>
+      <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
+        <HubIndexHero
+          eyebrow="Carrier comparison library"
+          title="Insurance providers"
+          description="Review insurers by service quality, category coverage, and claim handling. Use provider profiles alongside product reviews to find the right balance of price and reliability."
+          stats={stats}
+        />
+      </InsurancePageBand>
 
-      <section className="rounded-xl border bg-card p-5">
-        <div className="mb-4 flex items-center justify-between gap-3">
-          <h2 className="text-lg font-semibold tracking-tight">All providers</h2>
-          <p className="text-xs text-muted-foreground">{providers.length} entries</p>
-        </div>
-        {providers.length > 0 ? (
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {providers.map((provider) => (
-              <Link
-                key={provider.id}
-                href={`/providers/${provider.slug}`}
-                className="rounded-lg border bg-background px-4 py-3 text-sm transition-colors hover:bg-accent"
-              >
-                <p className="font-medium">{provider.name}</p>
-                <p className="mt-1 text-muted-foreground">{provider.summary ?? "Open provider profile"}</p>
-                {typeof provider.rating === "number" ? (
-                  <p className="mt-1 text-xs text-muted-foreground">Rating: {provider.rating} / 5</p>
-                ) : null}
-              </Link>
-            ))}
+      <InsurancePageBand tone="accent" innerClassName="py-8 sm:py-10">
+        <HubCategoryGrid
+          heading="Providers by coverage line"
+          description="See which carriers operate in each insurance category and jump into hub comparisons."
+          items={categoryItems}
+        />
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="surface" id="provider-library" innerClassName="py-8 sm:py-10">
+        <div className="space-y-10">
+          <div className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Featured directory
+            </p>
+            <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+              Providers by coverage line
+            </h2>
+            <p className="max-w-2xl text-sm leading-6 text-muted-foreground">
+              Up to {PROVIDERS_PER_CATEGORY} top-rated carriers per category ·{" "}
+              {publishedProviders.length} profiles indexed site-wide.
+            </p>
           </div>
-        ) : (
-          <p className="text-sm text-muted-foreground">No providers are available yet.</p>
-        )}
-      </section>
+
+          {groupedProviders.map((group) => (
+            <HubGroupedSection
+              key={group.slug}
+              idPrefix="providers-group"
+              slug={group.slug}
+              title={group.title}
+              items={group.items}
+              totalCount={group.totalCount}
+              itemNoun="provider"
+              gridClassName="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+              hubHref={`/insurance/${group.slug}#compare`}
+              hubLinkLabel="category hub"
+            >
+              {group.items.map((provider) => (
+                <ProviderListCard key={`${group.slug}-${provider.id}`} provider={provider} />
+              ))}
+            </HubGroupedSection>
+          ))}
+        </div>
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">
+        <HubQuickPaths
+          description="Combine provider research with product reviews, buying guides, and claims playbooks."
+          paths={[
+            {
+              key: "products",
+              icon: ShieldCheck,
+              title: "Product reviews",
+              description: "Compare policies with pricing bands and coverage details.",
+              href: "/products",
+            },
+            {
+              key: "guides",
+              icon: Sparkles,
+              title: "Buying guides",
+              description: "Understand limits and exclusions before choosing a carrier.",
+              href: "/guides",
+            },
+            {
+              key: "methodology",
+              icon: Star,
+              title: "Review methodology",
+              description: "How Insurhi evaluates carriers and products independently.",
+              href: "/methodology",
+            },
+          ]}
+        />
+      </InsurancePageBand>
     </div>
   );
 }

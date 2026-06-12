@@ -1,6 +1,8 @@
 import type { CSSProperties, ReactNode } from "react";
 import Link from "next/link";
 
+import { buildHeadingIdList } from "@/lib/cms-content-utils";
+
 type LexicalNode = {
   type?: string;
   children?: LexicalNode[];
@@ -115,14 +117,22 @@ function applyTextFormats(
   return node;
 }
 
-function renderChildren(children: LexicalNode[] | undefined, keyPrefix: string): ReactNode[] {
+function renderChildren(
+  children: LexicalNode[] | undefined,
+  keyPrefix: string,
+  ctx: RenderContext,
+): ReactNode[] {
   if (!children?.length) return [];
   return children.map((child, index) => (
-    <span key={`${keyPrefix}-${index}`}>{renderNode(child, `${keyPrefix}-${index}`)}</span>
+    <span key={`${keyPrefix}-${index}`}>{renderNode(child, `${keyPrefix}-${index}`, ctx)}</span>
   ));
 }
 
-function renderNode(node: LexicalNode, keyPrefix: string): ReactNode {
+type RenderContext = {
+  nextHeadingId: () => string | undefined;
+};
+
+function renderNode(node: LexicalNode, keyPrefix: string, ctx: RenderContext): ReactNode {
   if (node.type === "text") {
     return applyTextFormats(node.text ?? "", node.format, node.style, keyPrefix);
   }
@@ -132,43 +142,48 @@ function renderNode(node: LexicalNode, keyPrefix: string): ReactNode {
   }
 
   if (node.type === "paragraph") {
-    return <p className="mb-4 leading-7 last:mb-0">{renderChildren(node.children, keyPrefix)}</p>;
+    return <p className="mb-4 leading-7 last:mb-0">{renderChildren(node.children, keyPrefix, ctx)}</p>;
   }
 
   if (node.type === "heading") {
     const level = node.tag ?? "h2";
+    const id = ctx.nextHeadingId();
+    const anchorClass = "scroll-mt-28";
     if (level === "h1") {
       return (
-        <h1 className="mb-4 text-3xl font-semibold tracking-tight">
-          {renderChildren(node.children, keyPrefix)}
+        <h1 id={id} className={`mb-4 text-3xl font-semibold tracking-tight ${anchorClass}`}>
+          {renderChildren(node.children, keyPrefix, ctx)}
         </h1>
       );
     }
     if (level === "h2") {
       return (
-        <h2 className="mb-3 mt-6 text-2xl font-semibold tracking-tight">
-          {renderChildren(node.children, keyPrefix)}
+        <h2
+          id={id}
+          className={`mb-3 mt-8 border-t border-border/50 pt-6 text-2xl font-semibold tracking-tight first:mt-0 first:border-t-0 first:pt-0 ${anchorClass}`}
+        >
+          {renderChildren(node.children, keyPrefix, ctx)}
         </h2>
       );
     }
     if (level === "h3") {
       return (
-        <h3 className="mb-2 mt-5 text-xl font-semibold tracking-tight">
-          {renderChildren(node.children, keyPrefix)}
+        <h3 id={id} className={`mb-2 mt-5 text-xl font-semibold tracking-tight ${anchorClass}`}>
+          {renderChildren(node.children, keyPrefix, ctx)}
         </h3>
       );
     }
     return (
-      <h4 className="mb-2 mt-4 text-lg font-semibold tracking-tight">
-        {renderChildren(node.children, keyPrefix)}
+      <h4 id={id} className={`mb-2 mt-4 text-lg font-semibold tracking-tight ${anchorClass}`}>
+        {renderChildren(node.children, keyPrefix, ctx)}
       </h4>
     );
   }
 
   if (node.type === "quote") {
     return (
-      <blockquote className="my-4 border-l-2 pl-4 italic text-muted-foreground">
-        {renderChildren(node.children, keyPrefix)}
+      <blockquote className="my-4 border-l-4 border-sky-300/70 bg-sky-50/50 py-1 pl-4 italic text-muted-foreground dark:border-sky-700 dark:bg-sky-950/20">
+        {renderChildren(node.children, keyPrefix, ctx)}
       </blockquote>
     );
   }
@@ -176,33 +191,41 @@ function renderNode(node: LexicalNode, keyPrefix: string): ReactNode {
   if (node.type === "list") {
     const isOrdered = node.listType === "number";
     if (isOrdered) {
-      return <ol className="my-4 list-decimal space-y-2 pl-6">{renderChildren(node.children, keyPrefix)}</ol>;
+      return (
+        <ol className="my-4 list-decimal space-y-2 pl-6 marker:text-sky-700">
+          {renderChildren(node.children, keyPrefix, ctx)}
+        </ol>
+      );
     }
-    return <ul className="my-4 list-disc space-y-2 pl-6">{renderChildren(node.children, keyPrefix)}</ul>;
+    return (
+      <ul className="my-4 list-disc space-y-2 pl-6 marker:text-sky-600">
+        {renderChildren(node.children, keyPrefix, ctx)}
+      </ul>
+    );
   }
 
   if (node.type === "listitem") {
-    return <li>{renderChildren(node.children, keyPrefix)}</li>;
+    return <li className="leading-7">{renderChildren(node.children, keyPrefix, ctx)}</li>;
   }
 
   if (node.type === "link") {
     const href = node.url ?? "#";
-    const className = "underline underline-offset-4";
+    const className = "font-medium text-sky-800 underline underline-offset-4 hover:text-sky-950";
     if (isInternalHref(href)) {
       return (
         <Link href={href} className={className}>
-          {renderChildren(node.children, keyPrefix)}
+          {renderChildren(node.children, keyPrefix, ctx)}
         </Link>
       );
     }
     return (
-      <a href={href} className={className}>
-        {renderChildren(node.children, keyPrefix)}
+      <a href={href} className={className} rel="noopener noreferrer" target="_blank">
+        {renderChildren(node.children, keyPrefix, ctx)}
       </a>
     );
   }
 
-  return <>{renderChildren(node.children, keyPrefix)}</>;
+  return <>{renderChildren(node.children, keyPrefix, ctx)}</>;
 }
 
 export function extractCmsText(content: unknown): string {
@@ -248,10 +271,16 @@ export function CmsRichText({
   if (!isLexicalContent(content)) return null;
 
   const children = content.root?.children ?? [];
+  const headingIds = buildHeadingIdList(content);
+  let headingIndex = 0;
+  const ctx: RenderContext = {
+    nextHeadingId: () => headingIds[headingIndex++],
+  };
+
   return (
     <div className={rootClass}>
       {children.map((node, index) => (
-        <div key={index}>{renderNode(node, `block-${index}`)}</div>
+        <div key={index}>{renderNode(node, `block-${index}`, ctx)}</div>
       ))}
     </div>
   );

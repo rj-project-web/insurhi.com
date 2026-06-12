@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Sparkles } from "lucide-react";
 
-import { CmsRichText } from "@/components/cms-rich-text";
-import { EditorialDisclosure, EditorialMetadata } from "@/components/editorial-disclosure";
+import { CmsRichText, extractCmsText } from "@/components/cms-rich-text";
+import { EditorialDisclosure } from "@/components/editorial-disclosure";
+import { GuideArticleHero } from "@/components/guide-article-hero";
+import { GuideArticleSidebar } from "@/components/guide-article-sidebar";
+import { GuideKeyTakeaways } from "@/components/guide-key-takeaways";
+import { GuideQuickPaths } from "@/components/guide-quick-paths";
+import { InsurancePageBand, InsurancePanel } from "@/components/insurance-page-band";
 import { RelatedContentPanel } from "@/components/related-content-panel";
 import { getArticleBySlug, getArticlesList } from "@/lib/cms-client";
+import {
+  estimateReadMinutes,
+  extractCmsHeadings,
+  getArticleLede,
+  getArticleListItems,
+} from "@/lib/cms-content-utils";
 import { getRelatedContentForGuide } from "@/lib/content-links";
 import {
   absoluteUrl,
@@ -40,20 +49,6 @@ function categorySlugFromArticle(category: unknown): string | null {
 function categoryTitleFromArticle(category: unknown): string | null {
   if (!category || typeof category !== "object") return null;
   return (category as { title?: string }).title ?? null;
-}
-
-function getArticleParagraphs(article: Awaited<ReturnType<typeof getArticleBySlug>>) {
-  const nodes = article?.body?.root?.children ?? [];
-
-  return nodes
-    .filter((node) => node.type === "paragraph")
-    .map((node) =>
-      (node.children ?? [])
-        .map((child) => child.text ?? "")
-        .join("")
-        .trim(),
-    )
-    .filter(Boolean);
 }
 
 export async function generateStaticParams() {
@@ -90,6 +85,7 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
   if (!article) {
     notFound();
   }
+
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Guides", path: "/guides" },
@@ -107,15 +103,20 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
     authorUrl: reviewerAuthor?.slug ? absoluteUrl(`/authors/${reviewerAuthor.slug}`) : undefined,
     authorJobTitle: reviewerAuthor?.role,
   });
-  const paragraphs = getArticleParagraphs(article);
-  const keyPoints = paragraphs.slice(0, 3);
-  const categoryPath = inferInsuranceCategoryPath(article.slug, article.title);
+
   const categorySlug = categorySlugFromArticle(article.category);
   const categoryTitle = categoryTitleFromArticle(article.category);
+  const categoryPath = inferInsuranceCategoryPath(article.slug, article.title);
   const relatedContent = getRelatedContentForGuide(article.slug, article.category);
 
+  const lede = getArticleLede(article.body) ?? extractCmsText(article.body).slice(0, 220);
+  const summary = article.seo?.metaDescription ?? lede;
+  const headings = extractCmsHeadings(article.body);
+  const keyTakeaways = getArticleListItems(article.body, 3);
+  const readMinutes = estimateReadMinutes(article.body);
+
   return (
-    <div className="space-y-8">
+    <div className="-mx-4 -my-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
@@ -124,87 +125,60 @@ export default async function GuideDetailPage({ params }: GuideDetailPageProps) 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-indigo-500/[0.08] via-blue-500/[0.06] to-card p-6 lg:p-8">
-        <p className="inline-flex flex-wrap items-center gap-1 rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="h-3.5 w-3.5 text-cyan-600" />
-          <Link href="/guides" className="hover:text-foreground">
-            Guides
-          </Link>
-          <span>/</span>
-          {categorySlug && categoryTitle ? (
-            <Link href={`/insurance/${categorySlug}`} className="hover:text-foreground">
-              {categoryTitle}
-            </Link>
-          ) : (
-            <span>Insurance</span>
-          )}
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">{article.title}</h1>
-        <EditorialMetadata
+
+      <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
+        <GuideArticleHero
+          title={article.title}
+          summary={summary}
+          categorySlug={categorySlug}
+          categoryTitle={categoryTitle}
+          readMinutes={readMinutes}
           updatedAt={article.updatedAt}
           publishedAt={article.publishedAt}
           createdAt={article.createdAt}
           reviewedBy={article.reviewedBy}
           lastReviewedAt={article.lastReviewedAt}
         />
-      </section>
+      </InsurancePageBand>
 
-      {keyPoints.length > 0 ? (
-        <section className="rounded-xl border bg-gradient-to-r from-cyan-500/[0.08] to-blue-500/[0.04] p-5">
-          <h2 className="text-lg font-semibold tracking-tight">Key takeaways</h2>
-          <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-            {keyPoints.map((point, index) => (
-              <li key={`${article.id}-takeaway-${index}`} className="rounded-md border bg-background px-3 py-2">
-                {point}
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
+      <InsurancePageBand tone="surface" innerClassName="py-8 sm:py-10">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_17rem] xl:grid-cols-[minmax(0,1fr)_18rem]">
+          <div className="min-w-0 space-y-6">
+            <GuideKeyTakeaways items={keyTakeaways} />
 
-      <section className="space-y-4 rounded-lg border bg-gradient-to-br from-card to-indigo-500/[0.03] p-5">
-        {article.body ? (
-          <CmsRichText
-            content={article.body}
-            className="leading-7 text-foreground/90 [&_h2]:text-2xl [&_h2]:font-semibold [&_h3]:text-xl [&_h3]:font-semibold [&_p]:text-base [&_ul]:text-base [&_ol]:text-base"
+            <InsurancePanel className="p-6 sm:p-8">
+              {article.body ? (
+                <CmsRichText
+                  content={article.body}
+                  className="text-base leading-7 text-foreground/90 [&_p:first-of-type]:text-lg [&_p:first-of-type]:leading-8 [&_p:first-of-type]:text-muted-foreground"
+                />
+              ) : (
+                <p className="text-muted-foreground">
+                  This article has no published body content yet.
+                </p>
+              )}
+            </InsurancePanel>
+          </div>
+
+          <GuideArticleSidebar
+            headings={headings}
+            categorySlug={categorySlug}
+            categoryTitle={categoryTitle}
           />
-        ) : (
-          <p className="text-muted-foreground">
-            This article has no published body content yet.
-          </p>
-        )}
-      </section>
-
-      <EditorialDisclosure />
-
-      <RelatedContentPanel bundle={relatedContent} />
-
-      <section className="rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>
-        <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
-          {categorySlugFromArticle(article.category) ? (
-            <Link
-              href={`/insurance/${categorySlugFromArticle(article.category)}`}
-              className="underline underline-offset-4"
-            >
-              Related insurance category
-            </Link>
-          ) : (
-            <Link href={categoryPath} className="underline underline-offset-4">
-              Related insurance category
-            </Link>
-          )}
-          <Link href="/guides" className="underline underline-offset-4">
-            Back to guides
-          </Link>
-          <Link href="/claims" className="underline underline-offset-4">
-            Claims assistance
-          </Link>
-          <Link href="/insurance" className="underline underline-offset-4">
-            Insurance categories
-          </Link>
         </div>
-      </section>
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">
+        <div className="space-y-8">
+          <EditorialDisclosure />
+          <RelatedContentPanel bundle={relatedContent} />
+          <GuideQuickPaths
+            categorySlug={categorySlug}
+            categoryTitle={categoryTitle}
+            fallbackCategoryPath={categoryPath}
+          />
+        </div>
+      </InsurancePageBand>
     </div>
   );
 }

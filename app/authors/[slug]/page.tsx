@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BookOpen, ClipboardCheck, ShieldCheck, Sparkles } from "lucide-react";
+import { BookOpen, ClipboardCheck, ShieldCheck, Users } from "lucide-react";
 
-import type { CmsAuthor } from "@/lib/cms-client";
+import { HubQuickPaths } from "@/components/hub-quick-paths";
+import { InsurancePageBand, InsurancePanel } from "@/components/insurance-page-band";
+import { StaticPageHero } from "@/components/static-page-hero";
 import {
   getArticlesList,
   getAuthorBySlug,
@@ -54,18 +56,52 @@ export async function generateMetadata({ params }: AuthorPageProps): Promise<Met
   });
 }
 
+function ReviewedSection({
+  id,
+  title,
+  icon: Icon,
+  items,
+}: {
+  id: string;
+  title: string;
+  icon: typeof BookOpen;
+  items: Array<{ id: string; label: string; href: string }>;
+}) {
+  if (items.length === 0) return null;
+
+  return (
+    <InsurancePanel id={id} className="p-6 sm:p-8">
+      <h2 className="flex items-center gap-2 text-xl font-semibold tracking-tight text-foreground">
+        <Icon className="h-5 w-5 text-sky-600" aria-hidden />
+        {title}
+      </h2>
+      <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+        {items.map((item) => (
+          <li key={item.id}>
+            <Link
+              href={item.href}
+              className="block rounded-xl border bg-background p-4 font-medium transition-colors hover:border-sky-300/60 hover:bg-accent"
+            >
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </InsurancePanel>
+  );
+}
+
 export default async function AuthorPage({ params }: AuthorPageProps) {
   const { slug } = await params;
   const author = await getAuthorBySlug(slug);
 
-  if (!author) {
-    notFound();
-  }
+  if (!author) notFound();
 
-  const [articles, claimsGuides, products] = await Promise.all([
+  const [articles, claimsGuides, products, allAuthors] = await Promise.all([
     getArticlesList(),
     getClaimsGuidesList(),
     getProducts(),
+    getAuthors(),
   ]);
 
   const reviewedGuides = articles.filter((item) => reviewedBySlug(item.reviewedBy) === author.slug);
@@ -90,9 +126,10 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
   ]);
 
   const totalReviewed = reviewedGuides.length + reviewedClaims.length + reviewedProducts.length;
+  const others = allAuthors.filter((item) => item.slug !== author.slug);
 
   return (
-    <div className="space-y-8">
+    <div className="-mx-4 -my-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
@@ -102,118 +139,118 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <section className="space-y-4 rounded-2xl border border-blue-200/50 bg-gradient-to-br from-blue-800/[0.06] via-sky-500/[0.03] to-card p-6 lg:p-8">
-        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
-          Editorial team
-        </p>
-        <div className="flex items-center gap-4">
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-800 to-cyan-600 text-2xl font-bold text-white">
-            {author.name.charAt(0)}
+      <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
+        <StaticPageHero eyebrow="Editorial team" title={author.name} description={author.credentials ?? undefined}>
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-800 to-sky-600 text-2xl font-bold text-white">
+              {author.name.charAt(0)}
+            </div>
+            <div className="space-y-1">
+              {author.role ? <p className="text-sm text-muted-foreground">{author.role}</p> : null}
+              <p className="inline-flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
+                <span className="inline-flex items-center gap-1">
+                  <ShieldCheck className="h-3.5 w-3.5 text-sky-600" aria-hidden />
+                  {totalReviewed} pieces reviewed
+                </span>
+                <Link href="/methodology" className="text-sky-800 underline-offset-4 hover:underline dark:text-sky-400">
+                  Editorial methodology
+                </Link>
+              </p>
+            </div>
           </div>
-          <div>
-            <h1 className="text-3xl font-semibold tracking-tight">{author.name}</h1>
-            {author.role ? <p className="text-sm text-muted-foreground">{author.role}</p> : null}
-          </div>
+        </StaticPageHero>
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="surface" innerClassName="py-8 sm:py-10">
+        <div className="space-y-6">
+          <ReviewedSection
+            id="guides-reviewed"
+            title="Guides reviewed"
+            icon={BookOpen}
+            items={reviewedGuides.map((guide) => ({
+              id: guide.id,
+              label: guide.title,
+              href: `/guides/${guide.slug}`,
+            }))}
+          />
+          <ReviewedSection
+            id="products-reviewed"
+            title="Product reviews"
+            icon={ShieldCheck}
+            items={reviewedProducts.map((product) => ({
+              id: product.id,
+              label: product.name,
+              href: `/products/${product.slug}`,
+            }))}
+          />
+          <ReviewedSection
+            id="claims-reviewed"
+            title="Claims guides reviewed"
+            icon={ClipboardCheck}
+            items={reviewedClaims.map((guide) => ({
+              id: guide.id,
+              label: guide.title,
+              href: `/claims/guides/${guide.slug}`,
+            }))}
+          />
+
+          {totalReviewed === 0 ? (
+            <InsurancePanel className="p-5">
+              <p className="text-sm text-muted-foreground">
+                Reviewed content from {author.name} will appear here as it is published.
+              </p>
+            </InsurancePanel>
+          ) : null}
         </div>
-        {author.credentials ? (
-          <p className="max-w-3xl text-base leading-7 text-muted-foreground">{author.credentials}</p>
-        ) : null}
-        <p className="inline-flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
-          <span className="inline-flex items-center gap-1">
-            <ShieldCheck className="h-3.5 w-3.5 text-cyan-600" />
-            {totalReviewed} pieces reviewed
-          </span>
-          <Link href="/methodology" className="underline-offset-4 hover:underline">
-            Editorial methodology
-          </Link>
-        </p>
-      </section>
+      </InsurancePageBand>
 
-      {reviewedGuides.length > 0 ? (
-        <section className="space-y-3">
-          <h2 className="flex items-center gap-2 text-xl font-semibold tracking-tight">
-            <BookOpen className="h-5 w-5 text-cyan-600" />
-            Guides reviewed
-          </h2>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {reviewedGuides.map((guide) => (
-              <li key={guide.id} className="rounded-xl border bg-background p-4 transition-colors hover:bg-accent">
-                <Link href={`/guides/${guide.slug}`} className="font-medium">
-                  {guide.title}
+      {others.length > 0 ? (
+        <InsurancePageBand tone="accent" innerClassName="py-8 sm:py-10">
+          <InsurancePanel className="p-6">
+            <h2 className="text-sm font-semibold tracking-tight text-muted-foreground">More reviewers</h2>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {others.map((item) => (
+                <Link
+                  key={item.id}
+                  href={`/authors/${item.slug}`}
+                  className="rounded-full border bg-background px-3 py-1 text-sm transition-colors hover:bg-accent"
+                >
+                  {item.name}
                 </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
+              ))}
+            </div>
+          </InsurancePanel>
+        </InsurancePageBand>
       ) : null}
 
-      {reviewedProducts.length > 0 ? (
-        <section className="space-y-3">
-          <h2 className="flex items-center gap-2 text-xl font-semibold tracking-tight">
-            <ShieldCheck className="h-5 w-5 text-cyan-600" />
-            Product reviews
-          </h2>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {reviewedProducts.map((product) => (
-              <li key={product.id} className="rounded-xl border bg-background p-4 transition-colors hover:bg-accent">
-                <Link href={`/products/${product.slug}`} className="font-medium">
-                  {product.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
-
-      {reviewedClaims.length > 0 ? (
-        <section className="space-y-3">
-          <h2 className="flex items-center gap-2 text-xl font-semibold tracking-tight">
-            <ClipboardCheck className="h-5 w-5 text-cyan-600" />
-            Claims guides reviewed
-          </h2>
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {reviewedClaims.map((guide) => (
-              <li key={guide.id} className="rounded-xl border bg-background p-4 transition-colors hover:bg-accent">
-                <Link href={`/claims/guides/${guide.slug}`} className="font-medium">
-                  {guide.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ) : null}
-
-      {totalReviewed === 0 ? (
-        <p className="rounded-xl border bg-background p-4 text-sm text-muted-foreground">
-          Reviewed content from {author.name} will appear here as it is published.
-        </p>
-      ) : null}
-
-      <AuthorsFooterNav current={author} />
+      <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">
+        <HubQuickPaths
+          description="Explore more editorial content and research standards."
+          paths={[
+            {
+              key: "authors",
+              icon: Users,
+              title: "All reviewers",
+              description: "Browse the full editorial team directory.",
+              href: "/authors",
+            },
+            {
+              key: "methodology",
+              icon: ShieldCheck,
+              title: "Editorial methodology",
+              description: "How we score coverage, pricing, and claims quality.",
+              href: "/methodology",
+            },
+            {
+              key: "guides",
+              icon: BookOpen,
+              title: "Buying guides",
+              description: "Category playbooks reviewed by our team.",
+              href: "/guides",
+            },
+          ]}
+        />
+      </InsurancePageBand>
     </div>
-  );
-}
-
-async function AuthorsFooterNav({ current }: { current: CmsAuthor }) {
-  const authors = await getAuthors();
-  const others = authors.filter((author) => author.slug !== current.slug);
-  if (others.length === 0) return null;
-
-  return (
-    <section className="space-y-3 border-t pt-6">
-      <h2 className="text-sm font-semibold tracking-tight text-muted-foreground">More reviewers</h2>
-      <div className="flex flex-wrap gap-2">
-        {others.map((author) => (
-          <Link
-            key={author.id}
-            href={`/authors/${author.slug}`}
-            className="rounded-full border bg-background px-3 py-1 text-sm transition-colors hover:bg-accent"
-          >
-            {author.name}
-          </Link>
-        ))}
-      </div>
-    </section>
   );
 }

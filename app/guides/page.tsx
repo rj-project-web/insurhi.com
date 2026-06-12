@@ -1,10 +1,23 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { BookOpenCheck, Clock3, Sparkles } from "lucide-react";
-import { getLatestArticles } from "@/lib/cms-client";
-import { buildMetadata, buildBreadcrumbJsonLd } from "@/lib/seo";
+import { BookOpen, BookOpenCheck, Clock3, FolderKanban, Sparkles } from "lucide-react";
 
-/** Always merge latest CMS article list (avoid deploy-time-only or ISR-stale /guides). */
+import { GuideArticleCard } from "@/components/guide-article-card";
+import { HubCategoryGrid } from "@/components/hub-category-grid";
+import { HubGroupedSection } from "@/components/hub-grouped-section";
+import { HubIndexHero } from "@/components/hub-index-hero";
+import { HubQuickPaths } from "@/components/hub-quick-paths";
+import { InsurancePageBand } from "@/components/insurance-page-band";
+import { getArticlesList } from "@/lib/cms-client";
+import {
+  buildCategoryItemGroups,
+  categorySlugFromRelation,
+  countUniqueCategories,
+} from "@/lib/hub-list-utils";
+import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { insuranceCategories } from "@/lib/site-data";
+
+const GUIDES_PER_CATEGORY = 6;
+
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = buildMetadata({
@@ -14,102 +27,136 @@ export const metadata: Metadata = buildMetadata({
   path: "/guides",
 });
 
-function categorySlugFromArticle(category: unknown): string | null {
-  if (!category) return null;
-  if (typeof category === "string") return category;
-  if (typeof category === "object") return (category as { slug?: string }).slug ?? null;
-  return null;
-}
-
-function categoryTitleFromArticle(category: unknown): string | null {
-  if (!category || typeof category !== "object") return null;
-  return (category as { title?: string }).title ?? null;
-}
-
 export default async function GuidesPage() {
-  const articles = await getLatestArticles();
+  const articles = await getArticlesList();
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
     { name: "Guides", path: "/guides" },
   ]);
 
+  const categoryCount = countUniqueCategories(articles, (article) =>
+    categorySlugFromRelation(article.category),
+  );
+  const groupedArticles = buildCategoryItemGroups(
+    articles,
+    insuranceCategories,
+    (article) => categorySlugFromRelation(article.category),
+    GUIDES_PER_CATEGORY,
+  );
+
+  const stats = [
+    { label: "Guides", value: `${articles.length} articles`, icon: BookOpen },
+    {
+      label: "Categories",
+      value: `${categoryCount || insuranceCategories.length} lines`,
+      icon: FolderKanban,
+    },
+    { label: "Format", value: "Buying playbooks", icon: BookOpenCheck },
+    { label: "Updates", value: "CMS synced", icon: Clock3 },
+  ];
+
+  const categoryItems = insuranceCategories.map((category) => {
+    const count = articles.filter(
+      (article) => categorySlugFromRelation(article.category) === category.slug,
+    ).length;
+    return {
+      slug: category.slug,
+      title: category.title,
+      meta:
+        count > 0
+          ? `${count} guide${count === 1 ? "" : "s"} in library`
+          : "Hub + FAQs + buying guides",
+      href: `/insurance/${category.slug}#buying-guides`,
+      linkLabel: "Open buying guides",
+    };
+  });
+
   return (
-    <div className="space-y-8">
+    <div className="-mx-4 -my-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section className="space-y-4 rounded-2xl border bg-gradient-to-br from-indigo-500/[0.08] via-blue-500/[0.06] to-card p-6 lg:p-8">
-        <p className="inline-flex items-center rounded-full border bg-background/80 px-3 py-1 text-xs font-medium text-muted-foreground">
-          <Sparkles className="mr-1 h-3.5 w-3.5 text-cyan-600" />
-          Editorial guides library
-        </p>
-        <h1 className="text-3xl font-semibold tracking-tight lg:text-4xl">Insurance Guides</h1>
-        <p className="max-w-3xl text-muted-foreground">
-          Beginner basics, side-by-side reviews, claims tactics, and common pitfalls for smarter
-          insurance decisions.
-        </p>
-        <div className="grid gap-2 sm:grid-cols-2 lg:max-w-2xl">
-          <article className="rounded-lg border bg-background/90 p-3">
-            <p className="flex items-center gap-2 text-sm font-medium">
-              <BookOpenCheck className="h-4 w-4 text-blue-600" />
-              Structured buying playbooks
-            </p>
-          </article>
-          <article className="rounded-lg border bg-background/90 p-3">
-            <p className="flex items-center gap-2 text-sm font-medium">
-              <Clock3 className="h-4 w-4 text-cyan-600" />
-              Updated with latest CMS snapshot
-            </p>
-          </article>
-        </div>
-      </section>
 
-      <div className="grid gap-3 sm:grid-cols-2">
-        {articles.length > 0 ? (
-          articles.map((article) => {
-            const categorySlug = categorySlugFromArticle(article.category);
-            const categoryTitle = categoryTitleFromArticle(article.category);
-            return (
-              <Link
-                key={article.id}
-                href={`/guides/${article.slug}`}
-                className="rounded-xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-4 transition-colors hover:bg-accent"
-              >
-                <p className="font-medium">{article.title}</p>
-                {categorySlug && categoryTitle ? (
-                  <p className="mt-1 text-sm text-muted-foreground">
-                    <span className="text-foreground/80">{categoryTitle}</span>
-                  </p>
-                ) : (
-                  <p className="mt-1 text-sm text-muted-foreground">Insurance guide</p>
-                )}
-              </Link>
-            );
-          })
-        ) : (
-          <>
-            <article className="rounded-lg border bg-card p-4">Beginner starter guide</article>
-            <article className="rounded-lg border bg-card p-4">
-              Top policy comparison checklist
-            </article>
-            <article className="rounded-lg border bg-card p-4">Claims success playbook</article>
-            <article className="rounded-lg border bg-card p-4">Avoid expensive mistakes</article>
-          </>
-        )}
-      </div>
+      <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
+        <HubIndexHero
+          eyebrow="Editorial guides library"
+          title="Insurance guides"
+          description="Beginner basics, side-by-side reviews, claims tactics, and common pitfalls — structured buying playbooks for smarter coverage decisions."
+          stats={stats}
+        />
+      </InsurancePageBand>
 
-      <section className="rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Explore related channels</h2>
-        <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
-          <Link href="/insurance" className="underline underline-offset-4">
-            Insurance categories
-          </Link>
-          <Link href="/claims" className="underline underline-offset-4">
-            Claims assistance
-          </Link>
+      <InsurancePageBand tone="accent" innerClassName="py-8 sm:py-10">
+        <HubCategoryGrid
+          heading="Guides by coverage line"
+          description="Jump into category hubs for deep guides, product comparisons, and FAQs alongside editorial articles."
+          items={categoryItems}
+        />
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="surface" id="guide-library" innerClassName="py-8 sm:py-10">
+        <div className="space-y-10">
+          <div className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              Featured library
+            </p>
+            <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+              Guides by coverage line
+            </h2>
+            <p className="max-w-2xl text-sm leading-6 text-muted-foreground">
+              Up to {GUIDES_PER_CATEGORY} guides per category — open a hub for the full list.
+            </p>
+          </div>
+
+          {groupedArticles.map((group) => (
+            <HubGroupedSection
+              key={group.slug}
+              idPrefix="guides-group"
+              slug={group.slug}
+              title={group.title}
+              items={group.items}
+              totalCount={group.totalCount}
+              itemNoun="guide"
+              hubHref={`/insurance/${group.slug}#buying-guides`}
+              hubLinkLabel="category hub"
+            >
+              {group.items.map((article) => (
+                <GuideArticleCard key={article.id} article={article} />
+              ))}
+            </HubGroupedSection>
+          ))}
         </div>
-      </section>
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">
+        <HubQuickPaths
+          description="Pair guides with product reviews, claims playbooks, and glossary definitions for end-to-end research."
+          paths={[
+            {
+              key: "insurance",
+              icon: Sparkles,
+              title: "Insurance categories",
+              description: "Browse six coverage hubs with guides, products, and FAQs.",
+              href: "/insurance",
+            },
+            {
+              key: "products",
+              icon: BookOpenCheck,
+              title: "Product reviews",
+              description: "Compare flagship policies with pros, cons, and premium estimates.",
+              href: "/products",
+            },
+            {
+              key: "claims",
+              icon: Clock3,
+              title: "Claims assistance",
+              description: "Step-by-step claim playbooks and document checklists.",
+              href: "/claims",
+            },
+          ]}
+        />
+      </InsurancePageBand>
     </div>
   );
 }

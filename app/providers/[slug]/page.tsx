@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { BookOpen, Building2, ShieldCheck } from "lucide-react";
 
+import { DetailPageSidebar } from "@/components/detail-page-sidebar";
+import { HubQuickPaths } from "@/components/hub-quick-paths";
+import { InsurancePageBand } from "@/components/insurance-page-band";
+import {
+  getProviderDetailSections,
+  ProviderDetailContent,
+} from "@/components/provider-detail-content";
+import { ProviderDetailHero } from "@/components/provider-detail-hero";
 import type { CmsCategory, CmsProduct } from "@/lib/cms-client";
 import { getProducts, getProviderBySlug, getProviders } from "@/lib/cms-client";
 import { buildProviderPageTitle } from "@/lib/page-titles";
@@ -13,11 +21,10 @@ type ProviderPageProps = {
 };
 
 function resolveCategories(value: (string | CmsCategory)[] | undefined): CmsCategory[] {
-  if (!value?.length) {
-    return [];
-  }
-
-  return value.filter((item): item is CmsCategory => typeof item === "object" && item !== null && "slug" in item);
+  if (!value?.length) return [];
+  return value.filter(
+    (item): item is CmsCategory => typeof item === "object" && item !== null && "slug" in item,
+  );
 }
 
 function resolveBestFor(value: string | string[] | Array<{ item?: string }> | undefined) {
@@ -38,9 +45,7 @@ function resolveBestFor(value: string | string[] | Array<{ item?: string }> | un
 
 function providerMatchesProduct(product: CmsProduct, providerSlug: string, providerId: string) {
   if (!product.provider) return false;
-  if (typeof product.provider === "string") {
-    return product.provider === providerId;
-  }
+  if (typeof product.provider === "string") return product.provider === providerId;
   return product.provider.id === providerId || product.provider.slug === providerSlug;
 }
 
@@ -77,111 +82,106 @@ export async function generateMetadata({ params }: ProviderPageProps): Promise<M
 export default async function ProviderDetailPage({ params }: ProviderPageProps) {
   const { slug } = await params;
   const canonicalSlug = providerCanonicalAliases[slug];
-  if (canonicalSlug) {
-    redirect(`/providers/${canonicalSlug}`);
-  }
+  if (canonicalSlug) redirect(`/providers/${canonicalSlug}`);
 
   const provider = await getProviderBySlug(slug);
-
-  if (!provider) {
-    notFound();
-  }
+  if (!provider) notFound();
 
   const linkedCategories = resolveCategories(provider.categories);
   const bestForItems = resolveBestFor(provider.bestFor);
   const allProducts = await getProducts();
   const linkedProducts = allProducts
     .filter((product) => providerMatchesProduct(product, provider.slug, provider.id))
-    .slice(0, 12);
+    .slice(0, 6);
+  const sections = getProviderDetailSections({
+    bestForItems,
+    linkedCategories,
+    linkedProducts,
+    coverageRegions: provider.coverageRegions,
+  });
+  const primaryCategory = linkedCategories[0];
+
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
-    { name: "Insurance", path: "/insurance" },
+    { name: "Providers", path: "/providers" },
     { name: provider.name, path: `/providers/${slug}` },
   ]);
 
   return (
-    <div className="space-y-8">
+    <div className="-mx-4 -my-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section className="space-y-3">
-        <p className="text-sm text-muted-foreground">Providers / {slug}</p>
-        <h1 className="text-3xl font-semibold tracking-tight">{provider.name}</h1>
-        {provider.summary ? <p className="max-w-3xl text-sm text-muted-foreground">{provider.summary}</p> : null}
-        <p className="text-sm text-muted-foreground">Rating: {provider.rating ?? "N/A"} / 5</p>
-        {provider.coverageRegions && provider.coverageRegions.length > 0 ? (
-          <p className="text-sm text-muted-foreground">
-            Coverage regions: {provider.coverageRegions.join(", ")}
-          </p>
-        ) : null}
-      </section>
 
-      <section className="space-y-3 rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Best for</h2>
-        {bestForItems.length > 0 ? (
-          <ul className="grid gap-2 text-sm text-muted-foreground">
-            {bestForItems.map((item) => (
-              <li key={item} className="rounded-md border bg-background px-3 py-2">
-                {item}
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="text-sm text-muted-foreground">No best-for highlights are published yet.</p>
-        )}
-      </section>
+      <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
+        <ProviderDetailHero
+          name={provider.name}
+          slug={slug}
+          summary={provider.summary}
+          rating={provider.rating ?? null}
+          regionCount={provider.coverageRegions?.length ?? 0}
+          categoryCount={linkedCategories.length}
+          productCount={linkedProducts.length}
+          categories={linkedCategories}
+        />
+      </InsurancePageBand>
 
-      <section className="space-y-3 rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Linked categories</h2>
-        {linkedCategories.length > 0 ? (
-          <ul className="flex flex-wrap gap-2 text-sm">
-            {linkedCategories.map((category) => (
-              <li key={category.id}>
-                <Link
-                  href={`/insurance/${category.slug}`}
-                  className="rounded-md border px-3 py-1 transition-colors hover:bg-accent"
-                >
-                  {category.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="text-sm text-muted-foreground">No category relationships are published yet.</p>
-        )}
-      </section>
-
-      <section className="space-y-3 rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Linked products</h2>
-        {linkedProducts.length > 0 ? (
-          <div className="grid gap-2 text-sm">
-            {linkedProducts.map((product) => (
-              <Link
-                key={product.id}
-                href={`/products/${product.slug}`}
-                className="rounded-md border px-3 py-2 transition-colors hover:bg-accent"
-              >
-                {product.name}
-              </Link>
-            ))}
+      <InsurancePageBand tone="surface" innerClassName="py-8 sm:py-10">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_17rem] xl:grid-cols-[minmax(0,1fr)_18rem]">
+          <div className="min-w-0">
+            <ProviderDetailContent
+              bestForItems={bestForItems}
+              linkedCategories={linkedCategories}
+              linkedProducts={linkedProducts}
+              coverageRegions={provider.coverageRegions}
+            />
           </div>
-        ) : (
-          <p className="text-sm text-muted-foreground">No product relationships are published yet.</p>
-        )}
-      </section>
-
-      <section className="rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>
-        <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
-          <Link href="/insurance" className="underline underline-offset-4">
-            Insurance categories
-          </Link>
-          <Link href="/guides" className="underline underline-offset-4">
-            Guides
-          </Link>
+          <DetailPageSidebar
+            sections={sections}
+            categorySlug={primaryCategory?.slug}
+            categoryTitle={primaryCategory?.title}
+            hubLinks={
+              primaryCategory
+                ? [
+                    { href: `/providers`, label: "All providers" },
+                    { href: `/insurance/${primaryCategory.slug}#compare`, label: "Compare in hub" },
+                    { href: `/products`, label: "Product reviews" },
+                  ]
+                : [{ href: "/providers", label: "All providers" }]
+            }
+          />
         </div>
-      </section>
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">
+        <HubQuickPaths
+          description="Pair carrier research with product reviews, buying guides, and methodology notes."
+          paths={[
+            {
+              key: "products",
+              icon: ShieldCheck,
+              title: "Product reviews",
+              description: "Compare policies from this carrier and competitors.",
+              href: "/products",
+            },
+            {
+              key: "guides",
+              icon: BookOpen,
+              title: "Buying guides",
+              description: "Learn what to look for before switching insurers.",
+              href: "/guides",
+            },
+            {
+              key: "providers",
+              icon: Building2,
+              title: "All providers",
+              description: "Browse the full carrier directory.",
+              href: "/providers",
+            },
+          ]}
+        />
+      </InsurancePageBand>
     </div>
   );
 }

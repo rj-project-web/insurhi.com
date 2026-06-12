@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
-import { Clock3, Handshake, Headset, Mail } from "lucide-react";
+import { Clock3, Handshake, Headset, Mail, ShieldCheck } from "lucide-react";
 
 import { CmsRichText } from "@/components/cms-rich-text";
+import { HubQuickPaths } from "@/components/hub-quick-paths";
+import { InsurancePageBand, InsurancePanel } from "@/components/insurance-page-band";
+import { StaticPageHero } from "@/components/static-page-hero";
 import { getPageBySlug } from "@/lib/cms-client";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
 
@@ -19,6 +22,27 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
+const contactChannels = [
+  {
+    title: "Editorial",
+    description: "Content corrections, source updates, and fact-check requests.",
+    icon: Mail,
+    tone: "text-sky-600",
+  },
+  {
+    title: "Support",
+    description: "Website issues, broken links, and account or access related questions.",
+    icon: Headset,
+    tone: "text-sky-700",
+  },
+  {
+    title: "Partnerships",
+    description: "Business collaboration, media requests, and data licensing discussions.",
+    icon: Handshake,
+    tone: "text-blue-700",
+  },
+];
+
 export default async function ContactPage() {
   const cmsPage = await getPageBySlug("contact");
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
@@ -27,81 +51,95 @@ export default async function ContactPage() {
   ]);
 
   return (
-    <div className="space-y-8">
+    <div className="-mx-4 -my-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section
-        className="relative overflow-hidden rounded-2xl border bg-card p-6 lg:p-8"
-        style={{ backgroundImage: "url('/home-latest-bg.svg')" }}
-      >
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-600/[0.08] via-cyan-500/[0.05] to-card" />
-        <div className="relative space-y-3">
-          <h1 className="text-3xl font-semibold tracking-tight">{cmsPage?.title ?? "Contact"}</h1>
-          <p className="max-w-3xl text-muted-foreground">
-            Reach our team for editorial questions, product feedback, and partnership opportunities.
-            We route each request to the right owner and reply with clear next steps.
-          </p>
+
+      <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
+        <StaticPageHero
+          eyebrow="Contact"
+          title={cmsPage?.title ?? "Contact Insurhi"}
+          description="Reach our team for editorial questions, product feedback, and partnership opportunities. We route each request to the right owner and reply with clear next steps."
+        />
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="accent" innerClassName="py-8 sm:py-10">
+        <div className="grid gap-3 md:grid-cols-3">
+          {contactChannels.map((channel) => {
+            const Icon = channel.icon;
+            return (
+              <InsurancePanel key={channel.title} className="p-5">
+                <p className="flex items-center gap-2 text-sm font-medium text-foreground">
+                  <Icon className={`h-4 w-4 ${channel.tone}`} aria-hidden />
+                  {channel.title}
+                </p>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">{channel.description}</p>
+              </InsurancePanel>
+            );
+          })}
         </div>
-      </section>
+      </InsurancePageBand>
 
-      <section className="grid gap-3 md:grid-cols-3">
-        <article className="rounded-xl border bg-gradient-to-br from-card to-blue-500/[0.03] p-4">
-          <p className="flex items-center gap-2 text-sm font-medium">
-            <Mail className="h-4 w-4 text-blue-600" />
-            Editorial
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Content corrections, source updates, and fact-check requests.
-          </p>
-        </article>
-        <article className="rounded-xl border bg-gradient-to-br from-card to-cyan-500/[0.03] p-4">
-          <p className="flex items-center gap-2 text-sm font-medium">
-            <Headset className="h-4 w-4 text-cyan-600" />
-            Support
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Website issues, broken links, and account or access related questions.
-          </p>
-        </article>
-        <article className="rounded-xl border bg-gradient-to-br from-card to-indigo-500/[0.03] p-4">
-          <p className="flex items-center gap-2 text-sm font-medium">
-            <Handshake className="h-4 w-4 text-indigo-600" />
-            Partnerships
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Business collaboration, media requests, and data licensing discussions.
-          </p>
-        </article>
-      </section>
+      <InsurancePageBand tone="surface" innerClassName="py-8 sm:py-10">
+        <InsurancePanel className="p-6 sm:p-8">
+          <h2 className="text-xl font-semibold tracking-tight text-foreground">Contact details</h2>
+          {cmsPage?.content ? (
+            <div className="mt-4 max-w-3xl">
+              <CmsRichText content={cmsPage.content} />
+            </div>
+          ) : (
+            <p className="mt-4 max-w-3xl text-muted-foreground">
+              Contact channel placeholder for editorial, support, and partnership inquiries.
+            </p>
+          )}
+        </InsurancePanel>
+      </InsurancePageBand>
 
-      {cmsPage?.content ? (
-        <section className="rounded-xl border bg-card p-5">
-          <h2 className="text-lg font-semibold tracking-tight">Contact details</h2>
-          <div className="mt-3 max-w-3xl">
-            <CmsRichText content={cmsPage.content} />
-          </div>
-        </section>
-      ) : (
-        <section className="rounded-xl border bg-card p-5">
-          <h2 className="text-lg font-semibold tracking-tight">Contact details</h2>
-          <p className="mt-2 max-w-3xl text-muted-foreground">
-            Contact channel placeholder for editorial, support, and partnership inquiries.
-          </p>
-        </section>
-      )}
+      <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">
+        <div className="space-y-8">
+          <InsurancePanel className="p-5">
+            <h2 className="text-lg font-semibold tracking-tight text-foreground">
+              Response expectations
+            </h2>
+            <div className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
+              <Clock3 className="mt-0.5 h-4 w-4 text-sky-600" aria-hidden />
+              <p>
+                Most requests receive a first response within 1–2 business days. Complex partnership or
+                data inquiries may require additional review.
+              </p>
+            </div>
+          </InsurancePanel>
 
-      <section className="rounded-xl border bg-gradient-to-br from-card to-emerald-500/[0.03] p-5">
-        <h2 className="text-lg font-semibold tracking-tight">Response expectations</h2>
-        <div className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
-          <Clock3 className="mt-0.5 h-4 w-4 text-emerald-600" />
-          <p>
-            Most requests receive a first response within 1-2 business days. Complex partnership or
-            data inquiries may require additional review.
-          </p>
+          <HubQuickPaths
+            description="While you wait, explore our editorial standards and research channels."
+            paths={[
+              {
+                key: "methodology",
+                icon: ShieldCheck,
+                title: "Editorial methodology",
+                description: "How we review products, providers, and claims guidance.",
+                href: "/methodology",
+              },
+              {
+                key: "about",
+                icon: Mail,
+                title: "About Insurhi",
+                description: "Our mission and editorial independence.",
+                href: "/about",
+              },
+              {
+                key: "guides",
+                icon: Headset,
+                title: "Buying guides",
+                description: "Self-serve answers for common coverage questions.",
+                href: "/guides",
+              },
+            ]}
+          />
         </div>
-      </section>
+      </InsurancePageBand>
     </div>
   );
 }

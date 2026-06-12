@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { FileText, Home, Map } from "lucide-react";
 
 import { CmsRichText, extractCmsText } from "@/components/cms-rich-text";
+import { HubQuickPaths } from "@/components/hub-quick-paths";
+import { InsurancePageBand, InsurancePanel } from "@/components/insurance-page-band";
+import { StaticPageHero } from "@/components/static-page-hero";
 import { getAllPages, getPageBySlug } from "@/lib/cms-client";
 import { CMS_PAGE_FIXED_PATHS, isFixedCmsPageSlug } from "@/lib/cms-page-routes";
 import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
@@ -55,31 +58,57 @@ export default async function CmsDynamicPage({ params }: CmsPageProps) {
   ]);
 
   return (
-    <div className="space-y-8">
+    <div className="-mx-4 -my-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
-      <section className="space-y-3">
-        <p className="text-sm text-muted-foreground">CMS page / {slug}</p>
-        <h1 className="text-3xl font-semibold tracking-tight">{page.title}</h1>
-      </section>
 
-      <section className="max-w-3xl text-foreground/90">
-        <CmsRichText content={page.content} />
-      </section>
+      <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
+        <StaticPageHero
+          eyebrow="CMS page"
+          title={page.title}
+          description={`Published from CMS · slug: ${slug}`}
+        />
+      </InsurancePageBand>
 
-      <section className="rounded-lg border bg-card p-4">
-        <h2 className="text-lg font-semibold tracking-tight">Continue exploring</h2>
-        <div className="mt-3 flex flex-wrap gap-3 text-sm text-muted-foreground">
-          <Link href="/content-map" className="underline underline-offset-4">
-            Content map
-          </Link>
-          <Link href="/" className="underline underline-offset-4">
-            Home
-          </Link>
-        </div>
-      </section>
+      <InsurancePageBand tone="surface" innerClassName="py-8 sm:py-10">
+        <InsurancePanel className="p-6 sm:p-8">
+          <div className="max-w-3xl text-foreground/90">
+            <CmsRichText content={page.content} />
+          </div>
+        </InsurancePanel>
+      </InsurancePageBand>
+
+      <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">
+        <HubQuickPaths
+          title="Continue exploring"
+          description="Internal navigation for CMS QA and site browsing."
+          paths={[
+            {
+              key: "content-map",
+              icon: Map,
+              title: "Content map",
+              description: "Index of CMS collections and public URLs.",
+              href: "/content-map",
+            },
+            {
+              key: "about",
+              icon: FileText,
+              title: "About",
+              description: "Editorial mission and site overview.",
+              href: "/about",
+            },
+            {
+              key: "home",
+              icon: Home,
+              title: "Home",
+              description: "Return to the main insurance hub.",
+              href: "/",
+            },
+          ]}
+        />
+      </InsurancePageBand>
     </div>
   );
 }

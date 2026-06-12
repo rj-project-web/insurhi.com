@@ -151,3 +151,9 @@
     animation: none;
   }
 }
+
+/* Insurance category pages: single pinned bar = logo + section tabs */
+body.insurance-subnav-pinned .site-header {
+  visibility: hidden;
+  pointer-events: none;
+}

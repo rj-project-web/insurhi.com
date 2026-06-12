@@ -36,16 +36,28 @@ function visualFor(slug?: string): CategoryVisualMeta {
   };
 }
 
-export function CategoryIconBadge({ slug, label }: { slug?: string; label?: string }) {
+export function CategoryIconBadge({
+  slug,
+  label,
+  size = "md",
+}: {
+  slug?: string;
+  label?: string;
+  size?: "md" | "lg";
+}) {
   const visual = visualFor(slug);
   const Icon = visual.icon;
+  const sizeClass =
+    size === "lg"
+      ? "h-20 w-20 rounded-3xl [&_svg]:h-10 [&_svg]:w-10"
+      : "h-11 w-11 rounded-2xl";
 
   return (
     <span
-      className={`inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br ${visual.tint} text-blue-900 ring-1 ring-blue-200/70 dark:from-blue-950/40 dark:to-sky-950/20 dark:text-blue-100 dark:ring-blue-500/25`}
+      className={`inline-flex ${sizeClass} shrink-0 items-center justify-center bg-gradient-to-br ${visual.tint} text-blue-900 ring-1 ring-blue-200/70 dark:from-blue-950/40 dark:to-sky-950/20 dark:text-blue-100 dark:ring-blue-500/25`}
       aria-label={label}
     >
-      <Icon className="h-5 w-5" aria-hidden />
+      <Icon className={size === "lg" ? "h-10 w-10" : "h-5 w-5"} aria-hidden />
     </span>
   );
 }

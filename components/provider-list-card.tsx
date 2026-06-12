@@ -1,17 +1,20 @@
 import Link from "next/link";
 import { ArrowRight, Building2, Star } from "lucide-react";
 
-import type { CmsCategory, CmsProvider } from "@/lib/cms-client";
+import type { CmsProviderLike } from "@/lib/hub-list-utils";
 
-function resolveCategories(value: (string | CmsCategory)[] | undefined): CmsCategory[] {
+function resolveCategories(
+  value: CmsProviderLike["categories"],
+): Array<{ slug?: string; title?: string }> {
   if (!value?.length) return [];
   return value.filter(
-    (item): item is CmsCategory => typeof item === "object" && item !== null && "slug" in item,
+    (item): item is { slug?: string; title?: string } =>
+      typeof item === "object" && item !== null,
   );
 }
 
 type ProviderListCardProps = {
-  provider: CmsProvider;
+  provider: CmsProviderLike;
 };
 
 export function ProviderListCard({ provider }: ProviderListCardProps) {
@@ -50,7 +53,8 @@ export function ProviderListCard({ provider }: ProviderListCardProps) {
           {categories.length} coverage line{categories.length === 1 ? "" : "s"}:{" "}
           {categories
             .slice(0, 3)
-            .map((category) => category.title)
+            .map((category) => category.title ?? category.slug)
+            .filter(Boolean)
             .join(", ")}
           {categories.length > 3 ? "…" : ""}
         </p>

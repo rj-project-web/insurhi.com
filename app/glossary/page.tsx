@@ -8,7 +8,7 @@ import { HubIndexHero } from "@/components/hub-index-hero";
 import { HubQuickPaths } from "@/components/hub-quick-paths";
 import { InsurancePageBand } from "@/components/insurance-page-band";
 import { getGlossaryTerms } from "@/lib/cms-client";
-import { categoryContentHubs } from "@/lib/category-content-hub";
+import { categoryContentHubs, isCategorySlug } from "@/lib/category-content-hub";
 import {
   buildCategoryItemGroups,
   categorySlugFromRelation,
@@ -56,7 +56,9 @@ export default async function GlossaryPage() {
     const count = terms.filter(
       (term) => categorySlugFromRelation(term.category) === category.slug,
     ).length;
-    const hubTerms = categoryContentHubs[category.slug]?.glossaryTerms.length ?? 0;
+    const hubTerms = isCategorySlug(category.slug)
+      ? categoryContentHubs[category.slug].glossaryTerms.length
+      : 0;
     return {
       slug: category.slug,
       title: category.title,

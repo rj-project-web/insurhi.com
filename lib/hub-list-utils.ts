@@ -75,6 +75,7 @@ export type CmsProviderLike = {
   name: string;
   slug: string;
   rating?: number;
+  summary?: string | null;
   categories?: Array<string | { slug?: string }>;
 };
 

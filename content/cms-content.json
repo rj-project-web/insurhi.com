@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-13T08:14:25.518Z",
+    "exportedAt": "2026-06-13T08:19:50.018Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51059,6 +51059,1224 @@
   ],
   "articles": [
     {
+      "id": 30,
+      "title": "Flood vs Water Backup Insurance Guide (2026): NFIP, Endorsements, and Coverage Gaps",
+      "slug": "flood-vs-water-backup-buying-guide-2026",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Homeowners often assume one policy covers every water loss. Flood (rising surface water) and water backup (sewer/sump overflow) are usually separate from standard HO-3 sudden pipe bursts. Buying the right combination prevents five-figure uninsured losses.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Flood insurance basics",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "NFIP or private flood covers rising water, storm surge, and mudflow in participating communities.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Waiting periods often apply (typically 30 days for NFIP)—buy before hurricane or snowmelt season.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Dwelling and contents limits are separate; basements have restricted contents coverage under NFIP rules.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Water backup endorsement",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Covers sewer, drain, or sump pump backup into the home—excluded on base HO-3 forms.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Typical limits $5,000–$25,000; often inexpensive ($50–$120/year) relative to flood policies.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Does not replace flood insurance for river or street flooding entering the structure.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: sump failure after heavy rain",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A basement floods when the sump pump fails during a storm but street water did not enter through walls. Water backup endorsement may pay mitigation and contents; flood insurance may not trigger if the peril is backup, not rising floodwater. Document pump maintenance records.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: creek overflow enters first floor",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Rising creek water crosses the threshold—this is flood, not backup. NFIP or private flood pays subject to policy limits; homeowners sudden-water coverage does not. ALE rules differ between policies—read both forms.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Check FEMA flood zone maps for your address—even low-risk zones can flood.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Quote water backup and service line endorsements with your HO-3 renewal.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Align dwelling limits with rebuild cost per /guides/home-replacement-cost-vs-acv-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "After a loss, use /claims/guides/home-water-damage-claim-guide-2026 for FNOL steps.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare carriers at /insurance/home.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does homeowners insurance cover hurricane flooding? A: Wind-driven rain through a damaged roof may be covered; rising storm surge is flood and needs a flood policy.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is water backup the same as flood? A: No—backup is from sewers or sump failure inside the system; flood is external rising water.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: What limit should I buy for backup? A: Match basement finish and stored contents value—$10,000–$25,000 is common for finished basements.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Home water damage claims: /claims/guides/home-water-damage-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Endorsement selection: /guides/home-endorsement-selection-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "General home claims: /claims/guides/home-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-13T08:19:49.373Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-09T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Flood vs Water Backup Guide 2026 | Home Coverage",
+        "metaDescription": "Compare flood insurance with water backup endorsements: what each covers, typical costs, and how to avoid common denial gaps in 2026."
+      },
+      "updatedAt": "2026-06-13T08:19:49.379Z",
+      "createdAt": "2026-06-13T08:19:26.333Z",
+      "_status": "published"
+    },
+    {
+      "id": 29,
+      "title": "Gap Insurance Buying Guide (2026): Loans, Leases, and Total Loss Shortfalls",
+      "slug": "auto-gap-insurance-buying-guide-2026",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for buyers financing or leasing a new vehicle where the loan balance may exceed actual cash value (ACV) in the first 3–4 years. Gap insurance pays the difference between ACV and what you owe after a covered total loss—it is not a substitute for collision coverage.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What gap insurance actually covers",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pays the loan/lease shortfall after your collision carrier settles actual cash value minus deductible.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Usually excludes overdue payments, deferred interest, or rolled-in negative equity from a prior loan unless specifically covered.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Does not cover mechanical breakdown, theft without comprehensive, or a total loss you cause without collision coverage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Where to buy gap coverage",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Dealer/lender gap: convenient at closing but often the most expensive over the loan term.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Auto insurer endorsement: often $40–$80/year added to an existing policy—compare before dealer paperwork.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Standalone gap policies: available in some states; verify cancellation and refund rules if you pay off early.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: new SUV totaled in year two",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A buyer owes $38,000; ACV is $31,000 after a covered collision total loss. Collision pays $30,500 after a $500 deductible. Gap covers the $7,500 loan shortfall minus any excluded fees. Without gap, the lender still expects full payoff from the borrower.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: 20% down on a used truck",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A used truck is financed with 20% down and a 48-month loan. ACV tracks closer to balance after year three—gap may be unnecessary if loan-to-value stays below 80%. Run an amortization schedule against estimated depreciation before buying dealer gap.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare lender gap cost vs insurer endorsement on identical loan terms.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Read exclusions for negative equity rolled from a trade-in.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm gap ends when loan balance drops below ACV—cancel to save premium.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pair with adequate collision and UM/UIM limits from /guides/auto-insurance-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "If totaled, follow /claims/guides/auto-total-loss-claim-guide-2026 before signing releases.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is gap required by law? A: No—lenders may require it contractually on high LTV loans but states do not mandate gap for all buyers.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does gap cover my deductible? A: Usually no—gap pays loan shortfall after ACV; you still pay the collision deductible unless a waiver applies.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I buy gap after I drive off the lot? A: Often yes within 30 days through your auto insurer; dealer gap is typically only at signing.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "UM/UIM limits: /guides/auto-um-uim-coverage-deep-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Uninsured driver claims: /claims/guides/auto-uninsured-motorist-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare auto carriers: /insurance/auto",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-13T08:19:49.304Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-09T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Gap Insurance Buying Guide 2026 | Loan & Lease",
+        "metaDescription": "Gap insurance guide for 2026: when a total loss leaves you owing more than ACV, compare lender gap, carrier endorsement, and standalone policies."
+      },
+      "updatedAt": "2026-06-13T08:19:49.310Z",
+      "createdAt": "2026-06-13T08:19:26.299Z",
+      "_status": "published"
+    },
+    {
       "id": 28,
       "title": "Renters Sublease Insurance Guide (2026): Airbnb, Guests, and Coverage Gaps",
       "slug": "renters-sublease-coverage-guide-2026",
@@ -65740,6 +66958,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W3 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Uninsured motorist claims: /claims/guides/auto-uninsured-motorist-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Gap insurance when UM/UIM does not cover loan shortfall: /guides/auto-gap-insurance-buying-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -65755,12 +67041,12 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-09T12:00:00.000Z",
       "seo": {
         "metaTitle": "UM/UIM Auto Insurance Guide 2026 | Insurhi",
         "metaDescription": "Deep guide to uninsured and underinsured motorist coverage: limits, stacking rules, claim scenarios, and how to compare UM/UIM before buying auto insurance."
       },
-      "updatedAt": "2026-06-02T00:40:26.691Z",
+      "updatedAt": "2026-06-13T08:19:49.475Z",
       "createdAt": "2026-05-20T06:54:29.534Z",
       "_status": "published"
     },
@@ -78215,6 +79501,120 @@
   ],
   "faqItems": [
     {
+      "id": 81,
+      "question": "How should I document home water damage in the first 48 hours?",
+      "answer": "Shut off water, photograph all affected rooms before cleanup, save plumber invoices, log discovery time, and start mitigation with dated receipts. Notify your carrier the same day when possible. A room-by-room inventory speeds personal property settlement.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-13T08:19:49.462Z",
+      "createdAt": "2026-06-13T08:19:26.383Z"
+    },
+    {
+      "id": 80,
+      "question": "What is the difference between flood insurance and water backup coverage?",
+      "answer": "Flood covers rising external water (rivers, storm surge). Water backup covers sewer or sump overflow through your plumbing system. Most HO-3 policies need a backup endorsement and separate flood policy for full water protection. Compare in /guides/flood-vs-water-backup-buying-guide-2026.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-13T08:19:49.454Z",
+      "createdAt": "2026-06-13T08:19:26.376Z"
+    },
+    {
+      "id": 79,
+      "question": "Does homeowners insurance cover a slow pipe leak behind a wall?",
+      "answer": "Usually not if the leak is gradual maintenance—carriers often deny long-term seepage. Sudden pipe bursts are typically covered. Document discovery time and get a plumber report stating the failure mode. See /claims/guides/home-water-damage-claim-guide-2026.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-13T08:19:49.446Z",
+      "createdAt": "2026-06-13T08:19:26.367Z"
+    },
+    {
+      "id": 78,
+      "question": "How long do I have to file a UM claim after a hit-and-run?",
+      "answer": "Many policies require prompt notice and a police report within 24–72 hours for hit-and-run UM property damage. BI claims may have longer windows but delay weakens witness evidence. File as soon as safely possible after the incident.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-13T08:19:49.432Z",
+      "createdAt": "2026-06-13T08:19:26.363Z"
+    },
+    {
+      "id": 77,
+      "question": "Is gap insurance worth it if I put 20% down on a car loan?",
+      "answer": "Often less critical than with 0% down, but still worth modeling: if your loan term is 72+ months or the vehicle depreciates quickly, a shortfall can exist in years 2–3. Compare lender gap cost to an insurer endorsement in /guides/auto-gap-insurance-buying-guide-2026.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-13T08:19:49.414Z",
+      "createdAt": "2026-06-13T08:19:26.357Z"
+    },
+    {
+      "id": 76,
+      "question": "What does uninsured motorist coverage pay when the at-fault driver has no insurance?",
+      "answer": "UM/UIM can pay your bodily injury and, in many states, property damage when an uninsured or underinsured driver causes a covered accident. Limits match what you purchased on your declarations page—not the other driver's nonexistent policy. See /claims/guides/auto-uninsured-motorist-claim-guide-2026 for filing steps.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-13T08:19:49.405Z",
+      "createdAt": "2026-06-13T08:19:26.345Z"
+    },
+    {
       "id": 75,
       "question": "Does no-exam life insurance cost more than a fully underwritten policy?",
       "answer": "Often yes—carriers price accelerated or simplified-issue policies for speed and slightly higher mortality risk. If you qualify for preferred rates with an exam, fully underwritten term is usually cheaper per $1,000 of coverage. No-exam still wins when health issues would table-rate a traditional application.",
@@ -80833,27 +82233,35 @@
       ],
       "nextActions": [
         {
-          "id": "6a1653a5abefb0405cd5b5c7",
+          "id": "6a2d12a5500e294c2fdbe5fe",
+          "action": "Water damage walkthrough: /claims/guides/home-water-damage-claim-guide-2026"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5ff",
+          "action": "Endorsement gaps for backup and flood: /guides/flood-vs-water-backup-buying-guide-2026"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe600",
           "action": "Get a written copy of any denial or settlement decision before accepting any payment."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5c8",
+          "id": "6a2d12a5500e294c2fdbe601",
           "action": "Request a re-inspection with your contractor present if the adjuster's estimate misses identified damage."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5c9",
+          "id": "6a2d12a5500e294c2fdbe602",
           "action": "Hire a licensed public adjuster on a percentage basis for losses above $25,000 if the carrier's offer feels light—shop fees carefully."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5ca",
+          "id": "6a2d12a5500e294c2fdbe603",
           "action": "Use your state's mediation or appraisal clause (if your policy has one) before filing a lawsuit—it is faster and cheaper."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5cb",
+          "id": "6a2d12a5500e294c2fdbe604",
           "action": "File a complaint with your state Department of Insurance for delays beyond statutory prompt-pay deadlines."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5cc",
+          "id": "6a2d12a5500e294c2fdbe605",
           "action": "Consult a licensed insurance attorney before signing any release if the loss is large or the offer is significantly below repair estimates."
         }
       ],
@@ -80888,9 +82296,159 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "updatedAt": "2026-06-02T00:40:27.318Z",
+      "lastReviewedAt": "2026-06-09T12:00:00.000Z",
+      "updatedAt": "2026-06-13T08:19:49.514Z",
       "createdAt": "2026-04-22T07:53:42.850Z"
+    },
+    {
+      "id": 17,
+      "title": "Home Water Damage Claim Guide (2026): Burst Pipes, Appliance Leaks, and Gradual Seepage",
+      "slug": "home-water-damage-claim-guide-2026",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "steps": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5e5",
+          "step": "Shut off water at the main or appliance supply and run mitigation (fans, dehumidifiers, tarp) within hours."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5e6",
+          "step": "Photograph and video all affected areas before permanent cleanup—include moisture readings if available."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5e7",
+          "step": "Document when you discovered the loss and whether the source was sudden (burst pipe) vs long-term seepage."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5e8",
+          "step": "Call your carrier to file a claim; request an emergency mitigation vendor if your policy includes one."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5e9",
+          "step": "Keep invoices for emergency dry-out, hotel stays (ALE), and damaged contents with replacement-cost estimates."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5ea",
+          "step": "Meet the adjuster with your contractor present if estimates diverge; submit supplemental damage lists in writing."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5eb",
+          "item": "Policy number and property address"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5ec",
+          "item": "Timestamped photos/video of water lines, stains, and damaged contents"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5ed",
+          "item": "Plumber or appliance repair invoice identifying sudden cause"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5ee",
+          "item": "Mitigation company drying logs and equipment invoices"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5ef",
+          "item": "Room-by-room personal property inventory with ages and values"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5f0",
+          "item": "ALE receipts if the home is uninhabitable"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/home",
+      "denialReasons": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5f1",
+          "reason": "Gradual leak or long-term seepage classified as maintenance",
+          "explanation": "HO-3 policies cover sudden and accidental water—not slow pipe corrosion or months-old shower pan failure. Discovery date and plumber reports are critical."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5f2",
+          "reason": "Flood or groundwater exclusion",
+          "explanation": "Rising surface water, storm surge, and groundwater intrusion require separate flood insurance—not standard homeowners coverage."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5f3",
+          "reason": "Water backup without endorsement",
+          "explanation": "Sewer or sump pump backup often needs a water-backup endorsement. Standard policies exclude it unless added."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5f4",
+          "reason": "Failure to mitigate after discovery",
+          "explanation": "Policies require reasonable steps to prevent mold and further damage. Delayed dry-out can shrink payable amounts."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5f5",
+          "cause": "Cause-of-loss dispute between plumber and adjuster",
+          "explanation": "If the carrier classifies damage as gradual, they may pause pending a second inspection. Bring the plumber to the re-inspection."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5f6",
+          "cause": "Recoverable depreciation holdback until repairs complete",
+          "explanation": "RCV policies may hold back depreciation until work is finished and invoiced—procedural delay, not denial."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5f7",
+          "cause": "CAT-event adjuster backlog after regional freezes or storms",
+          "explanation": "Widespread pipe-burst events can delay inspections 2–4 weeks. Emergency mitigation should still start immediately."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5f8",
+          "action": "Request written denial citing the exact policy exclusion before accepting a partial payment."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5f9",
+          "action": "Review backup vs flood endorsements in /guides/flood-vs-water-backup-buying-guide-2026."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5fa",
+          "action": "For hail or wind combined events, cross-read /claims/guides/home-hail-damage-claim-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5fb",
+          "note": "Email the carrier a one-page timeline: discovery time, shutoff time, mitigation start, and adjuster visits."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5fc",
+          "note": "Do not discard damaged materials until the adjuster confirms in writing that inspection is complete."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5fd",
+          "note": "Separate flood (NFIP/private) from homeowners claims—do not assume one adjuster handles both."
+        }
+      ],
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-09T12:00:00.000Z",
+      "updatedAt": "2026-06-13T08:19:49.347Z",
+      "createdAt": "2026-06-13T08:19:26.317Z"
     },
     {
       "id": 11,
@@ -82731,6 +84289,156 @@
       "lastReviewedAt": "2026-06-08T14:00:00.000Z",
       "updatedAt": "2026-06-12T06:34:40.940Z",
       "createdAt": "2026-06-12T00:49:24.825Z"
+    },
+    {
+      "id": 16,
+      "title": "Uninsured Motorist Claim Guide (2026): Hit-and-Run, No Insurance, and UM/UIM Payouts",
+      "slug": "auto-uninsured-motorist-claim-guide-2026",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "steps": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5cc",
+          "step": "Call police for any hit-and-run or injury accident and get a report number before leaving the scene."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5cd",
+          "step": "Photograph all vehicles, damage, plates (if visible), skid marks, and witness contact information."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5ce",
+          "step": "Notify your carrier immediately—many policies require prompt notice for UM/UIM claims."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5cf",
+          "step": "Request the at-fault driver's insurance status in writing; if none, confirm UM/UIM applies on your declarations page."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5d0",
+          "step": "Submit medical records, repair estimates, and the police report to your adjuster with a written timeline."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5d1",
+          "step": "If liability is disputed, ask whether arbitration or mediation is available under your policy before suing."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5d2",
+          "item": "Police report or incident number (required for most hit-and-run UM claims)"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5d3",
+          "item": "Photos and video from the scene with timestamps"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5d4",
+          "item": "Witness names and phone numbers"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5d5",
+          "item": "Medical bills and provider treatment notes if injured"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5d6",
+          "item": "Repair estimates or total-loss valuation documents"
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5d7",
+          "item": "Copy of your declarations page showing UM/UIM limits"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/auto",
+      "denialReasons": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5d8",
+          "reason": "UM/UIM not purchased or below state minimum",
+          "explanation": "UM/UIM is optional in some states. If you declined it or carry limits lower than your liability, there may be no coverage for an uninsured driver loss."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5d9",
+          "reason": "Hit-and-run not reported to police within required timeframe",
+          "explanation": "Many policies require a police report within 24–72 hours for hit-and-run UM property damage. Late reports can void coverage."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5da",
+          "reason": "Fault disputed—you are majority at fault",
+          "explanation": "UM/UIM pays when the other driver is uninsured and typically when you are not primarily at fault. Comparative negligence rules vary by state."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5db",
+          "reason": "Policy exclusion for household member as driver",
+          "explanation": "If an excluded driver caused the loss, UM/UIM may not respond even when the other party is uninsured."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5dc",
+          "cause": "Investigation to confirm the other driver is uninsured",
+          "explanation": "Carriers verify the at-fault party has no active policy before paying UM. This can take 2–6 weeks if records are unclear."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5dd",
+          "cause": "Medical treatment ongoing before BI settlement",
+          "explanation": "UM bodily injury claims often wait until treatment stabilizes. Keep treating and documenting—do not accept a quick close if injuries persist."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5de",
+          "cause": "Arbitration between carriers on fault percentage",
+          "explanation": "When fault is split, UM payment may be reduced by your negligence percentage until arbitration resolves the split."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5df",
+          "action": "Request denial or partial denial in writing with the policy section cited."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5e0",
+          "action": "Compare your UM/UIM limits to liability limits in /guides/auto-um-uim-coverage-deep-guide-2026."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5e1",
+          "action": "For total loss with a loan balance, see /claims/guides/auto-total-loss-claim-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a2d12a5500e294c2fdbe5e2",
+          "note": "Use the phrase 'uninsured motorist claim' and your policy number in every email subject line."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5e3",
+          "note": "Do not sign a release from the at-fault driver for small cash without checking UM rights—you may waive subrogation."
+        },
+        {
+          "id": "6a2d12a5500e294c2fdbe5e4",
+          "note": "Confirm whether UM property damage has a separate deductible from collision in your state."
+        }
+      ],
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-09T12:00:00.000Z",
+      "updatedAt": "2026-06-13T08:19:49.272Z",
+      "createdAt": "2026-06-13T08:19:26.265Z"
     }
   ],
   "claimCases": [

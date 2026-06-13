@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-12T06:41:04.324Z",
+    "exportedAt": "2026-06-13T08:14:25.518Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -55415,6 +55415,66 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G note: Before renewal in high-risk counties, request written confirmation of wildfire mitigation credits and any separate wildfire or brush deductibles. If non-renewal is threatened, start FAIR Plan research at day 30—not day 5 before lapse.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Pair this guide with dwelling limit review in /guides/home-replacement-cost-vs-acv-deep-guide-2026—under-insured homes face coinsurance penalties after wildfire losses even when fire coverage itself responds.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G top-up 2: Keep receipts for defensible-space work (tree trimming, vent screens)—some carriers audit mitigation before renewing in tier 2 wildfire zones.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -55435,7 +55495,7 @@
         "metaTitle": "Home Wildfire Endorsement Guide 2026 | Coverage Gaps",
         "metaDescription": "Compare home wildfire endorsements, FAIR-plan gaps, and deductible trade-offs. Use a practical checklist to improve claim readiness before wildfire season."
       },
-      "updatedAt": "2026-06-12T06:40:58.775Z",
+      "updatedAt": "2026-06-13T08:13:40.518Z",
       "createdAt": "2026-06-09T01:15:49.582Z",
       "_status": "published"
     },
@@ -56074,6 +56134,46 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G note: Re-quote when the teen gets a license (not just a permit) and again at the first claim-free renewal. Some carriers move teens to adult rates at 21; others keep youthful surcharges until 25.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "If the teen buys their own vehicle, compare insuring it on the household policy versus a standalone policy—the household policy usually wins on price but ties all drivers to one claim record.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -56094,7 +56194,7 @@
         "metaTitle": "Teen Driver Auto Insurance Guide 2026 | Add-a-Teen Costs",
         "metaDescription": "Compare add-a-teen auto insurance costs, liability limits, and deductible strategy. Use a practical checklist to control premium spikes and avoid claim gaps."
       },
-      "updatedAt": "2026-06-12T06:40:58.869Z",
+      "updatedAt": "2026-06-13T08:13:22.218Z",
       "createdAt": "2026-06-08T07:34:58.271Z",
       "_status": "published"
     },
@@ -57586,6 +57686,124 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 1
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: first apartment with $25,000 contents",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A 24-year-old signs a lease requiring $100,000 liability. A $20,000 contents limit HO-4 costs about $18/month. A kitchen fire destroys $4,000 of belongings—the policy pays replacement cost minus a $500 deductible after the claim is documented. Without renters insurance, the landlord's policy would not cover the tenant's furniture or electronics.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: laptop stolen from a coffee shop",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Off-premises theft is often covered but electronics sub-limits may cap at $1,500. Filing a police report within 24 hours and listing serial numbers from a pre-loss inventory speeds reimbursement. See /guides/renters-theft-claim-evidence-deep-guide-2026 for evidence habits that also help water and fire claims.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G note: Send your landlord a certificate of insurance (COI) at move-in and after each renewal. Many leases require $100,000 liability minimum; hosting or subletting requires written disclosure to avoid business-use exclusions.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Bundle with auto only after comparing contents limits—bundled renters policies sometimes default to thin personal property coverage that does not match your inventory.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -57606,7 +57824,7 @@
         "metaTitle": "Renters Insurance Basics 2026 | Cost & Coverage",
         "metaDescription": "Renters insurance basics for 2026: what HO-4 covers, typical $15–$30/month costs, liability limits, and roommate gaps before you buy a policy."
       },
-      "updatedAt": "2026-06-12T01:28:48.991Z",
+      "updatedAt": "2026-06-13T08:13:22.242Z",
       "createdAt": "2026-04-21T09:51:14.667Z",
       "_status": "published"
     },
@@ -73010,6 +73228,66 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G note: If roommates split premium 50/50 but one owns 70% of contents value, consider separate policies or a written cost-sharing agreement—the policy pays the named insured, not the split you agreed on verbally.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Guest injuries in common areas can trigger liability on any named insured's policy; clarify alcohol and party rules before signing a joint lease.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G top-up 2: Add each roommate as a named insured only if they agree to shared claim history—one theft claim affects everyone's renewal pricing on a joint policy.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -73030,7 +73308,7 @@
         "metaTitle": "Renters Roommate Coverage Guide 2026 | Shared vs Individual",
         "metaDescription": "How renters insurance works with roommates: property split rules, liability boundaries, deductibles, and when each adult needs an own policy."
       },
-      "updatedAt": "2026-06-12T06:40:58.793Z",
+      "updatedAt": "2026-06-13T08:13:40.553Z",
       "createdAt": "2026-04-28T08:26:44.837Z",
       "_status": "published"
     },
@@ -73688,6 +73966,66 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G note: If you use mail-order drugs, confirm the new Part D plan's pharmacy network in November—formulary tiers can change even when the drug name stays the same.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Document every plan ID card change in January and notify your doctors' billing offices to reduce crossover billing errors covered in /claims/guides/medicare-billing-error-claim-guide-2026.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G top-up 2: If you miss AEP, document any Special Enrollment Period trigger (move, Medicaid change, plan exit) in writing before switching—carriers may request proof.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -73708,7 +74046,7 @@
         "metaTitle": "Medicare Enrollment Timing Guide 2026 | Avoid Gaps",
         "metaDescription": "Plan Medicare Annual Enrollment with deadline checkpoints, plan-switch strategy, and claim continuity tips to avoid coverage gaps and penalties."
       },
-      "updatedAt": "2026-06-12T06:40:58.812Z",
+      "updatedAt": "2026-06-13T08:13:40.572Z",
       "createdAt": "2026-04-28T08:26:44.820Z",
       "_status": "published"
     },
@@ -75038,6 +75376,106 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G note: Re-run your needs worksheet after any 20%+ salary change, new dependent, or new mortgage—layering a second term policy is often cheaper than replacing an in-force policy if health has changed.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Coordinate face amounts with employer group coverage so total death benefit matches goals without overpaying for duplicate term you do not need.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G top-up 2: Subtract employer-paid group life from your target before buying personal term—double-counting leads to over-insurance and wasted premium.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G top-up 3: Include final expenses ($15,000–$25,000) and six months of household cash buffer in your worksheet—not just income multiples.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G final: Review coverage every two years or after any major debt or dependent change.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -75058,7 +75496,7 @@
         "metaTitle": "Life Coverage Amount Guide 2026 | Avoid Gaps",
         "metaDescription": "Estimate life coverage using income, debt, and childcare costs. Compare premium fit and claim support signals to avoid underinsurance and keep budget control."
       },
-      "updatedAt": "2026-06-12T06:40:58.839Z",
+      "updatedAt": "2026-06-13T08:14:06.111Z",
       "createdAt": "2026-04-23T06:15:29.630Z",
       "_status": "published"
     },
@@ -75713,6 +76151,66 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G note: Ask your carrier how many at-fault claims trigger surcharge tiers in your state—two small collision claims in three years can cost more in renewal premium than years of deductible savings.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Glass claims may not count toward claim frequency in some states; confirm before you skip a comprehensive glass repair to protect a claim-free discount on collision.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G top-up 2: Pair UM/UIM limit review with deductible changes—raising collision deductible while keeping state minimum UM leaves you exposed on injury claims, not just repair bills.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -75733,7 +76231,7 @@
         "metaTitle": "Auto Deductible Strategy Guide 2026 | High vs Low",
         "metaDescription": "Compare high vs low auto deductibles by driver profile and claim risk. Use a checklist to balance premium savings with manageable out-of-pocket costs."
       },
-      "updatedAt": "2026-06-12T06:40:58.904Z",
+      "updatedAt": "2026-06-13T08:13:40.609Z",
       "createdAt": "2026-04-23T06:32:51.814Z",
       "_status": "published"
     },
@@ -77533,6 +78031,163 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 1
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: fender-bender with state minimum liability",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A driver with 25/50/25 limits rear-ends a sedan carrying three passengers. Medical bills exceed $80,000 and the driver faces a judgment above policy limits. Umbrella or higher BI limits ($100/300) would have absorbed most of the exposure—state minimums protect licenses, not assets.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: deer strike with comprehensive only",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A financed truck hits a deer causing $3,200 damage. The lender requires comprehensive; collision is not triggered because no other vehicle was involved. The owner pays comprehensive deductible ($500) and the lender's gap coverage is unnecessary because the truck is repairable, not totaled.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Which coverage pays for a hit-and-run when I only have liability? A: Usually nothing on liability-only policies—you need uninsured motorist property damage or collision for your car.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is PIP the same as medical payments? A: No—PIP is broader (lost wages, rehab) in no-fault states; med pay is a smaller medical-only add-on elsewhere.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Batch G note: When comparing quotes, require identical liability, UM/UIM, and deductible settings—carriers often quote different coverage mixes that make premium comparisons misleading.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
             }
           ],
           "direction": null
@@ -77553,12 +78208,69 @@
         "metaTitle": "Auto Insurance Types Explained 2026 | Coverage Guide",
         "metaDescription": "Understand auto liability, collision, comprehensive, UM/UIM, and PIP. Learn what each coverage type protects and how limits work in 2026."
       },
-      "updatedAt": "2026-06-12T01:28:48.976Z",
+      "updatedAt": "2026-06-13T08:13:22.397Z",
       "createdAt": "2026-04-21T09:23:41.709Z",
       "_status": "published"
     }
   ],
   "faqItems": [
+    {
+      "id": 75,
+      "question": "Does no-exam life insurance cost more than a fully underwritten policy?",
+      "answer": "Often yes—carriers price accelerated or simplified-issue policies for speed and slightly higher mortality risk. If you qualify for preferred rates with an exam, fully underwritten term is usually cheaper per $1,000 of coverage. No-exam still wins when health issues would table-rate a traditional application.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-13T08:14:06.152Z",
+      "createdAt": "2026-06-13T08:13:22.467Z"
+    },
+    {
+      "id": 74,
+      "question": "Is employer group life insurance enough without a personal policy?",
+      "answer": "Usually not for families relying on your income. Group coverage often equals 1–2× salary and ends when employment ends. A personal term policy fills gaps during job changes and provides portable coverage you control. Compare needs in /guides/life-coverage-amount-planning-guide-2026.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-13T08:14:06.145Z",
+      "createdAt": "2026-06-13T08:13:22.459Z"
+    },
+    {
+      "id": 73,
+      "question": "How do I change life insurance beneficiaries after divorce?",
+      "answer": "Submit a beneficiary change form to the carrier with the new primary and contingent names. Divorce decrees do not automatically update policies—your ex may remain beneficiary until the insurer processes the form. Keep a confirmation letter and store it with your estate documents. See /guides/life-beneficiary-claim-deep-guide-2026 for payout timing after updates.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-13T08:14:06.139Z",
+      "createdAt": "2026-06-13T08:13:22.427Z"
+    },
     {
       "id": 72,
       "question": "Will a slow plumbing leak be covered if I discovered it after several weeks?",

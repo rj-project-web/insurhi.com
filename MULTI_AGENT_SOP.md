@@ -195,6 +195,11 @@
 ### 9.4 内容治理规则（Agent B 发布前必跑）
 
 - **分类**：`articles` / `claims-guides` / `faq-items` 必须绑定正确 `category`。
+- **Slug（URL）**：
+  - **常青 URL**：`articles` / `claims-guides` 的 `slug` **不写年份**（例：`auto-gap-insurance-buying-guide`，非 `…-guide-2026`）。
+  - **时效写在标题与 SEO**：`title` / `metaTitle` 可含 `(2026)` 或 `2026`；`lastReviewedAt` 负责前台「最近审核」展示。
+  - **已发布带 `-2026` 的 W3/W4 文**：已迁移为无年份 slug；旧 URL 由 `lib/content-slug-redirects.ts` 301 到新路径。
+  - **历史深度文**（如 `auto-um-uim-coverage-deep-guide-2026`）：暂不批量改 slug；新增长尾从 W5 起一律无年份。
 - **SEO**：`metaTitle` 30–60 字；`metaDescription` 110–160 字。
 - **外链黑名单**（禁止写入 `sources.url` 或正文链接）：`medicare.gov`、`content.naic.org`（可按需扩展）。
 - **深度 vs 模板**：每周至少 1 篇含 Scenario + 独立结论，不得整站同构换标题。

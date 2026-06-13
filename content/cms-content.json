@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-13T08:33:05.843Z",
+    "exportedAt": "2026-06-13T08:38:48.368Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51061,7 +51061,7 @@
     {
       "id": 32,
       "title": "Medicare Part D Formulary Guide (2026): Drug Tiers, Exceptions, and Switching Plans",
-      "slug": "medicare-part-d-formulary-guide-2026",
+      "slug": "medicare-part-d-formulary-guide",
       "category": {
         "id": 5,
         "title": "Medicare Supplement Insurance",
@@ -51702,14 +51702,14 @@
         "metaTitle": "Medicare Part D Formulary Guide 2026 | Drug Tiers",
         "metaDescription": "Part D formulary guide for 2026: drug tiers, prior authorization, step therapy, formulary exceptions, and when to switch plans during Open Enrollment."
       },
-      "updatedAt": "2026-06-13T08:33:04.304Z",
+      "updatedAt": "2026-06-13T08:38:46.982Z",
       "createdAt": "2026-06-13T08:33:04.304Z",
       "_status": "published"
     },
     {
       "id": 31,
       "title": "Life Policy Lapse & Reinstatement Guide (2026): Grace Periods, Exams, and Coverage Gaps",
-      "slug": "life-policy-lapse-reinstatement-guide-2026",
+      "slug": "life-policy-lapse-reinstatement-guide",
       "category": {
         "id": 2,
         "title": "Life Insurance",
@@ -52240,7 +52240,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Claim delays after lapse disputes: /claims/guides/life-claim-delay-denial-guide-2026",
+                      "text": "Claim delays after lapse disputes: /claims/guides/life-claim-delay-denial-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -52311,14 +52311,14 @@
         "metaTitle": "Life Policy Lapse & Reinstatement Guide 2026",
         "metaDescription": "Missed a life insurance premium? Learn grace periods, reinstatement windows, health exams, and how lapse affects claims before you let coverage lapse."
       },
-      "updatedAt": "2026-06-13T08:33:04.257Z",
+      "updatedAt": "2026-06-13T08:38:47.071Z",
       "createdAt": "2026-06-13T08:33:04.256Z",
       "_status": "published"
     },
     {
       "id": 30,
       "title": "Flood vs Water Backup Insurance Guide (2026): NFIP, Endorsements, and Coverage Gaps",
-      "slug": "flood-vs-water-backup-buying-guide-2026",
+      "slug": "flood-vs-water-backup-buying-guide",
       "category": {
         "id": 3,
         "title": "Home Insurance",
@@ -52702,7 +52702,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "After a loss, use /claims/guides/home-water-damage-claim-guide-2026 for FNOL steps.",
+                      "text": "After a loss, use /claims/guides/home-water-damage-claim-guide for FNOL steps.",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -52849,7 +52849,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Home water damage claims: /claims/guides/home-water-damage-claim-guide-2026",
+                      "text": "Home water damage claims: /claims/guides/home-water-damage-claim-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -52920,14 +52920,14 @@
         "metaTitle": "Flood vs Water Backup Guide 2026 | Home Coverage",
         "metaDescription": "Compare flood insurance with water backup endorsements: what each covers, typical costs, and how to avoid common denial gaps in 2026."
       },
-      "updatedAt": "2026-06-13T08:19:49.379Z",
+      "updatedAt": "2026-06-13T08:38:47.087Z",
       "createdAt": "2026-06-13T08:19:26.333Z",
       "_status": "published"
     },
     {
       "id": 29,
       "title": "Gap Insurance Buying Guide (2026): Loans, Leases, and Total Loss Shortfalls",
-      "slug": "auto-gap-insurance-buying-guide-2026",
+      "slug": "auto-gap-insurance-buying-guide",
       "category": {
         "id": 1,
         "title": "Auto Insurance",
@@ -53477,7 +53477,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Uninsured driver claims: /claims/guides/auto-uninsured-motorist-claim-guide-2026",
+                      "text": "Uninsured driver claims: /claims/guides/auto-uninsured-motorist-claim-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -53529,7 +53529,7 @@
         "metaTitle": "Gap Insurance Buying Guide 2026 | Loan & Lease",
         "metaDescription": "Gap insurance guide for 2026: when a total loss leaves you owing more than ACV, compare lender gap, carrier endorsement, and standalone policies."
       },
-      "updatedAt": "2026-06-13T08:19:49.310Z",
+      "updatedAt": "2026-06-13T08:38:47.104Z",
       "createdAt": "2026-06-13T08:19:26.299Z",
       "_status": "published"
     },
@@ -56225,7 +56225,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Claim delays and denials: /claims/guides/life-claim-delay-denial-guide-2026",
+                      "text": "Claim delays and denials: /claims/guides/life-claim-delay-denial-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -56244,7 +56244,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Lapse and reinstatement before a claim: /guides/life-policy-lapse-reinstatement-guide-2026",
+                      "text": "Lapse and reinstatement before a claim: /guides/life-policy-lapse-reinstatement-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -56277,7 +56277,7 @@
         "metaTitle": "Life Beneficiary Claim Deep Guide 2026 | Setup Tips",
         "metaDescription": "Deep guide for life insurance beneficiaries: naming rules, minor-child structures, claim document prep, and links to contestability-period claim support."
       },
-      "updatedAt": "2026-06-13T08:33:04.395Z",
+      "updatedAt": "2026-06-13T08:38:47.187Z",
       "createdAt": "2026-05-27T00:53:45.366Z",
       "_status": "published"
     },
@@ -68319,7 +68319,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Uninsured motorist claims: /claims/guides/auto-uninsured-motorist-claim-guide-2026",
+                      "text": "Uninsured motorist claims: /claims/guides/auto-uninsured-motorist-claim-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -68338,7 +68338,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Gap insurance when UM/UIM does not cover loan shortfall: /guides/auto-gap-insurance-buying-guide-2026",
+                      "text": "Gap insurance when UM/UIM does not cover loan shortfall: /guides/auto-gap-insurance-buying-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -68371,7 +68371,7 @@
         "metaTitle": "UM/UIM Auto Insurance Guide 2026 | Insurhi",
         "metaDescription": "Deep guide to uninsured and underinsured motorist coverage: limits, stacking rules, claim scenarios, and how to compare UM/UIM before buying auto insurance."
       },
-      "updatedAt": "2026-06-13T08:19:49.475Z",
+      "updatedAt": "2026-06-13T08:38:47.215Z",
       "createdAt": "2026-05-20T06:54:29.534Z",
       "_status": "published"
     },
@@ -70297,7 +70297,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Part D formulary and drug tiers: /guides/medicare-part-d-formulary-guide-2026",
+                      "text": "Part D formulary and drug tiers: /guides/medicare-part-d-formulary-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -70349,7 +70349,7 @@
         "metaTitle": "Medigap Plan G, N & HD-G Comparison Guide (2026) | Insurhi",
         "metaDescription": "Medigap Plan G, Plan N, and high-deductible Plan G compared for 2026: benefits, pricing methods, household discounts, and switching plans without underwriting."
       },
-      "updatedAt": "2026-06-13T08:33:04.425Z",
+      "updatedAt": "2026-06-13T08:38:47.129Z",
       "createdAt": "2026-05-27T00:53:45.433Z",
       "_status": "published"
     },
@@ -71320,7 +71320,7 @@
                   "children": [
                     {
                       "mode": "normal",
-                      "text": "Allergy and chronic skin claims: /claims/guides/pet-allergy-claim-guide-2026",
+                      "text": "Allergy and chronic skin claims: /claims/guides/pet-allergy-claim-guide",
                       "type": "text",
                       "style": "",
                       "detail": 0,
@@ -71372,7 +71372,7 @@
         "metaTitle": "Pet Insurance Pre-Existing & Waiting Periods 2026 | Insurhi",
         "metaDescription": "Pet insurance pre-existing conditions and waiting periods for 2026: bilateral exclusions, curable vs incurable, and what to document before filing claims."
       },
-      "updatedAt": "2026-06-13T08:33:04.454Z",
+      "updatedAt": "2026-06-13T08:38:47.153Z",
       "createdAt": "2026-05-27T00:53:45.397Z",
       "_status": "published"
     },
@@ -80983,7 +80983,7 @@
     {
       "id": 86,
       "question": "Will pet insurance cover chronic allergy treatment like Apoquel or Cytopoint?",
-      "answer": "Often yes on illness plans if atopy is not pre-existing and waiting periods have passed—but maintenance allergy care may hit annual limits quickly. Accident-only plans exclude chronic allergies. See /claims/guides/pet-allergy-claim-guide-2026 for denial patterns.",
+      "answer": "Often yes on illness plans if atopy is not pre-existing and waiting periods have passed—but maintenance allergy care may hit annual limits quickly. Accident-only plans exclude chronic allergies. See /claims/guides/pet-allergy-claim-guide for denial patterns.",
       "category": {
         "id": 4,
         "title": "Pet insurance",
@@ -80996,7 +80996,7 @@
         "updatedAt": "2026-04-16T07:16:59.766Z",
         "createdAt": "2026-04-14T02:43:11.266Z"
       },
-      "updatedAt": "2026-06-13T08:33:04.359Z",
+      "updatedAt": "2026-06-13T08:38:47.655Z",
       "createdAt": "2026-06-13T08:33:04.359Z"
     },
     {
@@ -81021,7 +81021,7 @@
     {
       "id": 84,
       "question": "How do I request a Part D formulary exception for a drug not on the list?",
-      "answer": "Ask your prescriber to submit a formulary exception request with medical necessity documentation to your Part D plan. Include failed alternatives if required. Denied exceptions can be appealed with dated denial letters. Walkthrough: /guides/medicare-part-d-formulary-guide-2026.",
+      "answer": "Ask your prescriber to submit a formulary exception request with medical necessity documentation to your Part D plan. Include failed alternatives if required. Denied exceptions can be appealed with dated denial letters. Walkthrough: /guides/medicare-part-d-formulary-guide.",
       "category": {
         "id": 5,
         "title": "Medicare Supplement Insurance",
@@ -81034,13 +81034,13 @@
         "updatedAt": "2026-04-16T07:17:58.600Z",
         "createdAt": "2026-04-16T07:17:58.599Z"
       },
-      "updatedAt": "2026-06-13T08:33:04.349Z",
+      "updatedAt": "2026-06-13T08:38:47.661Z",
       "createdAt": "2026-06-13T08:33:04.349Z"
     },
     {
       "id": 83,
       "question": "Why is my life insurance beneficiary claim taking months to pay?",
-      "answer": "Delays often stem from contestability reviews in the first two policy years, incomplete death certificates, or beneficiary disputes. Request written status every 30 days. See /claims/guides/life-claim-delay-denial-guide-2026 for document checklists and escalation steps.",
+      "answer": "Delays often stem from contestability reviews in the first two policy years, incomplete death certificates, or beneficiary disputes. Request written status every 30 days. See /claims/guides/life-claim-delay-denial-guide for document checklists and escalation steps.",
       "category": {
         "id": 2,
         "title": "Life Insurance",
@@ -81053,7 +81053,7 @@
         "updatedAt": "2026-04-16T07:15:16.975Z",
         "createdAt": "2026-04-13T10:39:43.629Z"
       },
-      "updatedAt": "2026-06-13T08:33:04.337Z",
+      "updatedAt": "2026-06-13T08:38:47.668Z",
       "createdAt": "2026-06-13T08:33:04.337Z"
     },
     {
@@ -81097,7 +81097,7 @@
     {
       "id": 80,
       "question": "What is the difference between flood insurance and water backup coverage?",
-      "answer": "Flood covers rising external water (rivers, storm surge). Water backup covers sewer or sump overflow through your plumbing system. Most HO-3 policies need a backup endorsement and separate flood policy for full water protection. Compare in /guides/flood-vs-water-backup-buying-guide-2026.",
+      "answer": "Flood covers rising external water (rivers, storm surge). Water backup covers sewer or sump overflow through your plumbing system. Most HO-3 policies need a backup endorsement and separate flood policy for full water protection. Compare in /guides/flood-vs-water-backup-buying-guide.",
       "category": {
         "id": 3,
         "title": "Home Insurance",
@@ -81110,13 +81110,13 @@
         "updatedAt": "2026-04-16T07:16:13.426Z",
         "createdAt": "2026-04-13T14:08:21.606Z"
       },
-      "updatedAt": "2026-06-13T08:19:49.454Z",
+      "updatedAt": "2026-06-13T08:38:47.676Z",
       "createdAt": "2026-06-13T08:19:26.376Z"
     },
     {
       "id": 79,
       "question": "Does homeowners insurance cover a slow pipe leak behind a wall?",
-      "answer": "Usually not if the leak is gradual maintenance—carriers often deny long-term seepage. Sudden pipe bursts are typically covered. Document discovery time and get a plumber report stating the failure mode. See /claims/guides/home-water-damage-claim-guide-2026.",
+      "answer": "Usually not if the leak is gradual maintenance—carriers often deny long-term seepage. Sudden pipe bursts are typically covered. Document discovery time and get a plumber report stating the failure mode. See /claims/guides/home-water-damage-claim-guide.",
       "category": {
         "id": 3,
         "title": "Home Insurance",
@@ -81129,7 +81129,7 @@
         "updatedAt": "2026-04-16T07:16:13.426Z",
         "createdAt": "2026-04-13T14:08:21.606Z"
       },
-      "updatedAt": "2026-06-13T08:19:49.446Z",
+      "updatedAt": "2026-06-13T08:38:47.685Z",
       "createdAt": "2026-06-13T08:19:26.367Z"
     },
     {
@@ -81154,7 +81154,7 @@
     {
       "id": 77,
       "question": "Is gap insurance worth it if I put 20% down on a car loan?",
-      "answer": "Often less critical than with 0% down, but still worth modeling: if your loan term is 72+ months or the vehicle depreciates quickly, a shortfall can exist in years 2–3. Compare lender gap cost to an insurer endorsement in /guides/auto-gap-insurance-buying-guide-2026.",
+      "answer": "Often less critical than with 0% down, but still worth modeling: if your loan term is 72+ months or the vehicle depreciates quickly, a shortfall can exist in years 2–3. Compare lender gap cost to an insurer endorsement in /guides/auto-gap-insurance-buying-guide.",
       "category": {
         "id": 1,
         "title": "Auto Insurance",
@@ -81167,13 +81167,13 @@
         "updatedAt": "2026-04-16T07:14:17.561Z",
         "createdAt": "2026-04-13T10:39:43.623Z"
       },
-      "updatedAt": "2026-06-13T08:19:49.414Z",
+      "updatedAt": "2026-06-13T08:38:47.695Z",
       "createdAt": "2026-06-13T08:19:26.357Z"
     },
     {
       "id": 76,
       "question": "What does uninsured motorist coverage pay when the at-fault driver has no insurance?",
-      "answer": "UM/UIM can pay your bodily injury and, in many states, property damage when an uninsured or underinsured driver causes a covered accident. Limits match what you purchased on your declarations page—not the other driver's nonexistent policy. See /claims/guides/auto-uninsured-motorist-claim-guide-2026 for filing steps.",
+      "answer": "UM/UIM can pay your bodily injury and, in many states, property damage when an uninsured or underinsured driver causes a covered accident. Limits match what you purchased on your declarations page—not the other driver's nonexistent policy. See /claims/guides/auto-uninsured-motorist-claim-guide for filing steps.",
       "category": {
         "id": 1,
         "title": "Auto Insurance",
@@ -81186,7 +81186,7 @@
         "updatedAt": "2026-04-16T07:14:17.561Z",
         "createdAt": "2026-04-13T10:39:43.623Z"
       },
-      "updatedAt": "2026-06-13T08:19:49.405Z",
+      "updatedAt": "2026-06-13T08:38:47.706Z",
       "createdAt": "2026-06-13T08:19:26.345Z"
     },
     {
@@ -83809,11 +83809,11 @@
       "nextActions": [
         {
           "id": "6a2d12a5500e294c2fdbe5fe",
-          "action": "Water damage walkthrough: /claims/guides/home-water-damage-claim-guide-2026"
+          "action": "Water damage walkthrough: /claims/guides/home-water-damage-claim-guide"
         },
         {
           "id": "6a2d12a5500e294c2fdbe5ff",
-          "action": "Endorsement gaps for backup and flood: /guides/flood-vs-water-backup-buying-guide-2026"
+          "action": "Endorsement gaps for backup and flood: /guides/flood-vs-water-backup-buying-guide"
         },
         {
           "id": "6a2d12a5500e294c2fdbe600",
@@ -83872,13 +83872,13 @@
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
       "lastReviewedAt": "2026-06-09T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:19:49.514Z",
+      "updatedAt": "2026-06-13T08:38:47.550Z",
       "createdAt": "2026-04-22T07:53:42.850Z"
     },
     {
       "id": 17,
       "title": "Home Water Damage Claim Guide (2026): Burst Pipes, Appliance Leaks, and Gradual Seepage",
-      "slug": "home-water-damage-claim-guide-2026",
+      "slug": "home-water-damage-claim-guide",
       "category": {
         "id": 3,
         "title": "Home Insurance",
@@ -83991,7 +83991,7 @@
         },
         {
           "id": "6a2d12a5500e294c2fdbe5f9",
-          "action": "Review backup vs flood endorsements in /guides/flood-vs-water-backup-buying-guide-2026."
+          "action": "Review backup vs flood endorsements in /guides/flood-vs-water-backup-buying-guide."
         },
         {
           "id": "6a2d12a5500e294c2fdbe5fa",
@@ -84022,7 +84022,7 @@
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
       "lastReviewedAt": "2026-06-09T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:19:49.347Z",
+      "updatedAt": "2026-06-13T08:38:47.414Z",
       "createdAt": "2026-06-13T08:19:26.317Z"
     },
     {
@@ -84238,7 +84238,7 @@
     {
       "id": 18,
       "title": "Life Insurance Claim Delay & Denial Guide (2026): Beneficiary Paperwork and Payout Timelines",
-      "slug": "life-claim-delay-denial-guide-2026",
+      "slug": "life-claim-delay-denial-guide",
       "category": {
         "id": 2,
         "title": "Life Insurance",
@@ -84355,7 +84355,7 @@
         },
         {
           "id": "6a2d15c0d491848c01d0bd6f",
-          "action": "Review lapse prevention in /guides/life-policy-lapse-reinstatement-guide-2026."
+          "action": "Review lapse prevention in /guides/life-policy-lapse-reinstatement-guide."
         }
       ],
       "communicationNotes": [
@@ -84382,7 +84382,7 @@
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
       "lastReviewedAt": "2026-06-14T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:33:04.285Z",
+      "updatedAt": "2026-06-13T08:38:47.350Z",
       "createdAt": "2026-06-13T08:33:04.284Z"
     },
     {
@@ -84520,11 +84520,11 @@
       "nextActions": [
         {
           "id": "6a2d15c0d491848c01d0bd8c",
-          "action": "Delay and denial walkthrough: /claims/guides/life-claim-delay-denial-guide-2026"
+          "action": "Delay and denial walkthrough: /claims/guides/life-claim-delay-denial-guide"
         },
         {
           "id": "6a2d15c0d491848c01d0bd8d",
-          "action": "Lapse disputes: /guides/life-policy-lapse-reinstatement-guide-2026"
+          "action": "Lapse disputes: /guides/life-policy-lapse-reinstatement-guide"
         },
         {
           "id": "6a2d15c0d491848c01d0bd8e",
@@ -84583,7 +84583,7 @@
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
       "lastReviewedAt": "2026-06-14T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:33:04.493Z",
+      "updatedAt": "2026-06-13T08:38:47.446Z",
       "createdAt": "2026-04-22T07:53:42.862Z"
     },
     {
@@ -85108,7 +85108,7 @@
     {
       "id": 19,
       "title": "Pet Allergy & Chronic Skin Claim Guide (2026): Atopy, Food Trials, and Pre-Existing Denials",
-      "slug": "pet-allergy-claim-guide-2026",
+      "slug": "pet-allergy-claim-guide",
       "category": {
         "id": 4,
         "title": "Pet insurance",
@@ -85252,7 +85252,7 @@
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
       "lastReviewedAt": "2026-06-14T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:33:04.317Z",
+      "updatedAt": "2026-06-13T08:38:47.024Z",
       "createdAt": "2026-06-13T08:33:04.317Z"
     },
     {
@@ -85786,7 +85786,7 @@
       "nextActions": [
         {
           "id": "6a2d15c0d491848c01d0bd94",
-          "action": "Allergy and atopy claims: /claims/guides/pet-allergy-claim-guide-2026"
+          "action": "Allergy and atopy claims: /claims/guides/pet-allergy-claim-guide"
         },
         {
           "id": "6a2d15c0d491848c01d0bd95",
@@ -85845,7 +85845,7 @@
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
       "lastReviewedAt": "2026-06-14T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:33:04.527Z",
+      "updatedAt": "2026-06-13T08:38:47.602Z",
       "createdAt": "2026-04-22T07:53:42.841Z"
     },
     {
@@ -86180,7 +86180,7 @@
     {
       "id": 16,
       "title": "Uninsured Motorist Claim Guide (2026): Hit-and-Run, No Insurance, and UM/UIM Payouts",
-      "slug": "auto-uninsured-motorist-claim-guide-2026",
+      "slug": "auto-uninsured-motorist-claim-guide",
       "category": {
         "id": 1,
         "title": "Auto Insurance",
@@ -86324,7 +86324,7 @@
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
       "lastReviewedAt": "2026-06-09T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:19:49.272Z",
+      "updatedAt": "2026-06-13T08:38:46.746Z",
       "createdAt": "2026-06-13T08:19:26.265Z"
     }
   ],

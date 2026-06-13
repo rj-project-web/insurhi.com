@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { guideSlugRedirects } from "./lib/content-slug-redirects";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -11,6 +12,13 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
+  },
+  async redirects() {
+    return guideSlugRedirects.map(({ source, destination }) => ({
+      source,
+      destination,
+      permanent: true,
+    }));
   },
 };
 

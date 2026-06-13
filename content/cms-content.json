@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-13T08:19:50.018Z",
+    "exportedAt": "2026-06-13T08:33:05.843Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51059,6 +51059,1263 @@
   ],
   "articles": [
     {
+      "id": 32,
+      "title": "Medicare Part D Formulary Guide (2026): Drug Tiers, Exceptions, and Switching Plans",
+      "slug": "medicare-part-d-formulary-guide-2026",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for Medicare beneficiaries who take brand or specialty drugs and need predictable pharmacy costs. Part D plans change formularies annually—verify your medications every fall, not only at initial enrollment.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "How formularies work",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Each plan publishes a drug list with tiers (generic, preferred brand, non-preferred, specialty).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Tier placement drives copays or coinsurance—same drug can sit on different tiers across plans.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Prior authorization (PA) and step therapy may be required before the plan pays.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Formulary exceptions",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Request an exception when your drug is not on the formulary or is on a high tier without a clinical equivalent.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Physician statement of medical necessity is usually required—start with your prescriber, not the pharmacy.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Appeal denied exceptions through the plan's Medicare appeals process with dated denial letters.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Part D vs Medigap drug coverage",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Medigap policies sold today do not include standalone drug coverage—you need a Part D plan or Medicare Advantage with drug benefits. Medigap Plan letters help with cost-sharing for services, not pharmacy tiers. Cross-read /guides/medicare-medigap-plan-letters-deep-guide-2026 for hospital and physician gaps Part D does not fill.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: specialty drug on tier 5",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A beneficiary takes a tier-5 specialty medication with 25% coinsurance until the Part D deductible and initial coverage limits apply. Comparing three plans during Open Enrollment shows one plan places the drug on tier 3 with a fixed copay—annual savings can exceed $2,000 despite higher monthly premium.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: drug removed mid-year",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A plan drops a maintenance drug from the formulary effective July 1. Beneficiaries may qualify for a one-time Special Enrollment Period or formulary exception for continuity of therapy—file before switching pharmacies to avoid cash-pay gaps.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Run every prescription through the plan's online formulary search before enrolling.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Check mail-order vs retail pricing for 90-day supplies.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm pharmacy network includes your preferred location.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review /guides/medicare-annual-enrollment-timing-guide-2026 for switch deadlines.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Billing disputes on EOB codes: /claims/guides/medicare-billing-error-claim-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I use GoodRx instead of Part D? A: You can, but cash prices do not count toward Part D catastrophic coverage—model total annual cost both ways.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: What is the Part D deductible in 2026? A: Plans may charge up to the annual cap set by CMS—compare premium plus deductible, not premium alone.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Do supplements cover insulin? A: Standard Medigap does not cover retail pharmacy drugs—you need Part D or qualifying Advantage drug coverage.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Medigap plan letters: /guides/medicare-medigap-plan-letters-deep-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Annual enrollment timing: /guides/medicare-annual-enrollment-timing-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare Medicare products: /insurance/medicare",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-13T08:33:04.303Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Medicare Part D Formulary Guide 2026 | Drug Tiers",
+        "metaDescription": "Part D formulary guide for 2026: drug tiers, prior authorization, step therapy, formulary exceptions, and when to switch plans during Open Enrollment."
+      },
+      "updatedAt": "2026-06-13T08:33:04.304Z",
+      "createdAt": "2026-06-13T08:33:04.304Z",
+      "_status": "published"
+    },
+    {
+      "id": 31,
+      "title": "Life Policy Lapse & Reinstatement Guide (2026): Grace Periods, Exams, and Coverage Gaps",
+      "slug": "life-policy-lapse-reinstatement-guide-2026",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for policyholders who missed a payment or are weighing whether to reinstate instead of buying new coverage. A lapse can void protection during the gap and complicate future claims—act inside the grace period when possible.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What lapse means",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Grace period: typically 30–31 days after due date; coverage may continue if premium is paid in full.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "After grace: policy lapses—death benefit is not payable unless reinstated or converted per contract terms.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Reinstatement: restore the same policy within a limited window (often 3–5 years) with back premiums and sometimes new underwriting.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Reinstatement vs new policy",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Reinstatement keeps original issue age and may avoid new contestability clock on some contracts—read your policy.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "New policy resets underwriting, pricing, and contestability—sometimes cheaper if health improved, often costlier if age increased.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Term policies nearing end of level period may be poor reinstatement candidates—compare conversion options first.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: missed autopay during job change",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A term policyholder misses two months of premiums. Month one falls inside grace—paying both months plus any fees reinstates without lapse. Month two beyond grace requires formal reinstatement application, health questions, and possibly labs. Death during the uncovered gap pays nothing.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: whole life with cash value",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A whole life policy lapses after extended non-payment. The insurer may have used automatic premium loan from cash value first—check ledgers before assuming coverage ended. Reinstatement may require repaying loans plus interest and missed premiums.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Enable autopay and calendar alerts 10 days before due date.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Request grace period length in writing from customer service.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "If lapsed, ask for reinstatement deadline and whether evidence of insurability is required.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare conversion to permanent coverage before letting term lapse at older age.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Beneficiaries should know carrier name and policy number—see /guides/life-beneficiary-claim-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does grace period coverage require paying late fees? A: Usually you owe the full premium; some carriers charge interest after grace ends but not during it.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I reinstate without a medical exam? A: Often yes within 30–90 days of lapse if health attestations are clean—longer lapses trigger full underwriting.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Will a lapsed policy affect a pending death claim? A: If death occurs after lapse and before reinstatement, the claim is typically denied unless premium was paid within grace.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claim delays after lapse disputes: /claims/guides/life-claim-delay-denial-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Buying coverage: /guides/life-insurance-buying-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Contestability claims: /claims/guides/life-contestability-period-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-13T08:33:04.251Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Life Policy Lapse & Reinstatement Guide 2026",
+        "metaDescription": "Missed a life insurance premium? Learn grace periods, reinstatement windows, health exams, and how lapse affects claims before you let coverage lapse."
+      },
+      "updatedAt": "2026-06-13T08:33:04.257Z",
+      "createdAt": "2026-06-13T08:33:04.256Z",
+      "_status": "published"
+    },
+    {
       "id": 30,
       "title": "Flood vs Water Backup Insurance Guide (2026): NFIP, Endorsements, and Coverage Gaps",
       "slug": "flood-vs-water-backup-buying-guide-2026",
@@ -54932,6 +56189,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W4 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claim delays and denials: /claims/guides/life-claim-delay-denial-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Lapse and reinstatement before a claim: /guides/life-policy-lapse-reinstatement-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -54947,12 +56272,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
       "seo": {
         "metaTitle": "Life Beneficiary Claim Deep Guide 2026 | Setup Tips",
         "metaDescription": "Deep guide for life insurance beneficiaries: naming rules, minor-child structures, claim document prep, and links to contestability-period claim support."
       },
-      "updatedAt": "2026-06-09T01:26:28.694Z",
+      "updatedAt": "2026-06-13T08:33:04.395Z",
       "createdAt": "2026-05-27T00:53:45.366Z",
       "_status": "published"
     },
@@ -68936,6 +70261,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W4 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part D formulary and drug tiers: /guides/medicare-part-d-formulary-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Billing error claims: /claims/guides/medicare-billing-error-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -68951,12 +70344,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
       "seo": {
         "metaTitle": "Medigap Plan G, N & HD-G Comparison Guide (2026) | Insurhi",
         "metaDescription": "Medigap Plan G, Plan N, and high-deductible Plan G compared for 2026: benefits, pricing methods, household discounts, and switching plans without underwriting."
       },
-      "updatedAt": "2026-06-02T00:40:26.737Z",
+      "updatedAt": "2026-06-13T08:33:04.425Z",
       "createdAt": "2026-05-27T00:53:45.433Z",
       "_status": "published"
     },
@@ -69891,6 +71284,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W4 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Allergy and chronic skin claims: /claims/guides/pet-allergy-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Dental coverage buying: /guides/pet-dental-coverage-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -69906,12 +71367,12 @@
         "updatedAt": "2026-06-02T00:40:26.499Z",
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
       "seo": {
         "metaTitle": "Pet Insurance Pre-Existing & Waiting Periods 2026 | Insurhi",
         "metaDescription": "Pet insurance pre-existing conditions and waiting periods for 2026: bilateral exclusions, curable vs incurable, and what to document before filing claims."
       },
-      "updatedAt": "2026-06-02T00:40:26.763Z",
+      "updatedAt": "2026-06-13T08:33:04.454Z",
       "createdAt": "2026-05-27T00:53:45.397Z",
       "_status": "published"
     },
@@ -79501,6 +80962,120 @@
   ],
   "faqItems": [
     {
+      "id": 87,
+      "question": "Can pet insurance deny allergies as pre-existing if my vet never wrote 'allergy' before enrollment?",
+      "answer": "Yes—carriers look for symptoms (itching, ear infections, hot spots) even without an allergy diagnosis. Pull full records before switching vets. Compare enrollment timing in /guides/pet-pre-existing-waiting-period-deep-guide-2026.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-13T08:33:04.364Z",
+      "createdAt": "2026-06-13T08:33:04.364Z"
+    },
+    {
+      "id": 86,
+      "question": "Will pet insurance cover chronic allergy treatment like Apoquel or Cytopoint?",
+      "answer": "Often yes on illness plans if atopy is not pre-existing and waiting periods have passed—but maintenance allergy care may hit annual limits quickly. Accident-only plans exclude chronic allergies. See /claims/guides/pet-allergy-claim-guide-2026 for denial patterns.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-13T08:33:04.359Z",
+      "createdAt": "2026-06-13T08:33:04.359Z"
+    },
+    {
+      "id": 85,
+      "question": "Does Medigap cover prescription drugs on the Part D formulary?",
+      "answer": "No—Medigap policies sold to new beneficiaries do not include retail drug coverage. You need a standalone Part D plan or Medicare Advantage with drug benefits. Medigap helps with Medicare cost-sharing for services, not pharmacy tiers.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-13T08:33:04.354Z",
+      "createdAt": "2026-06-13T08:33:04.354Z"
+    },
+    {
+      "id": 84,
+      "question": "How do I request a Part D formulary exception for a drug not on the list?",
+      "answer": "Ask your prescriber to submit a formulary exception request with medical necessity documentation to your Part D plan. Include failed alternatives if required. Denied exceptions can be appealed with dated denial letters. Walkthrough: /guides/medicare-part-d-formulary-guide-2026.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-13T08:33:04.349Z",
+      "createdAt": "2026-06-13T08:33:04.349Z"
+    },
+    {
+      "id": 83,
+      "question": "Why is my life insurance beneficiary claim taking months to pay?",
+      "answer": "Delays often stem from contestability reviews in the first two policy years, incomplete death certificates, or beneficiary disputes. Request written status every 30 days. See /claims/guides/life-claim-delay-denial-guide-2026 for document checklists and escalation steps.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-13T08:33:04.337Z",
+      "createdAt": "2026-06-13T08:33:04.337Z"
+    },
+    {
+      "id": 82,
+      "question": "How long is the grace period for a missed life insurance premium?",
+      "answer": "Most individual life policies offer about 30–31 days after the due date. Coverage often continues during grace if you pay the full premium. After grace, the policy lapses and death benefits are not payable until reinstatement. Details vary by carrier and state.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-13T08:33:04.332Z",
+      "createdAt": "2026-06-13T08:33:04.332Z"
+    },
+    {
       "id": 81,
       "question": "How should I document home water damage in the first 48 hours?",
       "answer": "Shut off water, photograph all affected rooms before cleanup, save plumber invoices, log discovery time, and start mitigation with dated receipts. Notify your carrier the same day when possible. A room-by-room inventory speeds personal property settlement.",
@@ -82661,6 +84236,156 @@
       "createdAt": "2026-04-28T08:26:44.866Z"
     },
     {
+      "id": 18,
+      "title": "Life Insurance Claim Delay & Denial Guide (2026): Beneficiary Paperwork and Payout Timelines",
+      "slug": "life-claim-delay-denial-guide-2026",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "steps": [
+        {
+          "id": "6a2d15c0d491848c01d0bd5a",
+          "step": "Obtain certified death certificate copies (often 5–10) matching the insured name exactly as on the policy."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd5b",
+          "step": "Locate the policy number, agent contact, and beneficiary designation—request a current copy from the carrier if unsure."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd5c",
+          "step": "Submit FNOL with claim form, death certificate, and beneficiary ID within days—not weeks—of the funeral."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd5d",
+          "step": "Respond same-day to adjuster requests for medical records, employer statements, or foreign death documentation."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd5e",
+          "step": "If delayed past 30–60 days, send a written status letter citing state prompt-payment rules where applicable."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd5f",
+          "step": "Escalate to supervisor or state insurance department if denial cites lapse, contestability, or misrepresentation without policy citations."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a2d15c0d491848c01d0bd60",
+          "item": "Certified death certificate (multiple copies)"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd61",
+          "item": "Completed carrier claim form signed by all primary beneficiaries"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd62",
+          "item": "Government-issued beneficiary photo ID"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd63",
+          "item": "Original or certified policy copy if available"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd64",
+          "item": "Attending physician statement or medical records if contestability review is mentioned"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd65",
+          "item": "Proof premium payments if lapse is disputed"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/life",
+      "denialReasons": [
+        {
+          "id": "6a2d15c0d491848c01d0bd66",
+          "reason": "Policy lapsed before date of death",
+          "explanation": "If premium was not paid within the grace period, coverage ended. Reinstatement after death is not possible—beneficiaries may dispute timing with bank records."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd67",
+          "reason": "Death during contestability period with material misrepresentation",
+          "explanation": "First two years (often) allow rescission for inaccurate health or income disclosures on the application. Carriers investigate medical and Rx records."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd68",
+          "reason": "Excluded cause of death or hazardous activity rider",
+          "explanation": "Aviation, racing, or foreign travel exclusions may apply on some contracts. Read the exclusions schedule before accepting a denial."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd69",
+          "reason": "Beneficiary dispute or outdated designation",
+          "explanation": "Divorce decrees, wills, and per stirpes designations can conflict. Carrier may interplead funds to court when multiple parties claim."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a2d15c0d491848c01d0bd6a",
+          "cause": "Contestability investigation",
+          "explanation": "Carriers pull APS records and prescription history—common 60–90 day delay in first two policy years even for clean applications."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd6b",
+          "cause": "Incomplete beneficiary paperwork",
+          "explanation": "Missing signatures, non-certified death certificates, or foreign document authentication adds weeks. Resubmit complete packets rather than piecemeal."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd6c",
+          "cause": "Estate probate or employer group conversion timing",
+          "explanation": "Group life through an employer may require HR separation of employment proof. Estates need letters testamentary before payout to the estate."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a2d15c0d491848c01d0bd6d",
+          "action": "Request written denial citing policy section and facts relied upon."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd6e",
+          "action": "If lapse is alleged, gather bank statements showing premium payment within grace."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd6f",
+          "action": "Review lapse prevention in /guides/life-policy-lapse-reinstatement-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a2d15c0d491848c01d0bd70",
+          "note": "Send all correspondence certified mail with policy number and date of death in the subject line."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd71",
+          "note": "Do not cash partial checks marked 'full and final' if you dispute the amount or denial basis."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd72",
+          "note": "Ask whether interest is owed on delayed payment after state-mandated deadlines."
+        }
+      ],
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
+      "updatedAt": "2026-06-13T08:33:04.285Z",
+      "createdAt": "2026-06-13T08:33:04.284Z"
+    },
+    {
       "id": 7,
       "title": "Life Insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
       "slug": "life-claim-guide-2026",
@@ -82794,27 +84519,35 @@
       ],
       "nextActions": [
         {
-          "id": "6a1653a5abefb0405cd5b5af",
+          "id": "6a2d15c0d491848c01d0bd8c",
+          "action": "Delay and denial walkthrough: /claims/guides/life-claim-delay-denial-guide-2026"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd8d",
+          "action": "Lapse disputes: /guides/life-policy-lapse-reinstatement-guide-2026"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd8e",
           "action": "Request the denial or delay decision in writing, with the specific policy provision cited."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5b0",
+          "id": "6a2d15c0d491848c01d0bd8f",
           "action": "Use the NAIC Life Insurance Policy Locator if you cannot find the policy—free public service."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5b1",
+          "id": "6a2d15c0d491848c01d0bd90",
           "action": "If contestability is in progress, provide medical authorization promptly; the clock keeps running while you wait."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5b2",
+          "id": "6a2d15c0d491848c01d0bd91",
           "action": "Ask whether your state requires interest on delayed proceeds and request that interest be calculated."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5b3",
+          "id": "6a2d15c0d491848c01d0bd92",
           "action": "File a complaint with your state's Department of Insurance for delays beyond statutory deadlines."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5b4",
+          "id": "6a2d15c0d491848c01d0bd93",
           "action": "Consult a probate or insurance attorney before signing any settlement reducing the death benefit."
         }
       ],
@@ -82849,8 +84582,8 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "updatedAt": "2026-06-02T00:40:27.366Z",
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
+      "updatedAt": "2026-06-13T08:33:04.493Z",
       "createdAt": "2026-04-22T07:53:42.862Z"
     },
     {
@@ -83371,6 +85104,156 @@
       "lastReviewedAt": "2026-06-01T12:00:00.000Z",
       "updatedAt": "2026-06-12T00:49:25.141Z",
       "createdAt": "2026-04-22T07:53:42.829Z"
+    },
+    {
+      "id": 19,
+      "title": "Pet Allergy & Chronic Skin Claim Guide (2026): Atopy, Food Trials, and Pre-Existing Denials",
+      "slug": "pet-allergy-claim-guide-2026",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "steps": [
+        {
+          "id": "6a2d15c0d491848c01d0bd73",
+          "step": "Document first itch, ear infection, or GI signs with dated vet notes before and after enrollment when possible."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd74",
+          "step": "File claims with itemized invoices separating exam, diagnostics, allergy serology, and medication lines."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd75",
+          "step": "If denied as pre-existing, request the carrier's medical review summary citing prior symptoms."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd76",
+          "step": "Complete insurer-requested food elimination trials or cytology with written outcomes—partial trials weaken appeals."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd77",
+          "step": "Appeal with a veterinary letter linking acute flare to covered illness rather than maintenance allergy."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd78",
+          "step": "For chronic plans, track annual limits and per-condition caps before starting immunotherapy."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a2d15c0d491848c01d0bd79",
+          "item": "Enrollment date and waiting-period end confirmation email"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd7a",
+          "item": "Complete medical history from prior vet clinics (not just current hospital)"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd7b",
+          "item": "Itemized invoices with diagnosis codes (atopy, otitis externa, etc.)"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd7c",
+          "item": "Allergy test results and treatment plan from DVM"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd7d",
+          "item": "Photos of skin lesions with dates for acute flare documentation"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd7e",
+          "item": "Prior claim EOBs showing what was paid or denied"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/pet",
+      "denialReasons": [
+        {
+          "id": "6a2d15c0d491848c01d0bd7f",
+          "reason": "Symptoms noted before enrollment or during waiting period",
+          "explanation": "Scratching, licking paws, or ear infections in records before coverage starts often classify atopy as pre-existing—even if not yet labeled 'allergy.'"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd80",
+          "reason": "Bilateral condition exclusion",
+          "explanation": "Some policies exclude the second ear or second cruciate if the first side was treated pre-policy. Ear infections may trigger bilateral ear exclusions."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd81",
+          "reason": "Food allergy not proven after trial",
+          "explanation": "Carriers may deny hypoallergenic diet costs unless a strict elimination trial is documented with before/after notes."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd82",
+          "reason": "Wellness or routine care exclusion",
+          "explanation": "Allergy shots and maintenance apoquel may be classified as ongoing care not tied to an acute covered illness on accident-only plans."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a2d15c0d491848c01d0bd83",
+          "cause": "Medical records request from prior vets",
+          "explanation": "Carriers pull 12–24 months of history. Slow clinic response delays approval 2–4 weeks—authorize records release promptly."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd84",
+          "cause": "Line-item coding disputes on immunotherapy",
+          "explanation": "Allergy serums may be reclassified as experimental or wellness. Ask the adjuster which policy section applies before resubmitting."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd85",
+          "cause": "Annual limit reached mid-treatment",
+          "explanation": "Chronic allergy care can exhaust limits in Q3. Delays after limit exhaustion are benefit exhaustion, not processing backlog."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a2d15c0d491848c01d0bd86",
+          "action": "Request pre-existing review in writing with symptom dates cited from records."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd87",
+          "action": "Compare waiting periods in /guides/pet-pre-existing-waiting-period-deep-guide-2026."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd88",
+          "action": "For surgery after allergy complications, see /claims/guides/pet-surgery-claim-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a2d15c0d491848c01d0bd89",
+          "note": "Use pet name and policy number in every email; attach PDF invoices, not phone photos when possible."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd8a",
+          "note": "Ask whether apoquel/cytopoint counts toward medication sub-limits separate from exam fees."
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd8b",
+          "note": "Do not start immunotherapy until waiting periods end—premature treatment strengthens pre-existing arguments."
+        }
+      ],
+      "reviewedBy": {
+        "id": 1,
+        "name": "Insurhi Editorial Team",
+        "slug": "editorial-team",
+        "role": "Insurance research & editorial",
+        "credentials": "Cross-category coverage reviews, claims workflow checks, and policy form comparisons.",
+        "updatedAt": "2026-06-02T00:40:26.499Z",
+        "createdAt": "2026-06-02T00:40:26.496Z"
+      },
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
+      "updatedAt": "2026-06-13T08:33:04.317Z",
+      "createdAt": "2026-06-13T08:33:04.317Z"
     },
     {
       "id": 12,
@@ -83902,27 +85785,31 @@
       ],
       "nextActions": [
         {
-          "id": "6a1653a5abefb0405cd5b5de",
+          "id": "6a2d15c0d491848c01d0bd94",
+          "action": "Allergy and atopy claims: /claims/guides/pet-allergy-claim-guide-2026"
+        },
+        {
+          "id": "6a2d15c0d491848c01d0bd95",
           "action": "Request a written explanation of any pre-existing classification, citing which specific record supports it."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5df",
+          "id": "6a2d15c0d491848c01d0bd96",
           "action": "Ask your vet for a letter clarifying that the current condition is medically distinct from earlier records, if applicable."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5e0",
+          "id": "6a2d15c0d491848c01d0bd97",
           "action": "If a bilateral exclusion is wrong, get a specialist's anatomical letter—this is the most successful basis for appeal."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5e1",
+          "id": "6a2d15c0d491848c01d0bd98",
           "action": "Submit a formal appeal in writing with new documentation; many carriers reverse partial denials at first appeal."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5e2",
+          "id": "6a2d15c0d491848c01d0bd99",
           "action": "Re-shop coverage at renewal if the carrier consistently misclassifies; switching restarts waiting periods, so weigh carefully."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5e3",
+          "id": "6a2d15c0d491848c01d0bd9a",
           "action": "File a complaint with your state's Department of Insurance for unreasonable claim handling."
         }
       ],
@@ -83957,8 +85844,8 @@
         "updatedAt": "2026-06-02T00:40:26.499Z",
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "updatedAt": "2026-06-02T00:40:27.463Z",
+      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
+      "updatedAt": "2026-06-13T08:33:04.527Z",
       "createdAt": "2026-04-22T07:53:42.841Z"
     },
     {

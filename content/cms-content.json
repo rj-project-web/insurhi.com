@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-13T08:38:48.368Z",
+    "exportedAt": "2026-06-21T02:02:34.621Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51059,6 +51059,1224 @@
   ],
   "articles": [
     {
+      "id": 34,
+      "title": "Medicare Advantage vs Medigap Guide (2026): Networks, Part D, and Switching Rules",
+      "slug": "medicare-advantage-vs-medigap-buying-guide",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for new Medicare enrollees or retirees choosing between bundled Advantage (Part C) and Original Medicare plus Medigap. You generally cannot stack a Medigap plan on top of most Advantage contracts—this is a fork-in-the-road decision, not a mix-and-match menu.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Medicare Advantage (Part C) at a glance",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Combines Parts A and B; most plans include Part D drug coverage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Uses provider networks (HMO/PPO) with copays and annual out-of-pocket caps.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "May include dental/vision/hearing extras—read evidence of coverage for limits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Original Medicare + Medigap",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Use any Medicare-accepting provider nationwide with fewer network restrictions.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Medigap covers coinsurance/deductibles per plan letter—not retail drugs (need Part D).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Higher monthly premium than many $0-premium Advantage plans but predictable hospital bills.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: snowbird with two homes",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A retiree splits time between states. Original Medicare plus Plan G and a standalone Part D plan avoids HMO network friction when seeing specialists in two regions. A local Advantage HMO may require referrals and out-of-network penalties at the second home.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: healthy retiree prioritizing drug costs",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A beneficiary takes three generics. A $0-premium Advantage plan with integrated Part D may beat paying Medigap premium plus separate Part D. Model total cost: premium + max OOP + drug tiers using /guides/medicare-part-d-formulary-guide.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "List doctors and hospitals in each plan's network before enrolling in Advantage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare Plan G or N premium + Part D vs Advantage total out-of-pocket.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Check Medigap open enrollment and guaranteed issue rights before delaying Medigap.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Read plan letters in /guides/medicare-medigap-plan-letters-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Enrollment timing: /guides/medicare-annual-enrollment-timing-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I have Medigap and Advantage together? A: Generally no—Medigap cannot pay cost-sharing on Advantage-covered services.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I switch back to Medigap later? A: Maybe, but medical underwriting may apply outside guaranteed issue windows—do not assume easy switches.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does Advantage replace Part B? A: You still pay Part B premium; Advantage administers benefits instead of Original Medicare paying fee-for-service.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part D formularies: /guides/medicare-part-d-formulary-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Supplement buying: /guides/medicare-supplement-buying-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare products: /insurance/medicare",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-21T02:01:18.533Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Medicare Advantage vs Medigap 2026 | Compare",
+        "metaDescription": "Medicare Advantage vs Medigap in 2026: networks, Part D bundling, travel coverage, switching windows, and why you usually cannot hold both."
+      },
+      "updatedAt": "2026-06-21T02:01:18.534Z",
+      "createdAt": "2026-06-21T02:01:18.533Z",
+      "_status": "published"
+    },
+    {
+      "id": 33,
+      "title": "Pet Multi-Pet Discount Guide (2026): One Policy, Two Pets, and Waiting Period Rules",
+      "slug": "pet-multi-pet-discount-guide",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for households with two or more dogs or cats comparing whether to stack pets on one policy or buy separate plans. Multi-pet discounts typically shave 5–10% off premium—but shared annual limits and synchronized waiting periods can cost more after a claim.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "How multi-pet pricing works",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Most carriers apply a per-pet premium with a household discount when all pets enroll together.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Some insurers cap pets per policy (often 4–6); exotic pets may need a separate underwriter.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Discounts usually apply to illness/accident premium, not wellness add-ons priced per pet.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "One policy vs separate policies",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "One policy: simpler billing; shared customer service; risk that one pet's chronic condition crowds annual limit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Separate policies: independent limits and renewals; may lose multi-pet discount but isolate pre-existing flags.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Enrolling a new puppy later may reset or add waiting periods—confirm before adoption day.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: two adult dogs, clean records",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A household insures a 4-year-old lab and a 6-year-old mixed breed on one policy with a 10% multi-pet discount. Both pass illness waiting periods. When the lab needs ACL surgery, the $10,000 annual limit applies to the policy—not per dog—leaving less room for the older dog's later dental illness.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: new kitten added mid-term",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A cat owner adds a kitten three months after insuring an adult cat on the same carrier. The kitten gets a new illness waiting period; the adult keeps existing coverage. The multi-pet discount may apply only after the kitten's effective date—ask whether accident coverage starts sooner for kittens.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Quote one-policy vs two-policy totals including wellness riders you actually use.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm whether annual and per-incident limits are per pet or per policy.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Align enrollment with /guides/pet-pre-existing-waiting-period-deep-guide-2026 before vet visits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare dental and allergy coverage in /guides/pet-dental-coverage-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Browse carriers at /insurance/pet.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Do all pets share one deductible? A: Usually each pet has its own deductible, but annual limits may be shared—read the declarations page.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I remove one pet mid-year? A: Often yes with premium adjustment; the remaining pet may lose multi-pet discount at renewal.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Are multi-pet discounts stackable with employer benefits? A: Rarely—verify whether third-party discount codes apply to pet lines.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Core buying: /guides/pet-insurance-buying-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Surgery claims: /claims/guides/pet-surgery-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Allergy claims: /claims/guides/pet-allergy-claim-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-21T02:01:18.462Z",
+      "reviewedBy": {
+        "id": 1,
+        "name": "Insurhi Editorial Team",
+        "slug": "editorial-team",
+        "role": "Insurance research & editorial",
+        "credentials": "Cross-category coverage reviews, claims workflow checks, and policy form comparisons.",
+        "updatedAt": "2026-06-02T00:40:26.499Z",
+        "createdAt": "2026-06-02T00:40:26.496Z"
+      },
+      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Pet Multi-Pet Discount Guide 2026 | Compare",
+        "metaDescription": "Compare multi-pet discounts: one policy vs two, waiting periods per pet, breed limits, and when insuring pets separately saves money in 2026."
+      },
+      "updatedAt": "2026-06-21T02:01:18.467Z",
+      "createdAt": "2026-06-21T02:01:18.466Z",
+      "_status": "published"
+    },
+    {
       "id": 32,
       "title": "Medicare Part D Formulary Guide (2026): Drug Tiers, Exceptions, and Switching Plans",
       "slug": "medicare-part-d-formulary-guide",
@@ -83464,6 +84682,156 @@
       "createdAt": "2026-04-23T06:15:29.683Z"
     },
     {
+      "id": 21,
+      "title": "Home Fire & Smoke Damage Claim Guide (2026): Kitchen Fires, Soot, and Additional Living Expense",
+      "slug": "home-fire-smoke-claim-guide",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "steps": [
+        {
+          "id": "6a3745eeccfc3525a4729c05",
+          "step": "Ensure occupants are safe; call fire department and obtain incident report and cause notes."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c06",
+          "step": "Do not discard charred materials until documented—photograph every room including HVAC vents and attic soot."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c07",
+          "step": "Contact carrier for emergency board-up and mitigation vendors if policy includes fire response services."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c08",
+          "step": "Separate structure damage (dwelling) from smoke-affected contents; list each room's items and odor damage."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c09",
+          "step": "Track additional living expense (ALE) receipts if the home is uninhabitable—hotel, meals, pet boarding."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c0a",
+          "step": "Meet adjuster with contractor scope addressing code upgrades, smoke sealing, and content pack-out vendors."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a3745eeccfc3525a4729c0b",
+          "item": "Fire department incident report"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c0c",
+          "item": "Timestamped photos/video of all affected areas including exterior"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c0d",
+          "item": "Contractor mitigation invoice and drying/smoke logs"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c0e",
+          "item": "Contents inventory with age and replacement source"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c0f",
+          "item": "ALE receipts with dates matching displacement period"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c10",
+          "item": "Prior maintenance records if electrical cause is disputed"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/home",
+      "denialReasons": [
+        {
+          "id": "6a3745eeccfc3525a4729c11",
+          "reason": "Vacancy or unoccupancy exclusion",
+          "explanation": "Homes empty beyond policy-defined days may lose fire coverage—document move-in dates and utility usage."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c12",
+          "reason": "Arson or fraud investigation",
+          "explanation": "Carrier and law enforcement may delay or deny if intentional fire is suspected—cooperate with investigators."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c13",
+          "reason": "Smoke-only claim with no covered peril",
+          "explanation": "Neighbor smoke or wildfire ash may need separate wildfire/smoke endorsements in some regions—sudden kitchen fire is typically covered."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c14",
+          "reason": "Underinsured dwelling limits",
+          "explanation": "Extended replacement cost helps but caps exist—partial payment is limit exhaustion, not denial."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a3745eeccfc3525a4729c15",
+          "cause": "Cause-and-origin investigation",
+          "explanation": "Electrical fires may require engineer reports—2–4 week delay before dwelling payment."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c16",
+          "cause": "Content smoke cleaning backlog",
+          "explanation": "Pack-out vendors are scarce after regional fires—start contents list early even if structure scope is pending."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c17",
+          "cause": "Recoverable depreciation on contents",
+          "explanation": "RCV policies may hold depreciation until items are replaced and invoiced."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a3745eeccfc3525a4729c18",
+          "action": "Request written scope disagreement items before signing any partial settlement."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c19",
+          "action": "Water damage from firefighting: /claims/guides/home-water-damage-claim-guide."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c1a",
+          "action": "Dwelling limits: /guides/home-replacement-cost-vs-acv-deep-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a3745eeccfc3525a4729c1b",
+          "note": "Log every conversation with fire restoration vendors—carrier may direct repair through preferred networks."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c1c",
+          "note": "Separate wildfire evacuation ALE from smoke cleaning timelines in your ledger."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c1d",
+          "note": "Keep furnace filter changes and HVAC cleaning invoices—soot recurrence supports supplemental claims."
+        }
+      ],
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
+      "updatedAt": "2026-06-21T02:01:18.545Z",
+      "createdAt": "2026-06-21T02:01:18.545Z"
+    },
+    {
       "id": 10,
       "title": "Home Hail Damage Claim Guide (2026): Timeline, Evidence, and Denial Prevention",
       "slug": "home-hail-damage-claim-guide-2026",
@@ -86044,6 +87412,156 @@
       "lastReviewedAt": "2026-06-01T12:00:00.000Z",
       "updatedAt": "2026-06-12T00:49:25.080Z",
       "createdAt": "2026-04-22T07:53:42.795Z"
+    },
+    {
+      "id": 20,
+      "title": "Renters Theft Claim Guide (2026): Police Reports, Sub-Limits, and Off-Premises Loss",
+      "slug": "renters-theft-claim-guide",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "steps": [
+        {
+          "id": "6a3745eeccfc3525a4729bec",
+          "step": "File a police report immediately for burglary or off-premises theft—get the report number before cleanup."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bed",
+          "step": "Photograph disturbed entry points, missing item locations, and any remaining damaged property."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bee",
+          "step": "List stolen items with purchase dates, serial numbers, and replacement-cost estimates from current retailers."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bef",
+          "step": "Notify your carrier within 24–72 hours per policy; request a claim number and adjuster email."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bf0",
+          "step": "Submit inventory spreadsheet, police report, receipts, and photos in one PDF packet when possible."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bf1",
+          "step": "Track sub-limits on jewelry, electronics, and cash—schedule high-value items if limits are insufficient before the next loss."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a3745eeccfc3525a4729bf2",
+          "item": "Police report with case number and officer contact"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bf3",
+          "item": "Photos of forced entry or theft scene before repairs"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bf4",
+          "item": "Inventory with make/model/serial and age of each item"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bf5",
+          "item": "Original receipts or bank/credit card statements"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bf6",
+          "item": "Appraisal for jewelry or collectibles above sub-limits"
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bf7",
+          "item": "Landlord incident report if break-in occurred in a rental unit"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/renters",
+      "denialReasons": [
+        {
+          "id": "6a3745eeccfc3525a4729bf8",
+          "reason": "No police report for theft claim",
+          "explanation": "Most HO-4 renters policies require prompt police documentation for theft. Delayed or missing reports are a top denial reason."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bf9",
+          "reason": "Mysterious disappearance without evidence of theft",
+          "explanation": "Lost items without signs of forced entry or witness theft may be excluded—carriers treat unexplained loss as not covered."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bfa",
+          "reason": "Roommate or guest theft excluded",
+          "explanation": "Theft by someone named on the lease or a household member may be excluded; only covered property of the named insured is payable."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bfb",
+          "reason": "Sub-limit exceeded for electronics or jewelry",
+          "explanation": "A $2,000 laptop stack may hit a $1,500 off-premises electronics sub-limit even when total personal property limit is higher."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a3745eeccfc3525a4729bfc",
+          "cause": "Police report not yet available",
+          "explanation": "Carriers may pend until the report is filed—follow up with the precinct for digital copies."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bfd",
+          "cause": "Receipt gaps for older items",
+          "explanation": "Adjusters accept bank statements or photos from purchase date when receipts are missing—delays come from manual valuation."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729bfe",
+          "cause": "Landlord repair vs contents dispute",
+          "explanation": "Broken door frames may be landlord responsibility; clarify what is dwelling vs contents before estimates are approved."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a3745eeccfc3525a4729bff",
+          "action": "Request written denial citing policy section if police report was filed within required time."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c00",
+          "action": "Evidence habits: /guides/renters-theft-claim-evidence-deep-guide-2026."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c01",
+          "action": "Roommate coverage splits: /guides/renters-roommate-coverage-split-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a3745eeccfc3525a4729c02",
+          "note": "Email subject: Renters theft claim + policy number + police report number."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c03",
+          "note": "Do not replace locks or dispose of damaged doors until the adjuster confirms—or photograph first."
+        },
+        {
+          "id": "6a3745eeccfc3525a4729c04",
+          "note": "Separate off-premises theft (car break-in) from home burglary—sub-limits differ."
+        }
+      ],
+      "reviewedBy": {
+        "id": 1,
+        "name": "Insurhi Editorial Team",
+        "slug": "editorial-team",
+        "role": "Insurance research & editorial",
+        "credentials": "Cross-category coverage reviews, claims workflow checks, and policy form comparisons.",
+        "updatedAt": "2026-06-02T00:40:26.499Z",
+        "createdAt": "2026-06-02T00:40:26.496Z"
+      },
+      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
+      "updatedAt": "2026-06-21T02:01:18.512Z",
+      "createdAt": "2026-06-21T02:01:18.511Z"
     },
     {
       "id": 14,

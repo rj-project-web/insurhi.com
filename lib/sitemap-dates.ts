@@ -6,15 +6,23 @@ export type TimestampedContent = {
 };
 
 /** Pick the newest valid ISO timestamp (not first match). */
-export function latestModified(...candidates: Array<string | undefined | null>): Date | undefined {
+export function latestModified(
+  ...candidates: Array<string | Date | undefined | null>
+): Date | undefined {
   let newest: Date | undefined;
   for (const value of candidates) {
     if (!value) continue;
-    const date = new Date(value);
+    const date = value instanceof Date ? value : new Date(value);
     if (Number.isNaN(date.getTime())) continue;
     if (!newest || date.getTime() > newest.getTime()) newest = date;
   }
   return newest;
+}
+
+export function normalizeLastModified(value: string | Date | undefined | null): string | undefined {
+  if (!value) return undefined;
+  if (value instanceof Date) return value.toISOString();
+  return value;
 }
 
 export function contentLastModified(item: TimestampedContent): Date | undefined {

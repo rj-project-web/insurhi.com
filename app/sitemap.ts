@@ -19,6 +19,7 @@ import {
   contentLastModified,
   latestModified,
   maxDateFromItems,
+  normalizeLastModified,
 } from "@/lib/sitemap-dates";
 import { absoluteUrl } from "@/lib/seo";
 import { insuranceCategories, providerCanonicalAliases } from "@/lib/site-data";
@@ -266,8 +267,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       continue;
     }
     const mergedLastMod = latestModified(
-      existing.lastModified?.toISOString(),
-      item.lastModified?.toISOString(),
+      normalizeLastModified(existing.lastModified),
+      normalizeLastModified(item.lastModified),
     );
     dedupedByUrl.set(item.url, mergedLastMod ? { ...existing, lastModified: mergedLastMod } : existing);
   }

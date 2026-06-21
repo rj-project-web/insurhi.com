@@ -65,6 +65,8 @@ export type CmsProvider = {
   coverageRegions?: string[];
   categories?: (string | CmsCategory)[];
   seo?: CmsSeoGroup;
+  updatedAt?: string;
+  createdAt?: string;
 };
 
 export type CmsProduct = {
@@ -136,6 +138,8 @@ export type CmsPage = {
   slug: string;
   content: unknown;
   seo?: CmsSeoGroup;
+  updatedAt?: string;
+  createdAt?: string;
 };
 
 export type CmsArticle = {
@@ -196,6 +200,10 @@ const CMS_ARTICLES_TIMEOUT_MS = 8000;
 const CMS_CONTENT_SOURCE = (process.env.CMS_CONTENT_SOURCE ?? "api").trim().toLowerCase();
 
 type CmsContentSnapshot = {
+  meta?: {
+    exportedAt?: string;
+    source?: string;
+  };
   categories: CmsCategory[];
   providers: CmsProvider[];
   products: CmsProduct[];
@@ -211,6 +219,7 @@ type CmsContentSnapshot = {
 let cachedContentSnapshotPromise: Promise<CmsContentSnapshot | null> | null = null;
 
 const EMPTY_STATIC_SNAPSHOT: CmsContentSnapshot = {
+  meta: undefined,
   categories: [],
   providers: [],
   products: [],
@@ -253,6 +262,7 @@ async function getStaticContentSnapshot(): Promise<CmsContentSnapshot | null> {
         const parsed = JSON.parse(raw) as Partial<CmsContentSnapshot>;
 
         return {
+          meta: parsed.meta,
           categories: toSnapshotArray<CmsCategory>(parsed.categories).map((item) => ({
             ...item,
             id: toStringId(item.id),
@@ -666,6 +676,11 @@ export async function getClaimCasesList() {
   }
 
   return fetchCollection<CmsClaimCase>("/api/claim-cases?limit=100");
+}
+
+export async function getContentSnapshotMeta(): Promise<{ exportedAt?: string; source?: string } | null> {
+  const snapshot = await getStaticContentSnapshot();
+  return snapshot?.meta ?? null;
 }
 
 export async function getFaqItems() {

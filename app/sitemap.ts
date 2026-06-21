@@ -7,13 +7,20 @@ import {
   getCategories,
   getClaimCasesList,
   getClaimsGuidesList,
+  getContentSnapshotMeta,
   getGlossaryTerms,
   getProducts,
   getProviders,
 } from "@/lib/cms-client";
 import { cmsPagePublicPath, isFixedCmsPageSlug } from "@/lib/cms-page-routes";
-import { absoluteUrl } from "@/lib/seo";
 import { categoryContentHubs, CATEGORY_SLUGS } from "@/lib/category-content-hub";
+import {
+  buildCategoryLastModifiedMap,
+  contentLastModified,
+  latestModified,
+  maxDateFromItems,
+} from "@/lib/sitemap-dates";
+import { absoluteUrl } from "@/lib/seo";
 import { insuranceCategories, providerCanonicalAliases } from "@/lib/site-data";
 
 const DEEP_GUIDE_SLUGS = new Set(
@@ -23,35 +30,30 @@ const FLAGSHIP_PRODUCT_SLUGS = new Set(
   CATEGORY_SLUGS.map((slug) => categoryContentHubs[slug].flagshipProduct.slug),
 );
 
-function lastModified(...candidates: Array<string | undefined>): Date | undefined {
-  for (const value of candidates) {
-    if (!value) continue;
-    const date = new Date(value);
-    if (!Number.isNaN(date.getTime())) return date;
-  }
-  return undefined;
+function withLastModified(
+  entry: MetadataRoute.Sitemap[number],
+  ...candidates: Array<string | undefined | null | Date>
+): MetadataRoute.Sitemap[number] {
+  const isoCandidates = candidates.map((value) =>
+    value instanceof Date ? value.toISOString() : value,
+  );
+  const lastModified = latestModified(...isoCandidates);
+  return lastModified ? { ...entry, lastModified } : entry;
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const staticPaths = [
-    "/",
-    "/insurance",
-    "/guides",
-    "/claims",
-    "/resources",
-    "/about",
-    "/contact",
-    "/privacy-policy",
-    "/terms",
-    "/products",
-    "/providers",
-    "/methodology",
-    "/glossary",
-    "/authors",
-  ];
-
-  const [cmsCategories, articles, claimsGuides, claimCases, providers, products, pages, glossaryTerms, authors] =
-    await Promise.all([
+  const [
+    cmsCategories,
+    articles,
+    claimsGuides,
+    claimCases,
+    providers,
+    products,
+    pages,
+    glossaryTerms,
+    authors,
+    snapshotMeta,
+  ] = await Promise.all([
     getCategories(),
     getArticlesList(),
     getClaimsGuidesList(),
@@ -61,7 +63,66 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getAllPages(),
     getGlossaryTerms(),
     getAuthors(),
+    getContentSnapshotMeta(),
   ]);
+
+  const exportedAt = snapshotMeta?.exportedAt;
+
+  const articleLastMod = maxDateFromItems(articles);
+  const claimsLastMod = maxDateFromItems(claimsGuides);
+  const productLastMod = maxDateFromItems(
+    products.map((product) => ({
+      lastReviewedAt: product.lastReviewedAt,
+      updatedAt: product.updatedAt,
+      publishedAt: product.claimsTurnaround?.lastUpdated,
+      createdAt: product.createdAt,
+    })),
+  );
+  const providerLastMod = maxDateFromItems(providers);
+  const glossaryLastMod = maxDateFromItems(glossaryTerms);
+  const authorLastMod = maxDateFromItems(authors);
+  const siteLastMod = latestModified(
+    exportedAt,
+    articleLastMod?.toISOString(),
+    claimsLastMod?.toISOString(),
+    productLastMod?.toISOString(),
+  );
+
+  const categoryArticleMap = buildCategoryLastModifiedMap(articles);
+  const categoryClaimsMap = buildCategoryLastModifiedMap(claimsGuides);
+  const categoryProductMap = buildCategoryLastModifiedMap(products);
+
+  const categoryLastMod = (slug: string) =>
+    latestModified(
+      categoryArticleMap.get(slug)?.toISOString(),
+      categoryClaimsMap.get(slug)?.toISOString(),
+      categoryProductMap.get(slug)?.toISOString(),
+      exportedAt,
+    );
+
+  const fixedPageLastMod = new Map<string, Date | undefined>();
+  for (const page of pages) {
+    const slug = page.slug?.trim();
+    if (!slug || !isFixedCmsPageSlug(slug)) continue;
+    fixedPageLastMod.set(cmsPagePublicPath(slug), contentLastModified(page));
+  }
+
+  const staticPaths: Array<{ path: string; lastMod?: Date }> = [
+    { path: "/", lastMod: siteLastMod },
+    { path: "/insurance", lastMod: siteLastMod },
+    { path: "/guides", lastMod: latestModified(articleLastMod?.toISOString(), exportedAt) },
+    { path: "/claims", lastMod: latestModified(claimsLastMod?.toISOString(), exportedAt) },
+    { path: "/resources", lastMod: siteLastMod },
+    { path: "/about", lastMod: fixedPageLastMod.get("/about") ?? siteLastMod },
+    { path: "/contact", lastMod: fixedPageLastMod.get("/contact") ?? siteLastMod },
+    { path: "/privacy-policy", lastMod: fixedPageLastMod.get("/privacy-policy") ?? siteLastMod },
+    { path: "/terms", lastMod: fixedPageLastMod.get("/terms") ?? siteLastMod },
+    { path: "/products", lastMod: latestModified(productLastMod?.toISOString(), exportedAt) },
+    { path: "/providers", lastMod: latestModified(providerLastMod?.toISOString(), exportedAt) },
+    { path: "/methodology", lastMod: fixedPageLastMod.get("/methodology") ?? siteLastMod },
+    { path: "/glossary", lastMod: latestModified(glossaryLastMod?.toISOString(), exportedAt) },
+    { path: "/authors", lastMod: latestModified(authorLastMod?.toISOString(), exportedAt) },
+  ];
 
   const insuranceCategorySlugs = Array.from(
     new Set([...insuranceCategories.map((category) => category.slug), ...cmsCategories.map((category) => category.slug)]),
@@ -77,70 +138,138 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   const allUrls: MetadataRoute.Sitemap = [
-    ...staticPaths.map((path) => ({
-      url: absoluteUrl(path),
-      changeFrequency: "weekly" as const,
-      priority: path === "/" ? 1 : 0.7,
-    })),
-    ...insuranceCategorySlugs.map((slug) => ({
-      url: absoluteUrl(`/insurance/${slug}`),
-      changeFrequency: "weekly" as const,
-      priority: 0.85,
-    })),
-    ...articles.map((article) => ({
-      url: absoluteUrl(`/guides/${article.slug}`),
-      lastModified: lastModified(article.lastReviewedAt, article.updatedAt, article.publishedAt, article.createdAt),
-      changeFrequency: "weekly" as const,
-      priority: DEEP_GUIDE_SLUGS.has(article.slug) ? 0.82 : 0.7,
-    })),
+    ...staticPaths.map(({ path, lastMod }) =>
+      withLastModified(
+        {
+          url: absoluteUrl(path),
+          changeFrequency: "weekly" as const,
+          priority: path === "/" ? 1 : 0.7,
+        },
+        lastMod,
+      ),
+    ),
+    ...insuranceCategorySlugs.map((slug) =>
+      withLastModified(
+        {
+          url: absoluteUrl(`/insurance/${slug}`),
+          changeFrequency: "weekly" as const,
+          priority: 0.85,
+        },
+        categoryLastMod(slug),
+      ),
+    ),
+    ...insuranceCategorySlugs.map((slug) =>
+      withLastModified(
+        {
+          url: absoluteUrl(`/claims/${slug}`),
+          changeFrequency: "weekly" as const,
+          priority: 0.75,
+        },
+        categoryLastMod(slug),
+        categoryClaimsMap.get(slug),
+      ),
+    ),
+    ...articles.map((article) =>
+      withLastModified(
+        {
+          url: absoluteUrl(`/guides/${article.slug}`),
+          changeFrequency: "weekly" as const,
+          priority: DEEP_GUIDE_SLUGS.has(article.slug) ? 0.82 : 0.7,
+        },
+        contentLastModified(article),
+      ),
+    ),
     ...claimsGuides
       .filter((guide) => Boolean(guide.slug))
-      .map((guide) => ({
-        url: absoluteUrl(`/claims/guides/${guide.slug}`),
-        lastModified: lastModified(guide.lastReviewedAt, guide.updatedAt, guide.createdAt),
-        changeFrequency: "weekly" as const,
-        priority: 0.7,
-      })),
-    ...claimCases.map((claimCase) => ({
-      url: absoluteUrl(`/claims/cases/${claimCase.id}`),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
+      .map((guide) =>
+        withLastModified(
+          {
+            url: absoluteUrl(`/claims/guides/${guide.slug}`),
+            changeFrequency: "weekly" as const,
+            priority: 0.7,
+          },
+          contentLastModified(guide),
+        ),
+      ),
+    ...claimCases.map((claimCase) =>
+      withLastModified(
+        {
+          url: absoluteUrl(`/claims/cases/${claimCase.id}`),
+          changeFrequency: "monthly" as const,
+          priority: 0.6,
+        },
+        exportedAt,
+      ),
+    ),
     ...providers
       .filter((provider) => !providerCanonicalAliases[provider.slug])
-      .map((provider) => ({
-      url: absoluteUrl(`/providers/${provider.slug}`),
-      changeFrequency: "weekly" as const,
-      priority: 0.7,
-    })),
-    ...products.map((product) => ({
-      url: absoluteUrl(`/products/${product.slug}`),
-      lastModified: lastModified(product.lastReviewedAt, product.updatedAt, product.createdAt),
-      changeFrequency: "weekly" as const,
-      priority: FLAGSHIP_PRODUCT_SLUGS.has(product.slug) ? 0.8 : 0.7,
-    })),
-    ...pagePaths.map((path) => ({
-      url: absoluteUrl(path),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    })),
-    ...glossaryTerms.map((term) => ({
-      url: absoluteUrl(`/glossary/${term.slug}`),
-      lastModified: lastModified(term.updatedAt, term.createdAt),
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    })),
-    ...authors.map((author) => ({
-      url: absoluteUrl(`/authors/${author.slug}`),
-      lastModified: lastModified(author.updatedAt, author.createdAt),
-      changeFrequency: "monthly" as const,
-      priority: 0.5,
-    })),
+      .map((provider) =>
+        withLastModified(
+          {
+            url: absoluteUrl(`/providers/${provider.slug}`),
+            changeFrequency: "weekly" as const,
+            priority: 0.7,
+          },
+          contentLastModified(provider),
+        ),
+      ),
+    ...products.map((product) =>
+      withLastModified(
+        {
+          url: absoluteUrl(`/products/${product.slug}`),
+          changeFrequency: "weekly" as const,
+          priority: FLAGSHIP_PRODUCT_SLUGS.has(product.slug) ? 0.8 : 0.7,
+        },
+        contentLastModified(product),
+        product.claimsTurnaround?.lastUpdated,
+      ),
+    ),
+    ...pagePaths.map((path) => {
+      const page = pages.find((item) => cmsPagePublicPath(item.slug) === path);
+      return withLastModified(
+        {
+          url: absoluteUrl(path),
+          changeFrequency: "monthly" as const,
+          priority: 0.6,
+        },
+        page ? contentLastModified(page) : undefined,
+        exportedAt,
+      );
+    }),
+    ...glossaryTerms.map((term) =>
+      withLastModified(
+        {
+          url: absoluteUrl(`/glossary/${term.slug}`),
+          changeFrequency: "monthly" as const,
+          priority: 0.7,
+        },
+        contentLastModified(term),
+      ),
+    ),
+    ...authors.map((author) =>
+      withLastModified(
+        {
+          url: absoluteUrl(`/authors/${author.slug}`),
+          changeFrequency: "monthly" as const,
+          priority: 0.5,
+        },
+        contentLastModified(author),
+      ),
+    ),
   ];
 
   const dedupedByUrl = new Map<string, MetadataRoute.Sitemap[number]>();
   for (const item of allUrls) {
-    dedupedByUrl.set(item.url, item);
+    const existing = dedupedByUrl.get(item.url);
+    if (!existing) {
+      dedupedByUrl.set(item.url, item);
+      continue;
+    }
+    const mergedLastMod = latestModified(
+      existing.lastModified?.toISOString(),
+      item.lastModified?.toISOString(),
+    );
+    dedupedByUrl.set(item.url, mergedLastMod ? { ...existing, lastModified: mergedLastMod } : existing);
   }
 
   return Array.from(dedupedByUrl.values());

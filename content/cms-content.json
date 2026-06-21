@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-21T02:07:56.966Z",
+    "exportedAt": "2026-06-21T02:13:15.433Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51648,7 +51648,7 @@
           "direction": null
         }
       },
-      "publishedAt": "2026-06-21T02:07:56.385Z",
+      "publishedAt": "2026-06-21T02:13:13.415Z",
       "reviewedBy": {
         "id": 3,
         "name": "Health & Life Editor",
@@ -51663,7 +51663,7 @@
         "metaTitle": "Medicare Advantage vs Medigap 2026 | Compare",
         "metaDescription": "Medicare Advantage vs Medigap in 2026: networks, Part D bundling, travel coverage, switching windows, and why you usually cannot hold both."
       },
-      "updatedAt": "2026-06-21T02:07:56.391Z",
+      "updatedAt": "2026-06-21T02:13:13.420Z",
       "createdAt": "2026-06-21T02:01:18.533Z",
       "_status": "published"
     },
@@ -52257,7 +52257,7 @@
           "direction": null
         }
       },
-      "publishedAt": "2026-06-21T02:07:56.316Z",
+      "publishedAt": "2026-06-21T02:13:13.323Z",
       "reviewedBy": {
         "id": 1,
         "name": "Insurhi Editorial Team",
@@ -52272,7 +52272,7 @@
         "metaTitle": "Pet Multi-Pet Discount Guide 2026 | Compare",
         "metaDescription": "Compare multi-pet discounts: one policy vs two, waiting periods per pet, breed limits, and when insuring pets separately saves money in 2026."
       },
-      "updatedAt": "2026-06-21T02:07:56.329Z",
+      "updatedAt": "2026-06-21T02:13:13.335Z",
       "createdAt": "2026-06-21T02:01:18.466Z",
       "_status": "published"
     },
@@ -70524,6 +70524,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W5 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Renters theft claim steps: /claims/guides/renters-theft-claim-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Roommate coverage splits: /guides/renters-roommate-coverage-split-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -70539,12 +70607,12 @@
         "updatedAt": "2026-06-02T00:40:26.499Z",
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
       "seo": {
         "metaTitle": "Renters Theft Claim Guide 2026 | Evidence & Limits | Insurhi",
         "metaDescription": "Renters insurance theft claim guide for 2026: police report timing, jewelry and electronics sub-limits, scheduling property, and how to avoid partial denials."
       },
-      "updatedAt": "2026-06-02T00:40:26.784Z",
+      "updatedAt": "2026-06-21T02:13:13.737Z",
       "createdAt": "2026-05-27T00:53:45.470Z",
       "_status": "published"
     },
@@ -74203,6 +74271,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W5 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Medicare Advantage vs Medigap decision: /guides/medicare-advantage-vs-medigap-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part D formulary tiers: /guides/medicare-part-d-formulary-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -74218,12 +74354,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-08T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
       "seo": {
         "metaTitle": "Medigap Buying Guide 2026 | Plans & Cost",
         "metaDescription": "Medigap buying guide for 2026: compare plan letters, pricing approach, enrollment timing, and shortlist carriers with realistic cost ranges."
       },
-      "updatedAt": "2026-06-12T01:28:48.749Z",
+      "updatedAt": "2026-06-21T02:13:13.792Z",
       "createdAt": "2026-05-20T01:20:09.703Z",
       "_status": "published"
     },
@@ -74990,6 +75126,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W5 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Multi-pet household discounts: /guides/pet-multi-pet-discount-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Dental add-ons: /guides/pet-dental-coverage-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -75005,12 +75209,12 @@
         "updatedAt": "2026-06-02T00:40:26.499Z",
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
-      "lastReviewedAt": "2026-06-08T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
       "seo": {
         "metaTitle": "Pet Insurance Buying Guide 2026 | Coverage & Claims",
         "metaDescription": "Compare pet insurance plans by reimbursement, annual limits, waiting periods, and dental coverage. Use a practical checklist before binding coverage."
       },
-      "updatedAt": "2026-06-12T01:28:48.765Z",
+      "updatedAt": "2026-06-21T02:13:13.761Z",
       "createdAt": "2026-05-20T01:20:09.689Z",
       "_status": "published"
     },
@@ -82195,7 +82399,7 @@
         "updatedAt": "2026-04-16T07:16:13.426Z",
         "createdAt": "2026-04-13T14:08:21.606Z"
       },
-      "updatedAt": "2026-06-21T02:07:56.475Z",
+      "updatedAt": "2026-06-21T02:13:13.718Z",
       "createdAt": "2026-06-21T02:07:56.475Z"
     },
     {
@@ -82214,7 +82418,7 @@
         "updatedAt": "2026-04-16T07:17:58.600Z",
         "createdAt": "2026-04-16T07:17:58.599Z"
       },
-      "updatedAt": "2026-06-21T02:07:56.467Z",
+      "updatedAt": "2026-06-21T02:13:13.708Z",
       "createdAt": "2026-06-21T02:07:56.467Z"
     },
     {
@@ -82233,7 +82437,7 @@
         "updatedAt": "2026-04-16T07:18:44.313Z",
         "createdAt": "2026-04-16T07:18:44.313Z"
       },
-      "updatedAt": "2026-06-21T02:07:56.463Z",
+      "updatedAt": "2026-06-21T02:13:13.696Z",
       "createdAt": "2026-06-21T02:07:56.463Z"
     },
     {
@@ -82252,7 +82456,7 @@
         "updatedAt": "2026-04-16T07:18:44.313Z",
         "createdAt": "2026-04-16T07:18:44.313Z"
       },
-      "updatedAt": "2026-06-21T02:07:56.433Z",
+      "updatedAt": "2026-06-21T02:13:13.689Z",
       "createdAt": "2026-06-21T02:07:56.433Z"
     },
     {
@@ -82271,7 +82475,7 @@
         "updatedAt": "2026-04-16T07:16:59.766Z",
         "createdAt": "2026-04-14T02:43:11.266Z"
       },
-      "updatedAt": "2026-06-21T02:07:56.430Z",
+      "updatedAt": "2026-06-21T02:13:13.680Z",
       "createdAt": "2026-06-21T02:07:56.430Z"
     },
     {
@@ -82290,7 +82494,7 @@
         "updatedAt": "2026-04-16T07:16:59.766Z",
         "createdAt": "2026-04-14T02:43:11.266Z"
       },
-      "updatedAt": "2026-06-21T02:07:56.427Z",
+      "updatedAt": "2026-06-21T02:13:13.672Z",
       "createdAt": "2026-06-21T02:07:56.427Z"
     },
     {
@@ -84813,92 +85017,92 @@
       },
       "steps": [
         {
-          "id": "6a37477c4747674a7f13d775",
+          "id": "6a3748b9e73d2165538fbb44",
           "step": "Ensure occupants are safe; call fire department and obtain incident report and cause notes."
         },
         {
-          "id": "6a37477c4747674a7f13d776",
+          "id": "6a3748b9e73d2165538fbb45",
           "step": "Do not discard charred materials until documented—photograph every room including HVAC vents and attic soot."
         },
         {
-          "id": "6a37477c4747674a7f13d777",
+          "id": "6a3748b9e73d2165538fbb46",
           "step": "Contact carrier for emergency board-up and mitigation vendors if policy includes fire response services."
         },
         {
-          "id": "6a37477c4747674a7f13d778",
+          "id": "6a3748b9e73d2165538fbb47",
           "step": "Separate structure damage (dwelling) from smoke-affected contents; list each room's items and odor damage."
         },
         {
-          "id": "6a37477c4747674a7f13d779",
+          "id": "6a3748b9e73d2165538fbb48",
           "step": "Track additional living expense (ALE) receipts if the home is uninhabitable—hotel, meals, pet boarding."
         },
         {
-          "id": "6a37477c4747674a7f13d77a",
+          "id": "6a3748b9e73d2165538fbb49",
           "step": "Meet adjuster with contractor scope addressing code upgrades, smoke sealing, and content pack-out vendors."
         }
       ],
       "documentChecklist": [
         {
-          "id": "6a37477c4747674a7f13d77b",
+          "id": "6a3748b9e73d2165538fbb4a",
           "item": "Fire department incident report"
         },
         {
-          "id": "6a37477c4747674a7f13d77c",
+          "id": "6a3748b9e73d2165538fbb4b",
           "item": "Timestamped photos/video of all affected areas including exterior"
         },
         {
-          "id": "6a37477c4747674a7f13d77d",
+          "id": "6a3748b9e73d2165538fbb4c",
           "item": "Contractor mitigation invoice and drying/smoke logs"
         },
         {
-          "id": "6a37477c4747674a7f13d77e",
+          "id": "6a3748b9e73d2165538fbb4d",
           "item": "Contents inventory with age and replacement source"
         },
         {
-          "id": "6a37477c4747674a7f13d77f",
+          "id": "6a3748b9e73d2165538fbb4e",
           "item": "ALE receipts with dates matching displacement period"
         },
         {
-          "id": "6a37477c4747674a7f13d780",
+          "id": "6a3748b9e73d2165538fbb4f",
           "item": "Prior maintenance records if electrical cause is disputed"
         }
       ],
       "onlineClaimUrl": "https://www.insurhi.com/claims/home",
       "denialReasons": [
         {
-          "id": "6a37477c4747674a7f13d781",
+          "id": "6a3748b9e73d2165538fbb50",
           "reason": "Vacancy or unoccupancy exclusion",
           "explanation": "Homes empty beyond policy-defined days may lose fire coverage—document move-in dates and utility usage."
         },
         {
-          "id": "6a37477c4747674a7f13d782",
+          "id": "6a3748b9e73d2165538fbb51",
           "reason": "Arson or fraud investigation",
           "explanation": "Carrier and law enforcement may delay or deny if intentional fire is suspected—cooperate with investigators."
         },
         {
-          "id": "6a37477c4747674a7f13d783",
+          "id": "6a3748b9e73d2165538fbb52",
           "reason": "Smoke-only claim with no covered peril",
           "explanation": "Neighbor smoke or wildfire ash may need separate wildfire/smoke endorsements in some regions—sudden kitchen fire is typically covered."
         },
         {
-          "id": "6a37477c4747674a7f13d784",
+          "id": "6a3748b9e73d2165538fbb53",
           "reason": "Underinsured dwelling limits",
           "explanation": "Extended replacement cost helps but caps exist—partial payment is limit exhaustion, not denial."
         }
       ],
       "delayCauses": [
         {
-          "id": "6a37477c4747674a7f13d785",
+          "id": "6a3748b9e73d2165538fbb54",
           "cause": "Cause-and-origin investigation",
           "explanation": "Electrical fires may require engineer reports—2–4 week delay before dwelling payment."
         },
         {
-          "id": "6a37477c4747674a7f13d786",
+          "id": "6a3748b9e73d2165538fbb55",
           "cause": "Content smoke cleaning backlog",
           "explanation": "Pack-out vendors are scarce after regional fires—start contents list early even if structure scope is pending."
         },
         {
-          "id": "6a37477c4747674a7f13d787",
+          "id": "6a3748b9e73d2165538fbb56",
           "cause": "Recoverable depreciation on contents",
           "explanation": "RCV policies may hold depreciation until items are replaced and invoiced."
         }
@@ -84906,29 +85110,29 @@
       "supplementalDocuments": [],
       "nextActions": [
         {
-          "id": "6a37477c4747674a7f13d788",
+          "id": "6a3748b9e73d2165538fbb57",
           "action": "Request written scope disagreement items before signing any partial settlement."
         },
         {
-          "id": "6a37477c4747674a7f13d789",
+          "id": "6a3748b9e73d2165538fbb58",
           "action": "Water damage from firefighting: /claims/guides/home-water-damage-claim-guide."
         },
         {
-          "id": "6a37477c4747674a7f13d78a",
+          "id": "6a3748b9e73d2165538fbb59",
           "action": "Dwelling limits: /guides/home-replacement-cost-vs-acv-deep-guide-2026."
         }
       ],
       "communicationNotes": [
         {
-          "id": "6a37477c4747674a7f13d78b",
+          "id": "6a3748b9e73d2165538fbb5a",
           "note": "Log every conversation with fire restoration vendors—carrier may direct repair through preferred networks."
         },
         {
-          "id": "6a37477c4747674a7f13d78c",
+          "id": "6a3748b9e73d2165538fbb5b",
           "note": "Separate wildfire evacuation ALE from smoke cleaning timelines in your ledger."
         },
         {
-          "id": "6a37477c4747674a7f13d78d",
+          "id": "6a3748b9e73d2165538fbb5c",
           "note": "Keep furnace filter changes and HVAC cleaning invoices—soot recurrence supports supplemental claims."
         }
       ],
@@ -84942,7 +85146,7 @@
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
       "lastReviewedAt": "2026-06-16T12:00:00.000Z",
-      "updatedAt": "2026-06-21T02:07:56.413Z",
+      "updatedAt": "2026-06-21T02:13:13.626Z",
       "createdAt": "2026-06-21T02:01:18.545Z"
     },
     {
@@ -85290,36 +85494,36 @@
       ],
       "nextActions": [
         {
-          "id": "6a2d12a5500e294c2fdbe5fe",
+          "id": "6a3748b9e73d2165538fbb5d",
+          "action": "Fire and smoke damage claims: /claims/guides/home-fire-smoke-claim-guide"
+        },
+        {
+          "id": "6a3748b9e73d2165538fbb5e",
+          "action": "Water damage after firefighting: /claims/guides/home-water-damage-claim-guide"
+        },
+        {
+          "id": "6a3748b9e73d2165538fbb5f",
           "action": "Water damage walkthrough: /claims/guides/home-water-damage-claim-guide"
         },
         {
-          "id": "6a2d12a5500e294c2fdbe5ff",
+          "id": "6a3748b9e73d2165538fbb60",
           "action": "Endorsement gaps for backup and flood: /guides/flood-vs-water-backup-buying-guide"
         },
         {
-          "id": "6a2d12a5500e294c2fdbe600",
+          "id": "6a3748b9e73d2165538fbb61",
           "action": "Get a written copy of any denial or settlement decision before accepting any payment."
         },
         {
-          "id": "6a2d12a5500e294c2fdbe601",
+          "id": "6a3748b9e73d2165538fbb62",
           "action": "Request a re-inspection with your contractor present if the adjuster's estimate misses identified damage."
         },
         {
-          "id": "6a2d12a5500e294c2fdbe602",
+          "id": "6a3748b9e73d2165538fbb63",
           "action": "Hire a licensed public adjuster on a percentage basis for losses above $25,000 if the carrier's offer feels light—shop fees carefully."
         },
         {
-          "id": "6a2d12a5500e294c2fdbe603",
+          "id": "6a3748b9e73d2165538fbb64",
           "action": "Use your state's mediation or appraisal clause (if your policy has one) before filing a lawsuit—it is faster and cheaper."
-        },
-        {
-          "id": "6a2d12a5500e294c2fdbe604",
-          "action": "File a complaint with your state Department of Insurance for delays beyond statutory prompt-pay deadlines."
-        },
-        {
-          "id": "6a2d12a5500e294c2fdbe605",
-          "action": "Consult a licensed insurance attorney before signing any release if the loss is large or the offer is significantly below repair estimates."
         }
       ],
       "communicationNotes": [
@@ -85353,8 +85557,8 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-09T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:38:47.550Z",
+      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
+      "updatedAt": "2026-06-21T02:13:13.823Z",
       "createdAt": "2026-04-22T07:53:42.850Z"
     },
     {
@@ -87545,92 +87749,92 @@
       },
       "steps": [
         {
-          "id": "6a37477c4747674a7f13d75c",
+          "id": "6a3748b9e73d2165538fbb2b",
           "step": "File a police report immediately for burglary or off-premises theft—get the report number before cleanup."
         },
         {
-          "id": "6a37477c4747674a7f13d75d",
+          "id": "6a3748b9e73d2165538fbb2c",
           "step": "Photograph disturbed entry points, missing item locations, and any remaining damaged property."
         },
         {
-          "id": "6a37477c4747674a7f13d75e",
+          "id": "6a3748b9e73d2165538fbb2d",
           "step": "List stolen items with purchase dates, serial numbers, and replacement-cost estimates from current retailers."
         },
         {
-          "id": "6a37477c4747674a7f13d75f",
+          "id": "6a3748b9e73d2165538fbb2e",
           "step": "Notify your carrier within 24–72 hours per policy; request a claim number and adjuster email."
         },
         {
-          "id": "6a37477c4747674a7f13d760",
+          "id": "6a3748b9e73d2165538fbb2f",
           "step": "Submit inventory spreadsheet, police report, receipts, and photos in one PDF packet when possible."
         },
         {
-          "id": "6a37477c4747674a7f13d761",
+          "id": "6a3748b9e73d2165538fbb30",
           "step": "Track sub-limits on jewelry, electronics, and cash—schedule high-value items if limits are insufficient before the next loss."
         }
       ],
       "documentChecklist": [
         {
-          "id": "6a37477c4747674a7f13d762",
+          "id": "6a3748b9e73d2165538fbb31",
           "item": "Police report with case number and officer contact"
         },
         {
-          "id": "6a37477c4747674a7f13d763",
+          "id": "6a3748b9e73d2165538fbb32",
           "item": "Photos of forced entry or theft scene before repairs"
         },
         {
-          "id": "6a37477c4747674a7f13d764",
+          "id": "6a3748b9e73d2165538fbb33",
           "item": "Inventory with make/model/serial and age of each item"
         },
         {
-          "id": "6a37477c4747674a7f13d765",
+          "id": "6a3748b9e73d2165538fbb34",
           "item": "Original receipts or bank/credit card statements"
         },
         {
-          "id": "6a37477c4747674a7f13d766",
+          "id": "6a3748b9e73d2165538fbb35",
           "item": "Appraisal for jewelry or collectibles above sub-limits"
         },
         {
-          "id": "6a37477c4747674a7f13d767",
+          "id": "6a3748b9e73d2165538fbb36",
           "item": "Landlord incident report if break-in occurred in a rental unit"
         }
       ],
       "onlineClaimUrl": "https://www.insurhi.com/claims/renters",
       "denialReasons": [
         {
-          "id": "6a37477c4747674a7f13d768",
+          "id": "6a3748b9e73d2165538fbb37",
           "reason": "No police report for theft claim",
           "explanation": "Most HO-4 renters policies require prompt police documentation for theft. Delayed or missing reports are a top denial reason."
         },
         {
-          "id": "6a37477c4747674a7f13d769",
+          "id": "6a3748b9e73d2165538fbb38",
           "reason": "Mysterious disappearance without evidence of theft",
           "explanation": "Lost items without signs of forced entry or witness theft may be excluded—carriers treat unexplained loss as not covered."
         },
         {
-          "id": "6a37477c4747674a7f13d76a",
+          "id": "6a3748b9e73d2165538fbb39",
           "reason": "Roommate or guest theft excluded",
           "explanation": "Theft by someone named on the lease or a household member may be excluded; only covered property of the named insured is payable."
         },
         {
-          "id": "6a37477c4747674a7f13d76b",
+          "id": "6a3748b9e73d2165538fbb3a",
           "reason": "Sub-limit exceeded for electronics or jewelry",
           "explanation": "A $2,000 laptop stack may hit a $1,500 off-premises electronics sub-limit even when total personal property limit is higher."
         }
       ],
       "delayCauses": [
         {
-          "id": "6a37477c4747674a7f13d76c",
+          "id": "6a3748b9e73d2165538fbb3b",
           "cause": "Police report not yet available",
           "explanation": "Carriers may pend until the report is filed—follow up with the precinct for digital copies."
         },
         {
-          "id": "6a37477c4747674a7f13d76d",
+          "id": "6a3748b9e73d2165538fbb3c",
           "cause": "Receipt gaps for older items",
           "explanation": "Adjusters accept bank statements or photos from purchase date when receipts are missing—delays come from manual valuation."
         },
         {
-          "id": "6a37477c4747674a7f13d76e",
+          "id": "6a3748b9e73d2165538fbb3d",
           "cause": "Landlord repair vs contents dispute",
           "explanation": "Broken door frames may be landlord responsibility; clarify what is dwelling vs contents before estimates are approved."
         }
@@ -87638,29 +87842,29 @@
       "supplementalDocuments": [],
       "nextActions": [
         {
-          "id": "6a37477c4747674a7f13d76f",
+          "id": "6a3748b9e73d2165538fbb3e",
           "action": "Request written denial citing policy section if police report was filed within required time."
         },
         {
-          "id": "6a37477c4747674a7f13d770",
+          "id": "6a3748b9e73d2165538fbb3f",
           "action": "Evidence habits: /guides/renters-theft-claim-evidence-deep-guide-2026."
         },
         {
-          "id": "6a37477c4747674a7f13d771",
+          "id": "6a3748b9e73d2165538fbb40",
           "action": "Roommate coverage splits: /guides/renters-roommate-coverage-split-guide-2026."
         }
       ],
       "communicationNotes": [
         {
-          "id": "6a37477c4747674a7f13d772",
+          "id": "6a3748b9e73d2165538fbb41",
           "note": "Email subject: Renters theft claim + policy number + police report number."
         },
         {
-          "id": "6a37477c4747674a7f13d773",
+          "id": "6a3748b9e73d2165538fbb42",
           "note": "Do not replace locks or dispose of damaged doors until the adjuster confirms—or photograph first."
         },
         {
-          "id": "6a37477c4747674a7f13d774",
+          "id": "6a3748b9e73d2165538fbb43",
           "note": "Separate off-premises theft (car break-in) from home burglary—sub-limits differ."
         }
       ],
@@ -87674,7 +87878,7 @@
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
       "lastReviewedAt": "2026-06-16T12:00:00.000Z",
-      "updatedAt": "2026-06-21T02:07:56.366Z",
+      "updatedAt": "2026-06-21T02:13:13.380Z",
       "createdAt": "2026-06-21T02:01:18.511Z"
     },
     {

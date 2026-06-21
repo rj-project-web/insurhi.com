@@ -9,24 +9,84 @@ import type { glossaryResourceLinks } from "@/lib/glossary-links";
 type GlossaryResources = (typeof glossaryResourceLinks)[string];
 
 type GlossaryTermContentProps = {
+  term: string;
   definition: string;
+  categoryTitle?: string | null;
   resources?: GlossaryResources;
   relatedTerms: CmsGlossaryTerm[];
 };
 
+export function buildGlossaryFaqs(input: { term: string; definition: string; categoryTitle?: string | null }) {
+  const categoryText = input.categoryTitle ? ` in ${input.categoryTitle.toLowerCase()}` : "";
+  return [
+    {
+      question: `What does ${input.term} mean${categoryText}?`,
+      answer: input.definition,
+    },
+    {
+      question: `Why does ${input.term} matter?`,
+      answer: `${input.term} can affect what is covered, how much you pay out of pocket, and what evidence you need when comparing policies or filing a claim.`,
+    },
+    {
+      question: `What should I check before buying coverage involving ${input.term}?`,
+      answer: `Check the policy wording, limits, exclusions, waiting periods, deductibles, and claim documentation rules tied to ${input.term}.`,
+    },
+  ];
+}
+
 export function GlossaryTermContent({
+  term,
   definition,
+  categoryTitle,
   resources,
   relatedTerms,
 }: GlossaryTermContentProps) {
+  const categoryText = categoryTitle ? `${categoryTitle.toLowerCase()} ` : "";
+  const relatedNames = relatedTerms.slice(0, 3).map((item) => item.term);
+  const glossaryFaqs = buildGlossaryFaqs({ term, definition, categoryTitle });
+
   return (
     <div className="space-y-6">
+      <InsurancePanel id="quick-answer" className="p-6 sm:p-8">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-sky-700">Quick answer</p>
+        <h2 className="mt-2 flex items-center gap-2 text-2xl font-semibold tracking-tight text-foreground">
+          <BookOpenText className="h-5 w-5 text-sky-600" aria-hidden />
+          What does {term} mean?
+        </h2>
+        <p className="mt-4 text-base leading-8 text-muted-foreground">{definition}</p>
+      </InsurancePanel>
+
       <InsurancePanel id="definition" className="p-6 sm:p-8">
         <h2 className="flex items-center gap-2 text-2xl font-semibold tracking-tight text-foreground">
           <BookOpenText className="h-5 w-5 text-sky-600" aria-hidden />
-          Definition
+          How it works
         </h2>
-        <p className="mt-4 text-base leading-8 text-muted-foreground">{definition}</p>
+        <p className="mt-4 text-base leading-8 text-muted-foreground">
+          In {categoryText}policies, {term.toLowerCase()} is usually defined in the contract rather
+          than in marketing copy. Read the exact wording, then check whether the term changes your
+          deductible, covered causes of loss, documentation burden, or claim payout.
+        </p>
+      </InsurancePanel>
+
+      <InsurancePanel id="example" className="p-6 sm:p-8">
+        <h2 className="text-2xl font-semibold tracking-tight text-foreground">Example and common mistake</h2>
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
+          <div className="rounded-xl border border-border/70 bg-background/90 p-4">
+            <h3 className="font-semibold text-foreground">Example</h3>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              Before choosing a policy, compare how {term.toLowerCase()} appears in the declarations
+              page, coverage form, and exclusions. Small wording differences can change the claim
+              result.
+            </p>
+          </div>
+          <div className="rounded-xl border border-border/70 bg-background/90 p-4">
+            <h3 className="font-semibold text-foreground">Common mistake</h3>
+            <p className="mt-2 text-sm leading-6 text-muted-foreground">
+              Do not assume {term.toLowerCase()} means the same thing across carriers. Confirm the
+              limit, trigger, waiting period, or proof requirements before relying on a quote.
+            </p>
+          </div>
+        </div>
       </InsurancePanel>
 
       {resources?.guides?.length || resources?.claims?.length || resources?.insurance ? (
@@ -76,6 +136,23 @@ export function GlossaryTermContent({
           </div>
         </InsurancePanel>
       ) : null}
+
+      <InsurancePanel id="term-faqs" className="p-6 sm:p-8">
+        <h2 className="text-2xl font-semibold tracking-tight text-foreground">Common questions</h2>
+        <div className="mt-4 space-y-4">
+          {glossaryFaqs.map((item) => (
+            <div key={item.question} className="rounded-xl border border-border/70 bg-background/90 p-4">
+              <h3 className="font-semibold text-foreground">{item.question}</h3>
+              <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.answer}</p>
+            </div>
+          ))}
+          {relatedNames.length > 0 ? (
+            <p className="text-sm leading-6 text-muted-foreground">
+              Related concepts to compare: {relatedNames.join(", ")}.
+            </p>
+          ) : null}
+        </div>
+      </InsurancePanel>
     </div>
   );
 }
@@ -84,10 +161,15 @@ export function getGlossaryTermSections(input: {
   resources?: GlossaryResources;
   relatedTerms: CmsGlossaryTerm[];
 }) {
-  const sections = [{ id: "definition", label: "Definition" }];
+  const sections = [
+    { id: "quick-answer", label: "Quick answer" },
+    { id: "definition", label: "How it works" },
+    { id: "example", label: "Example" },
+  ];
   if (input.resources?.guides?.length || input.resources?.claims?.length || input.resources?.insurance) {
     sections.push({ id: "related-reading", label: "Related reading" });
   }
   if (input.relatedTerms.length) sections.push({ id: "related-terms", label: "Related terms" });
+  sections.push({ id: "term-faqs", label: "FAQs" });
   return sections;
 }

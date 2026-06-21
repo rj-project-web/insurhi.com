@@ -6,6 +6,7 @@ import { DetailPageSidebar } from "@/components/detail-page-sidebar";
 import { HubQuickPaths } from "@/components/hub-quick-paths";
 import { InsurancePageBand } from "@/components/insurance-page-band";
 import {
+  buildProviderFaqs,
   getProviderDetailSections,
   ProviderDetailContent,
 } from "@/components/provider-detail-content";
@@ -13,7 +14,7 @@ import { ProviderDetailHero } from "@/components/provider-detail-hero";
 import type { CmsCategory, CmsProduct } from "@/lib/cms-client";
 import { getProducts, getProviderBySlug, getProviders } from "@/lib/cms-client";
 import { buildProviderPageTitle } from "@/lib/page-titles";
-import { buildBreadcrumbJsonLd, buildMetadata } from "@/lib/seo";
+import { buildBreadcrumbJsonLd, buildFaqPageJsonLd, buildMetadata } from "@/lib/seo";
 import { providerCanonicalAliases } from "@/lib/site-data";
 
 type ProviderPageProps = {
@@ -100,6 +101,12 @@ export default async function ProviderDetailPage({ params }: ProviderPageProps) 
     coverageRegions: provider.coverageRegions,
   });
   const primaryCategory = linkedCategories[0];
+  const providerFaqs = buildProviderFaqs({
+    name: provider.name,
+    bestForItems,
+    linkedCategories,
+  });
+  const faqJsonLd = buildFaqPageJsonLd(providerFaqs);
 
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
@@ -113,6 +120,12 @@ export default async function ProviderDetailPage({ params }: ProviderPageProps) 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      ) : null}
 
       <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
         <ProviderDetailHero
@@ -131,6 +144,9 @@ export default async function ProviderDetailPage({ params }: ProviderPageProps) 
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_17rem] xl:grid-cols-[minmax(0,1fr)_18rem]">
           <div className="min-w-0">
             <ProviderDetailContent
+              name={provider.name}
+              summary={provider.summary}
+              rating={provider.rating ?? null}
               bestForItems={bestForItems}
               linkedCategories={linkedCategories}
               linkedProducts={linkedProducts}

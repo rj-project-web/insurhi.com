@@ -48,15 +48,44 @@ export default async function AboutPage() {
       </InsurancePageBand>
 
       <InsurancePageBand tone="surface" innerClassName="py-8 sm:py-10">
-        <InsurancePanel className="p-6 sm:p-8">
-          {cmsPage?.content ? (
-            <div className="max-w-3xl">
-              <CmsRichText content={cmsPage.content} />
+        <div className="space-y-6">
+          <InsurancePanel className="p-6 sm:p-8">
+            {cmsPage?.content ? (
+              <div className="max-w-3xl">
+                <CmsRichText content={cmsPage.content} />
+              </div>
+            ) : (
+              <p className="max-w-3xl text-base leading-8 text-muted-foreground">{fallbackDescription}</p>
+            )}
+          </InsurancePanel>
+
+          <InsurancePanel className="p-6 sm:p-8">
+            <h2 className="text-2xl font-semibold tracking-tight text-foreground">
+              What makes Insurhi guidance different
+            </h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              {[
+                {
+                  title: "Insurance-specific analysis",
+                  text: "We focus on coverage wording, exclusions, claim triggers, pricing context, and provider behavior rather than generic personal finance advice.",
+                },
+                {
+                  title: "Visible methodology",
+                  text: "Product and provider recommendations are tied to documented criteria including coverage clarity, claim experience, pricing signals, and consumer suitability.",
+                },
+                {
+                  title: "Editorial independence",
+                  text: "Commercial relationships do not determine rankings. Errors and source updates can be sent to editorial@insurhi.com for review.",
+                },
+              ].map((item) => (
+                <div key={item.title} className="rounded-xl border border-border/70 bg-background/90 p-4">
+                  <h3 className="font-semibold text-foreground">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.text}</p>
+                </div>
+              ))}
             </div>
-          ) : (
-            <p className="max-w-3xl text-base leading-8 text-muted-foreground">{fallbackDescription}</p>
-          )}
-        </InsurancePanel>
+          </InsurancePanel>
+        </div>
       </InsurancePageBand>
 
       <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">

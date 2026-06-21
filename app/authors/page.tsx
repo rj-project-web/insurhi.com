@@ -38,37 +38,66 @@ export default async function AuthorsPage() {
       </InsurancePageBand>
 
       <InsurancePageBand tone="surface" innerClassName="py-8 sm:py-10">
-        {authors.length > 0 ? (
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {authors.map((author) => (
-              <Link key={author.id} href={`/authors/${author.slug}`} className="group">
-                <InsurancePanel className="flex h-full flex-col gap-3 p-5 transition-all group-hover:-translate-y-0.5 group-hover:border-sky-300/60 group-hover:shadow-md">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-800 to-sky-600 text-lg font-bold text-white">
-                      {author.name.charAt(0)}
-                    </div>
-                    <div>
-                      <p className="font-semibold tracking-tight text-foreground">{author.name}</p>
-                      {author.role ? (
-                        <p className="text-xs text-muted-foreground">{author.role}</p>
-                      ) : null}
-                    </div>
-                  </div>
-                  {author.credentials ? (
-                    <p className="text-sm leading-6 text-muted-foreground">{author.credentials}</p>
-                  ) : null}
-                </InsurancePanel>
-              </Link>
-            ))}
-          </div>
-        ) : (
-          <InsurancePanel className="p-5">
-            <p className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Users className="h-4 w-4" aria-hidden />
-              Reviewer profiles are being published.
-            </p>
+        <div className="space-y-6">
+          <InsurancePanel className="p-6 sm:p-8">
+            <h2 className="text-2xl font-semibold tracking-tight text-foreground">
+              How our review process works
+            </h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              {[
+                {
+                  title: "Source check",
+                  text: "Editors compare policy forms, public filings, carrier disclosures, and claim workflow notes before drafting recommendations.",
+                },
+                {
+                  title: "Category review",
+                  text: "Each guide or profile is reviewed by an editor focused on the relevant insurance line, such as auto, property, life, Medicare, or pet coverage.",
+                },
+                {
+                  title: "Correction loop",
+                  text: "Readers can email editorial@insurhi.com. Material corrections are reviewed against source documents and updated within a defined editorial workflow.",
+                },
+              ].map((item) => (
+                <div key={item.title} className="rounded-xl border border-border/70 bg-background/90 p-4">
+                  <h3 className="font-semibold text-foreground">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.text}</p>
+                </div>
+              ))}
+            </div>
           </InsurancePanel>
-        )}
+
+          {authors.length > 0 ? (
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {authors.map((author) => (
+                <Link key={author.id} href={`/authors/${author.slug}`} className="group">
+                  <InsurancePanel className="flex h-full flex-col gap-3 p-5 transition-all group-hover:-translate-y-0.5 group-hover:border-sky-300/60 group-hover:shadow-md">
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-blue-800 to-sky-600 text-lg font-bold text-white">
+                        {author.name.charAt(0)}
+                      </div>
+                      <div>
+                        <p className="font-semibold tracking-tight text-foreground">{author.name}</p>
+                        {author.role ? (
+                          <p className="text-xs text-muted-foreground">{author.role}</p>
+                        ) : null}
+                      </div>
+                    </div>
+                    {author.credentials ? (
+                      <p className="text-sm leading-6 text-muted-foreground">{author.credentials}</p>
+                    ) : null}
+                  </InsurancePanel>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <InsurancePanel className="p-5">
+              <p className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Users className="h-4 w-4" aria-hidden />
+                Reviewer profiles are being published.
+              </p>
+            </InsurancePanel>
+          )}
+        </div>
       </InsurancePageBand>
 
       <InsurancePageBand tone="muted" innerClassName="py-8 sm:py-10">

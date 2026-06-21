@@ -16,6 +16,16 @@ type ClaimCaseDetailPageProps = {
 
 export const dynamic = "force-dynamic";
 
+function buildClaimCaseDescription(input: { title: string; scenario: string; outcome: string }) {
+  const scenario = input.scenario.trim();
+  const outcome = input.outcome.trim();
+  const outcomeSnippet = outcome && outcome !== scenario ? ` Outcome: ${outcome}` : "";
+  return `${input.title}: review the claim scenario, key documentation signals, and outcome lessons before filing a similar insurance claim.${outcomeSnippet}`.slice(
+    0,
+    160,
+  );
+}
+
 export async function generateStaticParams() {
   const claimCases = await getClaimCasesList();
   return claimCases.map((claimCase) => ({ id: String(claimCase.id) }));
@@ -35,7 +45,7 @@ export async function generateMetadata({ params }: ClaimCaseDetailPageProps): Pr
 
   return buildMetadata({
     title: claimCase.title,
-    description: claimCase.scenario,
+    description: buildClaimCaseDescription(claimCase),
     path: `/claims/cases/${claimCase.id}`,
   });
 }
@@ -55,6 +65,7 @@ export default async function ClaimCaseDetailPage({ params }: ClaimCaseDetailPag
     "@context": "https://schema.org",
     "@type": "Article",
     headline: claimCase.title,
+    description: buildClaimCaseDescription(claimCase),
     mainEntityOfPage: absoluteUrl(`/claims/cases/${claimCase.id}`),
     url: absoluteUrl(`/claims/cases/${claimCase.id}`),
   };

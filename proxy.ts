@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
  * RSC prefetch requests (?_rsc=...) are internal Next.js flight payloads, not
  * standalone pages. Mark them noindex so crawlers do not treat them as duplicates.
  */
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   if (!request.nextUrl.searchParams.has("_rsc")) {
     return NextResponse.next();
   }

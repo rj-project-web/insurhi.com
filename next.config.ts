@@ -13,6 +13,20 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async headers() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "query", key: "_rsc" }],
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow",
+          },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return guideSlugRedirects.map(({ source, destination }) => ({
       source,

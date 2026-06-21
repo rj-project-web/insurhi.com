@@ -5,6 +5,7 @@ import { BookOpenText, ClipboardList, Sparkles } from "lucide-react";
 import { DetailPageSidebar } from "@/components/detail-page-sidebar";
 import { EditorialDisclosure } from "@/components/editorial-disclosure";
 import {
+  buildGlossaryFaqs,
   getGlossaryTermSections,
   GlossaryTermContent,
 } from "@/components/glossary-term-content";
@@ -18,6 +19,7 @@ import {
   absoluteUrl,
   buildBreadcrumbJsonLd,
   buildDefinedTermJsonLd,
+  buildFaqPageJsonLd,
   buildMetadata,
 } from "@/lib/seo";
 
@@ -66,6 +68,12 @@ export default async function GlossaryTermPage({ params }: GlossaryTermPageProps
   const catSlug = categorySlugFromRelation(term.category);
   const catTitle = categoryTitleFromRelation(term.category);
   const sections = getGlossaryTermSections({ resources, relatedTerms });
+  const glossaryFaqs = buildGlossaryFaqs({
+    term: term.term,
+    definition: term.definition,
+    categoryTitle: catTitle,
+  });
+  const faqJsonLd = buildFaqPageJsonLd(glossaryFaqs);
 
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "Home", path: "/" },
@@ -88,6 +96,12 @@ export default async function GlossaryTermPage({ params }: GlossaryTermPageProps
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(definedTermJsonLd) }}
       />
+      {faqJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      ) : null}
 
       <InsurancePageBand tone="hero" innerClassName="py-10 sm:py-12 lg:py-14">
         <GlossaryTermHero
@@ -103,7 +117,9 @@ export default async function GlossaryTermPage({ params }: GlossaryTermPageProps
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_17rem] xl:grid-cols-[minmax(0,1fr)_18rem]">
           <div className="min-w-0">
             <GlossaryTermContent
+              term={term.term}
               definition={term.definition}
+              categoryTitle={catTitle}
               resources={resources}
               relatedTerms={relatedTerms}
             />

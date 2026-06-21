@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-21T02:02:34.621Z",
+    "exportedAt": "2026-06-21T02:07:56.966Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51648,7 +51648,7 @@
           "direction": null
         }
       },
-      "publishedAt": "2026-06-21T02:01:18.533Z",
+      "publishedAt": "2026-06-21T02:07:56.385Z",
       "reviewedBy": {
         "id": 3,
         "name": "Health & Life Editor",
@@ -51663,7 +51663,7 @@
         "metaTitle": "Medicare Advantage vs Medigap 2026 | Compare",
         "metaDescription": "Medicare Advantage vs Medigap in 2026: networks, Part D bundling, travel coverage, switching windows, and why you usually cannot hold both."
       },
-      "updatedAt": "2026-06-21T02:01:18.534Z",
+      "updatedAt": "2026-06-21T02:07:56.391Z",
       "createdAt": "2026-06-21T02:01:18.533Z",
       "_status": "published"
     },
@@ -52257,7 +52257,7 @@
           "direction": null
         }
       },
-      "publishedAt": "2026-06-21T02:01:18.462Z",
+      "publishedAt": "2026-06-21T02:07:56.316Z",
       "reviewedBy": {
         "id": 1,
         "name": "Insurhi Editorial Team",
@@ -52272,7 +52272,7 @@
         "metaTitle": "Pet Multi-Pet Discount Guide 2026 | Compare",
         "metaDescription": "Compare multi-pet discounts: one policy vs two, waiting periods per pet, breed limits, and when insuring pets separately saves money in 2026."
       },
-      "updatedAt": "2026-06-21T02:01:18.467Z",
+      "updatedAt": "2026-06-21T02:07:56.329Z",
       "createdAt": "2026-06-21T02:01:18.466Z",
       "_status": "published"
     },
@@ -82180,6 +82180,120 @@
   ],
   "faqItems": [
     {
+      "id": 93,
+      "question": "Is smoke damage covered the same as fire damage on homeowners insurance?",
+      "answer": "Sudden fire and related smoke/soot from a covered peril are typically part of the same claim—kitchen fires often include content cleaning and odor remediation. Neighbor smoke or wildfire ash may need different endorsements by region. Walkthrough: /claims/guides/home-fire-smoke-claim-guide.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-21T02:07:56.475Z",
+      "createdAt": "2026-06-21T02:07:56.475Z"
+    },
+    {
+      "id": 92,
+      "question": "Can I have Medicare Advantage and Medigap at the same time?",
+      "answer": "Generally no—Medigap is designed to supplement Original Medicare, not Part C Advantage plans. You choose one path: Advantage (often with Part D bundled) or Original Medicare plus Medigap and usually standalone Part D. Compare in /guides/medicare-advantage-vs-medigap-buying-guide.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-21T02:07:56.467Z",
+      "createdAt": "2026-06-21T02:07:56.467Z"
+    },
+    {
+      "id": 91,
+      "question": "Does renters insurance cover a roommate's stolen belongings?",
+      "answer": "Generally no—your policy covers your named insured property, not a roommate's items unless they are scheduled or the roommate is a named insured. Roommates should carry separate policies. Split rules: /guides/renters-roommate-coverage-split-guide-2026.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-21T02:07:56.463Z",
+      "createdAt": "2026-06-21T02:07:56.463Z"
+    },
+    {
+      "id": 90,
+      "question": "Do I need a police report for a renters insurance theft claim?",
+      "answer": "Almost always yes for burglary or off-premises theft. Most HO-4 policies require prompt police documentation; missing reports are a top denial reason. Filing steps: /claims/guides/renters-theft-claim-guide.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-21T02:07:56.433Z",
+      "createdAt": "2026-06-21T02:07:56.433Z"
+    },
+    {
+      "id": 89,
+      "question": "Does adding a second pet reset the waiting period?",
+      "answer": "Usually the new pet gets its own illness waiting period; the first pet's coverage typically continues unchanged. Accident waiting periods may be shorter—confirm effective dates before the new pet's first vet visit. See /guides/pet-multi-pet-discount-guide.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-21T02:07:56.430Z",
+      "createdAt": "2026-06-21T02:07:56.430Z"
+    },
+    {
+      "id": 88,
+      "question": "Do I need one pet insurance policy for multiple pets?",
+      "answer": "No—a single policy can often cover multiple pets with a household discount, or you can buy separate policies per pet. One policy simplifies billing but may share annual limits. Compare totals in /guides/pet-multi-pet-discount-guide.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-21T02:07:56.427Z",
+      "createdAt": "2026-06-21T02:07:56.427Z"
+    },
+    {
       "id": 87,
       "question": "Can pet insurance deny allergies as pre-existing if my vet never wrote 'allergy' before enrollment?",
       "answer": "Yes—carriers look for symptoms (itching, ear infections, hot spots) even without an allergy diagnosis. Pull full records before switching vets. Compare enrollment timing in /guides/pet-pre-existing-waiting-period-deep-guide-2026.",
@@ -84699,92 +84813,92 @@
       },
       "steps": [
         {
-          "id": "6a3745eeccfc3525a4729c05",
+          "id": "6a37477c4747674a7f13d775",
           "step": "Ensure occupants are safe; call fire department and obtain incident report and cause notes."
         },
         {
-          "id": "6a3745eeccfc3525a4729c06",
+          "id": "6a37477c4747674a7f13d776",
           "step": "Do not discard charred materials until documented—photograph every room including HVAC vents and attic soot."
         },
         {
-          "id": "6a3745eeccfc3525a4729c07",
+          "id": "6a37477c4747674a7f13d777",
           "step": "Contact carrier for emergency board-up and mitigation vendors if policy includes fire response services."
         },
         {
-          "id": "6a3745eeccfc3525a4729c08",
+          "id": "6a37477c4747674a7f13d778",
           "step": "Separate structure damage (dwelling) from smoke-affected contents; list each room's items and odor damage."
         },
         {
-          "id": "6a3745eeccfc3525a4729c09",
+          "id": "6a37477c4747674a7f13d779",
           "step": "Track additional living expense (ALE) receipts if the home is uninhabitable—hotel, meals, pet boarding."
         },
         {
-          "id": "6a3745eeccfc3525a4729c0a",
+          "id": "6a37477c4747674a7f13d77a",
           "step": "Meet adjuster with contractor scope addressing code upgrades, smoke sealing, and content pack-out vendors."
         }
       ],
       "documentChecklist": [
         {
-          "id": "6a3745eeccfc3525a4729c0b",
+          "id": "6a37477c4747674a7f13d77b",
           "item": "Fire department incident report"
         },
         {
-          "id": "6a3745eeccfc3525a4729c0c",
+          "id": "6a37477c4747674a7f13d77c",
           "item": "Timestamped photos/video of all affected areas including exterior"
         },
         {
-          "id": "6a3745eeccfc3525a4729c0d",
+          "id": "6a37477c4747674a7f13d77d",
           "item": "Contractor mitigation invoice and drying/smoke logs"
         },
         {
-          "id": "6a3745eeccfc3525a4729c0e",
+          "id": "6a37477c4747674a7f13d77e",
           "item": "Contents inventory with age and replacement source"
         },
         {
-          "id": "6a3745eeccfc3525a4729c0f",
+          "id": "6a37477c4747674a7f13d77f",
           "item": "ALE receipts with dates matching displacement period"
         },
         {
-          "id": "6a3745eeccfc3525a4729c10",
+          "id": "6a37477c4747674a7f13d780",
           "item": "Prior maintenance records if electrical cause is disputed"
         }
       ],
       "onlineClaimUrl": "https://www.insurhi.com/claims/home",
       "denialReasons": [
         {
-          "id": "6a3745eeccfc3525a4729c11",
+          "id": "6a37477c4747674a7f13d781",
           "reason": "Vacancy or unoccupancy exclusion",
           "explanation": "Homes empty beyond policy-defined days may lose fire coverage—document move-in dates and utility usage."
         },
         {
-          "id": "6a3745eeccfc3525a4729c12",
+          "id": "6a37477c4747674a7f13d782",
           "reason": "Arson or fraud investigation",
           "explanation": "Carrier and law enforcement may delay or deny if intentional fire is suspected—cooperate with investigators."
         },
         {
-          "id": "6a3745eeccfc3525a4729c13",
+          "id": "6a37477c4747674a7f13d783",
           "reason": "Smoke-only claim with no covered peril",
           "explanation": "Neighbor smoke or wildfire ash may need separate wildfire/smoke endorsements in some regions—sudden kitchen fire is typically covered."
         },
         {
-          "id": "6a3745eeccfc3525a4729c14",
+          "id": "6a37477c4747674a7f13d784",
           "reason": "Underinsured dwelling limits",
           "explanation": "Extended replacement cost helps but caps exist—partial payment is limit exhaustion, not denial."
         }
       ],
       "delayCauses": [
         {
-          "id": "6a3745eeccfc3525a4729c15",
+          "id": "6a37477c4747674a7f13d785",
           "cause": "Cause-and-origin investigation",
           "explanation": "Electrical fires may require engineer reports—2–4 week delay before dwelling payment."
         },
         {
-          "id": "6a3745eeccfc3525a4729c16",
+          "id": "6a37477c4747674a7f13d786",
           "cause": "Content smoke cleaning backlog",
           "explanation": "Pack-out vendors are scarce after regional fires—start contents list early even if structure scope is pending."
         },
         {
-          "id": "6a3745eeccfc3525a4729c17",
+          "id": "6a37477c4747674a7f13d787",
           "cause": "Recoverable depreciation on contents",
           "explanation": "RCV policies may hold depreciation until items are replaced and invoiced."
         }
@@ -84792,29 +84906,29 @@
       "supplementalDocuments": [],
       "nextActions": [
         {
-          "id": "6a3745eeccfc3525a4729c18",
+          "id": "6a37477c4747674a7f13d788",
           "action": "Request written scope disagreement items before signing any partial settlement."
         },
         {
-          "id": "6a3745eeccfc3525a4729c19",
+          "id": "6a37477c4747674a7f13d789",
           "action": "Water damage from firefighting: /claims/guides/home-water-damage-claim-guide."
         },
         {
-          "id": "6a3745eeccfc3525a4729c1a",
+          "id": "6a37477c4747674a7f13d78a",
           "action": "Dwelling limits: /guides/home-replacement-cost-vs-acv-deep-guide-2026."
         }
       ],
       "communicationNotes": [
         {
-          "id": "6a3745eeccfc3525a4729c1b",
+          "id": "6a37477c4747674a7f13d78b",
           "note": "Log every conversation with fire restoration vendors—carrier may direct repair through preferred networks."
         },
         {
-          "id": "6a3745eeccfc3525a4729c1c",
+          "id": "6a37477c4747674a7f13d78c",
           "note": "Separate wildfire evacuation ALE from smoke cleaning timelines in your ledger."
         },
         {
-          "id": "6a3745eeccfc3525a4729c1d",
+          "id": "6a37477c4747674a7f13d78d",
           "note": "Keep furnace filter changes and HVAC cleaning invoices—soot recurrence supports supplemental claims."
         }
       ],
@@ -84828,7 +84942,7 @@
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
       "lastReviewedAt": "2026-06-16T12:00:00.000Z",
-      "updatedAt": "2026-06-21T02:01:18.545Z",
+      "updatedAt": "2026-06-21T02:07:56.413Z",
       "createdAt": "2026-06-21T02:01:18.545Z"
     },
     {
@@ -87431,92 +87545,92 @@
       },
       "steps": [
         {
-          "id": "6a3745eeccfc3525a4729bec",
+          "id": "6a37477c4747674a7f13d75c",
           "step": "File a police report immediately for burglary or off-premises theft—get the report number before cleanup."
         },
         {
-          "id": "6a3745eeccfc3525a4729bed",
+          "id": "6a37477c4747674a7f13d75d",
           "step": "Photograph disturbed entry points, missing item locations, and any remaining damaged property."
         },
         {
-          "id": "6a3745eeccfc3525a4729bee",
+          "id": "6a37477c4747674a7f13d75e",
           "step": "List stolen items with purchase dates, serial numbers, and replacement-cost estimates from current retailers."
         },
         {
-          "id": "6a3745eeccfc3525a4729bef",
+          "id": "6a37477c4747674a7f13d75f",
           "step": "Notify your carrier within 24–72 hours per policy; request a claim number and adjuster email."
         },
         {
-          "id": "6a3745eeccfc3525a4729bf0",
+          "id": "6a37477c4747674a7f13d760",
           "step": "Submit inventory spreadsheet, police report, receipts, and photos in one PDF packet when possible."
         },
         {
-          "id": "6a3745eeccfc3525a4729bf1",
+          "id": "6a37477c4747674a7f13d761",
           "step": "Track sub-limits on jewelry, electronics, and cash—schedule high-value items if limits are insufficient before the next loss."
         }
       ],
       "documentChecklist": [
         {
-          "id": "6a3745eeccfc3525a4729bf2",
+          "id": "6a37477c4747674a7f13d762",
           "item": "Police report with case number and officer contact"
         },
         {
-          "id": "6a3745eeccfc3525a4729bf3",
+          "id": "6a37477c4747674a7f13d763",
           "item": "Photos of forced entry or theft scene before repairs"
         },
         {
-          "id": "6a3745eeccfc3525a4729bf4",
+          "id": "6a37477c4747674a7f13d764",
           "item": "Inventory with make/model/serial and age of each item"
         },
         {
-          "id": "6a3745eeccfc3525a4729bf5",
+          "id": "6a37477c4747674a7f13d765",
           "item": "Original receipts or bank/credit card statements"
         },
         {
-          "id": "6a3745eeccfc3525a4729bf6",
+          "id": "6a37477c4747674a7f13d766",
           "item": "Appraisal for jewelry or collectibles above sub-limits"
         },
         {
-          "id": "6a3745eeccfc3525a4729bf7",
+          "id": "6a37477c4747674a7f13d767",
           "item": "Landlord incident report if break-in occurred in a rental unit"
         }
       ],
       "onlineClaimUrl": "https://www.insurhi.com/claims/renters",
       "denialReasons": [
         {
-          "id": "6a3745eeccfc3525a4729bf8",
+          "id": "6a37477c4747674a7f13d768",
           "reason": "No police report for theft claim",
           "explanation": "Most HO-4 renters policies require prompt police documentation for theft. Delayed or missing reports are a top denial reason."
         },
         {
-          "id": "6a3745eeccfc3525a4729bf9",
+          "id": "6a37477c4747674a7f13d769",
           "reason": "Mysterious disappearance without evidence of theft",
           "explanation": "Lost items without signs of forced entry or witness theft may be excluded—carriers treat unexplained loss as not covered."
         },
         {
-          "id": "6a3745eeccfc3525a4729bfa",
+          "id": "6a37477c4747674a7f13d76a",
           "reason": "Roommate or guest theft excluded",
           "explanation": "Theft by someone named on the lease or a household member may be excluded; only covered property of the named insured is payable."
         },
         {
-          "id": "6a3745eeccfc3525a4729bfb",
+          "id": "6a37477c4747674a7f13d76b",
           "reason": "Sub-limit exceeded for electronics or jewelry",
           "explanation": "A $2,000 laptop stack may hit a $1,500 off-premises electronics sub-limit even when total personal property limit is higher."
         }
       ],
       "delayCauses": [
         {
-          "id": "6a3745eeccfc3525a4729bfc",
+          "id": "6a37477c4747674a7f13d76c",
           "cause": "Police report not yet available",
           "explanation": "Carriers may pend until the report is filed—follow up with the precinct for digital copies."
         },
         {
-          "id": "6a3745eeccfc3525a4729bfd",
+          "id": "6a37477c4747674a7f13d76d",
           "cause": "Receipt gaps for older items",
           "explanation": "Adjusters accept bank statements or photos from purchase date when receipts are missing—delays come from manual valuation."
         },
         {
-          "id": "6a3745eeccfc3525a4729bfe",
+          "id": "6a37477c4747674a7f13d76e",
           "cause": "Landlord repair vs contents dispute",
           "explanation": "Broken door frames may be landlord responsibility; clarify what is dwelling vs contents before estimates are approved."
         }
@@ -87524,29 +87638,29 @@
       "supplementalDocuments": [],
       "nextActions": [
         {
-          "id": "6a3745eeccfc3525a4729bff",
+          "id": "6a37477c4747674a7f13d76f",
           "action": "Request written denial citing policy section if police report was filed within required time."
         },
         {
-          "id": "6a3745eeccfc3525a4729c00",
+          "id": "6a37477c4747674a7f13d770",
           "action": "Evidence habits: /guides/renters-theft-claim-evidence-deep-guide-2026."
         },
         {
-          "id": "6a3745eeccfc3525a4729c01",
+          "id": "6a37477c4747674a7f13d771",
           "action": "Roommate coverage splits: /guides/renters-roommate-coverage-split-guide-2026."
         }
       ],
       "communicationNotes": [
         {
-          "id": "6a3745eeccfc3525a4729c02",
+          "id": "6a37477c4747674a7f13d772",
           "note": "Email subject: Renters theft claim + policy number + police report number."
         },
         {
-          "id": "6a3745eeccfc3525a4729c03",
+          "id": "6a37477c4747674a7f13d773",
           "note": "Do not replace locks or dispose of damaged doors until the adjuster confirms—or photograph first."
         },
         {
-          "id": "6a3745eeccfc3525a4729c04",
+          "id": "6a37477c4747674a7f13d774",
           "note": "Separate off-premises theft (car break-in) from home burglary—sub-limits differ."
         }
       ],
@@ -87560,7 +87674,7 @@
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
       "lastReviewedAt": "2026-06-16T12:00:00.000Z",
-      "updatedAt": "2026-06-21T02:01:18.512Z",
+      "updatedAt": "2026-06-21T02:07:56.366Z",
       "createdAt": "2026-06-21T02:01:18.511Z"
     },
     {

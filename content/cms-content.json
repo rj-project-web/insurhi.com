@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-21T02:16:30.980Z",
+    "exportedAt": "2026-06-23T00:57:38.564Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51219,6 +51219,1205 @@
   ],
   "articles": [
     {
+      "id": 36,
+      "title": "Term Life Conversion Guide (2026): Conversion Windows, Exams, and Premium Jumps",
+      "slug": "life-term-conversion-buying-guide",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for term policyholders nearing the end of level premium period or facing health changes who want to keep coverage without full underwriting. Conversion uses your original issue age for pricing on the permanent product—often valuable if health declined.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "How conversion privilege works",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Most term contracts allow conversion to a permanent product from the same carrier during a window (often to age 65–70).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Conversion typically avoids new medical exam if exercised inside the stated period.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Premium jumps sharply versus term because permanent builds cash value and lifelong coverage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Conversion vs new policy",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Conversion: keeps original underwriting class; limited product menu from the carrier.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "New policy: full underwriting; may be cheaper if health improved or you shop aggressively.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Lapsed term cannot convert—pay within grace per /guides/life-policy-lapse-reinstatement-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: term ending at age 58 with new diagnosis",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A policyholder develops a condition that would decline new coverage. Converting a $500,000 term rider to universal life at original issue age 42 pricing may be the only guaranteed path—compare converted premium to reduced face amount options.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: healthy at term year 15",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A healthy insured may beat conversion rates with a new 20-year term from a competitor—run quotes before exercising conversion. Factor contestability and beneficiary continuity.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Locate conversion deadline on the policy schedule or call customer service.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Model converted premium vs reduced death benefit amounts.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm converted policy type (whole vs universal) and cash value growth assumptions.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Buying basics: /guides/life-insurance-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 5,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Beneficiary updates: /guides/life-beneficiary-claim-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I convert partial face amount? A: Often yes—convert some coverage and let the rest lapse.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does conversion reset the contestability period? A: Usually not on the converted portion—verify contract language.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: What if I miss the conversion window? A: You must qualify for new underwriting or renew term if offered—often expensive.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claim delays: /claims/guides/life-claim-delay-denial-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Coverage amount planning: /guides/life-coverage-amount-planning-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare life products: /insurance/life",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-23T00:57:03.884Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Term Life Conversion Guide 2026 | No Exam",
+        "metaDescription": "Convert term life to permanent insurance: conversion privilege deadlines, evidence of insurability, premium increases, and when conversion beats a new policy."
+      },
+      "updatedAt": "2026-06-23T00:57:03.885Z",
+      "createdAt": "2026-06-23T00:57:03.885Z",
+      "_status": "published"
+    },
+    {
+      "id": 35,
+      "title": "Auto Rental Reimbursement Guide (2026): Daily Limits, Loss of Use, and Endorsements",
+      "slug": "auto-rental-reimbursement-buying-guide",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for drivers who rely on a vehicle daily and cannot self-fund a rental after a covered collision or comprehensive loss. Rental reimbursement (transportation expense) is usually an inexpensive endorsement—but caps and waiting periods vary widely.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What rental reimbursement covers",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pays toward a rental car while your vehicle is repaired or replaced after a covered loss.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Typical limits: $30–$50/day and $900–$1,500 total per claim (higher tiers available).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Does not replace liability coverage for the rental itself—you may need to buy the rental agency's CDW or use a credit card benefit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Loss of use vs rental reimbursement",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Rental reimbursement: you rent a replacement; carrier reimburses up to policy limits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Loss of use (when offered): may pay a flat per-day amount without requiring a rental contract—read form language.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Neither applies if the claim is denied or only liability is involved without your vehicle damage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: fender bender, 10-day repair",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A policy with $40/day and $1,200 max pays $400 for ten days. If the shop takes 18 days, days 13–18 are out of pocket unless you negotiate a supplement or extension with the adjuster in writing.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: total loss waiting on settlement",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Rental coverage often ends when the carrier declares a total loss or issues payment—even if you have not replaced the vehicle. Pair with /guides/auto-gap-insurance-buying-guide if you owe more than ACV.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Match daily limit to local economy rental rates (SUVs cost more than sedans).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm whether the endorsement starts day one or after a waiting period.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Stack with adequate collision/UM limits from /guides/auto-insurance-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "After a loss, follow /claims/guides/auto-accident-claim-guide-2026 before renting.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does rental reimbursement cover a rental while my car is in the shop for maintenance? A: No—only covered claims (collision, comprehensive, etc.) trigger the benefit.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Will insurance pay for a larger SUV rental? A: Only up to your daily dollar limit unless the adjuster authorizes an exception in writing.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is rental coverage included in full coverage? A: Usually optional—verify the endorsement on your declarations page.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Collision supplements: /claims/guides/auto-collision-supplement-claim-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Total loss: /claims/guides/auto-total-loss-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare auto carriers: /insurance/auto",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-23T00:57:03.721Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Auto Rental Reimbursement Guide 2026 | Limits",
+        "metaDescription": "Rental car reimbursement guide for 2026: daily limits, max days, loss of use vs rental coverage, and when the endorsement pays after a covered claim."
+      },
+      "updatedAt": "2026-06-23T00:57:03.727Z",
+      "createdAt": "2026-06-23T00:57:03.726Z",
+      "_status": "published"
+    },
+    {
       "id": 34,
       "title": "Medicare Advantage vs Medigap Guide (2026): Networks, Part D, and Switching Rules",
       "slug": "medicare-advantage-vs-medigap-buying-guide",
@@ -76141,6 +77340,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W6 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Term to permanent conversion: /guides/life-term-conversion-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Lapse and reinstatement: /guides/life-policy-lapse-reinstatement-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -76156,12 +77423,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-08T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
       "seo": {
         "metaTitle": "Life Insurance Buying Guide 2026 | Term vs Whole",
         "metaDescription": "Practical 2026 life insurance buying guide: estimate coverage, compare term vs whole life, choose riders, and shortlist carriers by claim reputation."
       },
-      "updatedAt": "2026-06-12T01:28:48.779Z",
+      "updatedAt": "2026-06-23T00:57:04.107Z",
       "createdAt": "2026-05-20T01:20:09.663Z",
       "_status": "published"
     },
@@ -81238,6 +82505,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W6 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Rental reimbursement endorsement: /guides/auto-rental-reimbursement-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Collision supplement claims: /claims/guides/auto-collision-supplement-claim-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -81253,12 +82588,12 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-08T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
       "seo": {
         "metaTitle": "Auto Insurance Buying Guide 2026 | Coverage and Claims",
         "metaDescription": "Step-by-step auto insurance buying guide for 2026: compare liability limits, deductibles, teen-driver costs, and claim service quality before you buy."
       },
-      "updatedAt": "2026-06-12T01:28:48.958Z",
+      "updatedAt": "2026-06-23T00:57:04.007Z",
       "createdAt": "2026-04-22T08:05:09.072Z",
       "_status": "published"
     },
@@ -82543,6 +83878,120 @@
     }
   ],
   "faqItems": [
+    {
+      "id": 99,
+      "question": "Are dog bite injuries covered by renters liability insurance?",
+      "answer": "Sometimes—breed exclusions and bite history may apply. MedPay may pay small bills quickly while liability is investigated. See /claims/guides/renters-liability-claim-guide.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-23T00:57:03.967Z",
+      "createdAt": "2026-06-23T00:57:03.967Z"
+    },
+    {
+      "id": 98,
+      "question": "Does renters insurance cover a guest who slips and falls in my apartment?",
+      "answer": "Often yes under personal liability or medical payments, subject to policy limits and exclusions. Document the incident and report promptly. Steps: /claims/guides/renters-liability-claim-guide.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-23T00:57:03.960Z",
+      "createdAt": "2026-06-23T00:57:03.960Z"
+    },
+    {
+      "id": 97,
+      "question": "Is a medical exam required to convert term to whole life?",
+      "answer": "Usually no if you convert within the contractual privilege period and choose an eligible permanent product. Late conversion may require evidence of insurability.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-23T00:57:03.937Z",
+      "createdAt": "2026-06-23T00:57:03.937Z"
+    },
+    {
+      "id": 96,
+      "question": "When does the term life conversion window usually end?",
+      "answer": "Often at age 65–70 or a set number of years from issue—check your policy schedule. Missing the window requires new underwriting. Details: /guides/life-term-conversion-buying-guide.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-23T00:57:03.931Z",
+      "createdAt": "2026-06-23T00:57:03.931Z"
+    },
+    {
+      "id": 95,
+      "question": "What if the body shop estimate is higher than the insurance adjuster's?",
+      "answer": "Ask the shop to submit a supplemental estimate with teardown photos. You can dispute line items in writing or invoke appraisal rights in some states. Guide: /claims/guides/auto-collision-supplement-claim-guide.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-23T00:57:03.927Z",
+      "createdAt": "2026-06-23T00:57:03.927Z"
+    },
+    {
+      "id": 94,
+      "question": "How much rental car reimbursement should I buy on auto insurance?",
+      "answer": "Match daily limits to local rental rates ($35–$50/day common) and total cap to expected repair length (30+ days for major collisions). See /guides/auto-rental-reimbursement-buying-guide.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-23T00:57:03.920Z",
+      "createdAt": "2026-06-23T00:57:03.920Z"
+    },
     {
       "id": 93,
       "question": "Is smoke damage covered the same as fire damage on homeowners insurance?",
@@ -84889,27 +86338,35 @@
       ],
       "nextActions": [
         {
-          "id": "6a1653a5abefb0405cd5b624",
+          "id": "6a39d9e0a7b0f53f91d259da",
+          "action": "Low estimate disputes: /claims/guides/auto-collision-supplement-claim-guide"
+        },
+        {
+          "id": "6a39d9e0a7b0f53f91d259db",
+          "action": "Rental limits while repairing: /guides/auto-rental-reimbursement-buying-guide"
+        },
+        {
+          "id": "6a39d9e0a7b0f53f91d259dc",
           "action": "Request the denial or short-pay decision in writing, citing the specific policy provision."
         },
         {
-          "id": "6a1653a5abefb0405cd5b625",
+          "id": "6a39d9e0a7b0f53f91d259dd",
           "action": "Pull a copy of your declarations page and policy form from your account portal—do not rely on the agent's verbal summary."
         },
         {
-          "id": "6a1653a5abefb0405cd5b626",
+          "id": "6a39d9e0a7b0f53f91d259de",
           "action": "Get a second written estimate from an independent shop if a total-loss or repair amount feels low."
         },
         {
-          "id": "6a1653a5abefb0405cd5b627",
+          "id": "6a39d9e0a7b0f53f91d259df",
           "action": "If the carrier delays beyond your state's prompt-pay statute, send a written demand referencing the statute by number."
         },
         {
-          "id": "6a1653a5abefb0405cd5b628",
+          "id": "6a39d9e0a7b0f53f91d259e0",
           "action": "File a complaint with your state's Department of Insurance using the carrier name, claim number, and a one-page timeline."
         },
         {
-          "id": "6a1653a5abefb0405cd5b629",
+          "id": "6a39d9e0a7b0f53f91d259e1",
           "action": "Consult a licensed attorney before signing a release if injuries are involved—settlement releases are usually final."
         }
       ],
@@ -84944,9 +86401,159 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "updatedAt": "2026-06-02T00:40:27.175Z",
+      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
+      "updatedAt": "2026-06-23T00:57:04.065Z",
       "createdAt": "2026-04-22T07:19:33.610Z"
+    },
+    {
+      "id": 22,
+      "title": "Auto Collision Supplemental Claim Guide (2026): Low Estimates, Supplements, and Depreciation Holdback",
+      "slug": "auto-collision-supplement-claim-guide",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "steps": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259a8",
+          "step": "Get a written estimate from your chosen repair shop before authorizing carrier direct repair program (DRP) only."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259a9",
+          "step": "File the collision claim with photos, police report if applicable, and the shop estimate."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259aa",
+          "step": "If teardown reveals hidden damage, have the shop submit a supplemental estimate with photos immediately."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259ab",
+          "step": "Request the adjuster reinspect before additional work begins when possible."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259ac",
+          "step": "Track rental reimbursement days against /guides/auto-rental-reimbursement-buying-guide limits."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259ad",
+          "step": "If settlement is below repair cost, send a written appraisal dispute citing line items before accepting check."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259ae",
+          "item": "Initial and supplemental repair estimates with parts/labor breakdown"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259af",
+          "item": "Photos of all damage including frame pulls and hidden panels"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259b0",
+          "item": "Police report for injury or disputed fault accidents"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259b1",
+          "item": "Rental receipts within policy daily limits"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259b2",
+          "item": "OEM vs aftermarket parts authorization emails"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259b3",
+          "item": "Total loss valuation worksheet if repair exceeds threshold"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/auto",
+      "denialReasons": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259b4",
+          "reason": "Betterment or wear-and-tear deduction",
+          "explanation": "Carriers may reduce payment for new parts on high-mileage vehicles—challenge line-by-line with shop notes."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259b5",
+          "reason": "Prior damage overlap",
+          "explanation": "Unrelated dents or rust may be excluded from the current loss—document with dated photos if possible."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259b6",
+          "reason": "Policy limits or collision deductible only",
+          "explanation": "Payment capped at policy limits minus deductible; supplements cannot exceed the covered loss valuation."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259b7",
+          "reason": "Use of non-authorized shop without appraisal clause rights",
+          "explanation": "You may still repair where you choose in many states, but carrier may use its own price guide—invoke appraisal if deadlocked."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259b8",
+          "cause": "Supplement inspection backlog",
+          "explanation": "Hidden damage supplements need a second adjuster visit—book reinspection within 48 hours of teardown."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259b9",
+          "cause": "Parts availability delays",
+          "explanation": "OEM backorders extend rental needs—ask adjuster to note parts delay for rental extension requests."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259ba",
+          "cause": "Recoverable depreciation holdback",
+          "explanation": "RCV policies may hold depreciation until repairs complete—procedural delay, not denial."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259bb",
+          "action": "Request written denial citing estimate lines before cashing a partial check."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259bc",
+          "action": "Rental limits: /guides/auto-rental-reimbursement-buying-guide."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259bd",
+          "action": "UM/UIM if at-fault driver is uninsured: /claims/guides/auto-uninsured-motorist-claim-guide."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259be",
+          "note": "Label emails 'Supplement estimate' with claim number and date of teardown."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259bf",
+          "note": "Do not authorize teardown at a DRP shop without confirming supplement process in writing."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259c0",
+          "note": "Keep rental under policy daily cap to avoid unreimbursed days."
+        }
+      ],
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
+      "updatedAt": "2026-06-23T00:57:03.819Z",
+      "createdAt": "2026-06-23T00:57:03.818Z"
     },
     {
       "id": 8,
@@ -87828,32 +89435,36 @@
       ],
       "nextActions": [
         {
-          "id": "6a1653a5abefb0405cd5b60b",
+          "id": "6a39d9e0a7b0f53f91d259e2",
+          "action": "Guest injury liability: /claims/guides/renters-liability-claim-guide"
+        },
+        {
+          "id": "6a39d9e0a7b0f53f91d259e3",
+          "action": "Theft claims: /claims/guides/renters-theft-claim-guide"
+        },
+        {
+          "id": "6a39d9e0a7b0f53f91d259e4",
           "action": "Request the partial-denial or sub-limit decision in writing with the policy provision cited."
         },
         {
-          "id": "6a1653a5abefb0405cd5b60c",
+          "id": "6a39d9e0a7b0f53f91d259e5",
           "action": "Schedule any high-value items immediately; you cannot retroactively schedule after a loss."
         },
         {
-          "id": "6a1653a5abefb0405cd5b60d",
+          "id": "6a39d9e0a7b0f53f91d259e6",
           "action": "Compare your declarations page against the policy form to confirm sub-limits are correctly stated."
         },
         {
-          "id": "6a1653a5abefb0405cd5b60e",
+          "id": "6a39d9e0a7b0f53f91d259e7",
           "action": "If the police report has errors, ask the department to amend it before the carrier finalizes a denial."
         },
         {
-          "id": "6a1653a5abefb0405cd5b60f",
+          "id": "6a39d9e0a7b0f53f91d259e8",
           "action": "File a complaint with your state Department of Insurance for unreasonable claim handling."
         },
         {
-          "id": "6a1653a5abefb0405cd5b610",
+          "id": "6a39d9e0a7b0f53f91d259e9",
           "action": "Consult a licensed attorney for liability-related claims with potential injury exposure."
-        },
-        {
-          "id": "6a2b5795e90a4919632465dd",
-          "action": "Water damage claim walkthrough: /claims/guides/renters-water-damage-claim-guide-2026"
         }
       ],
       "communicationNotes": [
@@ -87887,9 +89498,159 @@
         "updatedAt": "2026-06-02T00:40:26.499Z",
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "updatedAt": "2026-06-12T00:49:25.080Z",
+      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
+      "updatedAt": "2026-06-23T00:57:04.135Z",
       "createdAt": "2026-04-22T07:53:42.795Z"
+    },
+    {
+      "id": 23,
+      "title": "Renters Liability Claim Guide (2026): Guest Injuries, Dog Bites, and Medical Payments",
+      "slug": "renters-liability-claim-guide",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "steps": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259c1",
+          "step": "Provide first aid and document the incident scene with photos and witness contacts."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259c2",
+          "step": "Report the incident to your carrier before admitting fault or paying the guest out of pocket."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259c3",
+          "step": "Separate medical payments (MedPay) from liability—MedPay may pay quick small bills without fault finding."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259c4",
+          "step": "Do not sign releases from the injured party without carrier approval."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259c5",
+          "step": "Cooperate with the liability investigation; share rental lease and pet records if relevant."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259c6",
+          "step": "If sued, forward legal papers to your carrier immediately—delay can void defense coverage."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259c7",
+          "item": "Incident photos and written timeline"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259c8",
+          "item": "Witness names and statements"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259c9",
+          "item": "Guest medical bills and treatment notes"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259ca",
+          "item": "Lease showing named insured vs roommates"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259cb",
+          "item": "Pet vaccination and training records for animal incidents"
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259cc",
+          "item": "Correspondence with landlord about hazardous conditions"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/renters",
+      "denialReasons": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259cd",
+          "reason": "Business activity exclusion",
+          "explanation": "Home daycare or side business injuries may be excluded—commercial liability may be required."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259ce",
+          "reason": "Intentional acts or criminal activity",
+          "explanation": "Assault or intentional harm is excluded from liability coverage."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259cf",
+          "reason": "Dog breed or animal exclusion",
+          "explanation": "Some policies exclude specific breeds or require canine liability endorsements."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259d0",
+          "reason": "Injury to insured household member",
+          "explanation": "Liability covers third parties—not injuries to you or resident relatives covered elsewhere."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259d1",
+          "cause": "Liability investigation and recorded statements",
+          "explanation": "Carriers interview all parties before accepting fault—2–4 weeks typical."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259d2",
+          "cause": "MedPay vs liability routing",
+          "explanation": "Small bills may process on MedPay quickly while liability remains open."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259d3",
+          "cause": "Attorney involvement",
+          "explanation": "Once counsel is retained, communication may slow pending legal review."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259d4",
+          "action": "Request denial in writing citing policy exclusion before paying guest directly."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259d5",
+          "action": "Theft and contents: /claims/guides/renters-theft-claim-guide."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259d6",
+          "action": "Roommate splits: /guides/renters-roommate-coverage-split-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a39d9dfa7b0f53f91d259d7",
+          "note": "Do not post incident details on social media—statements can be used in liability disputes."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259d8",
+          "note": "Forward lawsuit service to the carrier within 24 hours."
+        },
+        {
+          "id": "6a39d9dfa7b0f53f91d259d9",
+          "note": "MedPay is usually no-fault but has low sub-limits—read declarations page."
+        }
+      ],
+      "reviewedBy": {
+        "id": 1,
+        "name": "Insurhi Editorial Team",
+        "slug": "editorial-team",
+        "role": "Insurance research & editorial",
+        "credentials": "Cross-category coverage reviews, claims workflow checks, and policy form comparisons.",
+        "updatedAt": "2026-06-02T00:40:26.499Z",
+        "createdAt": "2026-06-02T00:40:26.496Z"
+      },
+      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
+      "updatedAt": "2026-06-23T00:57:03.902Z",
+      "createdAt": "2026-06-23T00:57:03.902Z"
     },
     {
       "id": 20,

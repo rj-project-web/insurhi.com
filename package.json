@@ -8,6 +8,7 @@
     "export:cms-content": "node ./scripts/export-cms-content.mjs",
     "validate:content": "node ./scripts/validate-content.mjs",
     "validate:internal-links": "npx tsx scripts/validate-internal-links.ts",
+    "validate:sitemap-coverage": "npx tsx scripts/validate-sitemap-coverage.ts",
     "validate:schema": "node ./scripts/validate-schema.mjs",
     "lighthouse:baseline": "node ./scripts/lighthouse-baseline.mjs",
     "publish:static": "bash ./scripts/publish-static.sh",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-23T00:57:38.564Z",
+    "exportedAt": "2026-06-24T01:55:28.636Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51219,6 +51219,1719 @@
   ],
   "articles": [
     {
+      "id": 39,
+      "title": "Medicare Part B Late Enrollment Guide (2026): Penalties, SEPs, and Creditable Coverage Proof",
+      "slug": "medicare-part-b-late-enrollment-buying-guide",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for people aging off employer coverage, retiring after 65, or comparing COBRA vs Medicare timing. Missing Part B without qualifying coverage triggers a lifelong premium penalty—plan enrollment dates before the employer plan ends.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Standard Part B enrollment windows",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Initial Enrollment Period: three months before through three months after Part B eligibility month (usually 65).",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Special Enrollment Period: up to eight months after employer group coverage ends if you had creditable coverage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "General Enrollment Period: Jan 1–Mar 31 annually with July 1 effective date if you missed other windows.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Late enrollment penalty math",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Roughly 10% of the Part B premium for each full 12-month period you could have enrolled but did not.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Penalty usually lasts as long as you have Part B—it is not a one-time fee.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part D has a separate late penalty—see /guides/medicare-part-d-formulary-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: retire at 67 with delayed Part B",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "An employee works past 65 with large-group employer coverage, then retires without enrolling in Part B within eight months. Two full years of delay can add ~20% to Part B premium for life—often thousands over retirement. Enroll during the employer SEP with HR proof of coverage dates.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: COBRA vs Medicare at 65",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "COBRA is not creditable for delaying Part B without penalty in most cases—Medicare is primary at 65 for most workers. Compare Medigap guaranteed issue windows in /guides/medicare-advantage-vs-medigap-buying-guide before choosing COBRA only.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Request written creditable coverage letter from HR before leaving employer plan.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Enroll Part B online or at Social Security before COBRA ends if Medicare is primary.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pair with Medigap timing: /guides/medicare-supplement-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Plan letters reference: /guides/medicare-medigap-plan-letters-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I delay Part B if I have retiree coverage? A: Only if coverage is creditable primary insurance—verify with SSA, not HR alone.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does the penalty apply if I had VA coverage? A: Rules differ—VA is not always creditable for Part B delay; confirm before declining Part B.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can the penalty be removed later? A: Generally no—it attaches for as long as you have Part B.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Advantage vs Medigap: /guides/medicare-advantage-vs-medigap-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare Medicare products: /insurance/medicare",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-24T01:55:20.503Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Medicare Part B Late Enrollment Penalty 2026",
+        "metaDescription": "Medicare Part B late enrollment penalty for 2026: how the 10% surcharge compounds, who can delay, SEP windows, and how to document employer creditable coverage."
+      },
+      "updatedAt": "2026-06-24T01:55:20.504Z",
+      "createdAt": "2026-06-24T01:55:20.504Z",
+      "_status": "published"
+    },
+    {
+      "id": 38,
+      "title": "Home Wind & Hail Deductible Guide (2026): Percentage Deductibles, Roof Schedules, and Named Storms",
+      "slug": "home-wind-hail-deductible-buying-guide",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for homeowners in hail-prone or coastal regions reviewing renewals with higher wind deductibles or roof payment schedules. A 1% wind deductible on a $450,000 dwelling is $4,500 before the carrier pays—not the flat $1,000 all-peril deductible on your declarations page.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Percentage vs flat wind deductibles",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Wind/hail deductibles may be 1–5% of dwelling coverage limit, not a flat dollar amount.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Named storm or hurricane deductibles can apply in coastal states separately from hail.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "All-peril deductible may still apply to non-wind losses like fire or water.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Roof schedules and ACV on older roofs",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Some policies pay roof claims on actual cash value by roof age—depreciation can exceed deductible.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Cosmetic damage exclusions may deny hail dents that do not affect function—read endorsements.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pair dwelling limits with /guides/home-replacement-cost-vs-acv-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: hailstorm with cosmetic roof dents",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A 15-year asphalt roof shows widespread dents but no leaks. The carrier applies cosmetic exclusion and ACV depreciation—net payment may be zero even after a 1% deductible. Document with roofer photos before signing any release.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: wind damage with detached fence",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A 2% wind deductible applies to dwelling and other structures. Fence repair $3,200 with $9,000 wind deductible means entirely out of pocket for fence unless bundled into a larger dwelling claim—verify other structures limits.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Model dollar cost of 1%, 2%, and 5% wind deductibles at current dwelling limit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Ask if hail and wind share one deductible or separate triggers.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare roof replacement cost endorsement availability before renewal.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "After a storm: /claims/guides/home-hail-damage-claim-guide-2026 and /claims/guides/home-fire-smoke-claim-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I buy a lower wind deductible? A: Sometimes via buy-down endorsements for extra premium—availability varies by state and carrier.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does wind deductible apply to interior water from roof leak? A: Often yes if caused by covered wind/hail—read ensuing loss language.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Will filing a hail claim raise premiums? A: Many carriers score weather claims in hail corridors—compare long-term premium impact.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Home buying basics: /guides/home-insurance-buying-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare home carriers: /insurance/home",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-24T01:55:20.492Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Wind & Hail Home Deductible Guide 2026 | Roof",
+        "metaDescription": "Home wind and hail deductible guide for 2026: percentage deductibles, roof schedules, named storm clauses, and how to model out-of-pocket after severe weather."
+      },
+      "updatedAt": "2026-06-24T01:55:20.493Z",
+      "createdAt": "2026-06-24T01:55:20.493Z",
+      "_status": "published"
+    },
+    {
+      "id": 37,
+      "title": "Comprehensive vs Collision Auto Insurance Guide (2026): Coverage, Deductibles, and Lender Rules",
+      "slug": "auto-comprehensive-vs-collision-buying-guide",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for drivers deciding whether full coverage is worth the premium or which deductibles to carry on a financed or paid-off vehicle. Comprehensive and collision are separate physical damage coverages—lenders usually require both until the loan is paid.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What comprehensive covers",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Theft, vandalism, fire, hail, flood, falling objects, and animal strikes.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Glass-only claims may waive deductible on some policies—check endorsements.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Does not cover wear and tear or mechanical breakdown.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "What collision covers",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Damage to your vehicle from impact with another car or object, regardless of fault.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Single-car rollovers and hit-and-run to your vehicle may fall here or under UM property damage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pays up to actual cash value minus deductible when repair exceeds threshold.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: paid-off sedan in a garage",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A 12-year-old car worth $4,500 may not justify $500 collision plus $250 comprehensive premiums. Dropping collision first preserves theft and hail protection under comprehensive—model five-year premium savings against worst-case loss.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: new SUV with a $38,000 loan",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "The lender requires comprehensive and collision with max $1,000 deductibles. Raising deductibles to $1,000 from $500 may save $200/year but adds $500 out of pocket per claim—pair with /guides/auto-gap-insurance-buying-guide if loan balance exceeds ACV.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Read lender insurance requirements before changing deductibles.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Stack UM/UIM from /guides/auto-insurance-buying-guide-2026 before trimming physical damage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "After a loss, use /claims/guides/auto-collision-supplement-claim-guide for estimate disputes.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Rental reimbursement is separate: /guides/auto-rental-reimbursement-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is comprehensive required by law? A: No—only liability is mandated in most states, but lenders require physical damage coverage.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I have different deductibles for each? A: Yes—many policies allow $250 comprehensive and $1,000 collision.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does collision cover a hit-and-run to my parked car? A: Often yes, or UM property damage if the at-fault driver is unknown.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Auto buying basics: /guides/auto-insurance-buying-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare carriers: /insurance/auto",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-24T01:55:20.460Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Comprehensive vs Collision Auto 2026 | Compare",
+        "metaDescription": "Compare comprehensive and collision auto insurance in 2026: what each covers, deductibles, lender requirements, and when you need both on financed cars."
+      },
+      "updatedAt": "2026-06-24T01:55:20.466Z",
+      "createdAt": "2026-06-24T01:55:20.465Z",
+      "_status": "published"
+    },
+    {
       "id": 36,
       "title": "Term Life Conversion Guide (2026): Conversion Windows, Exams, and Premium Jumps",
       "slug": "life-term-conversion-buying-guide",
@@ -75698,6 +77411,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W7 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part B late enrollment penalty: /guides/medicare-part-b-late-enrollment-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Advantage vs Medigap: /guides/medicare-advantage-vs-medigap-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -75713,12 +77494,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-16T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
       "seo": {
         "metaTitle": "Medigap Buying Guide 2026 | Plans & Cost",
         "metaDescription": "Medigap buying guide for 2026: compare plan letters, pricing approach, enrollment timing, and shortlist carriers with realistic cost ranges."
       },
-      "updatedAt": "2026-06-21T02:16:27.507Z",
+      "updatedAt": "2026-06-24T01:55:20.744Z",
       "createdAt": "2026-05-20T01:20:09.703Z",
       "_status": "published"
     },
@@ -78146,6 +79927,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W7 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Wind and hail deductibles: /guides/home-wind-hail-deductible-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Replacement cost vs ACV: /guides/home-replacement-cost-vs-acv-deep-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -78161,12 +80010,12 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-08T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
       "seo": {
         "metaTitle": "Home Insurance Buying Guide 2026 | Coverage Tips",
         "metaDescription": "Step-by-step home insurance buying guide for 2026: set dwelling and personal property limits, choose deductibles, and compare claims service."
       },
-      "updatedAt": "2026-06-12T01:28:48.806Z",
+      "updatedAt": "2026-06-24T01:55:20.716Z",
       "createdAt": "2026-05-20T01:20:09.632Z",
       "_status": "published"
     },
@@ -82573,6 +84422,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W7 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Comprehensive vs collision: /guides/auto-comprehensive-vs-collision-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Rental reimbursement: /guides/auto-rental-reimbursement-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -82588,12 +84505,12 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
       "seo": {
         "metaTitle": "Auto Insurance Buying Guide 2026 | Coverage and Claims",
         "metaDescription": "Step-by-step auto insurance buying guide for 2026: compare liability limits, deductibles, teen-driver costs, and claim service quality before you buy."
       },
-      "updatedAt": "2026-06-23T00:57:04.007Z",
+      "updatedAt": "2026-06-24T01:55:20.692Z",
       "createdAt": "2026-04-22T08:05:09.072Z",
       "_status": "published"
     },
@@ -83878,6 +85795,158 @@
     }
   ],
   "faqItems": [
+    {
+      "id": 107,
+      "question": "Is accelerated death benefit income taxable?",
+      "answer": "Tax treatment depends on rider type and diagnosis—carriers may issue informational forms. Consult a tax professional before spending proceeds. Eligibility rules: /claims/guides/life-accelerated-death-benefit-claim-guide.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-24T01:55:20.658Z",
+      "createdAt": "2026-06-24T01:55:20.658Z"
+    },
+    {
+      "id": 106,
+      "question": "What is an accelerated death benefit on life insurance?",
+      "answer": "A living benefit rider that pays part of the death benefit while the insured is alive if they meet terminal, chronic, or critical illness definitions in the policy. Claim steps: /claims/guides/life-accelerated-death-benefit-claim-guide.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-24T01:55:20.627Z",
+      "createdAt": "2026-06-24T01:55:20.627Z"
+    },
+    {
+      "id": 105,
+      "question": "Can I delay Medicare Part B if I still work at 65?",
+      "answer": "Often yes with large-group employer coverage, but you must enroll within eight months after that coverage ends. COBRA usually does not qualify for the same delay. Steps: /guides/medicare-part-b-late-enrollment-buying-guide.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-24T01:55:20.591Z",
+      "createdAt": "2026-06-24T01:55:20.591Z"
+    },
+    {
+      "id": 104,
+      "question": "How much is the Medicare Part B late enrollment penalty?",
+      "answer": "About 10% of the Part B premium for each full 12-month period you were eligible but not enrolled without creditable coverage. It usually lasts for life. Avoid it with timely SEP enrollment—/guides/medicare-part-b-late-enrollment-buying-guide.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-24T01:55:20.579Z",
+      "createdAt": "2026-06-24T01:55:20.579Z"
+    },
+    {
+      "id": 103,
+      "question": "Does homeowners insurance cover cosmetic hail damage to my roof?",
+      "answer": "Many policies exclude cosmetic-only hail dents if the roof still sheds water. ACV roof schedules can also reduce payment. Read endorsements and document with a roofer. See /guides/home-wind-hail-deductible-buying-guide.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-24T01:55:20.564Z",
+      "createdAt": "2026-06-24T01:55:20.564Z"
+    },
+    {
+      "id": 102,
+      "question": "What is a percentage wind deductible on homeowners insurance?",
+      "answer": "It is a share of dwelling coverage (often 1–2%) due on wind or hail claims instead of a flat dollar deductible—on a $400,000 home, 2% is $8,000. Details: /guides/home-wind-hail-deductible-buying-guide.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-24T01:55:20.558Z",
+      "createdAt": "2026-06-24T01:55:20.558Z"
+    },
+    {
+      "id": 101,
+      "question": "Should I drop collision on an older paid-off car?",
+      "answer": "If the car's value is low, collision premium plus deductible may exceed a total loss payout. Keep comprehensive for theft and hail unless premium is still too high. Guide: /guides/auto-comprehensive-vs-collision-buying-guide.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-24T01:55:20.555Z",
+      "createdAt": "2026-06-24T01:55:20.555Z"
+    },
+    {
+      "id": 100,
+      "question": "What is the difference between comprehensive and collision on auto insurance?",
+      "answer": "Comprehensive covers theft, weather, animals, and non-collision events. Collision covers impact damage to your car. Lenders usually require both. Compare deductibles in /guides/auto-comprehensive-vs-collision-buying-guide.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-24T01:55:20.550Z",
+      "createdAt": "2026-06-24T01:55:20.550Z"
+    },
     {
       "id": 99,
       "question": "Are dog bite injuries covered by renters liability insurance?",
@@ -87479,6 +89548,156 @@
       "createdAt": "2026-06-13T08:19:26.317Z"
     },
     {
+      "id": 24,
+      "title": "Life Accelerated Death Benefit Claim Guide (2026): Living Benefits, Eligibility, and Tax Reporting",
+      "slug": "life-accelerated-death-benefit-claim-guide",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "steps": [
+        {
+          "id": "6a3b3908a65be28a09fba3c0",
+          "step": "Confirm the policy includes an accelerated death benefit (ADB) or chronic/critical illness rider—read the rider schedule."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3c1",
+          "step": "Obtain physician certification of qualifying condition (terminal, chronic, or critical illness per contract)."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3c2",
+          "step": "Request ADB claim forms from the carrier—separate from standard death claim packets."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3c3",
+          "step": "Submit HIPAA authorization so the insurer can obtain medical records supporting eligibility."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3c4",
+          "step": "Review payment option: lump sum vs monthly acceleration and impact on remaining death benefit."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3c5",
+          "step": "Ask the carrier for tax reporting guidance (1099-LTC or other) before accepting funds."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a3b3908a65be28a09fba3c6",
+          "item": "Policy and rider copies showing ADB definitions and percentages"
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3c7",
+          "item": "Physician statement on letterhead with diagnosis and prognosis or ADL limitations"
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3c8",
+          "item": "Completed carrier ADB claim form signed by insured and owner if different"
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3c9",
+          "item": "Government-issued ID and proof of insurable interest if owner is not insured"
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3ca",
+          "item": "Prior correspondence if contestability period applies"
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3cb",
+          "item": "Beneficiary designation form if acceleration changes payout splits"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/life",
+      "denialReasons": [
+        {
+          "id": "6a3b3908a65be28a09fba3cc",
+          "reason": "Condition does not meet rider definition",
+          "explanation": "Terminal must often be 12–24 month life expectancy; chronic illness may require two ADL deficits—appeal with specialist records."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3cd",
+          "reason": "Contestability or material misrepresentation",
+          "explanation": "Claims in first two policy years may face deeper review—see /claims/guides/life-contestability-period-claim-guide-2026."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3ce",
+          "reason": "Loan balance exceeds available cash value",
+          "explanation": "Outstanding policy loans reduce net acceleration amount—request in-force illustration before filing."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3cf",
+          "reason": "Accelerated amount already exhausted",
+          "explanation": "Riders cap total acceleration at 50–80% of face amount—verify remaining benefit on carrier portal."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a3b3908a65be28a09fba3d0",
+          "cause": "Medical record retrieval",
+          "explanation": "Carriers need treating physician records—sign broad HIPAA release and follow up weekly."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3d1",
+          "cause": "Independent medical review",
+          "explanation": "Large accelerations may trigger IME—schedule within 14 days to avoid deferral."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3d2",
+          "cause": "Owner vs insured signature conflicts",
+          "explanation": "Corporate-owned or trust-owned policies need authorized signer—delay until legal docs verified."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a3b3908a65be28a09fba3d3",
+          "action": "Request written denial citing rider section before accepting partial acceleration."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3d4",
+          "action": "Death claim after acceleration: /claims/guides/life-claim-guide-2026."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3d5",
+          "action": "Beneficiary setup: /guides/life-beneficiary-claim-deep-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a3b3908a65be28a09fba3d6",
+          "note": "Email subject: ADB claim + policy number + physician name."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3d7",
+          "note": "Acceleration reduces death benefit dollar-for-dollar plus fees in many contracts—model remaining coverage."
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3d8",
+          "note": "Consult a tax professional on reportable income before spending accelerated benefits."
+        }
+      ],
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
+      "updatedAt": "2026-06-24T01:55:20.522Z",
+      "createdAt": "2026-06-24T01:55:20.522Z"
+    },
+    {
       "id": 11,
       "title": "Life Contestability Period Claim Guide (2026): Documents, Delays, and Appeal Steps",
       "slug": "life-contestability-period-claim-guide-2026",
@@ -87972,36 +90191,36 @@
       ],
       "nextActions": [
         {
-          "id": "6a2d15c0d491848c01d0bd8c",
+          "id": "6a3b3908a65be28a09fba3d9",
+          "action": "Accelerated death benefits while living: /claims/guides/life-accelerated-death-benefit-claim-guide"
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3da",
+          "action": "Claim delays and denials: /claims/guides/life-claim-delay-denial-guide"
+        },
+        {
+          "id": "6a3b3908a65be28a09fba3db",
           "action": "Delay and denial walkthrough: /claims/guides/life-claim-delay-denial-guide"
         },
         {
-          "id": "6a2d15c0d491848c01d0bd8d",
+          "id": "6a3b3908a65be28a09fba3dc",
           "action": "Lapse disputes: /guides/life-policy-lapse-reinstatement-guide"
         },
         {
-          "id": "6a2d15c0d491848c01d0bd8e",
+          "id": "6a3b3908a65be28a09fba3dd",
           "action": "Request the denial or delay decision in writing, with the specific policy provision cited."
         },
         {
-          "id": "6a2d15c0d491848c01d0bd8f",
+          "id": "6a3b3908a65be28a09fba3de",
           "action": "Use the NAIC Life Insurance Policy Locator if you cannot find the policy—free public service."
         },
         {
-          "id": "6a2d15c0d491848c01d0bd90",
+          "id": "6a3b3908a65be28a09fba3df",
           "action": "If contestability is in progress, provide medical authorization promptly; the clock keeps running while you wait."
         },
         {
-          "id": "6a2d15c0d491848c01d0bd91",
+          "id": "6a3b3908a65be28a09fba3e0",
           "action": "Ask whether your state requires interest on delayed proceeds and request that interest be calculated."
-        },
-        {
-          "id": "6a2d15c0d491848c01d0bd92",
-          "action": "File a complaint with your state's Department of Insurance for delays beyond statutory deadlines."
-        },
-        {
-          "id": "6a2d15c0d491848c01d0bd93",
-          "action": "Consult a probate or insurance attorney before signing any settlement reducing the death benefit."
         }
       ],
       "communicationNotes": [
@@ -88035,8 +90254,8 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-14T12:00:00.000Z",
-      "updatedAt": "2026-06-13T08:38:47.446Z",
+      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
+      "updatedAt": "2026-06-24T01:55:20.783Z",
       "createdAt": "2026-04-22T07:53:42.862Z"
     },
     {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-25T01:22:10.201Z",
+    "exportedAt": "2026-06-26T00:53:47.278Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51219,6 +51219,1719 @@
   ],
   "articles": [
     {
+      "id": 45,
+      "title": "Home Service Line & Sewer Backup Endorsement Guide (2026): Buried Pipes, Limits, and Carrier Options",
+      "slug": "home-service-line-sewer-endorsement-buying-guide",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for homeowners whose standard policy excludes buried utility lines and sewer backup. A tree root crushing a sewer lateral or a sump failure can cost $10,000–$25,000—often excluded without endorsements.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Service line coverage",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "May cover repair/replacement of underground water, gas, or sewer pipes you own up to policy limit.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Excludes wells, septic systems, and shared municipal mains—read definitions.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "May overlap with home warranty—avoid paying twice for the same peril.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Sewer and water backup endorsements",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Backup coverage pays when wastewater enters the home through drains—not flood from outside.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Sub-limits often $5,000–$25,000—model against basement finish cost.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pair claim steps with /claims/guides/home-sewer-backup-claim-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: clay sewer lateral collapse",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A 1950s home needs trenchless pipe lining quoted at $18,000. Without service line coverage, the homeowner pays entirely out of pocket—municipal programs rarely cover private laterals.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: heavy rain overwhelms sump pump",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Sewage and stormwater back up through the basement drain. Backup endorsement may respond; flood insurance does not—distinguish cause when filing per /claims/guides/home-water-damage-claim-guide.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare service line limit to local plumber quotes for lateral replacement.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Ask if backup and service line are separate endorsements or bundled.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review other endorsements in /guides/home-endorsement-selection-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Wind and hail deductibles: /guides/home-wind-hail-deductible-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is sewer backup the same as flood insurance? A: No—backup is internal drain failure; flood is surface water entry.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does homeowners insurance cover broken water pipes under the yard? A: Only with a service line endorsement on many policies.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Will filing backup claims raise premiums? A: Carriers may surcharge water losses—compare long-term cost vs risk.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Sewer backup claims: /claims/guides/home-sewer-backup-claim-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare home carriers: /insurance/home",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-26T00:53:42.161Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Home Service Line & Sewer Backup 2026",
+        "metaDescription": "Home service line and sewer backup endorsements in 2026: buried pipe coverage, backup sub-limits, equipment breakdown overlap, and claim prep."
+      },
+      "updatedAt": "2026-06-26T00:53:42.162Z",
+      "createdAt": "2026-06-26T00:53:42.162Z",
+      "_status": "published"
+    },
+    {
+      "id": 44,
+      "title": "Employer Group vs Individual Life Insurance Guide (2026): Portability, Conversion, and Coverage Gaps",
+      "slug": "life-employer-group-vs-individual-buying-guide",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for employees relying on workplace basic life insurance who need coverage that survives job changes. Group term is cheap at enrollment but may not be portable—and face amounts tied to salary may be insufficient for dependents.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Employer group life basics",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Often 1x–2x salary at little or no employee premium for basic coverage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Evidence of insurability may be guaranteed during open enrollment up to a cap.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Coverage usually ends or shrinks when employment ends—read certificate language.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Individual life policy advantages",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Portable across employers; underwriting class locked in when healthy.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Custom face amounts and term lengths independent of salary bands.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Beneficiary and ownership control without HR as intermediary.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: mid-career job change with health changes",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A 45-year-old with new hypertension may convert group coverage via /guides/life-term-conversion-buying-guide but at higher permanent premiums. A healthy colleague might beat conversion with a new individual 20-year term—compare both before leaving.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: sole breadwinner with $80k salary",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Two times salary ($160,000) may fall short of income-replacement targets from /guides/life-coverage-amount-planning-guide-2026. Layer an individual term policy for the gap rather than relying on supplemental group elections alone.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Download group certificate and conversion deadline before resigning.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "List contingent beneficiaries separately from employer default forms.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare supplemental group elections vs individual term quotes.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Buying basics: /guides/life-insurance-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is group life enough for most families? A: Often no—multiples of salary rarely match full income-replacement models.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I keep group life after I quit? A: Sometimes via conversion or portability—deadlines are short after termination.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does group coverage require a medical exam? A: Basic enrollment may not; supplemental above the guarantee issue limit often does.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Term conversion: /guides/life-term-conversion-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare life products: /insurance/life",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-26T00:53:42.151Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Group vs Individual Life Insurance 2026",
+        "metaDescription": "Compare employer group and individual life insurance in 2026: portability, conversion windows, coverage multiples, and gaps when you change jobs."
+      },
+      "updatedAt": "2026-06-26T00:53:42.152Z",
+      "createdAt": "2026-06-26T00:53:42.152Z",
+      "_status": "published"
+    },
+    {
+      "id": 43,
+      "title": "Medicare Part D Late Enrollment Penalty Guide (2026): Creditable Coverage, SEPs, and Premium Math",
+      "slug": "medicare-part-d-late-enrollment-buying-guide",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for beneficiaries who delayed Part D after becoming eligible or who had employer drug coverage that may not have been creditable. The Part D penalty attaches for as long as you have drug coverage—plan enrollment before coverage gaps widen.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "When Part D enrollment is required",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Initial Enrollment Period aligns with Part B for most people at 65.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Special Enrollment Period: typically 63 days after creditable coverage ends to enroll without penalty.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Creditable coverage must pay at least as much as standard Part D—get written proof annually from HR.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Late enrollment penalty basics",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Roughly 1% of the national base beneficiary premium per month without creditable coverage.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Penalty is added to your plan premium for as long as you have Part D.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Separate from Part B penalty—see /guides/medicare-part-b-late-enrollment-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: retiree with 14-month coverage gap",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "An employee retires at 66 with COBRA but no creditable drug plan for 14 months before enrolling in Part D. A 14% premium surcharge may apply for life on top of plan premiums—enroll during the SEP window with HR letters documenting creditable months.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: veteran with VA drug benefits",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "VA drug coverage may count as creditable for Part D purposes if documented—confirm annually and keep the notice. If VA coverage ends, enroll in Part D within 63 days to avoid penalty accrual.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Request creditable coverage notice each fall from employer or retiree plan.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare standalone Part D vs Medicare Advantage with drugs in /guides/medicare-advantage-vs-medigap-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Model formulary tiers in /guides/medicare-part-d-formulary-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Medigap timing: /guides/medicare-supplement-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is the Part D penalty permanent? A: Generally yes for as long as you maintain Part D—it recalculates with the national base premium.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does GoodRx count as creditable coverage? A: No—discount cards are not creditable drug coverage.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I appeal the penalty? A: You may request reconsideration with proof of creditable coverage—keep HR letters and plan certificates.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part B late enrollment: /guides/medicare-part-b-late-enrollment-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare Medicare products: /insurance/medicare",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-26T00:53:42.079Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Medicare Part D Late Enrollment Penalty 2026",
+        "metaDescription": "Medicare Part D late enrollment penalty explained for 2026: creditable coverage proof, SEP windows, penalty math, and how to avoid lifelong premium surcharges."
+      },
+      "updatedAt": "2026-06-26T00:53:42.085Z",
+      "createdAt": "2026-06-26T00:53:42.084Z",
+      "_status": "published"
+    },
+    {
       "id": 42,
       "title": "Rideshare & Delivery Auto Coverage Guide (2026): Periods, Endorsements, and Personal Policy Gaps",
       "slug": "auto-rideshare-delivery-coverage-buying-guide",
@@ -79366,6 +81079,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W9 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part D late enrollment penalty: /guides/medicare-part-d-late-enrollment-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part B late enrollment: /guides/medicare-part-b-late-enrollment-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -79381,12 +81162,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-24T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
       "seo": {
         "metaTitle": "Medigap Buying Guide 2026 | Plans & Cost",
         "metaDescription": "Medigap buying guide for 2026: compare plan letters, pricing approach, enrollment timing, and shortlist carriers with realistic cost ranges."
       },
-      "updatedAt": "2026-06-24T01:55:20.744Z",
+      "updatedAt": "2026-06-26T00:53:42.239Z",
       "createdAt": "2026-05-20T01:20:09.703Z",
       "_status": "published"
     },
@@ -81144,6 +82925,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W9 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Employer group vs individual: /guides/life-employer-group-vs-individual-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Term conversion: /guides/life-term-conversion-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -81159,12 +83008,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
       "seo": {
         "metaTitle": "Life Insurance Buying Guide 2026 | Term vs Whole",
         "metaDescription": "Practical 2026 life insurance buying guide: estimate coverage, compare term vs whole life, choose riders, and shortlist carriers by claim reputation."
       },
-      "updatedAt": "2026-06-23T00:57:04.107Z",
+      "updatedAt": "2026-06-26T00:53:42.270Z",
       "createdAt": "2026-05-20T01:20:09.663Z",
       "_status": "published"
     },
@@ -84101,6 +85950,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W9 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Service line and sewer backup: /guides/home-service-line-sewer-endorsement-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Sewer backup claims: /claims/guides/home-sewer-backup-claim-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -84116,12 +86033,12 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-08T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
       "seo": {
         "metaTitle": "Home Endorsement Guide 2026 | Add-Ons That Matter",
         "metaDescription": "Choose home endorsements by real loss exposure and budget. Compare coverage impact, deductible interaction, and claims reliability before renewal decisions."
       },
-      "updatedAt": "2026-06-12T06:40:58.747Z",
+      "updatedAt": "2026-06-26T00:53:42.297Z",
       "createdAt": "2026-04-23T06:15:29.663Z",
       "_status": "published"
     },
@@ -87818,6 +89735,120 @@
     }
   ],
   "faqItems": [
+    {
+      "id": 121,
+      "question": "What is the difference between service line and sewer backup coverage?",
+      "answer": "Service line covers repair of buried pipes you own; sewer backup pays for damage when wastewater enters through drains. You may need both. See /guides/home-service-line-sewer-endorsement-buying-guide.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-26T00:53:42.211Z",
+      "createdAt": "2026-06-26T00:53:42.211Z"
+    },
+    {
+      "id": 120,
+      "question": "Does homeowners insurance cover sewer line replacement in my yard?",
+      "answer": "Usually only with a service line endorsement—standard policies exclude buried pipes. Limits vary. Buying guide: /guides/home-service-line-sewer-endorsement-buying-guide.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-26T00:53:42.205Z",
+      "createdAt": "2026-06-26T00:53:42.205Z"
+    },
+    {
+      "id": 119,
+      "question": "Can I keep life insurance after leaving my employer?",
+      "answer": "Sometimes via conversion or portability within 30–31 days—read your certificate. Missing the window requires new underwriting. Details: /guides/life-employer-group-vs-individual-buying-guide.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-26T00:53:42.201Z",
+      "createdAt": "2026-06-26T00:53:42.201Z"
+    },
+    {
+      "id": 118,
+      "question": "Is employer group life insurance enough?",
+      "answer": "Often not—coverage may be 1–2x salary and usually ends when you leave the job. Many families add portable individual term. Compare in /guides/life-employer-group-vs-individual-buying-guide.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-26T00:53:42.197Z",
+      "createdAt": "2026-06-26T00:53:42.197Z"
+    },
+    {
+      "id": 117,
+      "question": "What is Medicare prior authorization for prescriptions?",
+      "answer": "Plans may require insurer approval before covering certain drugs—especially high-cost or specialty medications. Denials can be appealed with prescriber documentation. Steps: /claims/guides/medicare-prior-authorization-claim-guide.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-26T00:53:42.189Z",
+      "createdAt": "2026-06-26T00:53:42.189Z"
+    },
+    {
+      "id": 116,
+      "question": "How is the Medicare Part D late enrollment penalty calculated?",
+      "answer": "About 1% of the national base beneficiary premium for each month without creditable drug coverage, added to your plan premium for as long as you have Part D. Avoid gaps with timely SEP enrollment. Guide: /guides/medicare-part-d-late-enrollment-buying-guide.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-26T00:53:42.182Z",
+      "createdAt": "2026-06-26T00:53:42.182Z"
+    },
     {
       "id": 115,
       "question": "What is the difference between sewer backup and flood damage?",
@@ -92912,6 +94943,156 @@
       "createdAt": "2026-06-09T01:25:12.306Z"
     },
     {
+      "id": 26,
+      "title": "Medicare Prior Authorization Claim Guide (2026): Step Therapy, Appeals, and Timeline Documentation",
+      "slug": "medicare-prior-authorization-claim-guide",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "steps": [
+        {
+          "id": "6a3dcd9621eaca2c46b0fec6",
+          "step": "Ask the pharmacy or provider why the claim rejected—capture the PA or step-therapy code on the receipt."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fec7",
+          "step": "Request the insurer's PA form and clinical criteria for the drug or procedure."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fec8",
+          "step": "Have your prescriber submit medical necessity notes and prior treatment history."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fec9",
+          "step": "If urgent, request expedited review (often 24–72 hours) with written urgency justification."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0feca",
+          "step": "If denied, file a first-level appeal within the deadline on the denial letter—do not miss the date."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fecb",
+          "step": "Track every call with representative name, date, and reference number."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a3dcd9621eaca2c46b0fecc",
+          "item": "EOB or pharmacy rejection showing PA requirement"
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fecd",
+          "item": "Prescriber letter of medical necessity"
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fece",
+          "item": "Step-therapy failure documentation if applicable"
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fecf",
+          "item": "Denial letter with appeal deadline and mailing address"
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fed0",
+          "item": "Formulary tier printout from /guides/medicare-part-d-formulary-guide research"
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fed1",
+          "item": "Expedited review request fax confirmation"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/medicare",
+      "denialReasons": [
+        {
+          "id": "6a3dcd9621eaca2c46b0fed2",
+          "reason": "Step therapy not documented",
+          "explanation": "Plan requires cheaper drug trial first—prescriber must document intolerance or contraindication."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fed3",
+          "reason": "Drug not on formulary",
+          "explanation": "May need formulary exception before PA—different appeal path than standard PA."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fed4",
+          "reason": "Out-of-network prescriber",
+          "explanation": "Advantage plans may require in-network ordering physician—verify network status."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fed5",
+          "reason": "Quantity limit exceeded",
+          "explanation": "PA may cap monthly fills—ask for 90-day or higher quantity medical necessity."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a3dcd9621eaca2c46b0fed6",
+          "cause": "Standard review window",
+          "explanation": "Non-urgent PA may take 7–14 days—use expedited process when clinically appropriate."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fed7",
+          "cause": "Incomplete clinical notes",
+          "explanation": "Resubmission resets clock—have prescriber call the plan clinical reviewer."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fed8",
+          "cause": "Plan-to-pharmacy communication lag",
+          "explanation": "After approval, confirm NDC and days supply match the PA authorization number."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a3dcd9621eaca2c46b0fed9",
+          "action": "Request written denial with appeal rights before paying cash price at pharmacy."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0feda",
+          "action": "Billing errors: /claims/guides/medicare-billing-error-claim-guide-2026."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fedb",
+          "action": "Out-of-network: /claims/guides/medicare-out-of-network-claim-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a3dcd9621eaca2c46b0fedc",
+          "note": "Fax PA requests with prescriber NPI and patient Medicare ID on cover sheet."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fedd",
+          "note": "Calendar the appeal deadline the day the denial arrives—missing it limits options."
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fede",
+          "note": "Keep partial fills receipts if plan approves lower quantity pending full PA."
+        }
+      ],
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
+      "updatedAt": "2026-06-26T00:53:42.129Z",
+      "createdAt": "2026-06-26T00:53:42.128Z"
+    },
+    {
       "id": 4,
       "title": "Medicare Supplement Insurance Claim Guide (2026): Steps, Documents, Timeline, and Common Pitfalls",
       "slug": "medicare-claim-guide-2026",
@@ -93035,36 +95216,36 @@
       ],
       "nextActions": [
         {
-          "id": "6a1653a5abefb0405cd5b5f4",
+          "id": "6a3dcd9621eaca2c46b0fedf",
+          "action": "Prior authorization appeals: /claims/guides/medicare-prior-authorization-claim-guide"
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fee0",
+          "action": "Part D formulary disputes: /guides/medicare-part-d-formulary-guide"
+        },
+        {
+          "id": "6a3dcd9621eaca2c46b0fee1",
           "action": "Request the Medicare Summary Notice (MSN) and Medigap explanation of benefits in writing for any disputed service."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5f5",
+          "id": "6a3dcd9621eaca2c46b0fee2",
           "action": "Use the Medicare Beneficiary Ombudsman or your local SHIP counselor (free) for help interpreting denials."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5f6",
+          "id": "6a3dcd9621eaca2c46b0fee3",
           "action": "File a Medicare appeal first if the underlying service was denied by Medicare; the supplement cannot pay before Medicare does."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5f7",
+          "id": "6a3dcd9621eaca2c46b0fee4",
           "action": "If the supplement denies after Medicare paid, request the specific policy provision cited and submit a written appeal."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5f8",
+          "id": "6a3dcd9621eaca2c46b0fee5",
           "action": "Switch supplements during your state's birthday rule or guaranteed-issue window to avoid medical underwriting later."
         },
         {
-          "id": "6a1653a5abefb0405cd5b5f9",
+          "id": "6a3dcd9621eaca2c46b0fee6",
           "action": "File a complaint with your state Department of Insurance for unreasonable supplement claim handling."
-        },
-        {
-          "id": "6a2b5795e90a4919632465de",
-          "action": "Billing code errors: /claims/guides/medicare-billing-error-claim-guide-2026"
-        },
-        {
-          "id": "6a2b5795e90a4919632465df",
-          "action": "Out-of-network disputes: /claims/guides/medicare-out-of-network-claim-guide-2026"
         }
       ],
       "communicationNotes": [
@@ -93098,8 +95279,8 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-01T12:00:00.000Z",
-      "updatedAt": "2026-06-12T00:49:25.141Z",
+      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
+      "updatedAt": "2026-06-26T00:53:42.332Z",
       "createdAt": "2026-04-22T07:53:42.829Z"
     },
     {

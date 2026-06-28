@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-26T00:53:47.278Z",
+    "exportedAt": "2026-06-28T02:06:05.264Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51219,6 +51219,1719 @@
   ],
   "articles": [
     {
+      "id": 48,
+      "title": "Disability vs Life Insurance Guide (2026): Income Protection, Death Benefit, and Employer STD",
+      "slug": "life-disability-vs-life-income-protection-buying-guide",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for breadwinners asking whether life insurance alone is enough. Life insurance pays beneficiaries after death; disability insurance replaces income while you are alive but unable to work—many households need both, not either/or.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Life insurance role",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Replaces long-term financial support for dependents after death.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Term life is inexpensive for large face amounts—see /guides/life-coverage-amount-planning-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Does not pay your bills if you survive but cannot earn income.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Disability insurance role",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Short-term disability (STD) often through employer—weeks of partial income.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Long-term disability (LTD) may replace 50–60% of salary after elimination period.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Own-occupation vs any-occupation definitions change payout odds—read carefully.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: 35-year-old parent, sole income",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A $750,000 term policy protects survivors but not a two-year disability from a back injury. Layer employer LTD with a supplemental individual policy if group coverage caps at $5,000/month—below actual expenses.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: dual-income household, mortgage",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Each spouse carries term life proportional to income share. Disability policies on both earners prevent one illness from forcing sale of the home while the healthy spouse covers medical copays.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Calculate monthly needs if you cannot work for 12+ months—not just funeral costs.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review employer STD/LTD certificates before open enrollment.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Group life gaps: /guides/life-employer-group-vs-individual-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Conversion options: /guides/life-term-conversion-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is disability insurance worth it if I have emergency savings? A: Savings may cover 3–6 months; LTD addresses multi-year income loss.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does life insurance include disability riders? A: Some policies offer waiver of premium or accelerated benefits—different from full income replacement.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Are disability benefits taxable? A: Employer-paid LTD benefits are often taxable; individually paid policies may pay tax-free—confirm with a tax professional.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Accelerated benefits: /claims/guides/life-accelerated-death-benefit-claim-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare life products: /insurance/life",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-28T02:06:04.621Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-27T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Disability vs Life Insurance Guide 2026",
+        "metaDescription": "Disability and life insurance compared for 2026: income replacement while living vs death benefit, employer STD/LTD, and how to layer both."
+      },
+      "updatedAt": "2026-06-28T02:06:04.625Z",
+      "createdAt": "2026-06-28T02:03:58.271Z",
+      "_status": "published"
+    },
+    {
+      "id": 47,
+      "title": "Pet Prescription Medication Coverage Guide (2026): Formularies, Compounding, and Chronic Drug Costs",
+      "slug": "pet-prescription-medication-coverage-buying-guide",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for pet owners managing chronic medications—thyroid, allergy, seizure, or heart drugs—who need to know whether illness plans reimburse Rx and how annual caps apply. Wellness riders rarely cover prescription drugs for treated conditions.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Where Rx fits in pet policies",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Illness and accident plans may reimburse prescriptions when tied to a covered diagnosis.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Wellness plans pay preventive care—not ongoing Rx for chronic disease.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Some carriers use a drug formulary or require vet-direct billing portals.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Chronic medication realities",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Annual maximums can be exhausted by monthly refills—model 12-month drug cost before enrolling.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pre-existing conditions are excluded—pull records before switching per /guides/pet-pre-existing-waiting-period-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compounded medications may need extra documentation or be excluded.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: dog on daily allergy medication",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Apoquel costs $80/month ($960/year). A plan with $14,000 illness limit but 90% reimbursement still pays—but if the allergy predates enrollment, the entire drug line may be denied as pre-existing.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: cat with new diabetes diagnosis",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "After waiting periods pass, insulin and syringes may be covered as illness expenses. Track each refill receipt; some carriers cap durable supplies separately from exam fees.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Ask if Rx requires purchase through a partner pharmacy for full reimbursement.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare accident-only vs illness for chronic drug needs in /guides/pet-wellness-vs-accident-only-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Dental drugs may differ—see /guides/pet-dental-coverage-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Buying basics: /guides/pet-insurance-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Are pet prescriptions covered by accident-only plans? A: Only if prescribed for a covered accident injury—not for illness.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does pet insurance cover heartworm prevention? A: Usually under wellness riders, not illness Rx—read schedule limits.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I use any pharmacy? A: Policies vary—some require vet dispensing or partner mail-order for full payment.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Chronic claims: /claims/guides/pet-chronic-condition-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare pet carriers: /insurance/pet",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-28T02:06:04.608Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-27T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Pet Prescription Coverage Guide 2026 | Rx",
+        "metaDescription": "Pet prescription drug coverage in 2026: illness plan formularies, chronic medication caps, compounding rules, and when wellness riders do not pay Rx costs."
+      },
+      "updatedAt": "2026-06-28T02:06:04.612Z",
+      "createdAt": "2026-06-28T02:03:58.262Z",
+      "_status": "published"
+    },
+    {
+      "id": 46,
+      "title": "Auto PIP & MedPay Coverage Guide (2026): No-Fault Benefits, Coordination, and State Minimums",
+      "slug": "auto-pip-medpay-coverage-buying-guide",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for drivers in no-fault or PIP states—or anyone deciding whether to add medical payments to a liability-only policy. PIP and MedPay pay accident-related medical bills for you and passengers, often without waiting for fault determinations.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "PIP vs MedPay",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "PIP (Personal Injury Protection): broader—may include lost wages, essential services, and funeral costs in no-fault states.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "MedPay: usually pays medical and funeral expenses only; available in many fault states as an optional add-on.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Both may coordinate with health insurance—read whether auto is primary or secondary.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "State and policy coordination",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Some states require minimum PIP limits; others make it optional.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Health insurance may require PIP/MedPay exhaustion before paying—stack limits thoughtfully.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "UM/UIM is separate—see /guides/auto-um-uim-coverage-deep-guide-2026 for injury from uninsured drivers.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: passenger injury in a fault state with MedPay",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A policyholder carries $5,000 MedPay and $100,000 bodily injury liability. A passenger needs $8,000 in ER care. MedPay pays the first $5,000 quickly; liability may pay the rest if the policyholder is at fault—MedPay does not replace liability for third-party claims.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: no-fault state wage loss",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A driver with $50,000 PIP misses two weeks of work. PIP may reimburse documented lost wages up to policy sub-limits while health insurance handles hospital bills—submit employer pay stubs with the auto claim.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Match PIP/MedPay limits to health plan deductible and out-of-network ER risk.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Ask if PIP waives subrogation against household members.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pair with liability limits from /guides/auto-insurance-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Physical damage: /guides/auto-comprehensive-vs-collision-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Do I need PIP if I have good health insurance? A: PIP may still pay copays, deductibles, and wage loss—compare premium cost to benefit.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does MedPay cover me as a pedestrian hit by a car? A: Often yes when struck by a vehicle—verify policy definitions.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Will using PIP raise my auto rates? A: Not-fault PIP claims may still affect renewal in some states—ask carrier scoring rules.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Accident claims: /claims/guides/auto-accident-claim-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare auto carriers: /insurance/auto",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-28T02:06:04.555Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-27T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Auto PIP & MedPay Coverage Guide 2026",
+        "metaDescription": "Auto PIP and MedPay for 2026: no-fault medical benefits, coordination with health insurance, state rules, and limits to consider after an accident."
+      },
+      "updatedAt": "2026-06-28T02:06:04.565Z",
+      "createdAt": "2026-06-28T02:03:58.197Z",
+      "_status": "published"
+    },
+    {
       "id": 45,
       "title": "Home Service Line & Sewer Backup Endorsement Guide (2026): Buried Pipes, Limits, and Carrier Options",
       "slug": "home-service-line-sewer-endorsement-buying-guide",
@@ -82070,6 +83783,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W10 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Prescription medication coverage: /guides/pet-prescription-medication-coverage-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Wellness vs accident-only: /guides/pet-wellness-vs-accident-only-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -82085,12 +83866,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-25T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-27T12:00:00.000Z",
       "seo": {
         "metaTitle": "Pet Insurance Buying Guide 2026 | Coverage & Claims",
         "metaDescription": "Compare pet insurance plans by reimbursement, annual limits, waiting periods, and dental coverage. Use a practical checklist before binding coverage."
       },
-      "updatedAt": "2026-06-25T01:22:09.533Z",
+      "updatedAt": "2026-06-28T02:06:04.743Z",
       "createdAt": "2026-05-20T01:20:09.689Z",
       "_status": "published"
     },
@@ -86793,6 +88574,74 @@
               "direction": null,
               "textStyle": "",
               "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W10 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Disability vs life income protection: /guides/life-disability-vs-life-income-protection-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Employer group vs individual: /guides/life-employer-group-vs-individual-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -86808,12 +88657,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-08T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-27T12:00:00.000Z",
       "seo": {
         "metaTitle": "Life Coverage Amount Guide 2026 | Avoid Gaps",
         "metaDescription": "Estimate life coverage using income, debt, and childcare costs. Compare premium fit and claim support signals to avoid underinsurance and keep budget control."
       },
-      "updatedAt": "2026-06-13T08:14:06.111Z",
+      "updatedAt": "2026-06-28T02:06:04.762Z",
       "createdAt": "2026-04-23T06:15:29.630Z",
       "_status": "published"
     },
@@ -88430,6 +90279,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W10 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "PIP and MedPay limits: /guides/auto-pip-medpay-coverage-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "UM/UIM deep dive: /guides/auto-um-uim-coverage-deep-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -88445,12 +90362,12 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-25T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-27T12:00:00.000Z",
       "seo": {
         "metaTitle": "Auto Insurance Buying Guide 2026 | Coverage and Claims",
         "metaDescription": "Step-by-step auto insurance buying guide for 2026: compare liability limits, deductibles, teen-driver costs, and claim service quality before you buy."
       },
-      "updatedAt": "2026-06-25T01:22:09.576Z",
+      "updatedAt": "2026-06-28T02:06:04.696Z",
       "createdAt": "2026-04-22T08:05:09.072Z",
       "_status": "published"
     },
@@ -89735,6 +91652,158 @@
     }
   ],
   "faqItems": [
+    {
+      "id": 129,
+      "question": "What is the difference between short-term and long-term disability?",
+      "answer": "STD covers weeks of lost pay, often through employers. LTD may pay a portion of salary for years after a waiting period. Layer with life coverage per /guides/life-disability-vs-life-income-protection-buying-guide.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-28T02:06:04.684Z",
+      "createdAt": "2026-06-28T02:03:58.326Z"
+    },
+    {
+      "id": 128,
+      "question": "Do I need disability insurance if I already have life insurance?",
+      "answer": "Life insurance pays after death; disability insurance replaces income while you are alive but unable to work. Many earners need both. Compare in /guides/life-disability-vs-life-income-protection-buying-guide.",
+      "category": {
+        "id": 2,
+        "title": "Life Insurance",
+        "slug": "life",
+        "summary": "Market Size: US life insurance market is substantial with high coverage rates\nTarget Users: Primary breadwinners, young parents, high-net-worth individuals, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Protect Your Family with Life Insurance | Compare Policies 2026 | Insurhi",
+          "metaDescription": "Compare life insurance policies and rates. Expert guides on term vs. whole life, FAQs answered, and top-rated providers. Get quotes at Insurhi.com today."
+        },
+        "updatedAt": "2026-04-16T07:15:16.975Z",
+        "createdAt": "2026-04-13T10:39:43.629Z"
+      },
+      "updatedAt": "2026-06-28T02:06:04.676Z",
+      "createdAt": "2026-06-28T02:03:58.317Z"
+    },
+    {
+      "id": 127,
+      "question": "Are compounded pet medications covered by insurance?",
+      "answer": "Some carriers exclude compounding or require extra documentation. Mail-order partner pharmacies may be required for full reimbursement. Details: /guides/pet-prescription-medication-coverage-buying-guide.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-28T02:06:04.670Z",
+      "createdAt": "2026-06-28T02:03:58.313Z"
+    },
+    {
+      "id": 126,
+      "question": "Does pet insurance cover prescription medications?",
+      "answer": "Illness and accident plans often reimburse Rx tied to covered conditions; wellness plans usually do not pay chronic drug costs. Check formularies and caps. Guide: /guides/pet-prescription-medication-coverage-buying-guide.",
+      "category": {
+        "id": 4,
+        "title": "Pet insurance",
+        "slug": "pet",
+        "summary": "Market Size: US pet insurance market growing rapidly, 25%+ annual growth rate\nTarget Users: Pet owners, multi-pet households, senior pet owners, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Cut Vet Bills with Pet Insurance | Compare Plans & Save 2026 | Insurhi",
+          "metaDescription": "Compare pet insurance plans for dogs and cats. Expert guides on coverage options, FAQs answered, and top pet insurers. Save on vet costs with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:59.766Z",
+        "createdAt": "2026-04-14T02:43:11.266Z"
+      },
+      "updatedAt": "2026-06-28T02:06:04.661Z",
+      "createdAt": "2026-06-28T02:03:58.308Z"
+    },
+    {
+      "id": 125,
+      "question": "Should I report mold to my landlord or my renters insurer first?",
+      "answer": "Notify the landlord in writing to fix the moisture source, and file a contents claim with your renters carrier if your belongings are damaged. Both tracks may be needed. See /claims/guides/renters-mold-damage-claim-guide.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-28T02:06:04.652Z",
+      "createdAt": "2026-06-28T02:03:58.304Z"
+    },
+    {
+      "id": 124,
+      "question": "Does renters insurance cover mold damage to my belongings?",
+      "answer": "Sometimes, if mold results from a covered sudden water loss—but long-term mold from neglected leaks is often excluded. Sub-limits may apply. Claim steps: /claims/guides/renters-mold-damage-claim-guide.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-28T02:06:04.647Z",
+      "createdAt": "2026-06-28T02:03:58.300Z"
+    },
+    {
+      "id": 123,
+      "question": "Do I need MedPay if I have health insurance?",
+      "answer": "MedPay can pay deductibles and copays quickly after a car accident and may cover passengers. It is optional in many states. Compare limits in /guides/auto-pip-medpay-coverage-buying-guide.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-28T02:06:04.641Z",
+      "createdAt": "2026-06-28T02:03:58.297Z"
+    },
+    {
+      "id": 122,
+      "question": "What is the difference between PIP and MedPay on auto insurance?",
+      "answer": "PIP is broader no-fault coverage that may include wages and essential services; MedPay usually pays accident medical bills only. Requirements vary by state. Guide: /guides/auto-pip-medpay-coverage-buying-guide.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-28T02:06:04.635Z",
+      "createdAt": "2026-06-28T02:03:58.283Z"
+    },
     {
       "id": 121,
       "question": "What is the difference between service line and sewer backup coverage?",
@@ -96160,36 +98229,36 @@
       ],
       "nextActions": [
         {
-          "id": "6a39d9e0a7b0f53f91d259e2",
+          "id": "6a40810ee8fc483ec1931eb8",
+          "action": "Mold damage claims: /claims/guides/renters-mold-damage-claim-guide"
+        },
+        {
+          "id": "6a40810ee8fc483ec1931eb9",
+          "action": "Water damage: /claims/guides/renters-water-damage-claim-guide-2026"
+        },
+        {
+          "id": "6a40810ee8fc483ec1931eba",
           "action": "Guest injury liability: /claims/guides/renters-liability-claim-guide"
         },
         {
-          "id": "6a39d9e0a7b0f53f91d259e3",
+          "id": "6a40810ee8fc483ec1931ebb",
           "action": "Theft claims: /claims/guides/renters-theft-claim-guide"
         },
         {
-          "id": "6a39d9e0a7b0f53f91d259e4",
+          "id": "6a40810ee8fc483ec1931ebc",
           "action": "Request the partial-denial or sub-limit decision in writing with the policy provision cited."
         },
         {
-          "id": "6a39d9e0a7b0f53f91d259e5",
+          "id": "6a40810ee8fc483ec1931ebd",
           "action": "Schedule any high-value items immediately; you cannot retroactively schedule after a loss."
         },
         {
-          "id": "6a39d9e0a7b0f53f91d259e6",
+          "id": "6a40810ee8fc483ec1931ebe",
           "action": "Compare your declarations page against the policy form to confirm sub-limits are correctly stated."
         },
         {
-          "id": "6a39d9e0a7b0f53f91d259e7",
+          "id": "6a40810ee8fc483ec1931ebf",
           "action": "If the police report has errors, ask the department to amend it before the carrier finalizes a denial."
-        },
-        {
-          "id": "6a39d9e0a7b0f53f91d259e8",
-          "action": "File a complaint with your state Department of Insurance for unreasonable claim handling."
-        },
-        {
-          "id": "6a39d9e0a7b0f53f91d259e9",
-          "action": "Consult a licensed attorney for liability-related claims with potential injury exposure."
         }
       ],
       "communicationNotes": [
@@ -96223,8 +98292,8 @@
         "updatedAt": "2026-06-02T00:40:26.499Z",
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
-      "lastReviewedAt": "2026-06-22T12:00:00.000Z",
-      "updatedAt": "2026-06-23T00:57:04.135Z",
+      "lastReviewedAt": "2026-06-27T12:00:00.000Z",
+      "updatedAt": "2026-06-28T02:06:04.719Z",
       "createdAt": "2026-04-22T07:53:42.795Z"
     },
     {
@@ -96376,6 +98445,156 @@
       "lastReviewedAt": "2026-06-22T12:00:00.000Z",
       "updatedAt": "2026-06-23T00:57:03.902Z",
       "createdAt": "2026-06-23T00:57:03.902Z"
+    },
+    {
+      "id": 27,
+      "title": "Renters Mold Damage Claim Guide (2026): Hidden Growth, Landlord Duties, and Contents Limits",
+      "slug": "renters-mold-damage-claim-guide",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "steps": [
+        {
+          "id": "6a40818cda0ca844c4005b42",
+          "step": "Document visible mold with dated photos and note moisture source (leak, HVAC, window condensation)."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b43",
+          "step": "Notify landlord in writing to repair the source—many policies exclude long-term mold from neglected maintenance."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b44",
+          "step": "Report to your renters carrier if contents (furniture, clothing) are damaged—do not assume the landlord policy covers your stuff."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b45",
+          "step": "Use professional mold test results if the carrier disputes scope—keep lab chain of custody."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b46",
+          "step": "Mitigate further damage by moving salvageable items and running dehumidifiers if safe."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b47",
+          "step": "Itemize destroyed contents with replacement cost sources for the adjuster."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a40818cda0ca844c4005b48",
+          "item": "Timestamped photos of mold and moisture source"
+        },
+        {
+          "id": "6a40818cda0ca844c4005b49",
+          "item": "Written landlord maintenance requests and responses"
+        },
+        {
+          "id": "6a40818cda0ca844c4005b4a",
+          "item": "Professional mold inspection report if obtained"
+        },
+        {
+          "id": "6a40818cda0ca844c4005b4b",
+          "item": "Contents inventory with age and purchase proof"
+        },
+        {
+          "id": "6a40818cda0ca844c4005b4c",
+          "item": "Mitigation invoices (dehumidifier rental, cleaning)"
+        },
+        {
+          "id": "6a40818cda0ca844c4005b4d",
+          "item": "Lease clauses on maintenance and habitability"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/renters",
+      "denialReasons": [
+        {
+          "id": "6a40818cda0ca844c4005b4e",
+          "reason": "Long-term mold or maintenance exclusion",
+          "explanation": "Gradual seepage over weeks may be excluded—sudden pipe burst mold may be covered differently."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b4f",
+          "reason": "Landlord responsible for structure",
+          "explanation": "Renters policy covers your belongings, not landlord's drywall—pursue landlord separately for uninhabitable conditions."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b50",
+          "reason": "Sub-limit for mold remediation",
+          "explanation": "Policies may cap mold at $5,000–$10,000—read endorsements before assuming full limits apply."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b51",
+          "reason": "Flood-caused mold",
+          "explanation": "Mold following flood water may require flood coverage—see /guides/renters-flood-earthquake-endorsement-buying-guide."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a40818cda0ca844c4005b52",
+          "cause": "Source-of-loss dispute with landlord",
+          "explanation": "Carriers wait to see if landlord fixed the leak—document habitability complaints to local housing authority if needed."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b53",
+          "cause": "Lab testing backlog",
+          "explanation": "Independent mold tests can take 5–10 days—order early if carrier requires species identification."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b54",
+          "cause": "Contents vs remediation routing",
+          "explanation": "Renters policies pay contents; structural mold remediation is usually landlord's issue—clarify scope in writing."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a40818cda0ca844c4005b55",
+          "action": "Request denial citing mold sub-limit or maintenance exclusion in writing."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b56",
+          "action": "Water damage baseline: /claims/guides/renters-water-damage-claim-guide-2026."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b57",
+          "action": "Liability if guest affected: /claims/guides/renters-liability-claim-guide."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a40818cda0ca844c4005b58",
+          "note": "Email subject: Renters mold claim + policy number + unit address."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b59",
+          "note": "Do not disturb large mold patches without PPE—adjuster may need to inspect first."
+        },
+        {
+          "id": "6a40818cda0ca844c4005b5a",
+          "note": "Separate flood mold from slow leak mold in your timeline narrative."
+        }
+      ],
+      "reviewedBy": {
+        "id": 1,
+        "name": "Insurhi Editorial Team",
+        "slug": "editorial-team",
+        "role": "Insurance research & editorial",
+        "credentials": "Cross-category coverage reviews, claims workflow checks, and policy form comparisons.",
+        "updatedAt": "2026-06-02T00:40:26.499Z",
+        "createdAt": "2026-06-02T00:40:26.496Z"
+      },
+      "lastReviewedAt": "2026-06-27T12:00:00.000Z",
+      "updatedAt": "2026-06-28T02:06:04.593Z",
+      "createdAt": "2026-06-28T02:03:58.238Z"
     },
     {
       "id": 20,

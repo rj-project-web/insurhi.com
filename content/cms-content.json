@@ -1,6 +1,6 @@
 {
   "meta": {
-    "exportedAt": "2026-06-28T02:06:05.264Z",
+    "exportedAt": "2026-06-30T03:16:59.102Z",
     "source": "http://localhost:3000"
   },
   "categories": [
@@ -51219,6 +51219,1719 @@
   ],
   "articles": [
     {
+      "id": 51,
+      "title": "Stacked vs Unstacked UM/UIM Auto Guide (2026): Limits, Premium, and Injury Scenarios",
+      "slug": "auto-stacked-unstacked-um-uim-buying-guide",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for households with more than one vehicle in states that allow UM/UIM stacking. Stacking multiplies uninsured motorist limits by the number of cars on the policy—unstacking uses one vehicle's limit only, usually at lower premium.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Stacked UM/UIM",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "In some states, limits on each insured vehicle can be added together for one loss.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Example: two cars with $100,000 UM each may yield $200,000 stacked coverage for one injured occupant.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Premium is higher than unstacked—compare cost per dollar of protection.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Unstacked UM/UIM",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "One vehicle's UM limit applies per accident regardless of how many cars you insure.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Lower premium; may leave gaps after severe injuries when at-fault driver is uninsured.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Required or default in some states—read election forms at purchase.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: multi-car family, hit by uninsured driver",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A parent suffers $180,000 in medical bills. Stacked $100,000 limits on two vehicles may provide $200,000 UM—unstacked pays $100,000 and leaves $80,000 to health insurance or out of pocket.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: single vehicle household",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Stacking offers no benefit with one car—focus on raising per-vehicle UM/UIM limits and /guides/auto-pip-medpay-coverage-buying-guide coordination.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Confirm whether your state allows stacking and default elections.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare stacked premium vs simply raising limits on one vehicle.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Deep coverage context: /guides/auto-um-uim-coverage-deep-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Claim steps: /claims/guides/auto-uninsured-motorist-claim-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does stacking apply to property damage? A: Stacking rules usually focus on bodily injury UM/UIM—verify UM property damage separately.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Can I stack UIM if I was not in my own car? A: State rules vary—some tie stacking to insured vehicles on the policy regardless of which car you occupied.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is stacked always better? A: Not if premium is prohibitive—higher unstacked limits on one vehicle may be more cost-effective.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Auto buying basics: /guides/auto-insurance-buying-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare auto carriers: /insurance/auto",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-30T03:16:51.993Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-29T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Stacked vs Unstacked UM/UIM Guide 2026",
+        "metaDescription": "Stacked vs unstacked UM/UIM auto insurance in 2026: how limits multiply per vehicle, premium trade-offs, and which structure helps after serious injuries."
+      },
+      "updatedAt": "2026-06-30T03:16:51.994Z",
+      "createdAt": "2026-06-30T03:16:51.994Z",
+      "_status": "published"
+    },
+    {
+      "id": 50,
+      "title": "Home Scheduled Personal Property Guide (2026): Jewelry, Bikes, Art, and Appraisal Rules",
+      "slug": "home-scheduled-personal-property-buying-guide",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for homeowners with engagement rings, road bikes, cameras, or art above standard personal property sub-limits. A scheduled personal property endorsement (floater) lists specific items with agreed values—often with lower deductibles and broader perils.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Standard policy sub-limits",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Jewelry theft may cap at $1,500 unless scheduled—read special limits on declarations.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Firearms, silverware, and business property often have separate caps.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Replacement cost on contents does not remove category sub-limits.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scheduling items",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Provide descriptions, serial numbers, and appraisals dated within 3–5 years for jewelry.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Premium is usually a few dollars per $1,000 of value for jewelry floaters.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Update schedules after major purchases—unscheduled new items may be underinsured.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: $8,000 engagement ring stolen",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Without scheduling, theft coverage may stop at $1,500. A scheduled floater for $8,000 with a $0 deductible pays replacement minus policy rules—often requires a police report and appraisal on file.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: e-bike worth $4,500",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Bicycles may be covered as personal property but theft away from home can have lower sub-limits. Scheduling the bike clarifies worldwide theft coverage and agreed value.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Inventory valuables with photos and receipts before scheduling.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Ask if mysterious disappearance is covered for jewelry—varies by carrier.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Bundle endorsements in /guides/home-endorsement-selection-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Theft evidence habits from /guides/renters-theft-claim-evidence-deep-guide-2026 apply to home too.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Is scheduling the same as increasing dwelling limits? A: No—scheduling covers named personal property, not the house structure.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Do I need a new appraisal every year? A: Carriers often require updates every 3–5 years or after large market moves.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Are scheduled items covered away from home? A: Often yes worldwide—verify off-premises theft language.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Replacement cost vs ACV: /guides/home-replacement-cost-vs-acv-deep-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare home carriers: /insurance/home",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-30T03:16:51.970Z",
+      "reviewedBy": {
+        "id": 2,
+        "name": "Auto & Property Editor",
+        "slug": "auto-property-editor",
+        "role": "Auto and property insurance",
+        "credentials": "Focus on HO-3/HO-4 forms, UM/UIM limits, catastrophe deductibles, and property claim timelines.",
+        "updatedAt": "2026-06-02T00:40:26.509Z",
+        "createdAt": "2026-06-02T00:40:26.509Z"
+      },
+      "lastReviewedAt": "2026-06-29T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Home Scheduled Property Guide 2026 | Jewelry",
+        "metaDescription": "Schedule high-value items on homeowners insurance in 2026: jewelry, bikes, art, appraisal rules, per-item limits, and when a floater beats base contents coverage."
+      },
+      "updatedAt": "2026-06-30T03:16:51.971Z",
+      "createdAt": "2026-06-30T03:16:51.971Z",
+      "_status": "published"
+    },
+    {
+      "id": 49,
+      "title": "Medicare IRMAA Income Surcharge Guide (2026): MAGI Brackets, Part B & D Premiums, and Appeals",
+      "slug": "medicare-irmaa-income-surcharge-buying-guide",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "body": {
+        "root": {
+          "type": "root",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Best for retirees whose income spikes from Roth conversions, capital gains, or returning to work. IRMAA (Income-Related Monthly Adjustment Amount) adds surcharges to Part B and Part D premiums based on tax-return income from two years prior.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "How IRMAA is calculated",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Uses Modified Adjusted Gross Income (MAGI) from your tax return two years before the premium year.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Higher brackets add flat monthly surcharges to both Part B and Part D—stacks on top of base premiums.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Married filing jointly brackets differ from single filers—plan joint Roth conversions carefully.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Life-changing event appeals",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "You may request a new determination after divorce, death of spouse, work stoppage, or income reduction.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Submit SSA form with supporting documents—appeals are not automatic.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Pair with enrollment timing in /guides/medicare-part-b-late-enrollment-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: Roth conversion at 63",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A couple converts $200,000 to Roth at 63. Two years later at Medicare enrollment, IRMAA surcharges may apply even if income normalized—model conversions before age 63 or spread over years.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Scenario: widow with income drop",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "A surviving spouse's income falls below the threshold after a death. Filing a life-changing event appeal with the death certificate and recent tax return may remove IRMAA for the current premium year.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Buying checklist",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Review MAGI projections two years ahead of Medicare start.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare Advantage vs Medigap total cost including IRMAA in /guides/medicare-advantage-vs-medigap-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 3,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part D penalty still applies separately—/guides/medicare-part-d-late-enrollment-buying-guide.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 4,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Medigap basics: /guides/medicare-supplement-buying-guide-2026.",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "FAQ",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Does IRMAA affect Medigap premiums? A: IRMAA applies to Part B and Part D—not private Medigap carrier premiums.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: How long does IRMAA last? A: Usually for the calendar year tied to the referenced tax return unless you successfully appeal.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "type": "paragraph",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Q: Are Roth withdrawals counted for IRMAA? A: Qualified Roth distributions may not increase MAGI—conversions do.",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null,
+              "textStyle": "",
+              "textFormat": 0
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "Related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Plan letters: /guides/medicare-medigap-plan-letters-deep-guide-2026",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Compare Medicare products: /insurance/medicare",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
+            }
+          ],
+          "direction": null
+        }
+      },
+      "publishedAt": "2026-06-30T03:16:51.858Z",
+      "reviewedBy": {
+        "id": 3,
+        "name": "Health & Life Editor",
+        "slug": "health-life-editor",
+        "role": "Life and Medicare supplement",
+        "credentials": "Focus on beneficiary claims, Medigap plan letters, enrollment windows, and contestability rules.",
+        "updatedAt": "2026-06-02T00:40:26.519Z",
+        "createdAt": "2026-06-02T00:40:26.519Z"
+      },
+      "lastReviewedAt": "2026-06-29T12:00:00.000Z",
+      "seo": {
+        "metaTitle": "Medicare IRMAA Surcharge Guide 2026 | MAGI",
+        "metaDescription": "Medicare IRMAA surcharges for 2026: how MAGI tiers raise Part B and Part D premiums, two-year lookback, life-changing events, and appeal documentation."
+      },
+      "updatedAt": "2026-06-30T03:16:51.864Z",
+      "createdAt": "2026-06-30T03:16:51.863Z",
+      "_status": "published"
+    },
+    {
       "id": 48,
       "title": "Disability vs Life Insurance Guide (2026): Income Protection, Death Benefit, and Employer STD",
       "slug": "life-disability-vs-life-income-protection-buying-guide",
@@ -77886,6 +79599,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W11 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Stacked vs unstacked UM/UIM: /guides/auto-stacked-unstacked-um-uim-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "PIP and MedPay: /guides/auto-pip-medpay-coverage-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -77901,12 +79682,12 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-09T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-29T12:00:00.000Z",
       "seo": {
         "metaTitle": "UM/UIM Auto Insurance Guide 2026 | Insurhi",
         "metaDescription": "Deep guide to uninsured and underinsured motorist coverage: limits, stacking rules, claim scenarios, and how to compare UM/UIM before buying auto insurance."
       },
-      "updatedAt": "2026-06-13T08:38:47.215Z",
+      "updatedAt": "2026-06-30T03:16:52.327Z",
       "createdAt": "2026-05-20T06:54:29.534Z",
       "_status": "published"
     },
@@ -81849,6 +83630,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W11 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Bed bug infestation claims: /claims/guides/renters-bed-bug-infestation-claim-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Flood and earthquake endorsements: /guides/renters-flood-earthquake-endorsement-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -81864,12 +83713,12 @@
         "updatedAt": "2026-06-02T00:40:26.499Z",
         "createdAt": "2026-06-02T00:40:26.496Z"
       },
-      "lastReviewedAt": "2026-06-25T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-29T12:00:00.000Z",
       "seo": {
         "metaTitle": "Renters Insurance Buying Guide 2026 | Coverage Tips",
         "metaDescription": "Compare renters insurance by personal property limits, liability, deductibles, and sub-limits. Includes short-term rental and roommate coverage considerations."
       },
-      "updatedAt": "2026-06-25T01:22:09.554Z",
+      "updatedAt": "2026-06-30T03:16:52.359Z",
       "createdAt": "2026-05-20T01:20:09.751Z",
       "_status": "published"
     },
@@ -82860,6 +84709,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W11 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "IRMAA income surcharges: /guides/medicare-irmaa-income-surcharge-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Part D late enrollment: /guides/medicare-part-d-late-enrollment-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -82875,12 +84792,12 @@
         "updatedAt": "2026-06-02T00:40:26.519Z",
         "createdAt": "2026-06-02T00:40:26.519Z"
       },
-      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-29T12:00:00.000Z",
       "seo": {
         "metaTitle": "Medigap Buying Guide 2026 | Plans & Cost",
         "metaDescription": "Medigap buying guide for 2026: compare plan letters, pricing approach, enrollment timing, and shortlist carriers with realistic cost ranges."
       },
-      "updatedAt": "2026-06-26T00:53:42.239Z",
+      "updatedAt": "2026-06-30T03:16:52.260Z",
       "createdAt": "2026-05-20T01:20:09.703Z",
       "_status": "published"
     },
@@ -87799,6 +89716,74 @@
               ],
               "listType": "bullet",
               "direction": null
+            },
+            {
+              "tag": "h2",
+              "type": "heading",
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "W11 related guides",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": null
+            },
+            {
+              "type": "list",
+              "start": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "type": "listitem",
+                  "value": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Scheduled personal property: /guides/home-scheduled-personal-property-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                },
+                {
+                  "type": "listitem",
+                  "value": 2,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "mode": "normal",
+                      "text": "Service line and sewer backup: /guides/home-service-line-sewer-endorsement-buying-guide",
+                      "type": "text",
+                      "style": "",
+                      "detail": 0,
+                      "format": 0,
+                      "version": 1
+                    }
+                  ],
+                  "direction": null
+                }
+              ],
+              "listType": "bullet",
+              "direction": null
             }
           ],
           "direction": null
@@ -87814,12 +89799,12 @@
         "updatedAt": "2026-06-02T00:40:26.509Z",
         "createdAt": "2026-06-02T00:40:26.509Z"
       },
-      "lastReviewedAt": "2026-06-26T12:00:00.000Z",
+      "lastReviewedAt": "2026-06-29T12:00:00.000Z",
       "seo": {
         "metaTitle": "Home Endorsement Guide 2026 | Add-Ons That Matter",
         "metaDescription": "Choose home endorsements by real loss exposure and budget. Compare coverage impact, deductible interaction, and claims reliability before renewal decisions."
       },
-      "updatedAt": "2026-06-26T00:53:42.297Z",
+      "updatedAt": "2026-06-30T03:16:52.290Z",
       "createdAt": "2026-04-23T06:15:29.663Z",
       "_status": "published"
     },
@@ -91652,6 +93637,158 @@
     }
   ],
   "faqItems": [
+    {
+      "id": 137,
+      "question": "Who pays for bed bug treatment in a rental?",
+      "answer": "Lease and local law usually assign structural pest treatment to the landlord; renters may claim contents only if the policy allows. Document notices: /claims/guides/renters-bed-bug-infestation-claim-guide.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-30T03:16:52.223Z",
+      "createdAt": "2026-06-30T03:16:52.223Z"
+    },
+    {
+      "id": 136,
+      "question": "Does renters insurance cover bed bugs?",
+      "answer": "Many policies exclude vermin and infestation—some offer limited endorsements. Landlords often must treat the unit. Claim and documentation steps: /claims/guides/renters-bed-bug-infestation-claim-guide.",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "updatedAt": "2026-06-30T03:16:52.205Z",
+      "createdAt": "2026-06-30T03:16:52.205Z"
+    },
+    {
+      "id": 135,
+      "question": "Is stacked UM/UIM worth the extra premium?",
+      "answer": "It can significantly raise bodily injury limits for multi-car households hit by uninsured drivers—but costs more than unstacked. Model scenarios in /guides/auto-stacked-unstacked-um-uim-buying-guide.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-30T03:16:52.180Z",
+      "createdAt": "2026-06-30T03:16:52.180Z"
+    },
+    {
+      "id": 134,
+      "question": "What is stacked uninsured motorist coverage?",
+      "answer": "In allowed states, stacked UM/UIM may combine limits from each insured vehicle on the policy for one serious injury claim. Rules vary by state. Compare: /guides/auto-stacked-unstacked-um-uim-buying-guide.",
+      "category": {
+        "id": 1,
+        "title": "Auto Insurance",
+        "slug": "auto",
+        "summary": "Market Size: US auto insurance market exceeds $369.6 billion (2025)\nTarget Users: Car owners, new drivers, high-risk drivers, budget-conscious consumers",
+        "seo": {
+          "metaTitle": "Save on Auto Insurance 2026 | Compare Rates & Get Cheap Quotes | Insurhi",
+          "metaDescription": "Compare auto insurance rates from top providers. Read expert guides, find answers to FAQs, and discover recommended insurers. Trust Insurhi.com for car insurance."
+        },
+        "updatedAt": "2026-04-16T07:14:17.561Z",
+        "createdAt": "2026-04-13T10:39:43.623Z"
+      },
+      "updatedAt": "2026-06-30T03:16:52.163Z",
+      "createdAt": "2026-06-30T03:16:52.162Z"
+    },
+    {
+      "id": 133,
+      "question": "What items should be scheduled on a home policy?",
+      "answer": "High-value jewelry, art, collectibles, bikes, and cameras above special sub-limits are common candidates. Appraisals may be required. Guide: /guides/home-scheduled-personal-property-buying-guide.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-30T03:16:52.156Z",
+      "createdAt": "2026-06-30T03:16:52.155Z"
+    },
+    {
+      "id": 132,
+      "question": "Do I need to schedule jewelry on homeowners insurance?",
+      "answer": "Often yes—standard policies cap theft of jewelry at low sub-limits (sometimes $1,500). Scheduling lists specific items for agreed values. Steps: /guides/home-scheduled-personal-property-buying-guide.",
+      "category": {
+        "id": 3,
+        "title": "Home Insurance",
+        "slug": "home",
+        "summary": "Market Size: US home insurance market exceeds $170 billion\nTarget Users: Homeowners, new home buyers, high-value property owners, Airbnb hosts",
+        "seo": {
+          "metaTitle": "Complete Home Insurance Coverage | Protect Your Property 2026 | Insurhi",
+          "metaDescription": "Compare home insurance coverage and rates. Expert guides on homeowners insurance, FAQs answered, and trusted insurers. Protect your home with Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:16:13.426Z",
+        "createdAt": "2026-04-13T14:08:21.606Z"
+      },
+      "updatedAt": "2026-06-30T03:16:52.152Z",
+      "createdAt": "2026-06-30T03:16:52.152Z"
+    },
+    {
+      "id": 131,
+      "question": "Can I appeal Medicare IRMAA surcharges?",
+      "answer": "You may request a redetermination after life-changing events like retirement, divorce, or income loss—submit documentation to SSA. Details: /guides/medicare-irmaa-income-surcharge-buying-guide.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-30T03:16:52.145Z",
+      "createdAt": "2026-06-30T03:16:52.145Z"
+    },
+    {
+      "id": 130,
+      "question": "What is Medicare IRMAA based on?",
+      "answer": "IRMAA uses Modified Adjusted Gross Income from your tax return two years before the premium year to add surcharges to Part B and Part D. Brackets change annually. Guide: /guides/medicare-irmaa-income-surcharge-buying-guide.",
+      "category": {
+        "id": 5,
+        "title": "Medicare Supplement Insurance",
+        "slug": "medicare",
+        "summary": "Market Size: US Medicare Supplement market covers tens of millions of seniors\nTarget Users: Adults 65+, new Medicare members, users with high medical expenses",
+        "seo": {
+          "metaTitle": "Medicare Insurance for 65+ | Compare Supplement Plans 2026 | Insurhi",
+          "metaDescription": "Compare Medicare Supplement insurance plans (Medigap). Expert guides on coverage, FAQs answered, and top Medicare insurers. Find the right plan at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:17:58.600Z",
+        "createdAt": "2026-04-16T07:17:58.599Z"
+      },
+      "updatedAt": "2026-06-30T03:16:52.120Z",
+      "createdAt": "2026-06-30T03:16:52.120Z"
+    },
     {
       "id": 129,
       "question": "What is the difference between short-term and long-term disability?",
@@ -98094,6 +100231,156 @@
       "lastReviewedAt": "2026-06-14T12:00:00.000Z",
       "updatedAt": "2026-06-13T08:38:47.602Z",
       "createdAt": "2026-04-22T07:53:42.841Z"
+    },
+    {
+      "id": 28,
+      "title": "Renters Bed Bug Infestation Claim Guide (2026): Documentation, Landlord Duty, and Contents Loss",
+      "slug": "renters-bed-bug-infestation-claim-guide",
+      "category": {
+        "id": 6,
+        "title": "Renters Insurance",
+        "slug": "renters",
+        "summary": "Market Size: US renters insurance market growing rapidly, young renting population increasing\nTarget Users: Renters, apartment dwellers, college students, young professionals",
+        "seo": {
+          "metaTitle": "Renters Insurance Guide 2026 | Protect Your Belongings | Insurhi",
+          "metaDescription": "Compare renters insurance rates and coverage. Expert guides on tenant insurance, FAQs answered, and top renters insurers. Protect your apartment at Insurhi.com."
+        },
+        "updatedAt": "2026-04-16T07:18:44.313Z",
+        "createdAt": "2026-04-16T07:18:44.313Z"
+      },
+      "steps": [
+        {
+          "id": "6a433524e0a6a07e4d584bb3",
+          "step": "Photograph bites, bugs, and affected furniture with dates—seek medical documentation if needed."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bb4",
+          "step": "Notify landlord in writing immediately—many leases assign treatment duty to the owner."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bb5",
+          "step": "Check if renters policy covers bed bug remediation or contents—coverage is limited on many policies."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bb6",
+          "step": "Keep receipts for laundry, encasements, replacement bedding, and professional inspection."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bb7",
+          "step": "If claiming contents, list discarded items with replacement cost—mitigate spread per insurer instructions."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bb8",
+          "step": "Document landlord pest control response or lack thereof for habitability disputes."
+        }
+      ],
+      "documentChecklist": [
+        {
+          "id": "6a433524e0a6a07e4d584bb9",
+          "item": "Dated photos of infestation and bite marks"
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bba",
+          "item": "Written landlord notice and response emails"
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bbb",
+          "item": "Pest inspector report if obtained"
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bbc",
+          "item": "Receipts for laundry, bags, mattress encasements, discarded furniture"
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bbd",
+          "item": "Lease pest and habitability clauses"
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bbe",
+          "item": "Medical visit notes if treating bite reactions"
+        }
+      ],
+      "onlineClaimUrl": "https://www.insurhi.com/claims/renters",
+      "denialReasons": [
+        {
+          "id": "6a433524e0a6a07e4d584bbf",
+          "reason": "Exclusion for vermin or infestation",
+          "explanation": "Many renters policies exclude bed bugs as maintenance or vermin—read endorsements before assuming coverage."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bc0",
+          "reason": "Landlord responsible for treatment",
+          "explanation": "Structural treatment is usually landlord duty—renters policy may only cover your belongings if at all."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bc1",
+          "reason": "No proof of sudden loss",
+          "explanation": "Gradual infestation over months may be denied as preventable—document discovery date carefully."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bc2",
+          "reason": "Sub-limit for pest-related claims",
+          "explanation": "Rare endorsements cap bed bug payouts—verify dollar limits on declarations."
+        }
+      ],
+      "delayCauses": [
+        {
+          "id": "6a433524e0a6a07e4d584bc3",
+          "cause": "Coverage determination on vermin exclusion",
+          "explanation": "Carriers research policy form versions—initial delays of 1–2 weeks are common."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bc4",
+          "cause": "Landlord vs tenant responsibility dispute",
+          "explanation": "Insurer may wait for landlord treatment outcome before paying contents—keep parallel habitability records."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bc5",
+          "cause": "Inventory verification for discarded items",
+          "explanation": "Adjusters require proof you owned replaced mattresses and furniture—use bank statements or photos."
+        }
+      ],
+      "supplementalDocuments": [],
+      "nextActions": [
+        {
+          "id": "6a433524e0a6a07e4d584bc6",
+          "action": "Request written denial citing exclusion section before discarding large furniture."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bc7",
+          "action": "Mold and moisture: /claims/guides/renters-mold-damage-claim-guide."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bc8",
+          "action": "Theft and evidence: /guides/renters-theft-claim-evidence-deep-guide-2026."
+        }
+      ],
+      "communicationNotes": [
+        {
+          "id": "6a433524e0a6a07e4d584bc9",
+          "note": "Do not spread infested items to storage without sealing—document mitigation steps."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bca",
+          "note": "Email subject: Renters bed bug claim + policy number + move-in date."
+        },
+        {
+          "id": "6a433524e0a6a07e4d584bcb",
+          "note": "Local housing codes may require landlord treatment—cite violations if applicable."
+        }
+      ],
+      "reviewedBy": {
+        "id": 1,
+        "name": "Insurhi Editorial Team",
+        "slug": "editorial-team",
+        "role": "Insurance research & editorial",
+        "credentials": "Cross-category coverage reviews, claims workflow checks, and policy form comparisons.",
+        "updatedAt": "2026-06-02T00:40:26.499Z",
+        "createdAt": "2026-06-02T00:40:26.496Z"
+      },
+      "lastReviewedAt": "2026-06-29T12:00:00.000Z",
+      "updatedAt": "2026-06-30T03:16:52.043Z",
+      "createdAt": "2026-06-30T03:16:52.043Z"
     },
     {
       "id": 3,
